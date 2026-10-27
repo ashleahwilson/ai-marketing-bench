@@ -1,0 +1,59 @@
+{
+ "skill": "campaign-intake",
+ "version": "1.2.0",
+ "date": "2026-10-27",
+ "status": "Meets the Bench Standard bar on Opus (75/76, every trap passed, no invented facts). On Haiku it beats no skill by 18 tests (75/76 vs 57/76) and passes every trap, but in the final round it wrote one unmarked currency assumption (the BFCM budget as '6000 USD' when the thread gave no currency), so the no-invented-facts part of the bar is met on large models only.",
+ "method": "9 evals (4 traps), expectations written before any run. No comparison skill exists locally, so round 1 compared the skill with no skill on Haiku and Opus, in fresh headless agents graded blind by a separate Opus grader. Rounds 2 and 3 re-ran the skill as it was revised (round 3 on Haiku and Opus).",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 75,
+   "total": 76
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 74,
+   "total": 76
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 57,
+   "total": 76
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 75,
+   "total": 76
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 57,
+   "total": 76
+  }
+ ],
+ "traps": {
+  "with skill, Haiku (round 3)": "33/33",
+  "with skill, Opus (round 3)": "33/33",
+  "no skill, Haiku": "25/33",
+  "no skill, Opus": "27/33"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 72,
+  "2 (v1.1.0)": 75,
+  "3 (v1.2.0)": 75,
+  "out_of": 76
+ },
+ "losses_and_open_issues": [
+  "Round 3, Haiku, eval 6: the Update reply ran 283 words against a 250 limit; replies tend to land near 300 words whatever the task",
+  "Round 3, Opus, eval 9: asked four numbered questions, but one joined two decisions (success metric and decision owner), counted as five",
+  "Round 3, Haiku, eval 2: recorded the budget as '6000 USD' with no currency in the thread and no assumption marker (an invented fact); also said no copy should go out until brand memory is updated, which over-gates",
+  "Round 3, Haiku, eval 3: planned to record Hannah's unverified '80% of inbound' figure in brand memory; eval 1 working-day count off by one",
+  "Round 3, Opus: cites public holidays (US Thanksgiving, Remembrance Day, Veterans Day) from general knowledge; correct, but not from the fixtures",
+  "Round 2, Haiku: on the deadline trap said nothing could ship by the date; on the webinar it re-dated the series over a one-day gap against the rough lead-time floor (fixed in 1.2.0)",
+  "Round 1, Haiku: three non-blocking questions on a complete request, picked one of two candidate success metrics, used a name from its environment ('Ashleah Wilson') in an update log, and wrote method words ('lead-time table') into intakes (fixed in 1.1.0)",
+  "Rounds 1 and 2: the judgment reference's feasibility example resembled the deadline-trap answer; replaced before round 3, so round 3 is the clean result for eval 2",
+  "Lead-time floors are planning defaults, not facts; they decide feasibility verdicts and should be replaced with the team's own",
+  "Round 1, without the skill: Opus invented conversion and cost-per-review figures, a budget split and CPC claims, and facts about Ferncliff; Haiku skipped brand memory on eval 8. Both missed numeric budgets, over-asked, and ran long",
+  "Every run, all configs, left the request and brand files unchanged"
+ ]
+}

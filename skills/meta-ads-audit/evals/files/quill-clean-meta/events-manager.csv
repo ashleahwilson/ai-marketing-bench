@@ -1,0 +1,4 @@
+Dataset,Event name,Connection method,Events received,Event ID coverage (%),Event match quality
+Quillmetrics Dataset 2291,StartTrial,Browser,612,98,7.9
+Quillmetrics Dataset 2291,StartTrial,Server (Conversions API),609,99,8.6
+Quillmetrics Dataset 2291,PageView,Browser,51840,,6.0

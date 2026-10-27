@@ -1,0 +1,21 @@
+FACTS
+- prospect: Casa Moreno, one location in Toronto, owner Rafael Moreno | user
+- address: rafael@casamoreno.example, published on casamoreno.example/contact, captured 2026-10-05 | user
+- offer: free month-end review | brand/offer.md
+- sender: Hannah Ruiz, Co-founder, Tallyhouse | brand/senders.md
+ASSUMED
+- none
+---
+Channel: email
+Type: first
+Subject: month-end at casa moreno
+
+Hi Rafael,
+
+When the books close weeks after month-end, prime cost is a guess for most of the next month. Tallyhouse gives Casa Moreno a named bookkeeper who has worked in restaurant finance and a P&L every month.
+
+Open to a free month-end review to see where your numbers land?
+
+Hannah Ruiz, Co-founder, Tallyhouse
+Tallyhouse Inc., 410 Adelaide St W, Suite 300, Toronto, ON M5V 1S8
+If this isn't relevant to you, reply "no" and I won't follow up.

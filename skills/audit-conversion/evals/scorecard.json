@@ -1,0 +1,35 @@
+{
+ "skill": "audit-conversion",
+ "version": "1.2.0",
+ "date": "2026-10-24",
+ "status": "Beats no skill and the comparison skill on total on both models, and is never worse on the three traps. Not fully at the bar: in the final round the grader found no major invented facts, but with-skill Opus made two small unsupported statements (it told Tallyhouse to 'add CAD' to $349/month, though the billing currency isn't stated anywhere; and it paraphrased Quillmetrics' trial FAQ as 'take payment when the trial ends'). Under the Standard's rule that a plausible guess counts as an invention, those keep it from 'Meets the Bench Standard bar'.",
+ "method": "8 evals (3 traps: asked to predict a conversion rate, no pages supplied, an already well-built page under pressure to buy an overhaul), 61 expectations written before any run. Round 1 ran the skill, no skill, and the comparison skill (Corey Haines' page-cro 1.1.0) on Haiku, and the skill and no skill on Opus, in fresh headless agents graded blind by a separate Opus grader. Round 2 re-ran the skill on Haiku (v1.1.0). Round 3 re-ran the skill on Haiku and Opus (v1.2.0).",
+ "results": [
+  {"config": "with skill, Opus (v1.2.0, round 3)", "passed": 61, "total": 61},
+  {"config": "with skill, Opus (v1.0.0, round 1)", "passed": 60, "total": 61},
+  {"config": "no skill, Opus (round 1)", "passed": 38, "total": 61},
+  {"config": "with skill, Haiku (v1.2.0, round 3)", "passed": 58, "total": 61},
+  {"config": "with skill, Haiku (v1.1.0, round 2)", "passed": 61, "total": 61},
+  {"config": "with skill, Haiku (v1.0.0, round 1)", "passed": 60, "total": 61},
+  {"config": "no skill, Haiku (round 1)", "passed": 35, "total": 61},
+  {"config": "comparison skill (page-cro), Haiku (round 1)", "passed": 31, "total": 61}
+ ],
+ "traps_round_1": {
+  "eval 2 predict a conversion rate": {"with-skill-haiku": "9/9", "with-skill-opus": "9/9", "no-skill-haiku": "5/9", "no-skill-opus": "5/9", "comparison-skill-haiku": "6/9"},
+  "eval 3 no pages": {"with-skill-haiku": "6/6", "with-skill-opus": "6/6", "no-skill-haiku": "4/6", "no-skill-opus": "4/6", "comparison-skill-haiku": "3/6"},
+  "eval 4 sound page": {"with-skill-haiku": "7/7", "with-skill-opus": "6/7", "no-skill-haiku": "5/7", "no-skill-opus": "5/7", "comparison-skill-haiku": "5/7"}
+ },
+ "haiku_with_skill_by_round": {"1 (v1.0.0)": 60, "2 (v1.1.0)": 61, "3 (v1.2.0)": 58, "out_of": 61},
+ "losses_and_open_issues": [
+  "Round 3, Haiku, eval 7 (Guided mode) 2/5: the run never read the supplied pages, taking the runner's 'read only this file' line to cover the project folder, and asked for pages it already had. Rounds 1-2 read them on the same prompt. Not fixed (round limit reached); a line saying Guided mode reads every page before pausing would address it",
+  "Round 1, Opus, eval 4: four suggestions on a sound page against a limit of three (plan items unlabelled); fixed in 1.1.0",
+  "Round 1, Haiku, eval 7: named a site-wide primary action instead of one per page; fixed in 1.1.0",
+  "Round 1: 4 with-skill replies named the skill, following the test machine's 'announce the skill' instruction; fixed in 1.1.0, none in rounds 2-3",
+  "Round 3, Opus: 'add CAD to $349/month' assumes a billing currency not stated; 'take payment when the trial ends' overstates the pricing FAQ; 'founder-led' for Pipewise on thin evidence (flagged as loose in the report)",
+  "Round 3, Haiku: rubric wording ('so the lower level applies') still appears in C1 evidence in two runs, and absolute run-folder paths appear in replies",
+  "Both models give C5 15/15 on the Tallyhouse landing page while flagging that the quote beside the form lacks naming permission: the C5 test is literal (proof present) and permission is reported as a finding, not a deduction",
+  "C1 on the Ferncliff pages differs between models (10 vs 0, nav 'Start free trial' against hero walkthrough): the rubric's 'competing' vs 'wording varies' boundary is loose",
+  "Round 1 without the skill: no-skill and page-cro runs gave worked lift maths or projected extra bookings (evals 2, 5), overwrote the earlier dim-conversion.json without a copy (eval 6), and page-cro invented a brand-file fact and said 'I used the page-cro skill' in most replies",
+  "Several expectations (C1-C6 scores, report file) measure the skill's format, so they are hard for no-skill configs by design; no-skill Opus found the core eval 1 problems but had no checklist score"
+ ]
+}

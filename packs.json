@@ -1,0 +1,92 @@
+{
+  "marketplace": "ai-marketing-bench",
+  "repo": "ashleahwilson/ai-marketing-bench",
+  "owner": "Ashleah Wilson",
+  "description": "Tested marketing and go-to-market skills for AI agents. Install one skill or a whole capability.",
+  "packs": [
+    {
+      "name": "outbound",
+      "title": "Outbound",
+      "description": "Ideal customer profile, prospect lists, buying committees, prospecting emails and reply handling, with every claim sourced and compliance checked.",
+      "skills": [
+        "reach-out",
+        "handle-reply",
+        "competitor-intel",
+        "icp",
+        "build-list",
+        "map-contacts"
+      ]
+    },
+    {
+      "name": "audit",
+      "title": "Marketing Audit",
+      "description": "A scored Marketing Health report for any website: positioning, acquisition, conversion, brand and measurement.",
+      "skills": [
+        "marketing-audit",
+        "audit-positioning",
+        "audit-acquisition",
+        "audit-conversion",
+        "audit-brand",
+        "audit-measurement"
+      ]
+    },
+    {
+      "name": "brand",
+      "title": "Brand",
+      "description": "Brand memory that every skill reads, codified voice rules, an anti-AI-writing pass, and a gate that checks drafts against them.",
+      "skills": [
+        "brand-memory",
+        "brand-voice-codify",
+        "de-slop",
+        "brand-voice-gate"
+      ]
+    },
+    {
+      "name": "content",
+      "title": "Content Ops",
+      "description": "Briefs, email sequences, LinkedIn content, a pre-publish QA gate, editorial review and content audits, run as a governed workflow.",
+      "skills": [
+        "content-brief",
+        "content-qa-gate",
+        "editorial-review-cycle",
+        "content-audit",
+        "email-sequence",
+        "linkedin-content"
+      ]
+    },
+    {
+      "name": "paid",
+      "title": "Paid Ads",
+      "description": "Audit Google Ads and Meta Ads accounts and build new campaigns and ads, with every claim sourced from brand memory.",
+      "skills": [
+        "google-ads-audit",
+        "google-ads-build",
+        "meta-ads-audit",
+        "meta-ads-build"
+      ]
+    },
+    {
+      "name": "team-ops",
+      "title": "Team Ops",
+      "description": "Turn proven work into skills, map which work goes to agents, and route intake and approvals.",
+      "skills": [
+        "skill-author",
+        "ai-workload-map",
+        "campaign-intake",
+        "approval-routing",
+        "agency-brief"
+      ]
+    },
+    {
+      "name": "compliance",
+      "title": "Claims & Compliance",
+      "description": "Claims substantiation, accessibility review and disclosure checks for regulated teams.",
+      "skills": [
+        "claims-review",
+        "accessibility-review",
+        "disclosure-check"
+      ]
+    }
+  ],
+  "homepage": "https://aimarketingbench.com"
+}

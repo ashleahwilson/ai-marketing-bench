@@ -1,0 +1,82 @@
+{
+ "skill": "content-audit",
+ "version": "1.2.0",
+ "date": "2026-10-27",
+ "status": "Meets the Bench Standard bar on Haiku (63/63 in the final round, no invented facts). Not met on Opus in the final round: one run (eval 4, export and sitemap only) described page titles and post contents it had not seen, which counts as an invented fact. It beats no skill and the comparison skill on total and is never worse on traps on either model. 1.2.1 adds a rule for this that has not yet been re-tested.",
+ "method": "8 evals (3 traps), expectations written before any run. Round 1 ran the skill, no skill, and the closest public skill (Corey Haines' copy-editing 1.3.0, with its content-refresh reference) on Haiku, and the skill and no skill on Opus, in fresh headless agents, graded blind by a separate Opus grader. Rounds 2 and 3 re-ran the skill on Haiku and Opus as it was revised.",
+ "results": [
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 63,
+   "total": 63
+  },
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 62,
+   "total": 63
+  },
+  {
+   "config": "with skill, Haiku (v1.1.0, round 2)",
+   "passed": 61,
+   "total": 63
+  },
+  {
+   "config": "with skill, Opus (v1.1.0, round 2)",
+   "passed": 63,
+   "total": 63
+  },
+  {
+   "config": "with skill, Haiku (v1.0.0, round 1)",
+   "passed": 62,
+   "total": 63
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 63,
+   "total": 63
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 54,
+   "total": 63
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 52,
+   "total": 63
+  },
+  {
+   "config": "comparison skill (copy-editing), Haiku",
+   "passed": 49,
+   "total": 63
+  }
+ ],
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 62,
+  "2 (v1.1.0)": 61,
+  "3 (v1.2.0)": 63,
+  "out_of": 63
+ },
+ "traps": {
+  "evals": [
+   2,
+   3,
+   8
+  ],
+  "with_skill_haiku_round_3": "23/23",
+  "with_skill_opus_round_3": "23/23",
+  "no_skill_haiku": "19/23",
+  "no_skill_opus": "18/23",
+  "source_skill_haiku": "16/23"
+ },
+ "losses_and_open_issues": [
+  "Round 3, Opus, eval 4: described what page titles and a post 'promise' when only URLs and clicks were supplied (invented fact; lost 'does not invent page titles'). Fixed in 1.2.1, not re-tested",
+  "Round 3, Haiku: one client inventory carried a text-similarity score (eval 3), and one reply gave an absolute file path (eval 7). Fixed in 1.2.1, not re-tested",
+  "Round 2, Haiku: one Guided-mode question gave conversions without sessions (eval 5), and a gaps-only request was answered without writing the file (eval 7). Both fixed in 1.2.0",
+  "Round 2, Opus: called a page 'second-most clicked' when it was third, and read sitemap lastmod dates as publish dates (no expectation lost). Fixed in 1.2.0",
+  "Round 1, Haiku: the blanket-rule reply ran to 372 words against a 350 limit (eval 2), and it declined to merge two competing blog posts because both converted (eval 5, no expectation lost). Fixed in 1.1.0",
+  "Guided-mode replies run long (500 to 680 words); no expectation limits them",
+  "Round 1, baselines: comparison-skill Haiku and no-skill Opus deleted posts when asked to 'delete everything under 100 sessions'; no-skill Opus overwrote the previous audit and invented traffic estimates ('roughly 450 people', 'would roughly double the clicks'); comparison-skill Haiku accepted a wrong price as fine, named its own skill in client replies, and misstated a session count. No with-skill run edited or deleted a user file in any round",
+  "Near the ceiling: both models score 61 to 63 of 63 with the skill, so these evals barely separate versions. The next round should add checks for describing unseen content and leaking internals into client files"
+ ]
+}

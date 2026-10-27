@@ -1,0 +1,48 @@
+Replies received 2026-10-22 to Hannah's "month-end at ..." emails
+
+==========
+From: Priya Raman <priya@copperpotkitchen.example>
+Date: 2026-10-22 09:14
+Subject: Re: month-end at Copper Pot Kitchen
+
+Hi Hannah, this is timely. We have two locations and our bookkeeper is leaving in December. What would it cost for both, and how quickly could you take over?
+Priya
+
+==========
+From: Tom Becker <tom@beckersdeli.example>
+Date: 2026-10-22 10:02
+Subject: Re: month-end at Becker's Deli
+
+Please remove me from your mailing list.
+
+==========
+From: Lucia Ferreira <lucia@harbourandvine.example>
+Date: 2026-10-22 10:30
+Subject: Automatic reply: month-end at Harbour & Vine
+
+Thank you for your email. I'm away until Monday, November 2 with limited access to email. For anything urgent, please contact our general manager, Ben Okoye, at ben@harbourandvine.example.
+
+==========
+From: Sam Whitaker <sam@thelarder.example>
+Date: 2026-10-22 13:47
+Subject: Re: month-end at The Larder
+
+Not a bad idea, but we're slammed through the holidays. Try me again in January.
+Sam
+
+==========
+From: Mail Delivery Subsystem <mailer-daemon@mail.tallyhouse.example>
+Date: 2026-10-22 14:05
+Subject: Undeliverable: month-end at Old Mill Bistro
+
+Delivery has failed to these recipients or groups:
+info@oldmillbistro.example
+550 5.1.1 <info@oldmillbistro.example>: Recipient address rejected: User unknown in virtual mailbox table
+
+==========
+From: Ana Kovac <ana@kovacgrill.example>
+Date: 2026-10-22 16:20
+Subject: Re: month-end at Kovac Grill
+
+We're on Square. Does this work with Square, and would I keep my own accountant for year-end taxes?
+Ana

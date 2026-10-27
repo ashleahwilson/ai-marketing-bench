@@ -1,0 +1,68 @@
+{
+ "skill": "build-list",
+ "version": "1.2.0",
+ "date": "2026-10-23",
+ "status": "Meets the Bench Standard bar on Opus (70/70 in rounds 1 and 3, no invented facts). On Haiku it beats every comparison on total (68/70 vs 40 no skill, 35 comparison) and on traps (21/22 vs 16 and 16), but in the final round it stated a wrong basis for one customer exclusion (copied from a generic script message, fixed in 1.2.1 and not re-run), so the no-invented-facts part of the bar is not met on Haiku; recommended for larger models.",
+ "method": "8 evals (3 traps), expectations written before any run. Round 1 ran the skill, no skill, and the comparison skill (the user's sales-prospect orchestrator) on Haiku, and the skill and no skill on Opus, each in a fresh headless agent that never saw the expectations, graded blind by a separate Opus grader with evidence per expectation. Rounds 2 and 3 re-ran the skill on Haiku as it was revised, and round 3 also re-ran it on Opus.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 70,
+   "total": 70
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 70,
+   "total": 70
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 52,
+   "total": 70
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 68,
+   "total": 70
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 40,
+   "total": 70
+  },
+  {
+   "config": "comparison skill (sales-prospect), Haiku",
+   "passed": 35,
+   "total": 70
+  }
+ ],
+ "traps": {
+  "evals": [
+   2,
+   4,
+   7
+  ],
+  "out_of": 22,
+  "with skill, Opus (round 3)": 22,
+  "with skill, Haiku (round 3)": 21,
+  "no skill, Opus": 16,
+  "no skill, Haiku": 16,
+  "comparison skill, Haiku": 16
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 66,
+  "2 (v1.1.0)": 66,
+  "3 (v1.2.0)": 68,
+  "out_of": 70
+ },
+ "losses_and_open_issues": [
+  "Round 3, Haiku, eval 1: Lantern Noodle Bar was merged and excluded correctly, but the stated reason was 'matches the customer list or a CRM customer stage' (it is neither; brand memory names it as a client). The generic script message is fixed in 1.2.1, not re-run",
+  "Round 3, Haiku, eval 7 (hurry trap): reply was 208 words against a 200-word limit",
+  "Round 3, both models, eval 4: cited CASL as a reason not to email personal inboxes on a list with no Canadian merchants (fixed in 1.2.1 wording, not re-run)",
+  "Round 2, Haiku: every reply ran 259 to 489 words; the no-data reply implied but didn't state who to target instead of CFOs; the personal-email decline didn't name consent law (fixed in 1.2.0)",
+  "Round 1, Haiku: showed a ranked score table as a guided-mode preview; called a webinar sign-up implied consent; named no law for Germany; didn't state how many accounts were new when adding to a list (fixed in 1.1.0)",
+  "CSV flags can read as contradictory (a row flagged as likely not the buyer can also say 'could reach tier A'); replies in evals 6 and 8 sometimes omitted the CSV file name",
+  "Comparisons, round 1: no skill and the comparison skill kept suppressed contacts (Jenny Tran, Derek Hall) in the list, never excluded the brand-memory client, and modified last month's list in place; no-skill Haiku and the comparison skill invented clinic names and provinces from domains and cities; the comparison skill refused eval 6 outright and leaked its own internals in five evals",
+  "No invented companies, people, emails or numbers in any with-skill output in any round. Every with-skill run left the input files unchanged"
+ ]
+}

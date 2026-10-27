@@ -1,0 +1,309 @@
+Day,Campaign name,Ad set name,Amount spent (USD),Impressions,Link clicks,Results,Result indicator
+2026-09-01,Prospecting | Free trial | Traffic,Traffic | Broad US,57.08,4078,53,0,Link clicks
+2026-09-02,Prospecting | Free trial | Traffic,Traffic | Broad US,58.25,4161,54,0,Link clicks
+2026-09-03,Prospecting | Free trial | Traffic,Traffic | Broad US,64.11,4580,59,0,Link clicks
+2026-09-04,Prospecting | Free trial | Traffic,Traffic | Broad US,55.80,3985,51,0,Link clicks
+2026-09-05,Prospecting | Free trial | Traffic,Traffic | Broad US,62.18,4441,57,0,Link clicks
+2026-09-06,Prospecting | Free trial | Traffic,Traffic | Broad US,56.64,4046,52,0,Link clicks
+2026-09-07,Prospecting | Free trial | Traffic,Traffic | Broad US,53.27,3805,49,0,Link clicks
+2026-09-08,Prospecting | Free trial | Traffic,Traffic | Broad US,59.27,4233,55,0,Link clicks
+2026-09-09,Prospecting | Free trial | Traffic,Traffic | Broad US,57.77,4126,53,0,Link clicks
+2026-09-10,Prospecting | Free trial | Traffic,Traffic | Broad US,60.16,4296,56,0,Link clicks
+2026-09-11,Prospecting | Free trial | Traffic,Traffic | Broad US,55.33,3952,51,0,Link clicks
+2026-09-12,Prospecting | Free trial | Traffic,Traffic | Broad US,57.63,4116,53,0,Link clicks
+2026-09-13,Prospecting | Free trial | Traffic,Traffic | Broad US,60.26,4303,56,0,Link clicks
+2026-09-14,Prospecting | Free trial | Traffic,Traffic | Broad US,63.44,4532,59,0,Link clicks
+2026-09-15,Prospecting | Free trial | Traffic,Traffic | Broad US,59.57,4255,55,0,Link clicks
+2026-09-16,Prospecting | Free trial | Traffic,Traffic | Broad US,59.92,4281,55,0,Link clicks
+2026-09-17,Prospecting | Free trial | Traffic,Traffic | Broad US,60.86,4347,56,0,Link clicks
+2026-09-18,Prospecting | Free trial | Traffic,Traffic | Broad US,66.84,4775,63,0,Link clicks
+2026-09-19,Prospecting | Free trial | Traffic,Traffic | Broad US,62.45,4461,58,0,Link clicks
+2026-09-20,Prospecting | Free trial | Traffic,Traffic | Broad US,63.14,4511,59,0,Link clicks
+2026-09-21,Prospecting | Free trial | Traffic,Traffic | Broad US,68.33,4882,64,0,Link clicks
+2026-09-22,Prospecting | Free trial | Traffic,Traffic | Broad US,54.88,3920,51,0,Link clicks
+2026-09-23,Prospecting | Free trial | Traffic,Traffic | Broad US,68.96,4925,64,0,Link clicks
+2026-09-24,Prospecting | Free trial | Traffic,Traffic | Broad US,56.23,4017,52,0,Link clicks
+2026-09-25,Prospecting | Free trial | Traffic,Traffic | Broad US,56.94,4066,53,0,Link clicks
+2026-09-26,Prospecting | Free trial | Traffic,Traffic | Broad US,59.22,4230,55,0,Link clicks
+2026-09-27,Prospecting | Free trial | Traffic,Traffic | Broad US,56.69,4050,53,0,Link clicks
+2026-09-28,Prospecting | Free trial | Traffic,Traffic | Broad US,64.78,4626,60,0,Link clicks
+2026-09-01,Trials | Conversions | 9 audiences,TR | Shopify owners US,45.65,3260,36,0,Website leads
+2026-09-02,Trials | Conversions | 9 audiences,TR | Shopify owners US,51.47,3677,40,1,Website leads
+2026-09-03,Trials | Conversions | 9 audiences,TR | Shopify owners US,53.35,3811,41,2,Website leads
+2026-09-04,Trials | Conversions | 9 audiences,TR | Shopify owners US,55.66,3975,43,2,Website leads
+2026-09-05,Trials | Conversions | 9 audiences,TR | Shopify owners US,51.77,3698,40,1,Website leads
+2026-09-06,Trials | Conversions | 9 audiences,TR | Shopify owners US,50.31,3594,40,1,Website leads
+2026-09-07,Trials | Conversions | 9 audiences,TR | Shopify owners US,54.08,3862,42,2,Website leads
+2026-09-08,Trials | Conversions | 9 audiences,TR | Shopify owners US,55.92,3993,44,2,Website leads
+2026-09-09,Trials | Conversions | 9 audiences,TR | Shopify owners US,55.31,3949,43,2,Website leads
+2026-09-10,Trials | Conversions | 9 audiences,TR | Shopify owners US,54.69,3906,43,1,Website leads
+2026-09-11,Trials | Conversions | 9 audiences,TR | Shopify owners US,53.05,3790,42,1,Website leads
+2026-09-12,Trials | Conversions | 9 audiences,TR | Shopify owners US,54.94,3925,44,2,Website leads
+2026-09-13,Trials | Conversions | 9 audiences,TR | Shopify owners US,50.84,3631,40,1,Website leads
+2026-09-14,Trials | Conversions | 9 audiences,TR | Shopify owners US,56.47,4034,45,2,Website leads
+2026-09-15,Trials | Conversions | 9 audiences,TR | Shopify owners US,52.36,3739,41,1,Website leads
+2026-09-16,Trials | Conversions | 9 audiences,TR | Shopify owners US,50.97,3641,40,1,Website leads
+2026-09-17,Trials | Conversions | 9 audiences,TR | Shopify owners US,50.75,3624,40,1,Website leads
+2026-09-18,Trials | Conversions | 9 audiences,TR | Shopify owners US,53.88,3849,42,1,Website leads
+2026-09-19,Trials | Conversions | 9 audiences,TR | Shopify owners US,52.56,3754,41,1,Website leads
+2026-09-20,Trials | Conversions | 9 audiences,TR | Shopify owners US,50.36,3597,40,1,Website leads
+2026-09-21,Trials | Conversions | 9 audiences,TR | Shopify owners US,51.97,3713,41,1,Website leads
+2026-09-22,Trials | Conversions | 9 audiences,TR | Shopify owners US,51.60,3686,41,1,Website leads
+2026-09-23,Trials | Conversions | 9 audiences,TR | Shopify owners US,44.53,3180,35,0,Website leads
+2026-09-24,Trials | Conversions | 9 audiences,TR | Shopify owners US,51.22,3659,41,1,Website leads
+2026-09-25,Trials | Conversions | 9 audiences,TR | Shopify owners US,48.54,3467,38,0,Website leads
+2026-09-26,Trials | Conversions | 9 audiences,TR | Shopify owners US,49.70,3551,40,1,Website leads
+2026-09-27,Trials | Conversions | 9 audiences,TR | Shopify owners US,52.30,3736,41,1,Website leads
+2026-09-28,Trials | Conversions | 9 audiences,TR | Shopify owners US,55.75,3983,43,2,Website leads
+2026-09-01,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,47.39,3386,37,1,Website leads
+2026-09-02,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,46.42,3316,36,1,Website leads
+2026-09-03,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,52.04,3718,41,2,Website leads
+2026-09-04,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,48.49,3463,38,1,Website leads
+2026-09-05,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,50.96,3639,40,1,Website leads
+2026-09-06,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,50.21,3586,39,2,Website leads
+2026-09-07,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,48.05,3432,38,1,Website leads
+2026-09-08,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,47.61,3401,37,1,Website leads
+2026-09-09,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,46.34,3310,36,1,Website leads
+2026-09-10,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,45.84,3273,36,1,Website leads
+2026-09-11,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,47.69,3406,37,1,Website leads
+2026-09-12,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,46.83,3345,37,1,Website leads
+2026-09-13,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,41.62,2973,32,0,Website leads
+2026-09-14,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,48.29,3449,38,1,Website leads
+2026-09-15,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,46.31,3309,36,1,Website leads
+2026-09-16,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,43.24,3088,34,0,Website leads
+2026-09-17,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,47.40,3386,37,1,Website leads
+2026-09-18,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,41.58,2970,32,0,Website leads
+2026-09-19,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,44.78,3198,35,1,Website leads
+2026-09-20,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,49.10,3507,39,1,Website leads
+2026-09-21,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,47.91,3422,37,1,Website leads
+2026-09-22,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,48.66,3476,38,2,Website leads
+2026-09-23,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,43.05,3075,34,0,Website leads
+2026-09-24,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,50.06,3575,39,1,Website leads
+2026-09-25,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,46.72,3337,36,1,Website leads
+2026-09-26,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,47.61,3401,38,1,Website leads
+2026-09-27,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,46.67,3334,36,1,Website leads
+2026-09-28,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,49.13,3509,39,2,Website leads
+2026-09-01,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,42.34,3025,33,1,Website leads
+2026-09-02,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,39.46,2818,31,0,Website leads
+2026-09-03,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,44.21,3158,34,1,Website leads
+2026-09-04,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,46.20,3301,36,2,Website leads
+2026-09-05,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,40.97,2927,32,1,Website leads
+2026-09-06,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,44.22,3160,34,1,Website leads
+2026-09-07,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,45.84,3274,35,2,Website leads
+2026-09-08,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,44.57,3183,35,1,Website leads
+2026-09-09,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,41.15,2939,33,0,Website leads
+2026-09-10,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,41.30,2950,32,0,Website leads
+2026-09-11,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,38.43,2745,30,0,Website leads
+2026-09-12,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,40.15,2868,32,1,Website leads
+2026-09-13,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,37.34,2666,29,0,Website leads
+2026-09-14,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,41.79,2984,33,1,Website leads
+2026-09-15,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,42.71,3050,34,1,Website leads
+2026-09-16,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,41.88,2992,33,0,Website leads
+2026-09-17,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,43.57,3112,34,1,Website leads
+2026-09-18,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,43.75,3124,35,1,Website leads
+2026-09-19,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,45.44,3246,35,1,Website leads
+2026-09-20,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,42.35,3025,33,1,Website leads
+2026-09-21,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,41.88,2991,32,1,Website leads
+2026-09-22,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,38.33,2738,30,0,Website leads
+2026-09-23,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,42.06,3004,33,1,Website leads
+2026-09-24,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,41.50,2964,33,1,Website leads
+2026-09-25,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,37.24,2659,29,0,Website leads
+2026-09-26,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,41.48,2963,32,1,Website leads
+2026-09-27,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,45.05,3218,35,1,Website leads
+2026-09-28,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,44.79,3200,35,1,Website leads
+2026-09-01,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,36.84,2632,29,0,Website leads
+2026-09-02,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,35.10,2507,27,0,Website leads
+2026-09-03,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,35.13,2509,28,0,Website leads
+2026-09-04,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,33.01,2358,25,0,Website leads
+2026-09-05,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,37.38,2670,29,1,Website leads
+2026-09-06,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,40.09,2863,31,2,Website leads
+2026-09-07,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,35.84,2560,27,0,Website leads
+2026-09-08,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,39.83,2845,31,1,Website leads
+2026-09-09,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,38.45,2746,30,1,Website leads
+2026-09-10,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,39.95,2854,31,1,Website leads
+2026-09-11,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,38.39,2742,30,1,Website leads
+2026-09-12,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,36.03,2574,28,0,Website leads
+2026-09-13,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,36.47,2605,28,0,Website leads
+2026-09-14,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,37.99,2714,29,1,Website leads
+2026-09-15,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,33.85,2417,26,0,Website leads
+2026-09-16,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,38.38,2742,30,1,Website leads
+2026-09-17,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,34.76,2483,27,0,Website leads
+2026-09-18,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,35.81,2558,28,0,Website leads
+2026-09-19,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,37.01,2644,29,1,Website leads
+2026-09-20,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,39.90,2849,31,1,Website leads
+2026-09-21,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,37.07,2648,29,1,Website leads
+2026-09-22,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,38.77,2770,30,1,Website leads
+2026-09-23,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,40.36,2883,32,2,Website leads
+2026-09-24,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,39.49,2821,31,1,Website leads
+2026-09-25,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,37.73,2696,30,1,Website leads
+2026-09-26,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,39.92,2851,31,1,Website leads
+2026-09-27,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,37.63,2686,29,0,Website leads
+2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,38.82,2773,30,1,Website leads
+2026-09-01,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,34.58,2469,27,0,Website leads
+2026-09-02,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,35.49,2535,27,0,Website leads
+2026-09-03,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,37.92,2708,29,1,Website leads
+2026-09-04,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,39.49,2821,31,2,Website leads
+2026-09-05,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,34.58,2470,27,0,Website leads
+2026-09-06,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,36.98,2640,29,1,Website leads
+2026-09-07,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,37.78,2699,29,1,Website leads
+2026-09-08,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,33.25,2375,26,0,Website leads
+2026-09-09,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,34.04,2430,26,0,Website leads
+2026-09-10,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,36.70,2622,28,1,Website leads
+2026-09-11,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,38.36,2741,30,2,Website leads
+2026-09-12,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,30.88,2205,24,0,Website leads
+2026-09-13,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,33.70,2407,27,0,Website leads
+2026-09-14,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,34.75,2483,27,0,Website leads
+2026-09-15,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,30.54,2181,23,0,Website leads
+2026-09-16,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,33.11,2365,26,0,Website leads
+2026-09-17,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,33.82,2416,26,1,Website leads
+2026-09-18,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,36.34,2596,28,0,Website leads
+2026-09-19,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,34.50,2465,26,0,Website leads
+2026-09-20,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,40.07,2863,31,2,Website leads
+2026-09-21,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,35.13,2510,28,1,Website leads
+2026-09-22,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,39.06,2791,30,1,Website leads
+2026-09-23,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,34.08,2433,27,0,Website leads
+2026-09-24,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,32.24,2302,25,0,Website leads
+2026-09-25,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,34.89,2492,27,1,Website leads
+2026-09-26,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,39.33,2809,31,2,Website leads
+2026-09-27,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,32.66,2333,25,0,Website leads
+2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,35.73,2553,28,1,Website leads
+2026-09-01,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,29.61,2116,23,0,Website leads
+2026-09-02,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,32.18,2299,24,1,Website leads
+2026-09-03,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,31.21,2229,24,1,Website leads
+2026-09-04,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,29.28,2091,23,0,Website leads
+2026-09-05,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,29.30,2092,23,0,Website leads
+2026-09-06,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,32.91,2351,25,1,Website leads
+2026-09-07,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,33.47,2392,26,1,Website leads
+2026-09-08,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,31.81,2272,25,0,Website leads
+2026-09-09,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,29.94,2138,23,0,Website leads
+2026-09-10,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,28.22,2015,21,0,Website leads
+2026-09-11,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,32.03,2287,25,0,Website leads
+2026-09-12,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,29.19,2086,23,0,Website leads
+2026-09-13,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,28.64,2045,22,0,Website leads
+2026-09-14,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,31.60,2258,25,1,Website leads
+2026-09-15,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,33.64,2404,26,1,Website leads
+2026-09-16,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,33.55,2398,26,0,Website leads
+2026-09-17,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,28.40,2028,22,0,Website leads
+2026-09-18,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,33.45,2389,26,1,Website leads
+2026-09-19,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,31.93,2280,24,1,Website leads
+2026-09-20,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,31.68,2263,24,1,Website leads
+2026-09-21,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,33.21,2372,26,1,Website leads
+2026-09-22,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,30.79,2198,23,0,Website leads
+2026-09-23,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,32.11,2294,25,0,Website leads
+2026-09-24,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,35.53,2538,27,2,Website leads
+2026-09-25,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,30.26,2160,23,0,Website leads
+2026-09-26,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,30.16,2154,24,0,Website leads
+2026-09-27,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,32.93,2352,25,0,Website leads
+2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,32.97,2355,26,1,Website leads
+2026-09-01,Trials | Conversions | 9 audiences,TR | Broad US 25-54,26.22,1873,20,0,Website leads
+2026-09-02,Trials | Conversions | 9 audiences,TR | Broad US 25-54,28.45,2032,21,1,Website leads
+2026-09-03,Trials | Conversions | 9 audiences,TR | Broad US 25-54,26.44,1888,20,0,Website leads
+2026-09-04,Trials | Conversions | 9 audiences,TR | Broad US 25-54,27.76,1982,22,0,Website leads
+2026-09-05,Trials | Conversions | 9 audiences,TR | Broad US 25-54,27.18,1942,21,0,Website leads
+2026-09-06,Trials | Conversions | 9 audiences,TR | Broad US 25-54,27.06,1934,21,0,Website leads
+2026-09-07,Trials | Conversions | 9 audiences,TR | Broad US 25-54,24.58,1755,19,0,Website leads
+2026-09-08,Trials | Conversions | 9 audiences,TR | Broad US 25-54,26.17,1870,20,0,Website leads
+2026-09-09,Trials | Conversions | 9 audiences,TR | Broad US 25-54,23.83,1701,18,0,Website leads
+2026-09-10,Trials | Conversions | 9 audiences,TR | Broad US 25-54,27.68,1977,21,0,Website leads
+2026-09-11,Trials | Conversions | 9 audiences,TR | Broad US 25-54,24.94,1782,19,0,Website leads
+2026-09-12,Trials | Conversions | 9 audiences,TR | Broad US 25-54,25.87,1847,20,0,Website leads
+2026-09-13,Trials | Conversions | 9 audiences,TR | Broad US 25-54,24.04,1716,18,0,Website leads
+2026-09-14,Trials | Conversions | 9 audiences,TR | Broad US 25-54,27.08,1935,20,1,Website leads
+2026-09-15,Trials | Conversions | 9 audiences,TR | Broad US 25-54,28.38,2027,21,1,Website leads
+2026-09-16,Trials | Conversions | 9 audiences,TR | Broad US 25-54,27.26,1947,21,0,Website leads
+2026-09-17,Trials | Conversions | 9 audiences,TR | Broad US 25-54,27.14,1938,21,0,Website leads
+2026-09-18,Trials | Conversions | 9 audiences,TR | Broad US 25-54,26.73,1910,20,0,Website leads
+2026-09-19,Trials | Conversions | 9 audiences,TR | Broad US 25-54,27.87,1992,22,1,Website leads
+2026-09-20,Trials | Conversions | 9 audiences,TR | Broad US 25-54,28.18,2013,22,0,Website leads
+2026-09-21,Trials | Conversions | 9 audiences,TR | Broad US 25-54,27.18,1941,21,1,Website leads
+2026-09-22,Trials | Conversions | 9 audiences,TR | Broad US 25-54,29.05,2076,22,1,Website leads
+2026-09-23,Trials | Conversions | 9 audiences,TR | Broad US 25-54,26.24,1874,21,0,Website leads
+2026-09-24,Trials | Conversions | 9 audiences,TR | Broad US 25-54,28.85,2060,22,1,Website leads
+2026-09-25,Trials | Conversions | 9 audiences,TR | Broad US 25-54,31.66,2261,25,2,Website leads
+2026-09-26,Trials | Conversions | 9 audiences,TR | Broad US 25-54,26.40,1886,20,0,Website leads
+2026-09-27,Trials | Conversions | 9 audiences,TR | Broad US 25-54,27.56,1968,21,1,Website leads
+2026-09-28,Trials | Conversions | 9 audiences,TR | Broad US 25-54,30.20,2157,23,1,Website leads
+2026-09-01,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,19.49,1392,15,0,Website leads
+2026-09-02,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,24.86,1776,19,1,Website leads
+2026-09-03,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,25.25,1804,19,1,Website leads
+2026-09-04,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,23.46,1676,18,0,Website leads
+2026-09-05,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,24.18,1727,18,0,Website leads
+2026-09-06,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,24.71,1765,19,1,Website leads
+2026-09-07,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,20.14,1438,15,0,Website leads
+2026-09-08,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,22.74,1624,17,0,Website leads
+2026-09-09,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,22.61,1615,17,0,Website leads
+2026-09-10,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,24.86,1776,19,1,Website leads
+2026-09-11,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,24.66,1761,19,1,Website leads
+2026-09-12,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,24.80,1772,19,1,Website leads
+2026-09-13,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,23.15,1655,18,0,Website leads
+2026-09-14,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,25.25,1804,19,1,Website leads
+2026-09-15,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,23.83,1702,18,0,Website leads
+2026-09-16,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,23.90,1707,18,0,Website leads
+2026-09-17,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,20.75,1482,16,0,Website leads
+2026-09-18,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,19.41,1386,15,0,Website leads
+2026-09-19,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,20.10,1435,15,0,Website leads
+2026-09-20,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,21.64,1545,16,0,Website leads
+2026-09-21,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,19.91,1422,15,0,Website leads
+2026-09-22,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,24.87,1776,19,1,Website leads
+2026-09-23,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,22.98,1641,18,0,Website leads
+2026-09-24,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,23.46,1676,18,0,Website leads
+2026-09-25,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,23.44,1675,18,0,Website leads
+2026-09-26,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,23.82,1701,18,0,Website leads
+2026-09-27,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,22.51,1608,17,0,Website leads
+2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,19.22,1373,15,0,Website leads
+2026-09-01,Trials | Conversions | 9 audiences,TR | Interest: Stripe,20.35,1454,15,1,Website leads
+2026-09-02,Trials | Conversions | 9 audiences,TR | Interest: Stripe,20.08,1434,15,1,Website leads
+2026-09-03,Trials | Conversions | 9 audiences,TR | Interest: Stripe,18.69,1335,14,0,Website leads
+2026-09-04,Trials | Conversions | 9 audiences,TR | Interest: Stripe,18.87,1348,14,0,Website leads
+2026-09-05,Trials | Conversions | 9 audiences,TR | Interest: Stripe,19.58,1398,15,0,Website leads
+2026-09-06,Trials | Conversions | 9 audiences,TR | Interest: Stripe,16.24,1160,12,0,Website leads
+2026-09-07,Trials | Conversions | 9 audiences,TR | Interest: Stripe,20.01,1429,15,0,Website leads
+2026-09-08,Trials | Conversions | 9 audiences,TR | Interest: Stripe,17.29,1235,13,0,Website leads
+2026-09-09,Trials | Conversions | 9 audiences,TR | Interest: Stripe,16.29,1163,12,0,Website leads
+2026-09-10,Trials | Conversions | 9 audiences,TR | Interest: Stripe,17.36,1240,13,0,Website leads
+2026-09-11,Trials | Conversions | 9 audiences,TR | Interest: Stripe,19.97,1426,15,0,Website leads
+2026-09-12,Trials | Conversions | 9 audiences,TR | Interest: Stripe,17.02,1216,13,0,Website leads
+2026-09-13,Trials | Conversions | 9 audiences,TR | Interest: Stripe,20.03,1431,15,1,Website leads
+2026-09-14,Trials | Conversions | 9 audiences,TR | Interest: Stripe,21.35,1525,16,1,Website leads
+2026-09-15,Trials | Conversions | 9 audiences,TR | Interest: Stripe,18.64,1331,14,0,Website leads
+2026-09-16,Trials | Conversions | 9 audiences,TR | Interest: Stripe,18.02,1287,14,0,Website leads
+2026-09-17,Trials | Conversions | 9 audiences,TR | Interest: Stripe,18.56,1325,14,0,Website leads
+2026-09-18,Trials | Conversions | 9 audiences,TR | Interest: Stripe,19.71,1408,15,0,Website leads
+2026-09-19,Trials | Conversions | 9 audiences,TR | Interest: Stripe,20.18,1442,15,1,Website leads
+2026-09-20,Trials | Conversions | 9 audiences,TR | Interest: Stripe,19.34,1382,15,0,Website leads
+2026-09-21,Trials | Conversions | 9 audiences,TR | Interest: Stripe,19.48,1392,15,0,Website leads
+2026-09-22,Trials | Conversions | 9 audiences,TR | Interest: Stripe,16.31,1165,12,0,Website leads
+2026-09-23,Trials | Conversions | 9 audiences,TR | Interest: Stripe,16.70,1193,13,0,Website leads
+2026-09-24,Trials | Conversions | 9 audiences,TR | Interest: Stripe,17.30,1235,13,0,Website leads
+2026-09-25,Trials | Conversions | 9 audiences,TR | Interest: Stripe,20.05,1432,15,1,Website leads
+2026-09-26,Trials | Conversions | 9 audiences,TR | Interest: Stripe,17.58,1255,13,0,Website leads
+2026-09-27,Trials | Conversions | 9 audiences,TR | Interest: Stripe,19.06,1362,14,0,Website leads
+2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: Stripe,15.94,1139,12,0,Website leads
+2026-09-01,Retargeting | Site visitors 30d,RT | Visitors 30d,39.10,1777,33,3,Website leads
+2026-09-02,Retargeting | Site visitors 30d,RT | Visitors 30d,41.91,1905,35,3,Website leads
+2026-09-03,Retargeting | Site visitors 30d,RT | Visitors 30d,47.37,2153,38,3,Website leads
+2026-09-04,Retargeting | Site visitors 30d,RT | Visitors 30d,47.64,2166,38,3,Website leads
+2026-09-05,Retargeting | Site visitors 30d,RT | Visitors 30d,47.42,2156,36,3,Website leads
+2026-09-06,Retargeting | Site visitors 30d,RT | Visitors 30d,42.21,1918,31,3,Website leads
+2026-09-07,Retargeting | Site visitors 30d,RT | Visitors 30d,45.27,2058,33,3,Website leads
+2026-09-08,Retargeting | Site visitors 30d,RT | Visitors 30d,44.56,2025,31,3,Website leads
+2026-09-09,Retargeting | Site visitors 30d,RT | Visitors 30d,44.58,2027,30,2,Website leads
+2026-09-10,Retargeting | Site visitors 30d,RT | Visitors 30d,39.88,1812,26,2,Website leads
+2026-09-11,Retargeting | Site visitors 30d,RT | Visitors 30d,50.37,2290,32,3,Website leads
+2026-09-12,Retargeting | Site visitors 30d,RT | Visitors 30d,40.97,1862,25,1,Website leads
+2026-09-13,Retargeting | Site visitors 30d,RT | Visitors 30d,51.51,2341,30,2,Website leads
+2026-09-14,Retargeting | Site visitors 30d,RT | Visitors 30d,50.94,2316,29,2,Website leads
+2026-09-15,Retargeting | Site visitors 30d,RT | Visitors 30d,38.52,1750,21,1,Website leads
+2026-09-16,Retargeting | Site visitors 30d,RT | Visitors 30d,44.48,2022,23,1,Website leads
+2026-09-17,Retargeting | Site visitors 30d,RT | Visitors 30d,49.37,2244,25,1,Website leads
+2026-09-18,Retargeting | Site visitors 30d,RT | Visitors 30d,51.37,2335,25,1,Website leads
+2026-09-19,Retargeting | Site visitors 30d,RT | Visitors 30d,44.35,2016,20,1,Website leads
+2026-09-20,Retargeting | Site visitors 30d,RT | Visitors 30d,41.91,1905,18,1,Website leads
+2026-09-21,Retargeting | Site visitors 30d,RT | Visitors 30d,41.12,1869,17,1,Website leads
+2026-09-22,Retargeting | Site visitors 30d,RT | Visitors 30d,51.07,2321,20,1,Website leads
+2026-09-23,Retargeting | Site visitors 30d,RT | Visitors 30d,41.13,1869,15,1,Website leads
+2026-09-24,Retargeting | Site visitors 30d,RT | Visitors 30d,46.15,2098,16,1,Website leads
+2026-09-25,Retargeting | Site visitors 30d,RT | Visitors 30d,40.20,1827,13,0,Website leads
+2026-09-26,Retargeting | Site visitors 30d,RT | Visitors 30d,45.37,2063,14,0,Website leads
+2026-09-27,Retargeting | Site visitors 30d,RT | Visitors 30d,51.16,2326,15,0,Website leads
+2026-09-28,Retargeting | Site visitors 30d,RT | Visitors 30d,40.07,1821,10,0,Website leads

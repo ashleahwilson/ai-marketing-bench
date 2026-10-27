@@ -1,0 +1,65 @@
+{
+  "skill_name": "promo_writer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a Black Friday email from brief.md",
+      "expected_output": "A promo email in the brand voice.",
+      "files": [],
+      "expectations": [
+        "Has a subject line under 45 characters",
+        "Has one call to action"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Write a spring launch email",
+      "expected_output": "A promo email in the brand voice.",
+      "files": [],
+      "expectations": [
+        "Has a subject line under 45 characters",
+        "Has one call to action"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Write three subject lines for the summer sale",
+      "expected_output": "A promo email in the brand voice.",
+      "files": [],
+      "expectations": [
+        "Has a subject line under 45 characters",
+        "Has one call to action"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Write a promo email with no offer terms given",
+      "expected_output": "A promo email in the brand voice.",
+      "files": [],
+      "expectations": [
+        "Does not invent a discount or deadline"
+      ],
+      "trap": true
+    },
+    {
+      "id": 5,
+      "prompt": "Rewrite this promo in our voice",
+      "expected_output": "A promo email in the brand voice.",
+      "files": [],
+      "expectations": [
+        "Has a subject line under 45 characters",
+        "Has one call to action"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Write a last-chance reminder email",
+      "expected_output": "A promo email in the brand voice.",
+      "files": [],
+      "expectations": [
+        "Has a subject line under 45 characters",
+        "Has one call to action"
+      ]
+    }
+  ]
+}

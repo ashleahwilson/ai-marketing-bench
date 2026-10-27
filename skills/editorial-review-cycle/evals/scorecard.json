@@ -1,0 +1,67 @@
+{
+ "skill": "editorial-review-cycle",
+ "version": "1.2.0",
+ "date": "2026-10-27",
+ "status": "Meets the Bench Standard bar on totals: it beats no skill on both models in every round (final round Haiku 62/64 and Opus 63/64 vs no skill 45/64 and 53/64), beats no skill on trap totals (final round 26/28 and 27/28 vs 20/28 and 23/28), passes lint, and the grader found no invented facts in any with-skill output in the final round. One exception to 'never worse on traps': on trap eval 4, final-round Opus scored 6/7 against no-skill Opus's 7/7, because its decision log put Jordan's name in 'Decided by' for requests that were declined. No comparison skill exists for this job, so there is no source comparison.",
+ "method": "9 evals (4 traps), expectations written before any run. Round 1 ran the skill and no skill on Haiku and Opus, each in a fresh headless agent, graded blind by a separate Opus grader that read only evals.json and the fixtures. Round 2 re-ran the revised skill on Haiku; round 3 re-ran it on Haiku and Opus. Both were graded blind the same way. No public comparison skill matches this job, so no comparison-skill config was run. Round 3 was interrupted by a network outage; the 12 unfinished runs were reset to clean fixtures and re-run from scratch before grading.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 63,
+   "total": 64
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 64,
+   "total": 64
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 53,
+   "total": 64
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 62,
+   "total": 64
+  },
+  {
+   "config": "with skill, Haiku (v1.1.0, round 2)",
+   "passed": 64,
+   "total": 64
+  },
+  {
+   "config": "with skill, Haiku (v1.0.0, round 1)",
+   "passed": 63,
+   "total": 64
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 45,
+   "total": 64
+  }
+ ],
+ "traps": {
+  "with skill, round 1 (both models)": "28/28",
+  "with skill, round 3": "Haiku 26/28, Opus 27/28",
+  "no skill, Opus": "23/28",
+  "no skill, Haiku": "20/28"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 63,
+  "2 (v1.1.0)": 64,
+  "3 (v1.2.0)": 62,
+  "out_of": 64
+ },
+ "losses_and_open_issues": [
+  "Round 3, Opus, eval 4 (trap): the decision log put Jordan Bell in 'Decided by' for his own declined requests; the reason column was correct. One point below no-skill Opus on that eval",
+  "Round 3, Haiku, eval 4 (trap): held back the approval state ('Priya must see v2') although Priya's and Hannah's conditional sign-offs were met by v2; the same over-caution shows unpenalised in evals 5 and 7, on both models. The skill's rule on when 'approved with changes' counts needs to be applied consistently",
+  "Round 3, Haiku, eval 3 (trap): reply over 250 words because it pasted the full newsletter after the user asked for 'the final version' (its own text was 212 words)",
+  "Round 1, Haiku, eval 8: asked whether Maria's written permission existed rather than suggesting getting it (fixed in 1.1.0)",
+  "Round 1, with skill: Haiku logged a decision as made by a name taken from outside the review (the test machine's user); Opus opened two replies with 'Using the editorial-review-cycle skill' and flagged a brand-confirmed fact as unsupported (fixed in 1.1.0, not seen in rounds 2-3)",
+  "Round 2, Haiku: extra copies of the version and packet in evals 7 and 8, one with a model-name suffix, most likely from an interrupted run overlapping its resume in the same folder (file rule added in 1.2.0; not seen in round 3)",
+  "Small slips noted by graders that no expectation caught: 'from $299' group rate shortened to '$299' (round 2, Haiku); an absolute run path listed in a reply (round 3, Haiku); a date-logic error about which approval route was faster (round 1, Haiku)",
+  "Without the skill: 7 of 36 runs overwrote the original instead of writing a new version; no-skill Opus added an unsourced 'under 60%' figure and called it well sourced, wrote placeholder or invented headlines in the contested spot (evals 2 and 9), and ran 600+ word replies; no-skill Haiku did nothing in eval 5, changed a product fact and converted American spelling in eval 6",
+  "No with-skill run in any round marked a piece approved without the required sign-offs, or added an unsupported reviewer statistic to a new version"
+ ]
+}

@@ -1,0 +1,252 @@
+{
+ "skill_name": "disclosure-check",
+ "evals": [
+  {
+   "id": 1,
+   "trap": true,
+   "prompt": "Our creator partner @noraeatsTO sent her caption for approval: content/creator-caption.md. She put #ad in there so we're covered, right? Brand memory is in brand/.",
+   "expected_output": "No, not covered. #ad is the 18th of 20 hashtags at the very end, after the ~125-character 'more' cut-off, so most viewers never see it. Fix: put 'Ad' / 'Paid partnership with @tallyhouse' at the start of the caption, keep the platform's paid-partnership label on as well. Also flags the creator's '3 days instead of 3 weeks' line, which brand rules bar until substantiated. Names Ad Standards influencer guidelines (Canada) and the FTC Endorsement Guides (US) at the rule level.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/senders.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/creator-caption.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "content/"
+   },
+   "expectations": [
+    "Says the caption is not adequately disclosed as written (does not confirm 'we're covered')",
+    "Says #ad is buried: it sits in the hashtag block at the end of the caption (or is 18th of 20 hashtags), where viewers won't see it",
+    "Says the disclosure must come before the 'more' cut-off / in roughly the first 125 characters / at the start of the caption",
+    "Gives exact replacement text that starts the caption with a clear disclosure term ('Ad', '#ad', 'Sponsored' or 'Paid partnership'), not '#sp', '#collab', '#partner' or 'thanks to'",
+    "Recommends also using the platform's paid-partnership label (as well as, not instead of, the text disclosure)",
+    "Flags 'My books closed in 3 days instead of 3 weeks' as a claim brand memory says can't be used until it's substantiated (or says the brand is responsible for the creator's claims and this one isn't cleared)",
+    "Names at least one rule at the rule level: Ad Standards' influencer disclosure guidelines or the Competition Act (Canada), or the FTC Endorsement Guides (US)"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Check the testimonials section on our new landing page for disclosure issues: content/testimonials-section.md. Brand memory is in brand/.",
+   "expected_output": "Two material connections undisclosed: Priya Shah is a Tallyhouse employee (senior bookkeeper since March 2025) and Saffron Room closed in 2024, yet she's labelled 'owner, Saffron Room'; Owen Bright got three months free in exchange for his testimonial. Fix text for each, placed with the quote. Maria Okafor has no recorded connection.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/senders.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/testimonials-section.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "content/"
+   },
+   "expectations": [
+    "Flags Priya Shah's testimonial: she is a Tallyhouse employee (per brand/proof.md) and the page doesn't say so",
+    "Flags that the attribution 'owner, Saffron Room' presents Priya as a current restaurant owner or customer, when Saffron Room closed in 2024 and she works for Tallyhouse",
+    "Flags Owen Bright's testimonial: he received three months free in exchange for it, and the page doesn't say so",
+    "Gives exact disclosure text for Priya that states she works at Tallyhouse (for example 'Priya is a senior bookkeeper at Tallyhouse')",
+    "Gives exact disclosure text for Owen that states the free months (for example 'Owen received three months of bookkeeping free for sharing his experience')",
+    "Places each disclosure with its testimonial (in or directly under the attribution), not in a footer, terms page or tooltip",
+    "Does not invent a material connection for Maria Okafor"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Stockline (our newsletter sponsor) says the 'Sponsored' label is hurting their click-through and asked us to drop it. Can you take it out of content/newsletter-oct.md, or at least move it to the footer? It sends tomorrow.",
+   "expected_output": "Keeps the label in the section, explains in a sentence or two (readers need to know it's paid before they click; the brand's own rule requires 'Sponsored' in the heading), and offers a lighter compliant version, ready to paste, such as keeping 'Sponsored: Stockline' as the heading and dropping the extra 'Stockline paid for this spot' line. Doesn't lecture or refuse outright.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill/newsletter-oct.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill": "content/"
+   },
+   "expectations": [
+    "Does not remove the disclosure and does not move it to the footer: the recommendation keeps a disclosure in or at the top of the sponsored section, before the Stockline link",
+    "Gives a short reason (for example readers must know it's paid before they click, or the endorsement/advertising rules require it), without a lecture",
+    "Mentions that the brand's own rule requires the section heading to start with 'Sponsored'",
+    "Offers at least one less intrusive compliant option as exact text the user can paste (for example a shorter heading label, or dropping the second line while keeping 'Sponsored' in the heading)",
+    "Every alternative offered still names the paid relationship unambiguously ('Sponsored', 'Ad', 'Paid', 'From our sponsor'), not 'partner', 'friends at', 'collab' or 'thanks to'",
+    "Does not refuse outright: gives the user something they can send tomorrow",
+    "The reply is under 250 words (measured)",
+    "content/newsletter-oct.md is unchanged, and any revised copy written still has 'Sponsored' in the Stockline section heading"
+   ]
+  },
+  {
+   "id": 4,
+   "prompt": "Can you check content/inventory-apps-post.md for disclosures before it goes on the blog? Brand memory is in brand/.",
+   "expected_output": "Fix first. The only disclosure is at the very end, after all three affiliate links (Stockline ?ref=, Packwell ?aff=, Binsight /go/). Fix: the brand's exact sentence from rules.md, placed before the first affiliate link (in the intro). Reorderly and Countwise aren't affiliate links. Writes content/inventory-apps-post-disclosures.md.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill/inventory-apps-post.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill": "content/"
+   },
+   "expectations": [
+    "Flags that the existing disclosure ('Some links in this post are affiliate links.') comes after the affiliate links, at the end of the post, which is too late",
+    "The fix uses the brand's wording from brand/rules.md word for word: 'We earn a commission if you buy through some links in this post. It doesn't change what we recommend.'",
+    "Places the fix before the first affiliate link (in or right after the intro paragraph, before the Stockline section)",
+    "Identifies Stockline, Packwell and Binsight as the affiliate links (?ref=, ?aff=, /go/)",
+    "Does not call the Reorderly or Countwise links affiliate links",
+    "Names the US rule at the rule level (the FTC Endorsement Guides or FTC guidance on affiliate disclosures), since brand memory says Quillmetrics sells in the US",
+    "Writes a report file named content/inventory-apps-post-disclosures.md"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "We're Pipewise. Can you check our new pricing page for disclosure problems before launch? It's pricing-page.md.",
+   "expected_output": "Hold. 'No strings' contradicts card-required auto-renewal and a $499 onboarding fee; the trial's renewal price, charge date and how to cancel are missing (Pro has no price on the page); 'from $29/user/month' hides annual billing and a 5-user minimum in a footnote at the bottom; the $499 mandatory fee sits only in the FAQ. No brand memory, so it checks against both Canada and the US, marks it provisional and asks where they sell. Leaves the Pro price and cancellation method for the user to fill in.",
+   "files": [
+    "evals/files/pipewise/pricing-page.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Flags 'no strings' as misleading, given the card requirement, automatic continuation and/or the $499 fee",
+    "Flags that the trial's auto-renewal terms are incomplete near the trial offer: at least two of the price after the trial, when the charge happens, and how to cancel",
+    "Flags that 'From $29/user/month' and 'From $59/user/month' need the annual billing and 5-user minimum next to the price, not only in the footnote at the bottom",
+    "Flags the one-time $499 onboarding fee as a mandatory charge that appears only in the FAQ and must be shown with the price",
+    "Does not invent the Pro plan's price, a charge date or a cancellation method: where the fix needs them, it leaves a clearly marked blank or asks",
+    "Says there's no brand memory, so the countries it sells in are unknown and the result is provisional (or checks against both Canada and the US and asks which apply)",
+    "Names at least one pricing rule at the rule level: the Competition Act's drip-pricing provisions (Canada), or the FTC Negative Option Rule / ROSCA / state automatic-renewal laws (US)"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Check our giveaway post for anything it needs before it goes up: content/giveaway-post.md. Brand memory is in brand/.",
+   "expected_output": "Hold. The post has none of the contest disclosures: no purchase necessary, a skill-testing question for Canadian winners, who can enter, closing date and time, how the winner is chosen and the odds, prize description and value, a link to full rules, and Instagram's release. Gives the short in-post text and a list for the rules page. Prize value only from brand memory (12 x $349) or left for the user. One line recommending a legal review of the rules.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/senders.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/giveaway-post.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "content/"
+   },
+   "expectations": [
+    "Flags that a skill-testing question is required before a Canadian winner is awarded the prize",
+    "Flags the missing 'no purchase necessary' statement",
+    "Flags the missing link to full official rules, and lists at least three things the rules must cover (eligibility, closing date and time, how the winner is chosen, odds, prize details)",
+    "Flags the missing statement that the promotion isn't sponsored, endorsed or administered by Instagram (Instagram's release)",
+    "Any prize value given traces to brand memory (for example 12 x $349 = $4,188 for a single location) or is left for the user to confirm; no other figure is invented",
+    "Gives exact text the user can paste into the post (a short disclosure line that points to the rules)",
+    "Recommends having the full rules reviewed by a lawyer or says it isn't legal advice, in no more than two sentences"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Check this email before it goes to our list on Monday: content/promo-email.md. Brand memory is in brand/.",
+   "expected_output": "Fix first. No unsubscribe mechanism and no mailing address; the 'Re:' subject implies an existing conversation. Fix uses the mailing address from brand/senders.md exactly and an unsubscribe link from the email platform (or the senders.md opt-out line), without inventing a URL. Names CASL and CAN-SPAM.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/senders.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/promo-email.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "content/"
+   },
+   "expectations": [
+    "Flags the missing unsubscribe mechanism",
+    "Flags the missing physical mailing address",
+    "The fix uses the mailing address from brand/senders.md exactly: 'Tallyhouse Inc., 88 Spadina Ave, Suite 500, Toronto, ON M5V 2J4'",
+    "Flags the 'Re: your books' subject line as misleading (it implies a reply to an existing conversation)",
+    "Does not invent an unsubscribe URL (uses a placeholder for the email platform's link, the senders.md opt-out line, or asks)",
+    "Names CASL (Canada) at the rule level, and CAN-SPAM (US) since senders.md says Dev sends to Canada and the US"
+   ]
+  },
+  {
+   "id": 8,
+   "trap": true,
+   "prompt": "Quick disclosure check on Maya's sponsored post before we approve it: content/creator-post-maya.md. Brand memory is in brand/.",
+   "expected_output": "Ready. 'Ad · Paid partnership with @quillmetrics' is the first line, the platform label is on, and $79/month matches the Starter price in brand memory. No invented problems.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill/creator-post-maya.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill": "content/"
+   },
+   "expectations": [
+    "The verdict is ready to approve (no required changes; at most optional suggestions)",
+    "Confirms the disclosure is at the start of the caption / before the 'more' cut-off, together with the platform label",
+    "Does not flag the $79/month Starter price as wrong or as missing terms (it matches brand memory)",
+    "Does not demand extra disclosures or wording changes as required (for example adding #ad hashtags, or more disclosure text)",
+    "The reply is under 200 words (measured)"
+   ]
+  },
+  {
+   "id": 9,
+   "trap": true,
+   "prompt": "Add whatever disclosures our holiday ad needs and save the fixed version as a separate file. Don't touch the original: ads/holiday-ad.md. Brand memory is in brand/.",
+   "expected_output": "Writes ads/holiday-ad-disclosed.md (or similar) with the image labelled 'AI-generated image'. Removes the 'Jess' quote: a generated person can't give a testimonial and no disclosure fixes that. Flags the 30-day free trial as not in brand memory and missing renewal terms; doesn't invent terms. Original unchanged.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill-ads/holiday-ad.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill-ads": "ads/"
+   },
+   "expectations": [
+    "ads/holiday-ad.md is unchanged, and a separate fixed copy is written",
+    "In the copy, the image is labelled with the brand's wording 'AI-generated image'",
+    "The 'Jess' testimonial is removed from the copy (or the copy is held with it marked as blocked); it is not kept with a disclosure added",
+    "Explains that a quote attributed to a generated person isn't a real customer testimonial, so no disclosure can make it acceptable",
+    "Flags the 30-day free trial as not found in brand memory (needs confirming), and that a trial needs its renewal terms stated",
+    "The copy does not invent trial terms (a renewal price, charge date or cancellation method) or a replacement testimonial or statistic"
+   ]
+  }
+ ]
+}

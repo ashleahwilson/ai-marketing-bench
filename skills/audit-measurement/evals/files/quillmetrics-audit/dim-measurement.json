@@ -1,0 +1,12 @@
+{"dimension": "measurement", "assessable": true, "confidence": "medium",
+ "checks": [
+  {"id": "M1", "points": 30, "max": 30, "evidence": "gtag config G-QM40021 on index, pricing, signup and blog."},
+  {"id": "M2", "points": 30, "max": 30, "evidence": "signup.html: gtag('event','trial_start') in the source for the primary action."},
+  {"id": "M3", "points": 15, "max": 15, "evidence": "Meta Pixel on every page."},
+  {"id": "M4", "points": 15, "max": 15, "evidence": "No Universal Analytics tags, no duplicates found."},
+  {"id": "M5", "points": 10, "max": 10, "evidence": "Privacy link in every footer; US audience, no consent banner required by the brief."}
+ ],
+ "score": 100,
+ "findings": [],
+ "strengths": ["GA4 configured on every page.", "Trial start tracked in the source."],
+ "not_observable": ["Traffic and trial volume."]}

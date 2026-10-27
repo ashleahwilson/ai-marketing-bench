@@ -1,0 +1,205 @@
+{
+ "skill_name": "audit-conversion",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Audit the conversion on our site, page by page. The HTML for our home, pricing, signup and demo pages is in site/, and our brand memory is in brand/. Trial signups feel low and I want to know why.",
+   "expected_output": "A full conversion audit in audits/quillmetrics.example/conversion.md (or similar) leading with the top three: the 'no credit card required' promise broken by a card form, a 9-field signup requiring phone, revenue and card, and four competing hero buttons. Deep-dive findings on the signup form (placeholder-only labels, email as type=text, 'Submit', no error handling, no privacy notice), demo page blocking zoom, signup missing viewport, render-blocking scripts. C3 0, C4 full (US-only, bare $ fine). Test backlog without lift figures. US spelling.",
+   "files": [
+    "evals/files/quill-site/index.html",
+    "evals/files/quill-site/pricing.html",
+    "evals/files/quill-site/signup.html",
+    "evals/files/quill-site/demo.html",
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quill-site": "site/",
+    "quill-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Writes a report file (e.g. audits/quillmetrics.example/conversion.md) that puts the three most important findings before the page-by-page detail and includes a plan with 48-hour, 2-week and 3-month horizons",
+    "Flags the contradiction between the pricing page's 'no credit card required' and the signup form requiring card number, expiry and CVC",
+    "Flags that the signup form requires phone and annual revenue (all 9 fields required), and scores C3 (form friction) 0",
+    "Flags the four equally styled hero buttons on the home page (Start free trial, Book a demo, Watch the 2-minute tour, Join Thursday's webinar) as competing primary actions",
+    "Flags at least two of these signup-form problems: placeholder-only labels, the email field not being type=email, the 'Submit' button text, no visible error handling (novalidate with no error markup)",
+    "Flags that the signup page has no privacy link or notice near the form",
+    "Flags both mobile problems: the signup page has no viewport meta tag, and the demo page's viewport blocks zoom (maximum-scale=1 / user-scalable=no)",
+    "Flags render-blocking scripts in the signup page's head (app.js, the chat widget loader, the A/B testing script) or images without width/height",
+    "Does not dock pricing clarity for the bare '$': C4 scores 15/15, since the site says it serves US stores and bills in US dollars",
+    "Ends with a C1–C6 checklist table using maxima 20/20/20/15/15/10 whose stated total equals the sum of its points",
+    "Notes that brand memory has no record of permission to name Jordan Lee / Copperline Goods, or says to confirm permission before using the quote near the form",
+    "Includes a test backlog where every row has a hypothesis, a change and a metric, and nowhere in the response or the report is there a predicted conversion rate, lift percentage, or number of extra signups, leads or bookings",
+    "The report uses US spelling throughout (none of: behaviour, colour, optimise, organisation, prioritise, centre, analyse), following the brand memory's voice file"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Can you audit the conversion path on our site? Pages are saved in site/. And the main thing I need for Thursday's board meeting: if we make your fixes, what conversion rate will we get, and how many extra walkthrough bookings a month?",
+   "expected_output": "Answers the prediction question first without a number: it can't be known from the pages; measure the current booking rate from analytics, make the changes, compare. Then the audit: nav 'Start free trial' vs hero 'Book a 20-minute walkthrough', a 9-field booking form with phone required (C3 0 despite founder-led), no privacy notice or next-step text by the form, novalidate with no error markup, 'Send'. Provisional (no brand memory), US spelling kept.",
+   "files": [
+    "evals/files/ferncliff-site/index.html",
+    "evals/files/ferncliff-site/book.html",
+    "evals/files/ferncliff-site/pricing.html"
+   ],
+   "files_dest": "site/",
+   "expectations": [
+    "Nowhere in the response or the report is there a predicted conversion rate, lift percentage, or number of extra signups, leads or bookings (no forecast or range presented as what they'll get)",
+    "Says the conversion rate after the fixes can't be predicted from the pages, and names the data that would give a baseline (for example visits to the booking page and walkthrough bookings from their analytics over a set period)",
+    "Gives the user something usable for the board instead of a number: a way to measure before and after, or the test backlog with a metric per change",
+    "Flags the conflicting primary actions: nav 'Start free trial' (to /trial) against 'Book a 20-minute walkthrough' (to /book)",
+    "Flags that the booking form requires phone and has 9 fields (8 required), and scores C3 0 without relaxing it for the small (team of 6) company",
+    "Flags that the booking page has no privacy notice near the form and no text saying what happens after submitting",
+    "Flags the form's lack of visible error handling (novalidate with no error markup) or its 'Send' button text",
+    "Says there is no brand memory and marks the output provisional (or offers to set one up)",
+    "The report keeps the client's US spelling (none of: behaviour, colour, optimise, organisation, prioritise, centre, analyse)"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Run a conversion audit on pipewise.example and tell me what's killing our demo requests.",
+   "expected_output": "Can't see the site: asks for the raw HTML of the home page, the demo-request page and pricing (and any paid landing page), optionally an analytics export of funnel steps. No findings, no score, no report file. Short, no lecture.",
+   "files": [],
+   "expectations": [
+    "Says it doesn't have the site's pages and can't audit what it hasn't seen",
+    "Asks for specific pages, including at least the home page and the page with the demo-request form, preferably as saved HTML or page source",
+    "Mentions that an analytics export of the funnel steps would show where people drop off (optional input)",
+    "Does not state any finding about pipewise.example's actual pages (no CTA wording, form fields, scores or issues presented as observed)",
+    "Does not write a conversion report file with findings or a score",
+    "The reply is under 200 words"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "Our agency wants $18,000 for a 'full CRO overhaul' of our demo page. Before I sign, can you audit the conversion on site/index.html and site/pricing.html and tell me what actually needs fixing? Brand memory is in brand/.",
+   "expected_output": "The pages are sound: one CTA worded the same everywhere, a 4-field form with labels, types, autocomplete, aria-live error message, privacy and next-step text, named and permissioned proof, USD/CAD prices, viewport, deferred scripts. Score 100/100. No overhaul needed; at most a few optional nits; no invented friction, no lift predictions.",
+   "files": [
+    "evals/files/pipewise-site/index.html",
+    "evals/files/pipewise-site/pricing.html",
+    "evals/files/pipewise-brand/brand/BRAND.md",
+    "evals/files/pipewise-brand/brand/offer.md",
+    "evals/files/pipewise-brand/brand/proof.md",
+    "evals/files/pipewise-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "pipewise-site": "site/",
+    "pipewise-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Concludes the pages don't need an overhaul (little or nothing needs fixing), and does not recommend paying for a full rebuild on this evidence",
+    "Scores the conversion checklist 100/100 (all six checks at full points)",
+    "Does not call the 4-field form too long or recommend removing fields or the navigation",
+    "Does not claim anything the pages already have is missing (privacy notice, what happens next, proof near the form, currency, viewport, error message element)",
+    "Any suggestions are labelled optional and number three or fewer",
+    "Confirms the Ardent Labs quote may be used by name because brand memory records permission (or at least doesn't tell them to remove or re-permission it)",
+    "Nowhere in the response or the report is there a predicted conversion rate, lift percentage, or number of extra signups, leads or bookings"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "Here's our catch-up bookkeeping landing page (site/catch-up.html) and September's funnel export from analytics (analytics/). Brand memory is in brand/. Where are we losing people and what should we fix first?",
+   "expected_output": "Computes the funnel: 4,210 landing views → 612 form starts (14.5%) → 148 submits (24.2%) → 61 booked; biggest drop landing→start; mobile far worse (8.8% vs 22.0% start; 12.9% vs 30.1% submit). Flags thank-you views (163) > submits (148) as a tracking problem. Ties mobile drop to the missing viewport tag as a hypothesis. Flags phone required, Okafor quote beside the form with naming permission unconfirmed. No projections or benchmarks.",
+   "files": [
+    "evals/files/tally-campaign/catch-up.html",
+    "evals/files/tally-analytics/funnel-sept-2026.csv",
+    "evals/files/tally-analytics/README.txt",
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tally-campaign": "site/",
+    "tally-analytics": "analytics/",
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Reports the step-to-step rates correctly: about 14.5% of landing views start the form and about 24.2% of starts submit (or the equivalent drop-offs, 85.5% and 75.8%)",
+    "Identifies mobile as much worse than desktop, with numbers (form start 8.8% vs 22.0% of landing views, or submit 12.9% vs 30.1% of starts)",
+    "Flags that thank-you views (163) exceed form submits (148) as a tracking problem to fix before trusting those steps",
+    "Links the mobile drop to the page's missing viewport meta tag, framed as a likely cause or hypothesis rather than a proven one",
+    "Flags the required phone field on the form",
+    "Flags that the Maria Okafor / Lantern Noodle Bar quote beside the form is not confirmed for naming in brand memory, and says to confirm permission",
+    "Does not project the funnel forward (no extra bookings, revenue or post-fix rates) and does not cite an unsourced industry benchmark conversion rate",
+    "The test backlog's metrics name funnel steps from the export (for example mobile form_start to form_submit)"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Our marketing audit last month scored conversion as fine. It's in audits/quillmetrics.example/dim-conversion.json. Go deeper on conversion using all four pages in site/ (it only looked at three) and update the conversion score. Brand memory is in brand/.",
+   "expected_output": "Re-scores with the signup page: C3 20→0 (the earlier score used the demo form; the trial signup is the primary path and requires phone, revenue, card), C4 8→15 (US-only, bare $ fine), C5 15→8 (no privacy notice on the signup page), C6 10→5 (signup lacks viewport), C1 10→0 or kept with reason. Lists each change old→new with the reason, writes a new dim-conversion.json in the same format, keeps the earlier file.",
+   "files": [
+    "evals/files/quill-site/index.html",
+    "evals/files/quill-site/pricing.html",
+    "evals/files/quill-site/signup.html",
+    "evals/files/quill-site/demo.html",
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill-audit/dim-conversion.json"
+   ],
+   "files_dest_map": {
+    "quill-site": "site/",
+    "quill-brand/brand": "brand/",
+    "quill-audit": "audits/quillmetrics.example/"
+   },
+   "expectations": [
+    "Says the earlier C3 score was based on the demo form, and re-scores C3 to 0 because the trial signup form (the primary path) requires phone, revenue and card details",
+    "Reverses the earlier currency deduction: C4 becomes 15/15 because the site serves US stores and bills in US dollars",
+    "Lowers C6 to 5 because the signup page has no viewport meta tag",
+    "Lists each check that changed with old and new points and a reason, and states the new total next to the earlier 83",
+    "Writes an updated dim-conversion.json with checks C1–C6 (points, max, evidence) whose score equals the sum of the points",
+    "The earlier dim-conversion.json content is preserved (kept as a copy such as dim-conversion.before.json, or the new score is written to a separate file)",
+    "Flags the 'no credit card required' promise broken by the card fields on the signup form"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Let's go through Ferncliff's conversion together. The pages are in site/. Check with me at each decision before you score anything or write it up.",
+   "expected_output": "Guided mode: proposes business type (B2B SaaS for dental clinics) and maturity (founder-led, team of 6) with evidence; proposes the primary action per page; raises the trial vs walkthrough conflict as a decision and asks whether /trial is live; then stops. No score, no report file.",
+   "files": [
+    "evals/files/ferncliff-site/index.html",
+    "evals/files/ferncliff-site/book.html",
+    "evals/files/ferncliff-site/pricing.html"
+   ],
+   "files_dest": "site/",
+   "expectations": [
+    "Stops for the user's input before scoring: the reply contains no checklist score or total",
+    "Does not write a final conversion report file",
+    "Proposes a primary action for each page (home, booking, pricing) quoting the CTA text, and asks the user to confirm",
+    "Raises the nav 'Start free trial' vs 'Book a 20-minute walkthrough' conflict as a decision for the user, without assuming a free trial exists (no trial page was supplied)",
+    "Proposes the business type and a founder-led or small-company maturity with quoted evidence (for example 'a team of 6')"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Our developer is away, so all I could grab is the text of our home and booking pages, pasted as markdown in site/. Can you audit the conversion?",
+   "expected_output": "Audits copy-level items (trial vs walkthrough conflict, 8 required fields incl. phone, no privacy notice or next-step text by the form, 'Send'), and says viewport, scripts, image sizes and form markup (labels, input types, error handling) can't be checked from markdown; asks for the HTML. C6 not awarded (0, 'not observable'), confidence Low, total a floor. No claim that the viewport is missing.",
+   "files": [
+    "evals/files/ferncliff-md/home.md",
+    "evals/files/ferncliff-md/book.md"
+   ],
+   "files_dest": "site/",
+   "expectations": [
+    "Says the mobile viewport, scripts or speed signals, and form markup (labels, input types, error handling) can't be checked from markdown, and asks for the HTML source",
+    "Does not claim the viewport tag is missing or present, and does not award C6 points (scores it 0 as not observable, or marks it not assessed)",
+    "Marks the confidence as low, or says the score is incomplete/a floor because of the missing HTML",
+    "Flags the required phone field and the number of required fields on the booking form (8 marked with *)",
+    "Flags that the booking page has no privacy notice and no text about what happens after submitting",
+    "Flags the conflicting primary actions ('Start free trial' vs 'Book a 20-minute walkthrough')"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Pipewise demo</title>
+<style>
+  body { font-family: Verdana, sans-serif; color: #1b1f24; background: #ffffff; font-size: 16px; }
+  .required { color: #d32f2f; }
+  .play { cursor: pointer; text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="cookie" aria-hidden="true">
+  We use cookies to measure visits. <a href="/privacy">Privacy policy</a> <button type="button">Accept</button>
+</div>
+<header>
+  <a href="/"><img src="pipewise-logo.svg" alt="Pipewise home" width="130" height="30"></a>
+</header>
+<main>
+  <h1>See which deals need you today</h1>
+  <p>Pipewise operationalizes cross-functional pipeline governance by synthesizing multi-touch engagement telemetry into prescriptive, rep-level next-best-action orchestration across the entire revenue lifecycle.</p>
+  <p>Pipewise shows each rep which deals need a follow-up today, and tells their manager which deals have gone quiet for more than 14 days.</p>
+  <p>So simple even your grandma could set it up. Built for sales leaders who are a little OCD about pipeline hygiene.</p>
+  <div class="play" role="button" onclick="openTour()">Watch the 2-minute tour</div>
+
+  <span role="heading">Book your demo</span>
+  <p>Fields in red are required.</p>
+  <form action="/demo" method="post">
+    <label for="company-name" class="required">Company</label>
+    <input type="text" id="company" name="company">
+
+    <span id="work-email-text" class="required">Work email</span>
+    <input type="email" id="work-email" name="email" aria-labelledby="email-label" autocomplete="email">
+
+    <select name="team-size">
+      <option>1 to 10 reps</option>
+      <option>11 to 50 reps</option>
+      <option>51+ reps</option>
+    </select>
+
+    <div role="buton" class="submit-row"><button type="submit">Book my demo</button></div>
+  </form>
+</main>
+<footer>
+  <p>Pipewise. <a href="/privacy">Privacy policy</a></p>
+</footer>
+</body>
+</html>

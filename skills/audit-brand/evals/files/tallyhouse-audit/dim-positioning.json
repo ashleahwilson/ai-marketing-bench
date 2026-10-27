@@ -1,0 +1,53 @@
+{
+ "dimension": "positioning",
+ "assessable": true,
+ "confidence": "medium",
+ "checks": [
+  {
+   "id": "P1",
+   "points": 10,
+   "max": 20,
+   "evidence": "index.html H1 \"Close your books in 3 days, not 3 weeks.\" says the benefit; the category is clear only from the subhead."
+  },
+  {
+   "id": "P2",
+   "points": 20,
+   "max": 20,
+   "evidence": "about.html: \"We don't serve retail, e-commerce or franchises with more than 15 locations\"; index.html: \"independent restaurants and small groups (1–15 locations)\"."
+  },
+  {
+   "id": "P3",
+   "points": 10,
+   "max": 20,
+   "evidence": "Specific (bookkeepers from hospitality finance, POS reconciliation) but not set against an alternative."
+  },
+  {
+   "id": "P4",
+   "points": 20,
+   "max": 20,
+   "evidence": "All four pages describe restaurant bookkeeping for the same audience."
+  },
+  {
+   "id": "P5",
+   "points": 0,
+   "max": 20,
+   "evidence": "The 3-day headline claim has no proof on any page; the Okafor quote is about prime cost, not timing."
+  }
+ ],
+ "score": 60,
+ "findings": [
+  {
+   "severity": "high",
+   "check": "P5",
+   "finding": "Headline claim unsupported",
+   "evidence": "index.html H1",
+   "fix": "Quote a measured client close time or change the H1."
+  }
+ ],
+ "strengths": [
+  "Specific audience with exclusions (about.html)."
+ ],
+ "not_observable": [
+  "How buyers compare Tallyhouse with alternatives."
+ ]
+}

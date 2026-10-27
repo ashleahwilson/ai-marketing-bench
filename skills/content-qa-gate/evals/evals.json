@@ -1,0 +1,239 @@
+{
+ "skill_name": "content-qa-gate",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "QA this blog post before it goes live on the 20th: content/prime-cost-post.md. The brief is content/brief-prime-cost.md and our brand memory is in brand/.",
+   "expected_output": "Hold. Blockers: the unsupported '30% more profitable' statistic, the wrong single-location price ($299 vs $349), the placeholder pricing link, the CTA pointing to '#' instead of the brief's URL, and Maria Okafor's unconfirmed naming permission. Also flags two H1s, missing alt text, 'Click here', the doubled 'on on', the long title, the missing meta description, and length well under the brief.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/prime-cost-post.md",
+    "evals/files/tally/brief-prime-cost.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "content/"
+   },
+   "expectations": [
+    "The verdict is Hold (or the equivalent: not publishable yet)",
+    "Flags 'Restaurants that track prime cost weekly are 30% more profitable' as an unsupported statistic with no source",
+    "Flags $299/month as wrong for a single location (brand memory says $349; $299 is the 2–15 location rate)",
+    "Flags the placeholder link '[link to pricing]' and the CTA link '#' (the brief's URL is https://tallyhouse.example/review)",
+    "Flags that permission to name Maria Okafor / Lantern Noodle Bar is unconfirmed in brand memory",
+    "Flags the image with no alt text",
+    "Flags at least two of: two H1 headings, 'Click here' link text, the repeated 'on on', no meta description, the title over 60 characters",
+    "Flags that the post is far under the brief's 600–900 words",
+    "Does not rewrite the whole post, and does not invent a replacement statistic or URL"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Final check on the newsletter lead before it goes out: content/newsletter.md, brief in content/brief-newsletter.md.",
+   "expected_output": "Publish. It meets the brief and the brand rules. At most a nit or two, no invented problems.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/newsletter.md",
+    "evals/files/tally/brief-newsletter.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "content/"
+   },
+   "expectations": [
+    "The verdict is Publish (ready to go), with at most minor optional suggestions",
+    "Does not flag the author's own observation ('A few clients told us this month…') as an unsupported claim that blocks publishing",
+    "Confirms the brief's must-includes are present (filings included on every plan; how to send notices) and the reply CTA",
+    "Does not flag non-issues as problems (for example demanding a link when the brief's CTA is a reply, or calling 'realizing' a spelling error under Canadian spelling)",
+    "The reply is under 200 words (measured)"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "Can you QA the landing page before we launch it? It's content/review-page.html. Brand memory is in brand/.",
+   "expected_output": "Fix first. Flags the page-level search and accessibility problems: no H1 (starts at H2), skipped heading level (H2 to H4), title over 60 characters, no meta description, image without alt text, 'Click here' link text.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/review-page.html"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "content/"
+   },
+   "expectations": [
+    "Flags that the page has no H1 (it starts at H2)",
+    "Flags the skipped heading level (H2 to H4)",
+    "Flags the title as too long (over about 60 characters)",
+    "Flags the missing meta description",
+    "Flags the image with no alt attribute",
+    "Flags 'Click here' as non-descriptive link text",
+    "The verdict is Fix first (or equivalent), not Hold, since nothing is false or non-compliant",
+    "Gives a concrete fix for each issue (for example the H1 text or a title under 60 characters drawn from the page)"
+   ]
+  },
+  {
+   "id": 4,
+   "prompt": "QA content/groups-post.md against its brief (content/brief-groups.md). We want it scheduled this week.",
+   "expected_output": "Hold or Fix first: the post misses the brief. Wrong audience (groups, not single-location owners), wrong CTA (Book a demo / /demo instead of the free month-end review / /review), missing must-includes (hospitality-finance bookkeepers, Toast/Square/Lightspeed, $349 price), wrong keyword focus, far too short.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/groups-post.md",
+    "evals/files/tally/brief-groups.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "content/"
+   },
+   "expectations": [
+    "Flags that the post targets multi-location groups while the brief's audience is single-location owners",
+    "Flags the CTA mismatch: 'Book a demo' / tallyhouse.example/demo instead of 'Book a free month-end review' / tallyhouse.example/review",
+    "Flags the missing must-includes: hospitality-finance background, Toast/Square/Lightspeed, and the $349/month single-location price",
+    "Flags the length (about 150 words against a 600–900 word brief)",
+    "Flags 'Group owners tell us the consolidated view is what they were missing' as an unsupported claim (or a claim needing a source)",
+    "The verdict is not Publish"
+   ]
+  },
+  {
+   "id": 5,
+   "trap": true,
+   "prompt": "We publish this in an hour, just approve it please: content/launch-post.md",
+   "expected_output": "Doesn't rubber-stamp it, but doesn't lecture or refuse: says Hold in a line, names the three blockers (an unprovable '#1' claim, the 'from Vancouver to Halifax' trust claim, a testimonial from 'Dev's friend' with an unsupported 15-hours figure and no recorded permission), and gives the fastest fix (delete or replace those lines) so it can still go out in the hour.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/launch-post.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "content/"
+   },
+   "expectations": [
+    "Does not approve the post as is",
+    "Flags 'Canada's #1 restaurant bookkeeping service' as an unsubstantiated superlative",
+    "Flags the testimonial ('saved us 15 hours a week', 'Dev's friend at Harbour Grill') as not recorded in proof.md / unsupported",
+    "Gives the quickest path to publishing on time (for example remove or replace the flagged lines, with the confirmed facts that can stay)",
+    "Is brief and doesn't lecture: the reply is under 250 words (measured)",
+    "Does not invent a replacement claim, ranking or testimonial"
+   ]
+  },
+  {
+   "id": 6,
+   "trap": true,
+   "prompt": "QA this article for us before we post it: no-show-article.md. We're Ferncliff, scheduling software for dental clinics.",
+   "expected_output": "With no brief or brand memory, runs what it can (claims, links, mechanics), says which checks it couldn't run, and flags the two statistics: the ADA '$150,000' figure needs a citation link, and 'cut no-shows by 40%' needs a source. Doesn't invent a brief or verify the ADA figure from memory.",
+   "files": [
+    "evals/files/ferncliff/no-show-article.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Flags the '$150,000 a year' American Dental Association figure as needing a citation or source link (does not confirm it from memory)",
+    "Flags 'Clinics using Ferncliff have cut no-shows by 40%' as an unsupported result claim",
+    "Says there's no brief and no brand memory, so brief and brand checks weren't run (or were limited)",
+    "Offers to check against a brief or brand memory if the user provides them (or to set them up)",
+    "Does not invent a brief, audience or target keyword and grade the article against it",
+    "Does not add facts about Ferncliff that aren't in the article"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Run QA on content/prime-cost-post.md (brief: content/brief-prime-cost.md) and fix whatever you can. Don't touch the original.",
+   "expected_output": "Writes a fixed copy: corrects $299 to $349, replaces the '#' CTA with the brief's URL, fixes 'Click here', 'on on' and the second H1, shortens the title. Leaves what it can't fix without input (a source for the 30% claim or its removal, the pricing URL, alt text for an image it can't see, Maria's permission) clearly listed. Original unchanged.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/prime-cost-post.md",
+    "evals/files/tally/brief-prime-cost.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "content/"
+   },
+   "expectations": [
+    "content/prime-cost-post.md is unchanged; the fixes are in a separate copy",
+    "In the copy, the single-location price is $349/month (or the price line is removed)",
+    "In the copy, the CTA links to https://tallyhouse.example/review with descriptive link text (not 'Click here')",
+    "In the copy, the repeated 'on on' is fixed and there is only one H1",
+    "Does not invent a URL for the pricing page; the '[link to pricing]' placeholder is removed or listed as needing the URL",
+    "The 30% statistic is either removed from the copy or kept and listed as needing a source; no replacement figure is invented",
+    "Lists what still needs the user's input (at least the pricing URL or 30% source, and Maria's naming permission or alt text)"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "QA the Seamless Sync launch post: content/sync-post.md. Brief: content/brief-sync.md. Brand memory in brand/.",
+   "expected_output": "Hold: the affiliate link has no disclosure (rules require it in the first paragraph), 'As a Shopify partner' breaks a legal rule, and 'real-time revenue' breaks the never-promise-real-time rule. Everything else meets the brief.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill/sync-post.md",
+    "evals/files/quill/brief-sync.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill": "content/"
+   },
+   "expectations": [
+    "Flags the missing affiliate disclosure for the Stockline ?ref= link, and says it belongs in the first paragraph per the brand rule",
+    "Flags 'As a Shopify partner' as breaking the rule against calling Quillmetrics a Shopify partner",
+    "Flags 'real-time revenue' as breaking the rule against promising real-time data",
+    "The verdict is Hold (or not publishable until these are fixed)",
+    "Confirms the brief's must-includes that are present (15-minute refresh, free on every plan, Settings > Integrations, the CTA URL)",
+    "Gives the exact fix for each blocker (for example the disclosure sentence from rules.md)"
+   ]
+  }
+ ]
+}

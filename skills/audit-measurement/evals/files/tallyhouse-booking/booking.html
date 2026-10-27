@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book your free month-end review | Tallyhouse</title>
+<!-- DRAFT: launching 2026-11-02. Analytics to be added. -->
+</head><body>
+<nav><a href="/">Tallyhouse</a> <a href="/pricing">Pricing</a> <a href="/blog">Blog</a></nav>
+<h1>Book your free month-end review</h1>
+<p>Pick a time that suits you. Your bookkeeper will walk through last month's numbers with you.</p>
+<form id="booking-form">
+<label>First name <input name="first_name" required></label>
+<label>Email <input name="email" type="email" required></label>
+<label>Phone <input name="phone" type="tel"></label>
+<label>Restaurant <input name="restaurant" required></label>
+<label>Locations <input name="locations" type="number" min="1" max="15" required></label>
+<label>Preferred time <select name="slot" required><option>Mon 10:00</option><option>Tue 14:00</option><option>Thu 09:30</option></select></label>
+<button type="submit">Confirm my booking</button>
+</form>
+<div id="booking-confirmed" hidden><h2>You're booked</h2><p>We've sent a calendar invite to your email.</p></div>
+<script>
+document.getElementById("booking-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  fetch("/api/bookings", { method: "POST", body: new FormData(this) }).then(function (r) {
+    if (r.ok) {
+      document.getElementById("booking-form").hidden = true;
+      document.getElementById("booking-confirmed").hidden = false;
+    }
+  });
+});
+</script>
+<footer>Tallyhouse · 220 King St W, Toronto ON · <a href="/privacy">Privacy</a></footer>
+</body></html>

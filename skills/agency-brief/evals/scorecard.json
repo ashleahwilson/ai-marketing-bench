@@ -1,0 +1,35 @@
+{
+ "skill": "agency-brief",
+ "version": "1.2.1",
+ "date": "2026-10-27",
+ "status": "Meets the Bench Standard bar on Opus (74/74 in both rounds, never worse than no skill on any trap, no invented facts). On Haiku it beats no skill on every round (69-71/74 vs 51/74) and on trap total (43-45 vs 35), but in the final round it lost one trap point to no skill (eval 3, too many questions) and invented two minor review problems in eval 5, so the bar is met only on large models.",
+ "method": "8 evals (5 traps), expectations written before any run. No comparison skill exists, so round 1 ran the skill and no skill on Haiku and Opus in fresh headless agents, graded blind by a separate Opus grader. Rounds 2 (Haiku and Opus) and 3 (Haiku) re-ran the skill as it was revised, each graded blind by a fresh grader.",
+ "results": [
+  {"config": "with skill, Opus (v1.1.0, round 2)", "passed": 74, "total": 74},
+  {"config": "with skill, Opus (v1.0.0, round 1)", "passed": 74, "total": 74},
+  {"config": "no skill, Opus", "passed": 61, "total": 74},
+  {"config": "with skill, Haiku (v1.2.0, round 3)", "passed": 69, "total": 74},
+  {"config": "with skill, Haiku (v1.0.0, round 1)", "passed": 71, "total": 74},
+  {"config": "no skill, Haiku", "passed": 51, "total": 74}
+ ],
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 71,
+  "2 (v1.1.0)": 70,
+  "3 (v1.2.0)": 69,
+  "out_of": 74
+ },
+ "losses_and_open_issues": [
+  "Haiku's score didn't improve across rounds (71, 70, 69): each fix closed one miss and a new one of similar size appeared. The differences are within run-to-run noise.",
+  "Round 3, Haiku, evals 1 and 7: the brand-pack draft labelled unconfirmed lines 'not yet confirmed', a status word in the agency's copy. Fixed in 1.2.1 ('our working view') but not re-run.",
+  "Round 3, Haiku, eval 5: invented two minor review problems, a trial end-date mismatch Fieldstone never stated, and a suggested rewrite of the brand's own approved voice line; it also called a minor point 'must change before signing'.",
+  "Round 2, Haiku, eval 5: counted two pipe-separated ad headlines as one 46-character headline. In round 3 it counted correctly.",
+  "Round 3, Haiku, eval 3 (trap): asked 7 separate questions against a limit of six, one point below no skill on that trap.",
+  "Round 3, Haiku, eval 2: gave a reason for leaving out the margin file but only described the customer list's contents.",
+  "Round 1, Haiku: an unnumbered send-back list (eval 4), a 365-word Accept reply (eval 5), and website ownership named as 'final deliverables' only (eval 8). Fixed in 1.1.0.",
+  "Round 2, Opus, eval 6: said the designer isn't responsible for printing while the budget section left that TBD (flagged to the user as an assumption).",
+  "Eval 3 doesn't separate configs: no-skill runs that draft with TBDs pass as fully as skill runs that ask first.",
+  "No skill, round 1: Opus invented a product claim for Ferncliff, described clients drawn from the confidential customer list, and invented selection schedules; Haiku recommended sending a de-identified customer list without opening it, shipped '[Company]' as a placeholder, put sender emails in a brand pack and treated Fieldstone's labelled estimate as a problem.",
+  "Only the no-skill runs caught Fieldstone's 97-character ad description in round 1; the review check now measures ad lengths.",
+  "Every run, all configs, left the user's brand/, data/, finance/ and brief files unchanged. No secrets leaked in any run."
+ ]
+}

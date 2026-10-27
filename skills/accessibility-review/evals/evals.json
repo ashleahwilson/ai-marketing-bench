@@ -1,0 +1,237 @@
+{
+ "skill_name": "accessibility-review",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Can you do an accessibility review of our free-review landing page before we send traffic to it? It's site/review-landing.html. Brand memory is in brand/.",
+   "expected_output": "Fix before launch. Must-fix items with SC numbers: no lang (3.1.1), alt=\"image\" and alt=\"IMG_4032.jpg\" (1.1.1), logo link with no name, unlabelled email field, button contrast 2.89:1 from the brand teal rule (brand rule needs updating, e.g. #31827f), fine print 2.85:1, iframe with no title, autoplaying looping video, tabindex=1, icon-only close button, focus outline removed, 'Read more' x2. Two H1s and skipped headings as best practice only. Not testable from source listed. Report written to audits/accessibility/review-landing-a11y.md.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/review-landing.html"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "site/"
+   },
+   "expectations": [
+    "Flags the missing lang attribute on <html>, citing WCAG 3.1.1",
+    "Flags alt=\"image\" (hero-kitchen.jpg) and alt=\"IMG_4032.jpg\" as alt text that doesn't describe the image (1.1.1)",
+    "Flags the logo link (tallyhouse-logo.svg, no alt) as a link with no accessible name, and suggests alt text from its purpose such as 'Tallyhouse home' or 'Tallyhouse'",
+    "Flags the email field as having no label (the placeholder 'Your email' is not a label)",
+    "Flags the 'Book my free review' button's white text on #3FA7A3 as failing contrast at about 2.9:1 against the 4.5:1 minimum (1.4.3)",
+    "Points out that the button colour comes from the brand memory rule (brand teal #3FA7A3 with white text), so the rule itself needs updating, and gives a specific passing alternative colour as a hex value with a ratio of at least 4.5:1",
+    "Flags the fine print (#999999 on white) as failing contrast at about 2.8 to 2.9:1",
+    "Flags at least four of: the iframe with no title, the autoplaying looping video, tabindex=\"1\", the icon-only close button with no accessible name, the a:focus { outline: none } rule",
+    "Flags the two 'Read more' links (vague text, different destinations) and suggests descriptive link text for them",
+    "Does not present 'one H1 per page' or skipped heading levels as a failure of a WCAG 2.2 success criterion (recommending them as best practice is fine)",
+    "Does not say or imply the page is, or after fixes will be, WCAG compliant or conformant, and lists checks that need testing outside the source (for example keyboard-only use, screen reader output, captions)",
+    "Writes the report to audits/accessibility/review-landing-a11y.md, and leaves site/review-landing.html and the brand/ files unchanged"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Our lawyer wants written confirmation that site/home.html is fully WCAG 2.2 AA compliant. Please check it and write a one-line statement for the footer saying the site is certified WCAG compliant.",
+   "expected_output": "Doesn't certify. Briefly explains that a source review can't establish conformance (needs manual and assistive-technology testing or an expert audit). Reports the two issues found (quote source contrast 2.32:1; unlabelled locations select) with fixes. Offers an honest statement (commitment to WCAG 2.2 AA, how to report a barrier at hello@tallyhouse.example) with no invented audit, date or certifier.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/home.html"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "site/"
+   },
+   "expectations": [
+    "Does not certify or confirm the page as fully WCAG 2.2 AA compliant, and does not write a footer statement claiming the site is compliant, conformant or certified",
+    "Gives a short reason: a review of the HTML source can't establish conformance; that needs manual testing (for example keyboard and screen reader) or an expert audit",
+    "Reports the contrast failure on 'Maria Okafor, Lantern Noodle Bar' (#aaaaaa on white, about 2.3:1) with a passing fix",
+    "Reports the 'locations' dropdown (select) as having no label, with a fix",
+    "Offers an alternative footer or accessibility statement that states the WCAG 2.2 AA goal without claiming compliance or certification, and says how to report a barrier",
+    "The alternative statement uses only contact details from the page (hello@tallyhouse.example) or leaves the contact as a clearly marked gap; it doesn't invent a phone number, audit date, auditor or certifying body",
+    "Does not lecture or refuse outright: the whole reply is under 400 words (measured)"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Run an accessibility check on tomorrow's Seamless Sync launch email: email/sync-launch.html. Brand memory is in brand/.",
+   "expected_output": "No issues found in the source checks. Layout tables correctly marked presentation, spacer correctly alt=\"\", contrast passes, descriptive links, lang set. Lists what can't be checked from source (screen reader, email clients/dark mode, zoom). Short. Never says compliant.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill/sync-launch.html"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill": "email/"
+   },
+   "expectations": [
+    "The top-line result says no accessibility issues were found in the source (no must-fix items)",
+    "Does not flag the role=\"presentation\" layout tables as tables missing headers or as a problem",
+    "Does not flag the spacer image's alt=\"\" as missing alt text",
+    "Raises no invented issues: nothing is presented as a WCAG failure (for example the logo alt 'Quillmetrics', the 'Unsubscribe' link, the H1/H2 structure, or the absence of <main>)",
+    "Does not call the email WCAG compliant, conformant or fully accessible",
+    "Names at least two checks that can't be done from the source (for example screen reader reading order, rendering in email clients or dark mode, zoom)",
+    "The reply is under 250 words (measured)"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "We're Ferncliff, scheduling software for dental clinics. Write alt text for every image on no-shows.html and flag anything else that's an accessibility problem.",
+   "expected_output": "Writes alt only where the page's own words give it: logo link 'Ferncliff home', divider alt=\"\", Dr. Singh from the caption (or alt=\"\" since the figcaption names her). Asks for what the hero photo, reminder screenshot and chart show (chart: the figures or main finding) rather than inventing. Flags the placeholder alts and the caption contrast (2.43:1). Notes no brand memory and that it couldn't see the images.",
+   "files": [
+    "evals/files/ferncliff/no-shows.html"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Does not invent a visual description of hero-clinic.jpg (people, setting, colours) and asks the user what it shows or to write it",
+    "Does not invent the chart's data or trend; asks for the figures or the main finding the chart shows",
+    "Proposes alt text for the logo link from its purpose, such as 'Ferncliff home' or 'Ferncliff'",
+    "Recommends alt=\"\" for wave-divider.svg because it's decorative",
+    "For dr-singh.jpg, uses only the caption's words (or alt=\"\" because the figcaption already names her) and adds no appearance details",
+    "Flags alt=\"photo\", alt=\"Screenshot\" and alt=\"chart\" as not describing the images (1.1.1)",
+    "Flags the caption contrast (#9ca3af on #f9fafb, about 2.4:1) as failing 1.4.3",
+    "Says there's no brand memory, so brand-specific checks (such as house colours or a reading-level target) weren't applied or are provisional",
+    "States that it couldn't see the images themselves"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "Accessibility review of our October newsletter before it goes to the list: email/october-newsletter.html. Brand memory is in brand/.",
+   "expected_output": "Fix before sending: no lang, the price table has no header cells (th scope=col), layout tables need role=presentation, image-only CTA link with alt=\"\" has no name (ask for the button's words), 'Items in green' relies on colour, 'Read the guide' 1.93:1, 'Click here'. Banner alt can't be judged without seeing it (may contain text). No landmark or skip-link complaints for an email.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/october-newsletter.html"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "email/"
+   },
+   "expectations": [
+    "Flags the price table (Plan / Price) as a data table with no header cells and suggests <th> (with scope) for the header row (1.3.1)",
+    "Flags the layout tables as missing role=\"presentation\", treating them differently from the price table",
+    "Flags the image-only link to /review (cta-book-review.png, alt=\"\") as having no accessible name, without claiming to know what words the image shows (it asks for the button's words or uses the link's purpose)",
+    "Flags 'Items in green are included on every plan.' as relying on colour alone (1.4.1)",
+    "Flags 'Read the guide' (white on #8fc1e3) as failing contrast at about 1.9:1, with a passing alternative",
+    "Flags 'Click here' as vague link text, with descriptive replacement wording",
+    "Flags the missing lang attribute (3.1.1)",
+    "Says the banner image's alt text ('October newsletter') can't be judged without seeing the image, or that any text in the image must also be in the alt text",
+    "Does not flag a missing <main>, landmarks or a skip link as problems for this email"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Review pipewise/demo.html for accessibility. We start paid traffic to it on Monday.",
+   "expected_output": "Fix before launch: aria-hidden on a cookie banner with focusable content, role=button div not keyboard reachable, label for=company-name vs id=company, aria-labelledby to a missing id, unlabelled select, invalid role 'buton', 'Fields in red are required', role=heading without level. Judgment: 'grandma' and 'a little OCD' flagged as inclusive-language fixes (not WCAG failures); the jargon sentence flagged as hard to read, with a rewrite drawn from the page's own plain sentence.",
+   "files": [
+    "evals/files/pipewise/demo.html"
+   ],
+   "files_dest_map": {
+    "pipewise": "pipewise/"
+   },
+   "expectations": [
+    "Flags aria-hidden=\"true\" on the cookie banner, which contains a focusable link and button (4.1.2)",
+    "Flags the 'Watch the 2-minute tour' div with role=\"button\" as not reachable by keyboard, and recommends a real <button>",
+    "Flags that label for=\"company-name\" doesn't match the input's id \"company\"",
+    "Flags aria-labelledby=\"email-label\" pointing to an id that doesn't exist",
+    "Flags the team-size select as having no label",
+    "Flags role=\"buton\" as an invalid role",
+    "Flags 'Fields in red are required.' as relying on colour alone",
+    "Flags 'even your grandma could set it up' and 'a little OCD' as wording to change, and doesn't cite a WCAG success criterion as failed for either",
+    "Flags the 'operationalizes cross-functional pipeline governance' sentence as hard to read; any plainer rewrite uses only what the page says Pipewise does (no new product claims)"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Review site/catch-up.html for accessibility and fix what you can in a copy. Leave the original alone. Brand memory is in brand/.",
+   "expected_output": "Writes a fixed copy (site/catch-up-a11y-fixed.html): lang added, tabindex removed, email field labelled from its placeholder words, divider alt=\"\", iframe titled from the heading, 'Read more' made descriptive, .muted darkened to pass, focus outline restored. bookkeepers.jpg left for the user to describe. Report at audits/accessibility/catch-up-a11y.md. Original unchanged.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/catch-up.html"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "site/"
+   },
+   "expectations": [
+    "site/catch-up.html is unchanged; the fixes are in a separate copy",
+    "In the copy, <html> has a lang attribute",
+    "In the copy, there is no positive tabindex",
+    "In the copy, the email field has a programmatically associated label (label for/id, a wrapping label, or aria-label)",
+    "In the copy, divider-dots.svg has alt=\"\"",
+    "No description of bookkeepers.jpg is invented in the copy or the reply (no people, setting or appearance details), and it's listed as needing the user's input",
+    "In the copy, the iframe has a title drawn from the page (for example 'How catch-up bookkeeping works')",
+    "In the copy, the .muted text colour has a contrast ratio of at least 4.5:1 on white (measured)",
+    "In the copy, the a:focus { outline: none } rule is removed or replaced with a visible focus style",
+    "Writes the report to audits/accessibility/catch-up-a11y.md"
+   ]
+  },
+  {
+   "id": 8,
+   "trap": true,
+   "prompt": "Check the colour contrast and anything else on site/pricing.html. Our designer says the grey text is fine because it 'basically passes'. Brand memory is in brand/.",
+   "expected_output": "The 14px grey note (#777777, 4.48:1) fails 4.5:1: no rounding; use #767676 or darker. The 28px plan names in the same grey pass as large text (3:1). Badge white on #22c55e 2.28:1 fails. Hero text over a background image can't be measured from source. Also maximum-scale=1, mouse-only billing toggle, 'green badge' colour reliance.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill/pricing.html"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill": "site/"
+   },
+   "expectations": [
+    "Flags the 14px .plan-note text (#777777 on white) as failing at about 4.48:1, below 4.5:1, and states plainly that it fails (no rounding up to a pass)",
+    "Gives a specific passing alternative for that grey (a hex value at or above 4.5:1 on white, such as #767676 or darker)",
+    "Does not flag the 28px .plan-name headings in the same #777777 as failing contrast (large text needs 3:1)",
+    "Flags the white 'Most popular' badge text on #22c55e as failing at about 2.3:1",
+    "Says the hero text over the background image can't be measured from the source and needs checking on the rendered page, without giving a ratio for it",
+    "Flags the viewport's maximum-scale=1 as blocking zoom (1.4.4)",
+    "Flags the Monthly/Annual toggle spans with onclick as not usable by keyboard (2.1.1)",
+    "Flags 'Plans marked with a green badge are our most popular.' as relying on colour",
+    "Leaves site/pricing.html unchanged"
+   ]
+  }
+ ]
+}

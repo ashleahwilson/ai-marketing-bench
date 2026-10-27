@@ -1,0 +1,3 @@
+Campaign Name,Campaign Objective,Special Ad Categories,Special Ad Category Country,Ad Set Name,Optimization Goal,Custom Event Type,Attribution Spec,Countries,Age Min,Age Max,Custom Audiences,Advantage+ Audience,Placements,Daily Budget
+Leads | Free month-end review | CA,OUTCOME_LEADS,None,,Review | Restaurant owners CA,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,CA,18,65,,On,Advantage+ placements,70.00
+Hiring | Restaurant bookkeepers | US+CA,OUTCOME_LEADS,None,,Bookkeepers | Age 25-44 | Lookalike staff,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,"US, CA",25,44,"Lookalike (US+CA, 1%) - Current staff",Off,Advantage+ placements,40.00

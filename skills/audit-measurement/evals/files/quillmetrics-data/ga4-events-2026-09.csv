@@ -1,0 +1,10 @@
+# GA4 export: Reports > Engagement > Events, property Quillmetrics (G-QM40021), 2026-09-01 to 2026-09-30
+event_name,event_count,total_users,key_event
+page_view,24318,7904,true
+user_engagement,15022,6011,false
+session_start,11206,7904,false
+scroll,8840,4120,false
+first_visit,6550,6550,false
+click,2290,1650,false
+trial_start,1214,903,false
+sign_up,0,0,true

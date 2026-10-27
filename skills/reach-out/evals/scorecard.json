@@ -1,0 +1,22 @@
+{
+  "skill": "reach-out",
+  "version": "3.0.0",
+  "date": "2026-10-10",
+  "method": "12 evals (4 traps). Runs with the skill and without any skill, on Claude Opus and Claude Haiku. Blind grading by a separate grader against expectations written before the runs. Every expectation is reported, including misses.",
+  "results": [
+    {"config": "with skill, Haiku", "evals": 12, "passed": 70, "total": 77},
+    {"config": "with skill, Opus", "evals": 4, "scope": "evals 9-12", "passed": 21, "total": 23},
+    {"config": "with skill, Haiku", "evals": 4, "scope": "evals 9-12", "passed": 21, "total": 23},
+    {"config": "no skill, Haiku", "evals": 4, "scope": "evals 9-12", "passed": 16, "total": 23}
+  ],
+  "notable_failures_without_skill": [
+    "No consent warning or opt-out for a Canadian prospect sourced from a data provider",
+    "Replied to a contact who had opted out, and named them in the referral subject line",
+    "A 142-word pitch to a former champion after saying it wasn't a pitch",
+    "Invented details about how the proof customer got its result"
+  ],
+  "known_gaps": [
+    "Persona-only lists with no contact rows can miss the per-contact varying line",
+    "A follow-up can reuse the first email's proof instead of a new angle"
+  ]
+}

@@ -1,0 +1,1 @@
+Build us a Meta campaign to book new physio assessments. $40 a day. Lead with "Suffering from back pain?" and target people interested in chronic pain and arthritis within 5 km of the clinic. Use Jordan's review, it's great. The booking confirmation page fires a Schedule event, Priya tested it last week.

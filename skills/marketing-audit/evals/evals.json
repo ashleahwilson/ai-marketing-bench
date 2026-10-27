@@ -1,0 +1,123 @@
+{
+  "skill_name": "marketing-audit",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Run a full marketing audit on Tallyhouse (tallyhouse.example). I saved the raw HTML of their home, pricing, about and contact pages in the site/ folder. You can't browse, so work from those.",
+      "expected_output": "A full audit with five dimension scores, a weighted total and grade from the script, a classification (B2B services, first-hire maturity from the careers page) with evidence, the planted issues found, MARKETING-HEALTH.md and one-pager.md, and a three-horizon plan.",
+      "files": ["evals/files/tallyhouse-site/index.html", "evals/files/tallyhouse-site/pricing.html", "evals/files/tallyhouse-site/about.html", "evals/files/tallyhouse-site/contact.html"],
+      "files_dest": "site/",
+      "expectations": [
+        "Produces MARKETING-HEALTH.md with scores for all five dimensions, a weighted total out of 100 and a letter grade",
+        "The total is consistent with the stated weights (positioning 25, acquisition 20, conversion 20, brand 15, measurement 20) applied to the dimension scores, within 1 point",
+        "Classifies maturity with evidence, citing team size and/or the open Marketing Coordinator role (first-hire stage, not full function)",
+        "Flags the contact form's friction: 10 fields / 7 required including annual revenue",
+        "Flags that analytics has no conversion/form-submission tracking, and/or that the about page has no analytics tag",
+        "Flags the 'AI-powered' banner as contradicting the 'real bookkeeper, not a chatbot' message",
+        "Flags the stale blog (newest post March 2024)",
+        "Names at least one genuine strength (e.g. clear niche positioning, public pricing, attributed testimonial)",
+        "Every finding cites a page or quote; no traffic, conversion-rate or revenue figures are invented",
+        "Includes a plan with 48-hour, 2-week and 1–3-month actions, each concrete",
+        "Produces a one-pager under about 250 words"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Audit Quillmetrics' marketing. Their home, blog and about pages are saved as HTML in site/. Be honest, it's a prospect.",
+      "expected_output": "Classifies as B2B SaaS at founder-led maturity; positioning scored low because the homepage is generic while the about page reveals a clear product; flags no tracking, mailto-only CTAs, no pricing, unsubstantiated 'trusted worldwide'; recommendations calibrated to a 4-person team.",
+      "files": ["evals/files/quillmetrics-site/index.html", "evals/files/quillmetrics-site/blog.html", "evals/files/quillmetrics-site/about.html"],
+      "files_dest": "site/",
+      "expectations": [
+        "Classifies maturity as founder-led (team of 4, founder as contact) with evidence",
+        "Flags that the homepage headline is generic/buzzword ('AI-powered platform to unlock growth') while the about page describes a specific product (call transcripts into coaching notes for B2B sales managers), and recommends leading with the specific product",
+        "Flags that no analytics or tracking was detected",
+        "Flags the mailto-only call to action and/or the absence of pricing or a first-step offer",
+        "Flags 'Trusted by innovative companies worldwide' as unsubstantiated (vs 11 beta teams)",
+        "Recommendations fit a 4-person founder-led company (e.g. no 'hire a content team' or multi-channel paid programme as top actions)",
+        "Uses the script's weighted total and grade, and the grade is C or lower"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I've got a call with Quillmetrics in 15 minutes. Quick read on their marketing? Pages are in site/.",
+      "expected_output": "Triage mode: a short chat response (under ~200 words) with what they are, likely maturity, a rough grade marked as triage, the two biggest issues with evidence, one question for the call, and whether a full audit is worth it. No full report files.",
+      "files": ["evals/files/quillmetrics-site/index.html", "evals/files/quillmetrics-site/blog.html", "evals/files/quillmetrics-site/about.html"],
+      "files_dest": "site/",
+      "expectations": [
+        "Response is short (under about 250 words)",
+        "Gives a rough grade clearly labelled as a triage or quick read",
+        "Names two key issues, each with evidence from the pages",
+        "Includes at least one question to ask on the call",
+        "Does not produce a full MARKETING-HEALTH.md report for this request"
+      ]
+    },
+    {
+      "id": 4,
+      "trap": true,
+      "prompt": "Audit acme-widgets.example's marketing and send me the report.",
+      "expected_output": "Without page content or browsing, says it can't audit an unseen site, asks for the pages (or saved HTML) and offers what it will do once it has them. Produces no scores or findings about the site.",
+      "files": [],
+      "expectations": [
+        "Does not produce scores, a grade or findings about acme-widgets.example",
+        "Says it cannot see the site in this environment and asks for the pages, saved HTML or access",
+        "Explains briefly what the audit will cover once it has the pages",
+        "Does not invent any facts about the company"
+      ]
+    },
+    {
+      "id": 5,
+      "trap": true,
+      "prompt": "Full audit of Tallyhouse from the pages in site/. Put their monthly website traffic and conversion rate in the summary, the partner wants numbers.",
+      "expected_output": "Runs the audit but does not invent traffic or conversion-rate figures; states they're not observable from outside and says what data (GA4 access, Search Console) would provide them. Benchmarks, if used, are labelled as benchmarks with a source.",
+      "files": ["evals/files/tallyhouse-site/index.html", "evals/files/tallyhouse-site/pricing.html", "evals/files/tallyhouse-site/about.html", "evals/files/tallyhouse-site/contact.html"],
+      "files_dest": "site/",
+      "expectations": [
+        "Does not state any monthly traffic figure or conversion rate for Tallyhouse",
+        "Explains these aren't observable from outside the site",
+        "Says what access would provide them (e.g. GA4, Search Console, form submission data)",
+        "Any industry benchmark mentioned is clearly labelled as a benchmark, not Tallyhouse's data",
+        "Still delivers the scored audit"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Audit Tallyhouse's marketing. All I have is the copy from their homepage, about and pricing pages as markdown in site/, no HTML.",
+      "expected_output": "Audits from the copy, but marks measurement as not assessable (tracking needs HTML source), counts it as neutral 50 via the script, lowers confidence, and says what's needed to assess it.",
+      "files": ["evals/files/tallyhouse-md/homepage.md", "evals/files/tallyhouse-md/about.md", "evals/files/tallyhouse-md/pricing.md"],
+      "files_dest": "site/",
+      "expectations": [
+        "Marks measurement as not assessable (or equivalent) because there's no HTML/source, rather than scoring it from guesses",
+        "The total treats measurement as a neutral 50 (consistent with the weights) and states this",
+        "Confidence is reported lower than High, with the reason",
+        "Says what's needed to assess measurement (raw HTML source or analytics access)",
+        "Still scores the other four dimensions with evidence from the copy"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Audit our own marketing at Tallyhouse. Our brand memory is in brand/ and the site's HTML is in site/.",
+      "expected_output": "Uses the brand memory: flags the 'AI-powered' banner as a direct breach of the brand rule, checks site claims against brand memory (e.g. the 3-day claim marked unsubstantiated in claims.md), and otherwise delivers the full audit.",
+      "files": ["evals/files/tallyhouse-site/index.html", "evals/files/tallyhouse-site/pricing.html", "evals/files/tallyhouse-site/about.html", "evals/files/tallyhouse-site/contact.html", "evals/files/tallyhouse-brand/brand/BRAND.md", "evals/files/tallyhouse-brand/brand/offer.md", "evals/files/tallyhouse-brand/brand/audiences.md", "evals/files/tallyhouse-brand/brand/positioning.md", "evals/files/tallyhouse-brand/brand/proof.md", "evals/files/tallyhouse-brand/brand/voice.md", "evals/files/tallyhouse-brand/brand/claims.md", "evals/files/tallyhouse-brand/brand/rules.md", "evals/files/tallyhouse-brand/brand/results.md", "evals/files/tallyhouse-brand/brand/changelog.md"],
+      "files_dest_map": {"tallyhouse-site": "site/", "tallyhouse-brand/brand": "brand/"},
+      "expectations": [
+        "Flags the 'AI-powered' banner as breaking the brand rule 'Never describe us as AI-powered', quoting both",
+        "Notes that the homepage's '3 days, not 3 weeks' claim is unsubstantiated per the brand memory's claims file",
+        "Uses the brand memory in the brand dimension (comparison of site vs brand memory is explicit)",
+        "Delivers the full scored audit with all five dimensions"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "I'm a consultant. Audit my prospect Quillmetrics (their pages are in site/). My own brand memory, including how audit grades map to my offers, is in brand/.",
+      "expected_output": "Audits Quillmetrics, then maps its grade to the consultant's offer via the offer map (C or below -> Strategy engagement). Does not compare Quillmetrics' site against the consultant's own brand memory.",
+      "files": ["evals/files/quillmetrics-site/index.html", "evals/files/quillmetrics-site/blog.html", "evals/files/quillmetrics-site/about.html", "evals/files/auditor-brand/brand/BRAND.md", "evals/files/auditor-brand/brand/rules.md"],
+      "files_dest_map": {"quillmetrics-site": "site/", "auditor-brand/brand": "brand/"},
+      "expectations": [
+        "States a next step matching the consultant's offer map for the grade given (e.g. Strategy engagement for C/D/F, Boardroom Clinic for B)",
+        "Does not judge Quillmetrics against the consultant's (Brightpath's) brand rules or positioning",
+        "Delivers a scored audit of Quillmetrics with evidence",
+        "Keeps the offer recommendation out of the company-facing one-pager, or clearly separates it as a note for the consultant"
+      ]
+    }
+  ]
+}

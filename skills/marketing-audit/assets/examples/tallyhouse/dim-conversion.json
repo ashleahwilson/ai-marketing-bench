@@ -1,0 +1,19 @@
+{"dimension": "conversion", "assessable": true, "confidence": "medium",
+ "checks": [
+  {"id": "C1", "points": 10, "max": 20, "evidence": "Wording varies: nav and pricing \"Book a free review\"; index.html hero \"Start with a free month-end review\"; contact.html H1 \"Book your free month-end review\". Present on the key pages but the wording varies: partial."},
+  {"id": "C2", "points": 20, "max": 20, "evidence": "Form at /contact, linked from the nav and the hero CTA on index.html. Easy to find."},
+  {"id": "C3", "points": 0, "max": 20, "evidence": "contact.html: 10 fields, 7 required, including \"revenue\" (Annual revenue, required) and \"phone\" (required). Revenue and phone required up front: 0."},
+  {"id": "C4", "points": 8, "max": 15, "evidence": "pricing.html: \"$349/month\", \"From $299/location/month\", \"Quoted per month of backlog\". No currency code. The company sells in Canada and the US (about.html), so a bare \"$\" is ambiguous. Catch-up has no range. Prices shown but currency ambiguous: partial."},
+  {"id": "C5", "points": 0, "max": 15, "evidence": "No proof on pricing.html or contact.html. No privacy link or notice on contact.html, the page with the form. Neither: 0."},
+  {"id": "C6", "points": 0, "max": 10, "evidence": "No viewport meta tag on index, pricing, about or contact. None: 0."}
+ ],
+ "score": 38,
+ "findings": [
+  {"severity": "high", "check": "C3", "finding": "The contact form asks for 10 fields, 7 required, including annual revenue and phone.", "evidence": "contact.html: first_name, last_name, email, phone, restaurant, locations, pos, revenue, current_bookkeeper, message. Required: first_name, last_name, email, phone, restaurant, locations, revenue.", "fix": "Cut the form to four visible fields: first name, email, restaurant name, number of locations. Move revenue and phone to the call, and make current_bookkeeper and message optional or remove them."},
+  {"severity": "medium", "check": "C4", "finding": "Prices have no currency and the catch-up price has no range.", "evidence": "pricing.html: \"$349/month\"; \"From $299/location/month\"; \"Quoted per month of backlog\".", "fix": "Add CAD or USD after each price. Replace the catch-up line with a range, e.g. \"From $X to $Y per month of backlog\", or say what drives the quote."},
+  {"severity": "medium", "check": "C1", "finding": "The primary CTA is worded three ways.", "evidence": "index.html: \"Book a free review\" (nav) and \"Start with a free month-end review\" (hero); contact.html H1 \"Book your free month-end review\".", "fix": "Use one phrase everywhere, e.g. \"Book a free month-end review\", in the nav, the hero, pricing and the contact H1."},
+  {"severity": "medium", "check": "C5", "finding": "The form page has no proof and no privacy notice.", "evidence": "contact.html has no testimonial, logo or privacy link. The only testimonial is on index.html.", "fix": "Place the Maria Okafor quote (with her name, business and location count) beside the contact form. Add a privacy policy link under the Submit button."},
+  {"severity": "low", "check": "C6", "finding": "No page declares a viewport, so mobile rendering is not set.", "evidence": "No <meta name=\"viewport\"> on any of the four saved pages.", "fix": "Add <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> to the head of every page, then check the contact form on a phone."}
+ ],
+ "strengths": ["One click from the nav or the hero reaches a form (contact.html).", "Pricing page points to the same contact path as the home page."],
+ "not_observable": ["Form completion rate and lead volume (no analytics access).", "Whether form submissions reach a person and how fast they are answered."]}

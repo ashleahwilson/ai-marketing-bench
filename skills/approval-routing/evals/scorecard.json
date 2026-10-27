@@ -1,0 +1,35 @@
+{
+ "skill": "approval-routing",
+ "version": "1.2.0",
+ "date": "2026-10-27",
+ "status": "Meets the Bench Standard bar on Opus (65/65, no invented facts). On Haiku it beats no skill by a wide margin (62-64/65 against 41/65) and is never worse on traps, but its final-round run labelled one ad line a 'confirmed feature' that brand memory doesn't fully support, so it's recommended for larger models.",
+ "method": "9 evals (4 traps), expectations written before any run. Round 1 ran the skill and no skill on Haiku and Opus in fresh headless agents, graded blind by a separate Opus grader that saw only the expectations and fixtures. Rounds 2 and 3 re-ran the skill as it was revised (round 3 on Haiku and Opus). No comparison skill existed to compare against.",
+ "results": [
+  {"config": "with skill, Opus (v1.2.0, round 3)", "passed": 65, "total": 65},
+  {"config": "with skill, Opus (v1.0.0, round 1)", "passed": 64, "total": 65},
+  {"config": "no skill, Opus", "passed": 53, "total": 65},
+  {"config": "with skill, Haiku (v1.2.0, round 3)", "passed": 62, "total": 65},
+  {"config": "with skill, Haiku (v1.1.0, round 2)", "passed": 64, "total": 65},
+  {"config": "no skill, Haiku", "passed": 41, "total": 65}
+ ],
+ "traps_by_config_final": {
+  "with skill, Haiku (round 3)": "evals 2, 3, 4, 9: 6/7, 7/7, 7/7, 5/6",
+  "with skill, Opus (round 3)": "7/7, 7/7, 7/7, 6/6",
+  "no skill, Haiku (round 1)": "2/7, 7/7, 3/7, 3/6",
+  "no skill, Opus (round 1)": "5/7, 7/7, 6/7, 0/6"
+ },
+ "haiku_with_skill_by_round": {"1 (v1.0.0)": 64, "2 (v1.1.0)": 64, "3 (v1.2.0)": 62, "out_of": 65},
+ "losses_and_open_issues": [
+  "Round 3 Haiku, eval 2: after cutting the two blocked claims it still routed the post to legal (Marcus Lee), instead of noting the legal step drops off",
+  "Round 3 Haiku, eval 5: with no approval rules on file, it didn't offer to record the answers as approval rules",
+  "Round 3 Haiku, eval 9: routed a plainly named blog post on the default rule and added 'confirm the content type' as a condition; still reached Approved",
+  "Round 3 Haiku, eval 7 (invented fact, not caught by an expectation): called 'One dashboard for revenue, refunds and fees' a confirmed feature; brand memory only records a dashboard combining Shopify and Stripe data",
+  "Round 2 Haiku, eval 9: 219-word reply to an approved piece (fixed in 1.2.0 for Opus; Haiku stayed within the limit in round 3)",
+  "Round 1 Haiku, eval 6: claimed two spare business days before go-live when there were none (the router now reports spare days)",
+  "Round 1 Opus, eval 8: asked for the content type without saying the approval list has no 'guide' line",
+  "Round 1, both skill runs in eval 8 named the skill and its mode in the reply, and both eval 5 runs wrote today's date as the request date (fixed in 1.1.0; not seen in rounds 2 or 3)",
+  "Grader note: eval 2's expected route arguably should include Dev Patel (finance) for the free month-end review offer; runs that added him were passed",
+  "Without the skill: Haiku twice claimed it couldn't see files in its folder, made Ferncliff's requester the approver of his own page, and approved a newsletter with no customer consent; Opus overwrote an existing route file, softened a banned claim, and invented a compliance blocker on a clean, fully signed post",
+  "Every with-skill run left the original files unchanged; the eval 6 v1 route file stayed byte-identical"
+ ]
+}

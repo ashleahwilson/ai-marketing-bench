@@ -1,0 +1,4 @@
+first_name,last_name,title,company,email,stage,last_activity,notes
+Alicia,Moreno,VP Sales,Northgate Freight,alicia.moreno@northgatefreight.example,Closed lost (timing),2026-06-12,"Champion in 2025 evaluation. Loved the slip alerts. Lost on timing: budget frozen until FY2027."
+Kevin,Shaw,Sales Ops Analyst,Northgate Freight,kevin.shaw@northgatefreight.example,Closed lost (timing),2025-11-18,"Ran the technical review; connected sandbox Salesforce in a day."
+Linda,Park,CFO,Northgate Freight,,Closed lost (timing),2025-11-18,"Froze the budget. Said to come back after their FY2027 planning (starts Jan 2027)."

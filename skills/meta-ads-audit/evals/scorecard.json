@@ -1,0 +1,73 @@
+{
+ "skill": "meta-ads-audit",
+ "version": "1.2.0",
+ "date": "2026-10-24",
+ "status": "Meets the Bench Standard bar on total and traps: with skill beats no skill and the comparison skill on both models (final round Haiku 62/64, Opus 63/64, against 34-44/64 without it and 37/64 for paid-ads) and is never worse on traps (32-33/33 against 19-24/33). One caveat on the no-invented-facts item: in the final round, Opus miscounted ads in one fix line (17 for 16); no invented dollar figures, rates or benchmarks in any with-skill run.",
+ "method": "9 evals (5 traps), expectations written before any run. Round 1 ran the skill, no skill, and the comparison skill (Corey Haines' paid-ads 1.1.0) on Haiku, and the skill and no skill on Opus, in fresh headless agents graded blind by a separate Opus grader. Rounds 2 and 3 re-ran the skill on Haiku as it was revised, and on Opus in round 3. Fixtures are fictional Ads Manager and Events Manager exports (Quillmetrics, Tallyhouse, Pipewise, Ferncliff) generated to be internally consistent, with planted problems.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 63,
+   "total": 64
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 62,
+   "total": 64
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 44,
+   "total": 64
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 62,
+   "total": 64
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 34,
+   "total": 64
+  },
+  {
+   "config": "comparison skill (paid-ads), Haiku",
+   "passed": 37,
+   "total": 64
+  }
+ ],
+ "traps": {
+  "evals": [
+   2,
+   3,
+   4,
+   5,
+   9
+  ],
+  "out_of": 33,
+  "with skill Haiku r3": 32,
+  "with skill Opus r3": 33,
+  "with skill Haiku r1": 33,
+  "with skill Opus r1": 32,
+  "no skill Haiku": 19,
+  "no skill Opus": 24,
+  "comparison skill Haiku": 21
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 62,
+  "2 (v1.1.0)": 63,
+  "3 (v1.2.0)": 62,
+  "out_of": 64
+ },
+ "losses_and_open_issues": [
+  "Round 3 Haiku, eval 5 (trap): said not to kill an ad set on 6 days of data, then named one to pause 'if you have to'",
+  "Round 2 and 3 Haiku, eval 8: found the old agency pixel sending Lead but made removing it conditional on a check, instead of recommending removal",
+  "Round 3 Opus, eval 1: flagged mixed attribution settings but didn't say ad set results aren't comparable",
+  "Round 3 Opus, eval 7: fixes.md said 17 single-image ads in the trials campaign; the export has 16 (a miscount, not a dollar figure)",
+  "Round 1 Haiku, eval 7: an Events Manager row (StartTrial, server 0) that isn't in the export; fixes sorted by horizon not priority (fixed in 1.1.0)",
+  "Round 1 Opus, eval 9: recommended four changes on a clean account (fixed in 1.1.0)",
+  "Reasoning slips noted by the grader, not covered by expectations: Haiku read 612 received events against 588 trials as ruling out double counting; Opus rated confidence High on lead counts its own finding called inflated",
+  "Without the skill: no-skill Opus quoted industry CTR and CPM ranges from 'general industry knowledge' and forecast cost per lead ranges; no-skill and comparison-skill runs invented economics (close rates, ACV, payback) and the comparison skill recommended scaling a non-compliant employment campaign",
+  "Every with-skill run left the user's exports unchanged and claimed no account changes"
+ ]
+}

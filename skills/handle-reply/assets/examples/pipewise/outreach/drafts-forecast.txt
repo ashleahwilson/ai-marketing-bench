@@ -1,0 +1,22 @@
+FACTS
+- persona: VPs of Sales at software companies with 10-100 reps | brand/BRAND.md
+- offer: weekly forecast from deal activity, risk flag on every deal; Salesforce and HubSpot | brand/offer.md
+- proof: Ardent Labs (40 reps) forecast within 5% of close for three straight quarters | brand/proof.md | named: yes
+- addresses: published on each company's website team page, captured 2026-11-03 | user
+- sender: Maya Chen, Founder, Pipewise | brand/senders.md
+ASSUMED
+- none
+---
+Channel: email
+Type: first
+Subject: forecast calls
+
+Hi {{first_name}},
+
+Forecast calls that run on rep gut feel tend to miss in the last two weeks of the quarter. Pipewise builds the forecast from deal activity and flags the deals at risk. Ardent Labs (40 reps) landed within 5% of close three quarters running.
+
+Open to a look at how it would read your pipeline?
+
+Maya Chen, Founder, Pipewise
+Pipewise Inc., 1188 West Georgia St, Suite 1500, Vancouver, BC V6E 4A2
+If this isn't relevant, reply "no" and I won't follow up.

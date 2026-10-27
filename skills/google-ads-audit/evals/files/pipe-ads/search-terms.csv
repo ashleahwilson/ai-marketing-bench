@@ -1,0 +1,13 @@
+Search terms report
+"August 1, 2026 - October 15, 2026"
+Search term,Match type,Campaign,Ad group,Keyword,Added/Excluded,Clicks,Impr.,Cost,Conversions
+pipeline management software,Phrase match,Search | Pipeline Software,Pipeline management,pipeline management software,None,610,8000,"3,120.40",21
+sales pipeline tool,Phrase match,Search | Pipeline Software,Pipeline management,sales pipeline tool,None,380,5200,"1,845.20",12
+crm for startups,Phrase match,Search | Pipeline Software,CRM for startups,crm for startups,None,410,9100,"2,410.80",5
+startup crm,Phrase match,Search | Pipeline Software,CRM for startups,startup crm,None,220,5600,"1,290.30",2
+deal tracking software,Exact match,Search | Pipeline Software,Deal tracking,deal tracking software,None,290,3900,"1,404.70",8
+sales email tracking,Phrase match,Search | Pipeline Software,Sales email tracking,sales email tracking,None,200,3300,980.35,3
+sales forecasting software,Phrase match,Search | Forecasting,Sales forecasting,sales forecasting software,None,470,11800,"2,840.60",6
+forecast accuracy tool,Phrase match,Search | Forecasting,Sales forecasting,forecast accuracy tool,None,100,2700,612.40,1
+Total: Search terms,,,,,,2680,49600,"14,504.75",58
+Total: Account,,,,,,2680,49600,"14,504.75",58

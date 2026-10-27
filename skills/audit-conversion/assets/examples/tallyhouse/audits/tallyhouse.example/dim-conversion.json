@@ -1,0 +1,20 @@
+{"dimension": "conversion", "assessable": true, "confidence": "high",
+ "checks": [
+  {"id": "C1", "points": 10, "max": 20, "evidence": "One action, worded three ways: 'Book a free review' (nav, pricing.html), 'Start with a free month-end review' (index.html hero), 'Book your free month-end review' (contact.html H1). Present but wording varies: partial."},
+  {"id": "C2", "points": 20, "max": 20, "evidence": "Form at /contact, linked from the nav and the index.html hero."},
+  {"id": "C3", "points": 0, "max": 20, "evidence": "contact.html: 10 fields, 7 required, including revenue and phone."},
+  {"id": "C4", "points": 8, "max": 15, "evidence": "pricing.html: '$349/month', 'From $299/location/month' with no currency for a Canada and US business (about.html); catch-up 'Quoted per month of backlog' with no range."},
+  {"id": "C5", "points": 0, "max": 15, "evidence": "No proof on pricing.html or contact.html; no privacy link or notice on contact.html."},
+  {"id": "C6", "points": 0, "max": 10, "evidence": "No viewport meta tag on index, pricing, about or contact."}
+ ],
+ "score": 38,
+ "findings": [
+  {"severity": "high", "check": "C3", "finding": "The contact form asks for 10 fields, 7 required, including annual revenue and phone.", "evidence": "contact.html: required first_name, last_name, email, phone, restaurant, locations, revenue.", "fix": "Keep first name, email, restaurant and locations; ask revenue and phone on the review call."},
+  {"severity": "medium", "check": "C5", "finding": "No proof or privacy notice at the decision point.", "evidence": "contact.html and pricing.html carry no testimonial; contact.html has no privacy link.", "fix": "Privacy line with a policy link under the button; the Okafor quote beside the form once she confirms naming permission."},
+  {"severity": "medium", "check": "C4", "finding": "Prices have no currency and catch-up has no range.", "evidence": "pricing.html: '$349/month'; 'Quoted per month of backlog'.", "fix": "Add CAD or USD to each price and a 'from' price per month of backlog."},
+  {"severity": "medium", "check": "C1", "finding": "The primary action is worded three ways.", "evidence": "'Book a free review', 'Start with a free month-end review', 'Book your free month-end review'.", "fix": "Use 'Book a free month-end review' everywhere."},
+  {"severity": "low", "check": "C6", "finding": "No page declares a viewport.", "evidence": "No <meta name=\"viewport\"> on any of the four pages.", "fix": "Add the viewport tag to every page's head."}
+ ],
+ "strengths": ["One click from the nav or the hero reaches the form.", "Main plan prices are public.", "The testimonial is specific and attributed."],
+ "not_observable": ["Form starts, submits and conversion rate (no analytics export).", "How fast submissions are answered."],
+ "pages_reviewed": ["index.html", "pricing.html", "about.html", "contact.html"]}

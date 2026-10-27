@@ -1,0 +1,7 @@
+Conversion actions
+"July 1, 2026 - September 30, 2026"
+Conversion action,Source,Category,Action optimization,Count,Value,Status,Conversions
+Book review form submit,Website (Google Ads tag),Submit lead form,Primary action,One,Don't use a value,Recording conversions,44
+Book review form (GA4),Google Analytics 4,Submit lead form,Primary action,One,Don't use a value,Recording conversions,41
+Pricing page view,Website (Google Ads tag),Page view,Primary action,Every,Don't use a value,Recording conversions,260
+Calls from ads,Call from ads,Phone call,Secondary action,One,Don't use a value,Recording conversions,12

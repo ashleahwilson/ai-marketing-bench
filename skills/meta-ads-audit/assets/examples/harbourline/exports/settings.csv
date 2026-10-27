@@ -1,0 +1,4 @@
+Campaign Name,Campaign Objective,Special Ad Categories,Special Ad Category Country,Ad Set Name,Optimization Goal,Custom Event Type,Attribution Spec,Countries,Age Min,Age Max,Custom Audiences,Advantage+ Audience,Placements,Daily Budget
+Sales | Kayaks | Prospecting,OUTCOME_SALES,None,,Kayaks | Advantage+ audience,OFFSITE_CONVERSIONS,PURCHASE,7-day click or 1-day view,CA,18,65,,On,Advantage+ placements,120.00
+Sales | Kayaks | Prospecting,OUTCOME_SALES,None,,Kayaks | Interest: camping,OFFSITE_CONVERSIONS,PURCHASE,7-day click or 1-day view,CA,18,65,,Off,Advantage+ placements,30.00
+Sales | Retargeting | Cart 14d,OUTCOME_SALES,None,,RT | Add to cart 14d,OFFSITE_CONVERSIONS,PURCHASE,7-day click or 1-day view,CA,18,65,Added to cart - 14 days,Off,Advantage+ placements,25.00

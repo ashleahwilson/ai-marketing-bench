@@ -1,0 +1,69 @@
+{
+ "skill": "google-ads-audit",
+ "version": "1.2.1",
+ "date": "2026-10-24",
+ "status": "Beats no skill and the comparison skill on total and on traps, on both models (final round: Haiku 64/64, Opus 63/64). Not fully met on one point: in the final round Opus made two unsupported statements (that Search Partners spend sat inside the waste total, and a cause for junk terms the data didn't show). The wording that invited the first is fixed in 1.2.1 (text only, not re-tested). No invented dollar figures, benchmarks, forecasts or account changes in any with-skill run.",
+ "method": "8 evals (4 traps), 64 expectations written before any run, on fictional accounts (Tallyhouse, Quillmetrics with brand memory; Ferncliff and Pipewise without). Round 1 ran the skill, no skill and the comparison skill (Corey Haines' paid-ads 1.1.0) on Haiku, and the skill and no skill on Opus, in fresh headless agents graded blind by a separate Opus grader. One invalid no-skill Haiku run (it failed to see its input files) was re-run and re-graded. Rounds 2 and 3 re-ran the revised skill (round 3 on Haiku and Opus).",
+ "results": [
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 64,
+   "total": 64
+  },
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 63,
+   "total": 64
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 64,
+   "total": 64
+  },
+  {
+   "config": "with skill, Haiku (v1.0.0, round 1)",
+   "passed": 61,
+   "total": 64
+  },
+  {
+   "config": "comparison skill (paid-ads), Haiku",
+   "passed": 49,
+   "total": 64
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 47,
+   "total": 64
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 42,
+   "total": 64
+  }
+ ],
+ "traps": {
+  "with skill, Haiku (round 3)": "28/28",
+  "with skill, Opus (round 3)": "27/28",
+  "comparison skill, Haiku": "20/28",
+  "no skill, Opus": "17/28",
+  "no skill, Haiku": "19/28"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 61,
+  "2 (v1.1.0)": 63,
+  "3 (v1.2.0)": 64,
+  "out_of": 64
+ },
+ "losses_and_open_issues": [
+  "Round 3, Opus, eval 5: the explanation for declining the 500% ROAS line ran to five sentences (limit three)",
+  "Round 3, Opus, eval 4: said the $61.40 Search Partners spend 'is already inside' the $277.50 waste total; the export doesn't show that (Haiku said 'overlaps' more loosely). Wording fixed in 1.2.1, not re-tested",
+  "Round 3, Opus, eval 1: stated Smart Bidding as the cause of junk searches getting through, a guess presented as fact",
+  "Round 3, Opus, eval 7: fixes.md suggested pausing 'restaurant cpa', whose search terms brought 9 conversions, while the reply said not to pause keywords",
+  "Round 3, Haiku, eval 5: top three said exclude four countries; the 48-hour plan said confirm Canada and the UK first",
+  "Round 2, Haiku: added 'tally house' as a brand term that appears nowhere in the data; borderline calls ('restaurant pos systems', 'stripe fees calculator') varied between runs on the same exports",
+  "Round 1, Haiku with skill: compared a budget-limited campaign with the blended CPA and said hold the budget (fixed in 1.1.0); gave a report location for only one export (fixed); left script and working-file names in client files (fixed)",
+  "Round 1, without the skill: no-skill Opus and the comparison skill both annualized 10 days of data (about $10,100 a year) and gave a verdict on Target CPA from 4 conversions; every non-skill run offered a substitute ROAS or CPA forecast in the ROAS trap; no-skill Opus claimed a headline came from brand files when it didn't; the comparison skill leaked its own name and tool paths",
+  "In this environment a user-level instruction made one Opus run open with the skill's name; end clients would see it",
+  "Every run, all configs, left the original export and brand files unchanged; no run claimed to change the account"
+ ]
+}

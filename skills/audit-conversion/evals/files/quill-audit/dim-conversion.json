@@ -1,0 +1,17 @@
+{"dimension": "conversion", "assessable": true, "confidence": "medium",
+ "checks": [
+  {"id": "C1", "points": 10, "max": 20, "evidence": "Trial CTA worded 'Try it free' (nav) and 'Start free trial' (hero); present on index and pricing. Wording varies: partial."},
+  {"id": "C2", "points": 20, "max": 20, "evidence": "demo.html has a booking form linked from the nav."},
+  {"id": "C3", "points": 20, "max": 20, "evidence": "demo.html: 4 fields (name, email, store_url, notes), nothing sensitive required."},
+  {"id": "C4", "points": 8, "max": 15, "evidence": "pricing.html: '$79/month', '$249/month'. No currency code shown: ambiguous."},
+  {"id": "C5", "points": 15, "max": 15, "evidence": "Jordan Lee quote on pricing.html; privacy notice under the demo form."},
+  {"id": "C6", "points": 10, "max": 10, "evidence": "Viewport meta tag on index, pricing and demo."}
+ ],
+ "score": 83,
+ "findings": [
+  {"severity": "medium", "check": "C1", "finding": "Trial CTA wording varies.", "evidence": "'Try it free' vs 'Start free trial'", "fix": "Use 'Start free trial' everywhere."},
+  {"severity": "medium", "check": "C4", "finding": "No currency on prices.", "evidence": "pricing.html: '$79/month'", "fix": "Add USD after each price."}
+ ],
+ "strengths": ["Short demo form with a privacy notice."],
+ "not_observable": ["Trial start rate and demo bookings (no analytics access)."],
+ "pages_reviewed": ["index.html", "pricing.html", "demo.html"]}

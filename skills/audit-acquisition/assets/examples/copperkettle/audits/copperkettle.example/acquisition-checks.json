@@ -1,0 +1,88 @@
+{
+ "dimension": "acquisition",
+ "maturity": "founder-led",
+ "assessable": true,
+ "confidence": "medium",
+ "audit_date": "2026-10-20",
+ "pages_reviewed": [
+  "/",
+  "/office-lunch",
+  "/weddings",
+  "/contact"
+ ],
+ "checks": [
+  {
+   "id": "A1",
+   "points": 10,
+   "max": 20,
+   "evidence": "Titles on all 4 pages, none duplicated; /office-lunch title is \"Untitled\" and it has no meta description."
+  },
+  {
+   "id": "A2",
+   "points": 8,
+   "max": 15,
+   "evidence": "Every page has one H1. H2s on /, /office-lunch, /weddings, not /contact. Self canonical on /, /office-lunch, /contact; /weddings points to /weddings-2023. No structured data on any page. Pages meet 2 or 3 of 4."
+  },
+  {
+   "id": "A3",
+   "points": 15,
+   "max": 15,
+   "evidence": "/: \"Copperkettle Catering cooks weekday office lunches and wedding dinners for 20 to 200 guests across Halifax and Dartmouth.\" /weddings: question headings \"Do you do tastings?\" and \"Do you supply staff and rentals?\"."
+  },
+  {
+   "id": "A4",
+   "points": 10,
+   "max": 20,
+   "evidence": "No blog, guides or dated content on any page reviewed: 0, raised to 10 by founder-led relief (owner-chef and a team of six, /)."
+  },
+  {
+   "id": "A5",
+   "points": 8,
+   "max": 15,
+   "evidence": "One kind: Instagram profile (/ footer). The newsletter signup on / is a channel but not one of the five counted kinds."
+  },
+  {
+   "id": "A6",
+   "points": 15,
+   "max": 15,
+   "evidence": "Same nav on all 4 pages, linking every key page."
+  }
+ ],
+ "score": 66,
+ "blockers": [
+  "/weddings: canonical points to https://copperkettle.example/weddings-2023"
+ ],
+ "findings": [
+  {
+   "severity": "blocker",
+   "check": "indexability",
+   "finding": "The weddings page tells search engines to index an old URL instead.",
+   "evidence": "/weddings: <link rel=\"canonical\" href=\"https://copperkettle.example/weddings-2023\">. Search Console (pages export): /weddings-2023 has 900 impressions, 0 clicks, position 19.0.",
+   "fix": "Change the canonical on /weddings to https://copperkettle.example/weddings, and redirect /weddings-2023 to /weddings."
+  },
+  {
+   "severity": "high",
+   "check": "A1",
+   "finding": "The office lunch page is titled \"Untitled\" with no description, and is clicked rarely for a query where it shows high.",
+   "evidence": "/office-lunch title \"Untitled\", no meta description. Export: \"office lunch catering halifax\" 4 clicks from 1,600 impressions (0.25%) at position 4.1; the site's non-branded positions 4-10 average 1.0%.",
+   "fix": "Title: \"Office lunch catering in Halifax | Copperkettle\". Description: \"Boxed lunches or a hot buffet delivered anywhere in Halifax and Dartmouth by 11:45. From $18 per person, minimum 15.\""
+  },
+  {
+   "severity": "medium",
+   "check": "A2",
+   "finding": "No structured data on any page, so the address, phone and service area aren't machine-readable.",
+   "evidence": "No JSON-LD or microdata on /, /office-lunch, /weddings or /contact. Address and phone appear as text on / and /contact.",
+   "fix": "Add LocalBusiness structured data to / with the name, 2140 Gottingen St, Halifax, NS B3K 3B3, (902) 555-0161, areaServed Halifax and Dartmouth, and sameAs the Instagram profile."
+  }
+ ],
+ "strengths": [
+  "A plain, quotable sentence on the home page says what they do, for whom and where.",
+  "Same navigation on every page, linking every service page.",
+  "The weddings page answers real buyer questions as headings."
+ ],
+ "not_observable": [
+  "Google Business Profile listing, reviews and rating.",
+  "Backlinks and local citations.",
+  "Whether /weddings-2023 still returns a page or redirects."
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "skill": "audit-acquisition",
+ "version": "1.2.0",
+ "date": "2026-10-24",
+ "status": "Beats no skill and the comparison skill on total and is never worse on traps in the final round (Haiku 68/68, Opus 67/68). Does NOT fully meet the no-invented-facts item: the strict final-round grader still found small overstatements in with-skill outputs (scope widened, e.g. 'hiring its first marketer'; 'Order online on every page' when one page has none; an exact day count from a month-only date). No invented traffic, rankings, search volumes, ratings, review counts or opening hours in any with-skill run.",
+ "method": "9 evals (3 traps), expectations written before any run. Round 1 ran the skill, no skill, and the comparison skill (Corey Haines' seo-audit 1.1.0) on Haiku, and the skill and no skill on Opus, in fresh headless agents graded blind by a separate Opus grader. Round 2 re-ran the skill on Haiku; round 3 re-ran it on Haiku and Opus, with the grader told to list every unsupported fact. 1.2.1 is a one-line script fix after round 3, not re-graded.",
+ "results": [
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 68,
+   "total": 68
+  },
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 67,
+   "total": 68
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 68,
+   "total": 68
+  },
+  {
+   "config": "with skill, Haiku (v1.0.0, round 1)",
+   "passed": 57,
+   "total": 68
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 54,
+   "total": 68
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 46,
+   "total": 68
+  },
+  {
+   "config": "comparison skill (seo-audit), Haiku",
+   "passed": 46,
+   "total": 68
+  }
+ ],
+ "traps_final_round": {
+  "with skill, Haiku": "20/20",
+  "with skill, Opus": "19/20",
+  "no skill, Haiku (round 1)": "17/20",
+  "no skill, Opus (round 1)": "17/20",
+  "comparison skill, Haiku (round 1)": "11/20"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 57,
+  "2 (v1.1.0)": 68,
+  "3 (v1.2.0)": 68,
+  "out_of": 68
+ },
+ "losses_and_open_issues": [
+  "Round 1, Haiku with the skill told the user the site files were missing in evals 2 and 4 (they were in site/), losing the noindex trap 1/8 against 7/8 with no skill; fixed in 1.1.0 (paths relative to the project folder, recursive listing). The comparison skill on Haiku did the same in evals 2, 3 and 8.",
+  "Round 3, Opus lost eval 2 expectation 6 by offering to keep /demo out of search instead of prescribing removal of the Disallow; the grader called the expectation arguably harsh.",
+  "Round 3 overstatements in with-skill outputs (both models): 'hiring its first Marketing Coordinator/marketer' (page says 'hiring a Marketing Coordinator'); 'Order online on every page' (not on /menu); '661 days' from 'January 2025' (Haiku, eval 3, despite the 1.1.0 rule); '8 required' form fields (7); 'nothing newer than March 2024' when other posts are undated; 'named customer quote' for an unnamed Head of Sales; one H2 claim on /contact.",
+  "Round 3: Haiku audit files twice used the raw label 'MISSING' and once said 'no brand memory was supplied'; one Haiku proposal line left '[date]' placeholders.",
+  "Round 2 (Haiku): '14 bookkeepers' for 'a team of 14', a menu image described without being seen, marketplace listings recommended that the site never shows, a .example domain flagged as not live; addressed in 1.2.0 and not seen again in round 3.",
+  "Opus round 3 misquoted titles because the page table swapped | for /; fixed in 1.2.1 (not re-graded).",
+  "Eval 5 expectation 4 is ambiguous about fractional positions in whole-number bands (the skill counts positions under 3.5 as 1 to 3).",
+  "No-skill runs invented details in round 1 (prices per post, form-field counts, competitor tools AI assistants supposedly recommend in eval 9); no config invented traffic, rankings or review counts.",
+  "Every run, all configs, left the earlier audit files in eval 8 byte-for-byte unchanged."
+ ]
+}

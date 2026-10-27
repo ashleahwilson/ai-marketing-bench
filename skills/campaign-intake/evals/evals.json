@@ -1,0 +1,271 @@
+{
+ "skill_name": "campaign-intake",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Today is 2026-11-02. Dev's email about a January campaign is in requests/catchup-email.md. Can you turn it into an intake so we can get started? Brand memory is in brand/.",
+   "expected_output": "Writes intake/<slug>.md. Narrows the audience to 1–15 locations because Tallyhouse doesn't serve groups over 15; flags the Lantern quote's unconfirmed naming permission; budget 4000 CAD; deadline 2027-01-11; Hannah's approval of ad copy; success metric 40 catch-up clients by end of February with where it's counted marked unknown; routes emails, Google Ads and LinkedIn; few questions; invents no prices or forecasts.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/catchup-email.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "requests/",
+    "tally-intake": "intake/"
+   },
+   "expectations": [
+    "Writes an intake file inside an intake/ folder",
+    "Says Tallyhouse doesn't serve groups over 15 locations (brand memory: 1–15 locations; franchises over 15 are not served) and limits or flags the audience accordingly, rather than accepting 'up to 25 locations' as is",
+    "The intake records the budget as the number 4000 (CAD, Google Ads, January), not '$4k'",
+    "The intake records the launch deadline as 2027-01-11",
+    "Flags that permission to name Maria Okafor / Lantern Noodle Bar in the quote is unconfirmed, so the quote can't be used with the name as is",
+    "Records Hannah Ruiz as the approver of ad copy",
+    "Records the success metric as 40 catch-up clients signed by end of February 2027, and marks where or how that is counted as unknown or an assumption to confirm (does not state a tracking method as fact)",
+    "The next steps cover all three channels: emails to the newsletter list, Google search ads, and LinkedIn posts",
+    "Asks no more than 4 questions in the reply",
+    "Does not invent a catch-up price, cost per click, conversion rate or forecast of results"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Today is Monday 2026-11-16. Priya wants an intake today for the BFCM campaign in requests/bfcm-slack.md. Brand memory is in brand/.",
+   "expected_output": "Says the full scope can't be live by Wednesday 18 November, with the reason (two working days; the videos need footage and Jess is out until the 23rd; a webinar in three days), offers a scoped-down version using existing assets (for example emails and a Google search campaign) and says what moves or drops, puts it to Priya for approval, flags the 'Real-time revenue tracking' title against the never-promise-real-time rule, records budget 6000, and doesn't promise the scoped version hits 60.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/audiences.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill/bfcm-slack.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill": "requests/"
+   },
+   "expectations": [
+    "States plainly that the full scope as asked can't be live by Wednesday 18 November (not merely that it is tight or ambitious)",
+    "Gives at least one concrete reason from the thread: about two working days available, and/or the three new videos need footage while Jess is out until the 23rd",
+    "Offers a scoped-down version that could ship by the deadline and names what is in it",
+    "Says what moves later or is dropped from the original ask (for example the new videos, the webinar or the new landing page)",
+    "Puts the scoped-down version to Priya or the user for a decision rather than treating it as approved",
+    "Flags the webinar title 'Real-time revenue tracking for BFCM' as breaking the brand rule against promising real-time data (Seamless Sync refreshes every 15 minutes)",
+    "Records the budget as the number 6000 (Meta and Google)",
+    "Does not claim or forecast that the scoped-down version will reach 60 new Growth subscriptions"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Today is 2026-11-09. Dev and Hannah went back and forth on the Q1 campaign (requests/q1-thread.md). Dev asked me to pull an intake together either way. Brand memory's in brand/.",
+   "expected_output": "Surfaces the disagreement instead of merging it: audience (groups 2–15 vs single-location owners), offer ($299/location vs free month-end review, no prices in ads), goal (demo calls vs reviews booked). Marks those fields open, asks who decides, records the agreed items (launch 2027-02-01, LinkedIn and email, $5,000), flags 'cheapest per-location in the market' as unsupported, and doesn't call the intake ready.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/q1-thread.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "requests/",
+    "tally-intake": "intake/"
+   },
+   "expectations": [
+    "Surfaces the audience conflict, attributing each side: Dev wants restaurant groups of 2–15 locations, Hannah wants single-location owners",
+    "Surfaces at least one more conflict, attributed: the offer ($299 per location vs the free month-end review / no prices in ads) or the goal (demo calls vs reviews booked)",
+    "Does not merge or pick: the intake does not set the audience to one side or to both combined; the conflicting fields are marked open, undecided or pending a decision",
+    "Asks who decides, or asks Dev and Hannah to make the call, as a question",
+    "Flags 'the cheapest per-location bookkeeping in the market' as an unsupported comparative claim",
+    "Records the agreed items as settled: launch 2027-02-01 and the LinkedIn plus email channels",
+    "The intake's status is not 'ready' (for example 'needs answers')",
+    "Does not present Hannah's '80% of our inbound' as a confirmed fact or as a claim to use in marketing"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "Today is 2026-11-02. Here are the kickoff notes for the 'Close faster' campaign: requests/kickoff-notes.md. Write up the intake please. Brand memory: brand/.",
+   "expected_output": "Flags that the headline 'Close your books in 3 days, not 3 weeks' is held by brand memory until substantiated and 'AI-powered' is banned, keeps both out of the intake as approved copy, says what would clear the 3-day claim or offers directions from confirmed facts, and still completes the rest: Meta + email, single-location Ontario owners, 2500/month for Dec–Jan (5000 total), launch 2026-12-01, 30 reviews by end of January, Hannah signs off.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/kickoff-notes.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "requests/",
+    "tally-intake": "intake/"
+   },
+   "expectations": [
+    "Flags 'Close your books in 3 days, not 3 weeks' as not usable yet because brand memory holds it until substantiated (cites the rule or claims file, or says it isn't substantiated)",
+    "Flags 'AI-powered' as banned by a brand rule",
+    "The intake does not record either line as the approved headline or subhead (each is struck, held, or listed under claims to resolve)",
+    "Says what evidence would clear the 3-day claim (for example average close time across clients or a client case study) or offers headline directions built only on confirmed facts (for example hospitality-finance bookkeepers, automatic Toast/Square/Lightspeed reconciliation, monthly P&L, the free month-end review)",
+    "Still completes the rest of the intake rather than refusing: channels Meta ads and email, single-location owners in Ontario, launch 2026-12-01",
+    "Records the budget as numbers: 2500 per month and/or 5000 total for December and January",
+    "Records the success metric as 30 free month-end reviews booked by end of January 2027",
+    "Records Hannah Ruiz as the sign-off on all copy",
+    "Does not invent a new statistic, testimonial or result to replace the held headline"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "Today is 2026-11-02. Jordan from Ferncliff sent this request form: requests/request-form.md. We're Ferncliff, scheduling software for dental clinics. Can you turn it into an intake?",
+   "expected_output": "With no brand memory, marks the intake provisional and offers to set one up. Leaves offer, budget, success metric and approvals unknown rather than inventing them. Flags '25% fewer no-shows' as needing a source and 'HIPAA certified' as a claim for legal review, not confirmed. Asks about customers vs prospects and a real deadline date. At most five questions.",
+   "files": [
+    "evals/files/ferncliff/request-form.md"
+   ],
+   "files_dest": "requests/",
+   "expectations": [
+    "Says there is no brand memory and marks the intake provisional",
+    "Offers to set up brand memory (or to record the facts from this request) for next time",
+    "The intake marks offer, budget, success metric and approvals as unknown or to be confirmed; it does not invent values for them",
+    "Flags the CEO's '25% fewer no-shows' as needing a source before it can be used (does not treat it as substantiated)",
+    "Flags 'HIPAA certified' as a claim that can't be used as written without verification or legal review (does not approve it or offer a reworded version as safe)",
+    "Asks whether the audience is existing customers or prospects, and says why it matters (for example consent for email, or a different offer)",
+    "Asks for a specific deadline date, or records an assumed date clearly marked to confirm, instead of treating 'before the holidays' as a fixed date",
+    "Asks no more than 5 questions",
+    "Does not add facts about Ferncliff (prices, customer counts, features beyond recall reminders) that aren't in the form"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Today is 2026-11-12. Answers on the Q1 intake (intake/q1-review-campaign.md): Dev and Hannah agreed on single-location owners, the offer is the free month-end review, and the goal is reviews booked, 30 by March 31. Budget stays $5,000, CAD. Hannah approves all copy. Also put Maria's quote in the email with her name. Update the intake so we can start the briefs.",
+   "expected_output": "Updates intake/q1-review-campaign.md: audience single-location owners, offer free month-end review, success metric 30 reviews booked by 2027-03-31, budget 5000 CAD, Hannah approves, conflicts marked resolved by Dev and Hannah, status ready (or ready with the quote open). Flags that Maria Okafor's naming permission is unconfirmed, so her name can't go in the email until she agrees. Leaves requests/q1-thread.md unchanged.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/q1-thread.md",
+    "evals/files/tally-intake/q1-review-campaign.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "requests/",
+    "tally-intake": "intake/"
+   },
+   "expectations": [
+    "The intake file in intake/ now records the audience as single-location owners and the offer as the free month-end review",
+    "The intake records the success metric as 30 reviews booked by 2027-03-31",
+    "The intake records the budget as 5000 CAD (digits, currency CAD)",
+    "The conflicts are marked resolved, with Dev and Hannah named as who decided",
+    "The status is no longer 'needs answers' because of the audience, offer or goal (for example 'ready')",
+    "Flags that permission to name Maria Okafor is unconfirmed in brand memory, so her name can't be used in the email until she agrees (the quote can run unnamed, or waits)",
+    "Records the change in the file (an update log line or equivalent naming the date 2026-11-12 or who decided)",
+    "requests/q1-thread.md is unchanged",
+    "The reply is under 250 words (measured)"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Today is 2026-10-26. Lena filled in the request form for the webinar series: requests/webinar-form.md. Turn it into an intake. Brand memory in brand/.",
+   "expected_output": "Writes the intake with session dates 2026-11-12, 2026-12-03, 2027-01-14; flags that the 1 October registration date is already past; budget as a range 10000–15000 to confirm; flags that emailing prospects needs a consent basis; flags last year's deck as stale (2025 numbers); records legal review of customer names; matches the audience to the brand segment; routes LinkedIn, email, Google Ads and a registration page brief.",
+   "files": [
+    "evals/files/pipewise-brand/brand/BRAND.md",
+    "evals/files/pipewise-brand/brand/audiences.md",
+    "evals/files/pipewise-brand/brand/offer.md",
+    "evals/files/pipewise-brand/brand/proof.md",
+    "evals/files/pipewise-brand/brand/rules.md",
+    "evals/files/pipewise/webinar-form.md"
+   ],
+   "files_dest_map": {
+    "pipewise-brand/brand": "brand/",
+    "pipewise": "requests/"
+   },
+   "expectations": [
+    "Records the session dates as 2026-11-12, 2026-12-03 and 2027-01-14 (years resolved correctly)",
+    "Flags that the registration-open date (1 October) is already past relative to today and asks or notes whether registration is already open",
+    "Records the budget as a numeric range (10000–15000) and marks it as needing confirmation",
+    "Flags that emailing prospects needs a consent basis (opt-in status unknown; CASL/CAN-SPAM or similar)",
+    "Flags last year's deck as stale or needing its 2025 numbers updated before reuse",
+    "Records legal review of anything with customer names as a required approval",
+    "Matches the audience to brand memory's segment (sales leaders at B2B software companies with 10–100 reps)",
+    "Treats the success metric as undecided or asks which one counts (registrants vs SQLs), rather than silently picking one",
+    "The next steps include LinkedIn posts, the email to the list, and a Google search campaign"
+   ]
+  },
+  {
+   "id": 8,
+   "trap": true,
+   "prompt": "Today is 2026-10-26. Ana sent this, can you make it an intake so we can brief it?\n\n\"Seamless Sync launch for customers.\n- Goal: get existing customers to turn on Seamless Sync in the first two weeks. What we care about is fewer support tickets about stale data and better retention on Growth.\n- Audience: current Quillmetrics customers (Starter and Growth), US.\n- Offer: Seamless Sync, free on every plan, refreshes every 15 minutes, turn it on in Settings > Integrations.\n- Channels: 2-email sequence to customers (launch day and one week later), plus 1 LinkedIn post from the company page.\n- Launch moved to 2026-11-04. Second email 2026-11-11.\n- Budget: none, it's organic.\n- Assets: product screenshots are done; help article is live at quillmetrics.example/help/seamless-sync.\n- Approval: me for copy; the product team checks feature accuracy.\n- Success: 40% of active accounts turn on Seamless Sync by 2026-11-18, measured in the product admin dashboard.\"\n\nBrand memory is in brand/.",
+   "expected_output": "Writes a ready intake with no or at most one question: two emails and one LinkedIn post, no paid channels added, budget none, 40% by 2026-11-18 in the admin dashboard, Ana and product team approvals. Notes that brand memory still says Seamless Sync launches 2026-10-14 and suggests updating it. Never says real-time. Short reply.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/audiences.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill": "requests/"
+   },
+   "expectations": [
+    "The intake status is ready (or equivalent): nothing is presented as blocking",
+    "Asks at most one question (zero is fine)",
+    "Records budget as none / organic (or 0)",
+    "Records the success metric as 40% of active accounts turning on Seamless Sync by 2026-11-18, measured in the product admin dashboard",
+    "The next steps are a 2-email sequence and 1 LinkedIn post; it does not add paid ads or other channels Ana didn't ask for",
+    "Notes that brand memory still says Seamless Sync launches 2026-10-14 (now 2026-11-04) and suggests updating it",
+    "Does not use the words 'real-time' or 'real time' to describe the product (except when quoting the rule against it)",
+    "The reply is under 200 words (measured)"
+   ]
+  },
+  {
+   "id": 9,
+   "prompt": "Today is 2026-10-26. Ana dropped this in Slack: \"Can we do something for Q1 around the new refunds report? Maybe ads? Have a think.\" Walk me through what you need to know before you write anything up. Brand memory is in brand/.",
+   "expected_output": "Guided mode: writes no intake file yet; asks at most four questions, each saying what changes with the answer, offering likely answers from brand memory (audience: US Shopify merchants $1M–$20M; plans Starter $79 / Growth $249) where they exist; invents nothing about the refunds report.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/audiences.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill": "requests/"
+   },
+   "expectations": [
+    "Does not write an intake file yet",
+    "Asks no more than 4 questions",
+    "Each question says what it changes, or why it matters to the plan (for example budget decides whether ads are possible)",
+    "Offers at least one likely answer drawn from brand memory (for example the audience of US Shopify merchants doing $1M–$20M, current customers, or the Starter/Growth plans)",
+    "Asks what the refunds report is or does, or who it's for, rather than describing its features",
+    "Does not invent features, a launch date, a price or a budget for the refunds report"
+   ]
+  }
+ ]
+}

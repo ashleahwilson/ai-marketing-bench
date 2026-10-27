@@ -1,0 +1,4 @@
+first_name,last_name,title,company,email,phone,lead_source,last_activity,notes
+Jen,Okoro,E-commerce Manager,Bramble & Birch,jen.okoro.pdx@gmail.com,,Old rep import 2025,2025-03-02,"Personal address, added by previous rep, source unknown"
+Sam,Whitaker,Head of Growth,Bramble & Birch,sam@brambleandbirch.example,,Trial signup,2026-10-06,"Started 14-day trial 2026-10-06; connected Shopify, not Stripe"
+Diego,Ramos,Finance & Operations Lead,Bramble & Birch,,,Trial: invited by Sam,2026-10-08,"Invited to trial workspace by Sam; viewed the revenue reconciliation report twice"

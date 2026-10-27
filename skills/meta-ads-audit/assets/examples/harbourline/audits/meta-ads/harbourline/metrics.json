@@ -1,0 +1,365 @@
+{
+ "files": {
+  "ad-sets-by-day.csv": "daily",
+  "ad-sets.csv": "adset",
+  "ads.csv": "ad",
+  "campaigns.csv": "campaign",
+  "events-manager.csv": "events",
+  "placements.csv": "placement",
+  "settings.csv": "settings"
+ },
+ "currency": "CAD",
+ "period": {
+  "start": "2026-08-01",
+  "end": "2026-08-31",
+  "days": 31
+ },
+ "account": {
+  "spend": 5430.0,
+  "impressions": 323125,
+  "link_clicks": 3657,
+  "results": 107,
+  "cost_per_result": 50.75,
+  "ctr_pct": 1.13,
+  "cpm": 16.8,
+  "cpc": 1.48,
+  "frequency": 2.36,
+  "results_per_week": 24.16
+ },
+ "conversion_results": 107,
+ "conversion_spend": 5430.0,
+ "campaigns": [
+  {
+   "spend": 4650.0,
+   "impressions": 290625,
+   "link_clicks": 3137,
+   "results": 77,
+   "cost_per_result": 60.39,
+   "ctr_pct": 1.08,
+   "cpm": 16.0,
+   "cpc": 1.48,
+   "frequency": 2.19,
+   "results_per_week": 17.39,
+   "name": "Sales | Kayaks | Prospecting",
+   "objective": "Sales",
+   "result_indicator": "Website purchases",
+   "special_ad_categories": "None",
+   "spend_share_pct": 85.64
+  },
+  {
+   "spend": 780.0,
+   "impressions": 32500,
+   "link_clicks": 520,
+   "results": 30,
+   "cost_per_result": 26.0,
+   "ctr_pct": 1.6,
+   "cpm": 24.0,
+   "cpc": 1.5,
+   "frequency": 8.93,
+   "results_per_week": 6.77,
+   "name": "Sales | Retargeting | Cart 14d",
+   "objective": "Sales",
+   "result_indicator": "Website purchases",
+   "special_ad_categories": "None",
+   "spend_share_pct": 14.36
+  }
+ ],
+ "ad_sets": [
+  {
+   "spend": 3720.0,
+   "impressions": 232500,
+   "link_clicks": 2688,
+   "results": 68,
+   "cost_per_result": 54.71,
+   "ctr_pct": 1.16,
+   "cpm": 16.0,
+   "cpc": 1.38,
+   "frequency": 2.0,
+   "results_per_week": 15.35,
+   "name": "Kayaks | Advantage+ audience",
+   "campaign": "Sales | Kayaks | Prospecting",
+   "attribution": "7-day click or 1-day view",
+   "optimization": "OFFSITE_CONVERSIONS / PURCHASE",
+   "ads": 2,
+   "formats": [
+    "Single image",
+    "Video"
+   ],
+   "spend_share_pct": 68.51,
+   "learning_limited": true,
+   "countries": "CA",
+   "age_min": "18",
+   "age_max": "65",
+   "adv_audience": "On",
+   "placements": "Advantage+ placements",
+   "budget": "120.00"
+  },
+  {
+   "spend": 930.0,
+   "impressions": 58125,
+   "link_clicks": 449,
+   "results": 9,
+   "cost_per_result": 103.33,
+   "ctr_pct": 0.77,
+   "cpm": 16.0,
+   "cpc": 2.07,
+   "frequency": 2.3,
+   "results_per_week": 2.03,
+   "name": "Kayaks | Interest: camping",
+   "campaign": "Sales | Kayaks | Prospecting",
+   "attribution": "7-day click or 1-day view",
+   "optimization": "OFFSITE_CONVERSIONS / PURCHASE",
+   "ads": 1,
+   "formats": [
+    "Single image"
+   ],
+   "spend_share_pct": 17.13,
+   "learning_limited": true,
+   "countries": "CA",
+   "age_min": "18",
+   "age_max": "65",
+   "adv_audience": "Off",
+   "placements": "Advantage+ placements",
+   "budget": "30.00"
+  },
+  {
+   "spend": 780.0,
+   "impressions": 32500,
+   "link_clicks": 520,
+   "results": 30,
+   "cost_per_result": 26.0,
+   "ctr_pct": 1.6,
+   "cpm": 24.0,
+   "cpc": 1.5,
+   "frequency": 9.4,
+   "results_per_week": 6.77,
+   "name": "RT | Add to cart 14d",
+   "campaign": "Sales | Retargeting | Cart 14d",
+   "attribution": "7-day click or 1-day view",
+   "optimization": "OFFSITE_CONVERSIONS / PURCHASE",
+   "ads": 1,
+   "formats": [
+    "Single image"
+   ],
+   "spend_share_pct": 14.36,
+   "learning_limited": true,
+   "countries": "CA",
+   "age_min": "18",
+   "age_max": "65",
+   "audiences": "Added to cart - 14 days",
+   "adv_audience": "Off",
+   "placements": "Advantage+ placements",
+   "budget": "25.00"
+  }
+ ],
+ "ad_sets_learning_limited": 3,
+ "attribution_settings": [
+  "7-day click or 1-day view"
+ ],
+ "ads": [
+  {
+   "spend": 2100.0,
+   "impressions": 131250,
+   "link_clicks": 1693,
+   "results": 41,
+   "cost_per_result": 51.22,
+   "ctr_pct": 1.29,
+   "cpm": 16.0,
+   "cpc": 1.24,
+   "frequency": 1.8,
+   "results_per_week": 9.26,
+   "name": "Sunrise paddle | Video",
+   "ad_set": "Kayaks | Advantage+ audience",
+   "format": "Video"
+  },
+  {
+   "spend": 1620.0,
+   "impressions": 101250,
+   "link_clicks": 995,
+   "results": 27,
+   "cost_per_result": 60.0,
+   "ctr_pct": 0.98,
+   "cpm": 16.0,
+   "cpc": 1.63,
+   "frequency": 1.8,
+   "results_per_week": 6.1,
+   "name": "Touring kayak | Single image",
+   "ad_set": "Kayaks | Advantage+ audience",
+   "format": "Single image"
+  },
+  {
+   "spend": 930.0,
+   "impressions": 58125,
+   "link_clicks": 449,
+   "results": 9,
+   "cost_per_result": 103.33,
+   "ctr_pct": 0.77,
+   "cpm": 16.0,
+   "cpc": 2.07,
+   "frequency": 2.07,
+   "results_per_week": 2.03,
+   "name": "Camping bundle | Single image",
+   "ad_set": "Kayaks | Interest: camping",
+   "format": "Single image"
+  },
+  {
+   "spend": 780.0,
+   "impressions": 32500,
+   "link_clicks": 520,
+   "results": 30,
+   "cost_per_result": 26.0,
+   "ctr_pct": 1.6,
+   "cpm": 24.0,
+   "cpc": 1.5,
+   "frequency": 8.46,
+   "results_per_week": 6.77,
+   "name": "RT | Free shipping | Single image",
+   "ad_set": "RT | Add to cart 14d",
+   "format": "Single image"
+  }
+ ],
+ "formats": {
+  "Single image": 3,
+  "Video": 1
+ },
+ "trends": [
+  {
+   "name": "Kayaks | Advantage+ audience",
+   "first_half": "2026-08-01 to 2026-08-15",
+   "second_half": "2026-08-17 to 2026-08-31",
+   "ctr_first_pct": 1.15,
+   "ctr_second_pct": 1.16,
+   "cpr_first": 53.25,
+   "cpr_second": 56.03,
+   "ctr_change_pct": 0.87,
+   "cpr_change_pct": 5.22
+  },
+  {
+   "name": "Kayaks | Interest: camping",
+   "first_half": "2026-08-01 to 2026-08-15",
+   "second_half": "2026-08-17 to 2026-08-31",
+   "ctr_first_pct": 0.77,
+   "ctr_second_pct": 0.77,
+   "cpr_first": 221.66,
+   "cpr_second": 65.22,
+   "ctr_change_pct": 0.0,
+   "cpr_change_pct": -70.58
+  },
+  {
+   "name": "RT | Add to cart 14d",
+   "first_half": "2026-08-01 to 2026-08-15",
+   "second_half": "2026-08-17 to 2026-08-31",
+   "ctr_first_pct": 2.01,
+   "ctr_second_pct": 1.21,
+   "cpr_first": 14.15,
+   "cpr_second": 97.55,
+   "ctr_change_pct": -39.8,
+   "cpr_change_pct": 589.4
+  }
+ ],
+ "placements": {
+  "Sales | Kayaks | Prospecting": {
+   "total": {
+    "spend": 4650.0,
+    "impressions": 290625,
+    "link_clicks": 3137,
+    "results": 77,
+    "cost_per_result": 60.39,
+    "ctr_pct": 1.08,
+    "cpm": 16.0,
+    "cpc": 1.48
+   },
+   "rows": [
+    {
+     "spend": 2162.8,
+     "impressions": 130326,
+     "link_clicks": 1446,
+     "results": 36,
+     "cost_per_result": 60.08,
+     "ctr_pct": 1.11,
+     "cpm": 16.6,
+     "cpc": 1.5,
+     "platform": "Facebook",
+     "placement": "Feed",
+     "spend_share_pct": 46.51,
+     "cpr_vs_campaign_x": 0.99
+    },
+    {
+     "spend": 1189.54,
+     "impressions": 71678,
+     "link_clicks": 795,
+     "results": 20,
+     "cost_per_result": 59.48,
+     "ctr_pct": 1.11,
+     "cpm": 16.6,
+     "cpc": 1.5,
+     "platform": "Instagram",
+     "placement": "Feed",
+     "spend_share_pct": 25.58,
+     "cpr_vs_campaign_x": 0.98
+    },
+    {
+     "spend": 865.11,
+     "impressions": 62556,
+     "link_clicks": 636,
+     "results": 15,
+     "cost_per_result": 57.67,
+     "ctr_pct": 1.02,
+     "cpm": 13.83,
+     "cpc": 1.36,
+     "platform": "Instagram",
+     "placement": "Reels",
+     "spend_share_pct": 18.6,
+     "cpr_vs_campaign_x": 0.95
+    },
+    {
+     "spend": 432.55,
+     "impressions": 26065,
+     "link_clicks": 260,
+     "results": 6,
+     "cost_per_result": 72.09,
+     "ctr_pct": 1.0,
+     "cpm": 16.6,
+     "cpc": 1.66,
+     "platform": "Facebook",
+     "placement": "Stories",
+     "spend_share_pct": 9.3,
+     "cpr_vs_campaign_x": 1.19
+    }
+   ]
+  }
+ },
+ "events": [
+  {
+   "event": "Purchase",
+   "datasets": [
+    "Harbourline Pixel"
+   ],
+   "total_received": 109,
+   "browser": 104,
+   "browser_event_id_coverage_pct": 97.0,
+   "server": 109,
+   "server_event_id_coverage_pct": 98.0,
+   "event_match_quality": 7.2,
+   "total_note": "estimate: browser and server deduplicated, so the larger of the two; Events Manager shows the exact total",
+   "flags": []
+  }
+ ],
+ "backend": [
+  {
+   "event": "Purchase",
+   "business_count": 164,
+   "ads_manager_results": 107,
+   "ads_manager_spend": 5430.0,
+   "ads_manager_vs_business_x": 0.65,
+   "cost_per_result_reported": 50.75,
+   "cost_per_business_conversion": 33.11,
+   "events_received_vs_business_x": 0.66
+  }
+ ],
+ "special_ad_category_flags": [],
+ "confidence": {
+  "level": "High",
+  "reason": "31 days, 107 conversions"
+ }
+}

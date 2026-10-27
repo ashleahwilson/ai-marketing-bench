@@ -1,0 +1,38 @@
+{
+ "skill": "brand-voice-codify",
+ "version": "1.2.0",
+ "date": "2026-10-23",
+ "status": "Meets the Bench Standard bar on Opus and Haiku: 62/63 on both in the final round, well ahead of no skill (36/63 Opus, 34/63 Haiku), never behind on the four traps, and no invented rules, sources, banned words or examples in any with-skill output. Caveat: replies occasionally miscount by one (eight contractions where there are nine, a 39-word post that measures 38). There is no public comparison skill to compare against.",
+ "method": "9 evals (4 traps), expectations written before any run. Round 1 ran the skill and no skill on Haiku and Opus in fresh headless agents, graded blind by a separate Opus grader. No comparison skill exists locally, so no comparison-skill config ran. One expectation (eval 1 spelling: 'colour' and 'cancelled' fit UK as well as Canadian) was clarified after round 1 because the grader showed it rewarded an assumption; eval 1 was regraded for every config under the clarified wording. Rounds 2 and 3 re-ran the skill as it was revised (round 3 on Haiku and Opus).",
+ "results": [
+  {"config": "with skill, Opus (v1.2.0, round 3)", "passed": 62, "total": 63},
+  {"config": "with skill, Opus (v1.0.0, round 1)", "passed": 63, "total": 63},
+  {"config": "no skill, Opus", "passed": 36, "total": 63},
+  {"config": "with skill, Haiku (v1.2.0, round 3)", "passed": 62, "total": 63},
+  {"config": "no skill, Haiku", "passed": 34, "total": 63}
+ ],
+ "traps": {
+  "evals": [2, 3, 5, 9],
+  "with skill, Haiku (round 3)": "25/26",
+  "with skill, Opus (round 3)": "26/26",
+  "no skill, Haiku": "15/26",
+  "no skill, Opus": "13/26"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 59,
+  "2 (v1.1.0)": 62,
+  "3 (v1.2.0)": 62,
+  "out_of": 63
+ },
+ "losses_and_open_issues": [
+  "Round 3, Haiku eval 3: confirmed a Website rule that rests on one page of evidence (should be provisional)",
+  "Round 3, Opus eval 4: one new rule carried both confirmed and provisional statuses",
+  "Round 1, Haiku eval 1: confirmed 'calm, not loud' from the rejected draft's general note; Haiku eval 4 dismissed Hannah's 'your bookkeeper' to 'our team' edit as compatible instead of asking; Haiku eval 2 confirmed the brand name; Haiku eval 8 didn't end on the approval question (all fixed in 1.1.0)",
+  "Round 2, Haiku eval 7: named three of four untagged rules (fixed in 1.2.0)",
+  "Miscounts in replies, not invented facts: Opus eval 9 says eight contractions (there are nine) in rounds 1 and 3; both eval 2 runs in round 3 call a 38-word post 39 words",
+  "No expectation tests that a pattern seen in three approved samples is marked confirmed; Opus tends to confirm such rules, Haiku tends to keep them provisional",
+  "Replies sometimes mention how other tools read the file (Opus eval 7), despite the rule against it",
+  "Without the skill: no-skill Opus invented banned words ('customers, clients, users', 'eliminate'), credited rules to Mailchimp and rewrote voice.md anyway, edited claims.md and BRAND.md unasked; no-skill Haiku asserted Canadian spelling with words not in the samples and settled a contradicted exclamation rule",
+  "Every with-skill run left the user's evidence files unchanged; Check and Guided runs wrote nothing to brand/"
+ ]
+}

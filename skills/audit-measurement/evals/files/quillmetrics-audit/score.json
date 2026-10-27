@@ -1,0 +1,16 @@
+{
+  "pages_reviewed": 4,
+  "total": 69,
+  "grade": "C",
+  "action": "Rework acquisition and conversion before putting more into growth.",
+  "confidence": "Medium",
+  "assessed": 5,
+  "unassessed": [],
+  "dimensions": {
+    "positioning": {"weight": 25, "score": 60, "assessed": true},
+    "acquisition": {"weight": 20, "score": 55, "assessed": true},
+    "conversion": {"weight": 20, "score": 60, "assessed": true},
+    "brand": {"weight": 15, "score": 72, "assessed": true},
+    "measurement": {"weight": 20, "score": 100, "assessed": true}
+  }
+}

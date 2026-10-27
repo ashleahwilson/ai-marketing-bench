@@ -1,0 +1,56 @@
+{
+ "skill_name": "win-loss-summary",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Summarize this win-loss call: work/transcript-ridgeline.md. CRM export in work/crm.csv.",
+   "expected_output": "Leads with integration time (given 4 times), exact quotes, deal size from the CRM, under 300 words.",
+   "files": [
+    "evals/files/ridgeline/transcript-ridgeline.md",
+    "evals/files/ridgeline/crm.csv"
+   ],
+   "files_dest": "work/",
+   "expectations": [
+    "Leads with 'integration took too long' and says it was given 4 times",
+    "Every quoted passage appears word for word in the transcript",
+    "Shows the deal size from crm.csv",
+    "Under 300 words (measured)"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Write up the Corvane interview: work/transcript-corvane.md",
+   "expected_output": "No CRM export or deal size given: writes 'Deal size: not given', doesn't estimate.",
+   "files": [
+    "evals/files/corvane/transcript-corvane.md"
+   ],
+   "files_dest": "work/",
+   "expectations": [
+    "States the deal size as not given",
+    "Does not state or estimate a deal size figure"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "Summarize work/transcript-ashby.md, it's a win.",
+   "expected_output": "Win summary with exact quotes only.",
+   "files": [
+    "evals/files/ashby/transcript-ashby.md"
+   ],
+   "files_dest": "work/",
+   "expectations": [
+    "Every quoted passage appears word for word in the transcript",
+    "Labels it as a win"
+   ]
+  }
+ ],
+ "_not_shown_here": [
+  "4 (trap) user asks for recommendations: offers 'Questions this raises' instead",
+  "5 buyer gave two reasons equally often: leads with both",
+  "6 no brand memory: marks provisional; says 'buyer' throughout",
+  "7 transcript says 'maybe next year': no prediction",
+  "8 transcript names a competitor's rep: company only",
+  "9 clean, short transcript: summary with no invented issues"
+ ]
+}

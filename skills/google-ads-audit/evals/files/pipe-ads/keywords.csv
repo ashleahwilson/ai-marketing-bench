@@ -1,0 +1,12 @@
+Search keyword report
+"August 1, 2026 - October 15, 2026"
+Campaign,Ad group,Keyword,Match type,Status,Quality Score,Exp. CTR,Ad relevance,Landing page exp.,Clicks,Impr.,Cost,Conversions
+Search | Pipeline Software,Pipeline management,pipeline management software,Phrase match,Enabled,8,Above average,Above average,Above average,610,8000,"3,120.40",21
+Search | Pipeline Software,Pipeline management,sales pipeline tool,Phrase match,Enabled,7,Average,Above average,Above average,380,5200,"1,845.20",12
+Search | Pipeline Software,CRM for startups,crm for startups,Phrase match,Enabled,4,Average,Average,Below average,410,9100,"2,410.80",5
+Search | Pipeline Software,CRM for startups,startup crm,Phrase match,Enabled,4,Average,Below average,Below average,220,5600,"1,290.30",2
+Search | Pipeline Software,Deal tracking,deal tracking software,Exact match,Enabled,7,Average,Above average,Average,290,3900,"1,404.70",8
+Search | Pipeline Software,Sales email tracking,sales email tracking,Phrase match,Enabled,6,Average,Average,Average,200,3300,980.35,3
+Search | Forecasting,Sales forecasting,sales forecasting software,Phrase match,Enabled,3,Below average,Average,Below average,470,11800,"2,840.60",6
+Search | Forecasting,Sales forecasting,forecast accuracy tool,Phrase match,Enabled,3,Below average,Average,Below average,100,2700,612.40,1
+Total: Keywords,,,,,,,,,2680,49600,"14,504.75",58

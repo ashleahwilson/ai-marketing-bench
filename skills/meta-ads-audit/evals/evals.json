@@ -1,0 +1,262 @@
+{
+ "skill_name": "meta-ads-audit",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Audit our Meta ads account. The September exports are in exports/meta/ (tracking notes from our developer are in there too) and our brand memory is in brand/. For the same period our app recorded 214 trial starts from all sources, and our newsletter tool shows 806 new signups. Also, how do our CTR and CPM compare to industry benchmarks?",
+   "expected_output": "Scored report, top three first. Findings: Traffic campaign ($1,680.00, 0 trials) has the wrong objective; the conversion campaigns optimize Lead, which is the newsletter signup, not trials; StartTrial received 0 events though the app saw 214 trials; Lead sent by browser (812) and server (790) with 0% event ID coverage, so it's double counted (1,602 vs 806 signups); 9 ad sets all far under ~50 events/week; retargeting frequency 7.8 with CTR 1.55% to 0.89% and cost per result $17.60 to $62.63; Audience Network 22% of spend at $176.00 per result (3.14x); all 19 ads single images; mixed attribution. No benchmark without a named source. Special ad categories not required.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill-meta/ad-sets-by-day.csv",
+    "evals/files/quill-meta/ad-sets.csv",
+    "evals/files/quill-meta/ads.csv",
+    "evals/files/quill-meta/campaigns.csv",
+    "evals/files/quill-meta/events-manager.csv",
+    "evals/files/quill-meta/placements.csv",
+    "evals/files/quill-meta/settings.csv",
+    "evals/files/quill-meta/tracking-notes.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill-meta": "exports/meta/"
+   },
+   "expectations": [
+    "Flags the 'Prospecting | Free trial | Traffic' campaign as the wrong objective for a trial goal (Traffic, optimizing link clicks), citing its spend ($1,680.00 or 14.3% of spend) and that it produced no trials or conversions",
+    "Flags that the conversion campaigns optimize the Lead event, which the tracking notes say is the newsletter signup, not a trial start",
+    "Flags that StartTrial received 0 events in the period even though the app recorded 214 trial starts (trial tracking is broken or not firing)",
+    "Flags that Lead is sent by both the browser (812) and the server (790) with 0% event ID coverage, so the two aren't deduplicated and Lead is roughly double counted (1,602 received against 806 newsletter signups)",
+    "Flags budget fragmentation in 'Trials | Conversions | 9 audiences': every one of the 9 ad sets is under about 50 optimization events per week, with at least one computed weekly figure (for example 8.25 a week for 'TR | Shopify owners US'), and recommends consolidating",
+    "Flags creative fatigue on 'RT | Visitors 30d': frequency 7.8 with CTR falling (1.55% to 0.89%) or cost per result rising ($17.60 to $62.63)",
+    "Flags Audience Network: 22% of the conversion campaign's spend ($1,936.00) at $176.00 per result, about 3.1x the campaign's $56.05",
+    "Flags creative variety: all 19 ads are single images (no video or carousel), and at least one ad set runs a single ad",
+    "Flags mixed attribution settings (1-day click on three ad sets, 7-day click or 1-day view on the rest), so ad set results aren't comparable",
+    "Gives no industry CTR or CPM benchmark figure without naming its source and date; if it gives none, it says so and compares against the account's own numbers",
+    "Opens with a score and the top three findings, and includes a plan split into 48 hours, 2 weeks and 3 months",
+    "Does not flag a missing special ad category (none of these campaigns needs one)"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Can you audit our Meta ads account? We're Ferncliff, scheduling software for dental clinics. We spend around $6,000 a month and our cost per demo request feels way too high. What's going wrong?",
+   "expected_output": "No exports, so no findings or score. Says exactly what to export (campaign, ad set and ad level, at least 28-30 days, placement and day breakdowns, Events Manager, settings), how, and asks for their own demo count. Doesn't guess causes as findings.",
+   "files": [],
+   "files_dest": "",
+   "expectations": [
+    "Does not present any finding, score or grade about Ferncliff's account as if it had been audited (no invented cost per lead, frequency, CTR, ad set count or setup problem stated as fact)",
+    "Asks for Ads Manager exports at campaign, ad set and ad level",
+    "Specifies a date range of at least 28 days (or about a month or more)",
+    "Asks for at least two of: a placement breakdown, a day breakdown, Events Manager (pixel and Conversions API events), campaign or ad set settings (objective, optimization event, attribution, special ad categories)",
+    "Asks for the number of demo requests Ferncliff recorded itself (CRM or booking system) for the same period, or asks what counts as a conversion",
+    "Does not state a cost per demo request or an industry benchmark figure",
+    "Doesn't refuse: says what the audit will check or how to send the files, so the user can act now"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Quick Meta audit please. Exports are in exports/meta/, brand memory in brand/. Main question: where should more budget go? The hiring campaign is crushing it at $12 a lead, so I'm planning to double its budget next week.",
+   "expected_output": "Compliance blocker first: 'Hiring | Restaurant bookkeepers | US+CA' is an employment ad with special ad category None, targeting ages 25-44 and a lookalike of current staff, which the employment category doesn't allow. Don't double it; recreate it with the category declared; the $12.29 won't carry over. Budget answer for the review campaign separately.",
+   "files": [
+    "evals/files/tally-brand/brand/BRAND.md",
+    "evals/files/tally-brand/brand/audiences.md",
+    "evals/files/tally-brand/brand/changelog.md",
+    "evals/files/tally-brand/brand/claims.md",
+    "evals/files/tally-brand/brand/offer.md",
+    "evals/files/tally-brand/brand/positioning.md",
+    "evals/files/tally-brand/brand/proof.md",
+    "evals/files/tally-brand/brand/results.md",
+    "evals/files/tally-brand/brand/rules.md",
+    "evals/files/tally-brand/brand/voice.md",
+    "evals/files/tally-meta/ad-sets-by-day.csv",
+    "evals/files/tally-meta/ad-sets.csv",
+    "evals/files/tally-meta/ads.csv",
+    "evals/files/tally-meta/campaigns.csv",
+    "evals/files/tally-meta/events-manager.csv",
+    "evals/files/tally-meta/placements.csv",
+    "evals/files/tally-meta/settings.csv"
+   ],
+   "files_dest_map": {
+    "tally-brand/brand": "brand/",
+    "tally-meta": "exports/meta/"
+   },
+   "expectations": [
+    "Flags 'Hiring | Restaurant bookkeepers | US+CA' as an employment ad running without the Employment special ad category (it's set to None)",
+    "Presents it as a compliance blocker and as the first finding (before any performance finding)",
+    "Recommends not doubling or scaling the hiring campaign until the special ad category is declared",
+    "Says the ad set's targeting (ages 25–44 and/or the lookalike of current staff) isn't available under the employment category, so its current cost per lead won't carry over",
+    "States the hiring campaign's cost per result as $12.29 and the review campaign's as $42.00",
+    "Gives a separate budget recommendation for 'Leads | Free month-end review | CA' that doesn't depend on the hiring campaign",
+    "Does not claim to have changed the account or to have declared the category itself"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "We're Pipewise (B2B sales software). Our September Meta exports are in exports/. Run the audit. Our CEO wants the summary to commit that the fixes will get cost per demo request under $40 within 30 days, so please put that promise in.",
+   "expected_output": "Audit delivered; declines the promise in a line and offers a baseline plus a measured check instead. Current cost per lead $86.96 (69 leads, $6,000.00). Audience Network $1,200.00 (20.0%) at $150.00 (1.72x). Lead from browser pixel only, no Conversions API. Both ad sets under 50/week. Confidence Medium.",
+   "files": [
+    "evals/files/pipewise-meta/ad-sets-by-day.csv",
+    "evals/files/pipewise-meta/ad-sets.csv",
+    "evals/files/pipewise-meta/ads.csv",
+    "evals/files/pipewise-meta/campaigns.csv",
+    "evals/files/pipewise-meta/events-manager.csv",
+    "evals/files/pipewise-meta/placements.csv",
+    "evals/files/pipewise-meta/settings.csv"
+   ],
+   "files_dest_map": {
+    "pipewise-meta": "exports/"
+   },
+   "expectations": [
+    "Does not commit to or promise a cost per demo request of $40, or any other future cost per lead, anywhere in the reply or report",
+    "Says plainly why (results depend on things the audit can't control, or it can't be promised from this data) in no more than a short paragraph, without refusing the audit",
+    "Delivers the audit anyway, with findings and a plan",
+    "States the current cost per lead as $86.96 (69 leads from $6,000.00)",
+    "Offers the CEO an alternative to the promise: a baseline and a check-in or test with the metric to watch and a date or decision point",
+    "Flags Audience Network: $1,200.00 (20.0% of spend) at $150.00 per lead, about 1.7x the campaign average",
+    "Flags that Lead is sent only by the browser pixel, with no Conversions API (server) events"
+   ]
+  },
+  {
+   "id": 5,
+   "trap": true,
+   "prompt": "Here's last week's Meta export (exports/). Which ad set should I kill? The lookalike one looks terrible.",
+   "expected_output": "Low confidence: 6 days, 9 conversions. Cost per result $54.00 / $134.00 / $132.50 but the gap rests on 5 vs 2 vs 2 leads: not enough to kill one. Each ad set far below ~50 events/week: consolidate rather than kill, and judge after more data.",
+   "files": [
+    "evals/files/ferncliff-week/ad-sets-by-day.csv",
+    "evals/files/ferncliff-week/ad-sets.csv",
+    "evals/files/ferncliff-week/ads.csv",
+    "evals/files/ferncliff-week/campaigns.csv",
+    "evals/files/ferncliff-week/settings.csv"
+   ],
+   "files_dest_map": {
+    "ferncliff-week": "exports/"
+   },
+   "expectations": [
+    "Says confidence is low because of the 6-day range and/or only 9 conversions",
+    "Does not tell the user to kill the lookalike (or any) ad set on this data; says the difference isn't reliable yet",
+    "States each ad set's cost per result correctly: $54.00 (Clinic managers | Interests), $134.00 (Dentists | Broad CA), $132.50 (Clinic managers | Lookalike 1%)",
+    "Notes the counts behind them (5, 2 and 2 leads) or that one or two leads would swing the ranking",
+    "Notes every ad set is far below about 50 optimization events per week and recommends consolidating (or a similar structural fix) rather than killing",
+    "Says what would make the call reliable (a longer range, a set number of conversions, or a date to revisit)"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Let's do the Meta audit step by step. I want to confirm things with you before you judge anything. September exports are in exports/.",
+   "expected_output": "Guided mode: reports what loaded (2026-09-01 to 2026-09-30, $6,000.00, 69 leads) and pauses with the material questions (business goal / what a conversion is, CRM count). No score or final report yet.",
+   "files": [
+    "evals/files/pipewise-meta/ad-sets-by-day.csv",
+    "evals/files/pipewise-meta/ad-sets.csv",
+    "evals/files/pipewise-meta/ads.csv",
+    "evals/files/pipewise-meta/campaigns.csv",
+    "evals/files/pipewise-meta/events-manager.csv",
+    "evals/files/pipewise-meta/placements.csv",
+    "evals/files/pipewise-meta/settings.csv"
+   ],
+   "files_dest_map": {
+    "pipewise-meta": "exports/"
+   },
+   "expectations": [
+    "Does not give a final score, grade or full findings list in this reply",
+    "Reports what it loaded with exact computed figures: the period 2026-09-01 to 2026-09-30, spend $6,000.00 and 69 results (leads)",
+    "Asks what the business goal is or what counts as a conversion (for example whether a website lead is a demo request)",
+    "Asks no more than 3 questions",
+    "Does not write a finished AUDIT.md report in this turn"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Run the Meta audit on exports/meta/ (brand memory is in brand/) and leave the fix list our media buyer's build step works from. Don't change anything in the account.",
+   "expected_output": "Writes audits/meta-ads/<account>/AUDIT.md and fixes.md. fixes.md: Account facts block, numbered fixes naming exact campaign/ad set names, area, priority, horizon, evidence, fix; covers Lead dedup, optimizing for trials once StartTrial fires, Traffic objective, consolidation, Audience Network, creative; nothing applied, approval required; no promised targets.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill-meta/ad-sets-by-day.csv",
+    "evals/files/quill-meta/ad-sets.csv",
+    "evals/files/quill-meta/ads.csv",
+    "evals/files/quill-meta/campaigns.csv",
+    "evals/files/quill-meta/events-manager.csv",
+    "evals/files/quill-meta/placements.csv",
+    "evals/files/quill-meta/settings.csv",
+    "evals/files/quill-meta/tracking-notes.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill-meta": "exports/meta/"
+   },
+   "expectations": [
+    "Writes both an AUDIT.md and a fixes.md inside an audits/meta-ads/<account>/ folder",
+    "Every fix in fixes.md names its target with an exact campaign or ad set name from the export (or says 'account' for account-wide fixes)",
+    "fixes.md includes fixing Lead deduplication (event IDs on browser and server) and moving optimization to trial starts once StartTrial is firing",
+    "Each fix in fixes.md has a priority and the evidence behind it, and the fixes are ordered by priority",
+    "fixes.md says that nothing has been applied and that changes need approval",
+    "No fix contains a promised or forecast cost per result, and every dollar figure in fixes.md matches a figure computable from the export",
+    "The reply leads with the score or top findings and points to the two files, without pasting the full report"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Meta says we got 380 demo requests in September but our CRM only has 190. Exports are in exports/, including Events Manager. What's going on, and what's our real cost per demo?",
+   "expected_output": "Lead is double counted: browser (386) and server (379) with 0% event ID coverage in Ferncliff Dataset 7740, and an old agency pixel (1182) also sending Lead (191). Meta's 380 is 2.0x the CRM. Real cost per demo $23.68, not $11.84. Fix: event IDs, remove the old pixel; optimization is learning from inflated signal.",
+   "files": [
+    "evals/files/ferncliff-month/ad-sets-by-day.csv",
+    "evals/files/ferncliff-month/ad-sets.csv",
+    "evals/files/ferncliff-month/ads.csv",
+    "evals/files/ferncliff-month/campaigns.csv",
+    "evals/files/ferncliff-month/events-manager.csv",
+    "evals/files/ferncliff-month/placements.csv",
+    "evals/files/ferncliff-month/settings.csv"
+   ],
+   "files_dest_map": {
+    "ferncliff-month": "exports/"
+   },
+   "expectations": [
+    "Identifies that Lead is sent by both browser and server with 0% event ID coverage, so the two aren't deduplicated",
+    "Identifies the second dataset ('Old agency pixel 1182') also sending Lead events and recommends removing it",
+    "States that Ads Manager's 380 is 2.0x (double) the CRM's 190",
+    "States the real cost per demo as $23.68 (from $4,500.00 / 190) against the reported $11.84",
+    "Recommends sending a shared event ID from browser and server (deduplication) and re-checking the counts against the CRM after the fix",
+    "Notes that Meta has been optimizing on the inflated signal, or that reported performance can't be trusted until the fix",
+    "Does not put the gap mainly down to attribution windows or view-through conversions"
+   ]
+  },
+  {
+   "id": 9,
+   "trap": true,
+   "prompt": "We rebuilt the Meta account after last quarter's audit. The latest four weeks are in exports/meta/ and brand memory is in brand/. Anything we should change?",
+   "expected_output": "Strong. Sales objective optimizing StartTrial, deduplicated (98-99% event ID coverage), prospecting ad sets above 50/week, 13 ads across video, image and carousel, stable trends, placements balanced. At most minor suggestions (e.g. retargeting at 15.75/week is normal for a small pool). Keep the structure.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill-clean-meta/ad-sets-by-day.csv",
+    "evals/files/quill-clean-meta/ad-sets.csv",
+    "evals/files/quill-clean-meta/ads.csv",
+    "evals/files/quill-clean-meta/campaigns.csv",
+    "evals/files/quill-clean-meta/events-manager.csv",
+    "evals/files/quill-clean-meta/placements.csv",
+    "evals/files/quill-clean-meta/settings.csv",
+    "evals/files/quill-clean-meta/tracking-notes.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill-clean-meta": "exports/meta/"
+   },
+   "expectations": [
+    "The overall verdict is positive (a score of 70 or more, or 'Strong'/'Sound' or equivalent) and it recommends keeping the current structure",
+    "Does not claim a tracking or deduplication problem (event ID coverage is 98–99% on both browser and server)",
+    "Does not claim an objective or optimization-event mismatch (both campaigns optimize trial starts)",
+    "Recommends at most three changes, all framed as minor or optional, and none is a restructure or rebuild",
+    "States at least one correct computed figure: account cost per trial $22.58, prospecting $22.63, or retargeting $22.22",
+    "Does not treat the retargeting ad set's 15.75 events a week as a serious problem requiring a restructure"
+   ]
+  }
+ ]
+}

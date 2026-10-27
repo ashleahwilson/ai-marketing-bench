@@ -1,0 +1,54 @@
+Account Name,Vertical,Headcount,Sites,Prov/State,Country,Deal Stage,ARR (CAD),Created Date,Close Date,Lead Source,Closed Reason
+Maplecrest Dental Group,GENERAL DENTISTRY,64,8,ON,Canada,Closed Won,"$13,700",03/04/2025,04/07/2025,Referral,
+Riverbend Family Dental,General Dentistry,51,6,BC,Canada,Closed Won,"$10,300",04/15/2025,05/26/2025,Webinar,
+Northgate Smiles,General Dentistry,98,12,AB,Canada,Closed Won,"$19,800",05/20/2025,07/11/2025,Outbound,
+Cedar Point Dental Partners,General Dentistry,70,9,WA,US,Closed Won,"$15,400",06/02/2025,07/01/2025,Referral,
+Harbour Light Dental,General Dentistry,38,5,NS,Canada,Closed Won,"$8,600",07/11/2025,08/18/2025,Search,
+Bluewater Dental Co.,,121,15,OR,US,Closed Won,"$24,500",08/19/2025,10/03/2025,Referral,
+Prairie Oak Dental,General Dentistry,55,7,SK,Canada,Closed Won,"$11,900",10/06/2025,11/11/2025,Webinar,
+Summit Ridge Dental,GENERAL DENTISTRY,90,11,WA,US,Closed Won,"$18,200",01/13/2026,03/02/2026,Outbound,
+Lakeshore Dental Collective,General Dentistry,47,6,ON,Canada,Closed Won,"$10,100",03/02/2026,04/02/2026,Referral,
+Westfield Dental Group,General Dentistry,82,10,ON,Canada,Churned,"$16,500",02/10/2025,03/26/2025,Outbound,moved back to ChairTime after an acquisition
+Granite Bay Dental,General Dentistry,104,13,OR,US,Closed Lost,,09/08/2025,11/08/2025,Outbound,stayed with ChairTime; switching cost
+Pinecrest Dental Network,General Dentistry,66,8,BC,Canada,Closed Lost,,02/16/2026,04/14/2026,Search,no budget this fiscal year
+Elm Street Dental,General Dentistry,22,3,ON,Canada,Closed Won,"$4,300",04/01/2025,04/25/2025,Referral,
+Two Rivers Dental,General Dentistry,15,2,MB,Canada,Closed Won,"$2,900",06/23/2025,07/12/2025,Search,
+Kestrel Dental Studio,GENERAL DENTISTRY,30,4,WA,US,Closed Won,"$5,700",09/15/2025,10/18/2025,Webinar,
+Copperleaf Dental,General Dentistry,24,3,AB,Canada,Closed Won,"$4,200",02/09/2026,03/03/2026,Referral,
+Sandpiper Dental,General Dentistry,14,2,OR,US,Churned,"$2,800",05/12/2025,06/02/2025,Search,office manager left; nobody owned the rollout
+Foxglove Dental,General Dentistry,21,3,BC,Canada,Closed Lost,,08/04/2025,09/10/2025,Outbound,stayed with ChairTime
+Birchwood Dental Care,General Dentistry,29,4,ON,Canada,Closed Lost,,11/17/2025,12/27/2025,Outbound,PMS calendar is good enough
+Ironwood Dental,General Dentistry,16,2,WA,US,Closed Lost,,04/06/2026,05/04/2026,Search,price
+Dr. Amara Singh Dentistry,General Dentistry,7,1,ON,Canada,Closed Won,"$1,400",05/05/2025,05/14/2025,Search,
+Bright Path Dental,GENERAL DENTISTRY,9,1,BC,Canada,Closed Won,"$1,400",11/03/2025,11/15/2025,Search,
+Willow Creek Dental,General Dentistry,8,1,WA,US,Closed Won,"$1,400",02/02/2026,02/10/2026,Webinar,
+Seabright Dental,,6,1,NS,Canada,Closed Won,"$1,300",03/16/2026,03/27/2026,Search,
+Hillside Dental Clinic,General Dentistry,10,1,ON,Canada,Closed Won,"$1,400",05/04/2026,05/11/2026,Search,
+Oakview Dental,General Dentistry,8,1,AB,Canada,Churned,"$1,400",03/10/2025,03/20/2025,Search,owner does the schedule herself; didn't need it
+Tidewater Dental,General Dentistry,7,1,OR,US,Churned,"$1,300",06/16/2025,06/30/2025,Search,too small to need rostering
+Fairhaven Dental,General Dentistry,9,1,BC,Canada,Churned,"$1,400",10/20/2025,10/29/2025,Webinar,price; switched to free PMS calendar
+Stonebridge Dental,GENERAL DENTISTRY,6,1,ON,Canada,Churned,"$1,300",01/05/2026,01/18/2026,Search,too small to need rostering
+Clearwater Smiles,General Dentistry,8,1,WA,US,Churned,"$1,400",02/23/2026,03/03/2026,Search,owner does the schedule herself; didn't need it
+Juniper Dental,General Dentistry,7,1,MB,Canada,Churned,"$1,400",04/13/2026,04/24/2026,Search,price
+Mossgrove Dental,General Dentistry,5,1,ON,Canada,Closed Lost,,08/11/2025,08/26/2025,Search,price
+Redcliff Dental,General Dentistry,8,1,OR,US,Closed Lost,,01/19/2026,02/06/2026,Search,PMS calendar is good enough
+Brookside Dental,General Dentistry,6,1,BC,Canada,Closed Lost,,05/25/2026,06/06/2026,Webinar,not the right time
+Little Teeth Pediatric Dental,Pediatric Dentistry,26,3,ON,Canada,Closed Won,"$4,400",07/07/2025,08/02/2025,Referral,
+Alignwell Orthodontics,ORTHODONTICS,31,4,WA,US,Closed Won,"$5,800",10/27/2025,11/19/2025,Referral,
+Northshore Oral Surgery,Oral Surgery,19,2,BC,Canada,Closed Won,"$3,000",01/26/2026,02/25/2026,Webinar,
+Straightline Ortho,Orthodontics,40,5,AB,Canada,Closed Won,"$7,300",04/20/2026,05/17/2026,Referral,
+Crestview Pediatric Dentistry,Pediatric Dentistry,17,2,OR,US,Closed Lost,,12/01/2025,01/05/2026,Outbound,stayed with ChairTime
+Keystone Oral Surgery,Oral Surgery,12,1,ON,Canada,Closed Lost,,03/09/2026,04/02/2026,Search,PMS calendar is good enough
+Evergreen Dental Partners,General Dentistry,410,42,WA,US,Closed Lost,,04/14/2025,10/17/2025,Outbound,IT security review stalled
+Coastline Dental Organization,General Dentistry,620,65,ON,Canada,Closed Lost,,07/21/2025,02/10/2026,Outbound,chose enterprise suite
+Unity Dental Alliance,GENERAL DENTISTRY,260,28,OR,US,Closed Lost,,10/13/2025,03/20/2026,Webinar,procurement required an RFP we didn't qualify for
+Trillium Dental Group,General Dentistry,300,31,ON,Canada,Closed Lost,,01/12/2026,07/02/2026,Outbound,IT security review stalled
+St. Brendan's Hospital Dental Clinic,Hospital Dental Department,45,1,ON,Canada,Closed Lost,,09/22/2025,02/12/2026,Outbound,hospital procurement
+Mercy Valley Hospital Dentistry,Hospital Dental Department,38,1,WA,US,Closed Lost,,02/02/2026,07/14/2026,Outbound,hospital procurement
+Aspen Grove Dental,General Dentistry,58,7,AB,Canada,Negotiation,,09/14/2026,,Referral,
+Kingfisher Dental,General Dentistry,6,1,ON,Canada,Negotiation,,10/05/2026,,Search,
+Meridian Dental Partners,General Dentistry,230,24,WA,US,Negotiation,,08/03/2026,,Outbound,
+Maplecrest Dental Group,GENERAL DENTISTRY,64,8,ON,Canada,Closed Won,"$13,700",03/04/2025,04/07/2025,Referral,
+Test Account - delete,,,,,,,,,,,
+Fernwood Dental,General Dentistry,12,2,ON,Canada,,,03/03/2026,,Search,
+Riverbend Family Dental,General Dentistry,51,6,BC,Canada,Closed Won,"$10,300",04/15/2025,05/26/2025,Webinar,

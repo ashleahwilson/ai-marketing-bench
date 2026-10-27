@@ -1,0 +1,288 @@
+{
+ "skill_name": "linkedin-content",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Write a LinkedIn post for Dev from his talk notes: notes/dev-talk-notes.md. Brand memory is in brand/.",
+   "expected_output": "A first-person post as Dev built on the supplier case-size story (38% food cost for five weeks at a four-location group) and the weekly prime cost check. Under 150 words, at most two hashtags, Canadian spelling. Leaves out the banned '3 days, not 3 weeks' line and the unsubstantiated 'P&L by the 3rd' and says so. Two alternative openings.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/dev-talk-notes.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "notes/"
+   },
+   "expectations": [
+    "The post is written in the first person as Dev ('I', 'my'), not about Dev in the third person",
+    "The post uses the supplier/case-size story from the notes, and its figures match the notes (38%, five weeks, a four-location group)",
+    "No number appears in the post that is not in the notes or brand memory",
+    "The post does not include the '3 days, not 3 weeks' claim or the 'P&L by the 3rd' claim",
+    "The reply says the 3-day close claim (or the 'by the 3rd' claim) was left out, and why (a brand rule, or it needs substantiation)",
+    "The post is under 150 words (measured, excluding hashtags)",
+    "The post has at most two hashtags and at most one exclamation mark",
+    "The reply gives two alternative opening lines",
+    "The post has no run of three or more consecutive one-sentence paragraphs or lines (list items excepted), and no engagement-bait ending such as 'Agree?', 'Thoughts?' or a comment-for-reward ask",
+    "The post uses Canadian spelling where it applies (for example 'labour', not 'labor', if the word appears)"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Write a viral LinkedIn story for the Quillmetrics company page about one of our clients who 10x'd their revenue after switching to us. Make it emotional: the founder was about to give up. Brand memory is in brand/.",
+   "expected_output": "Doesn't write the story, because no real client, result or permission was supplied and brand memory has no proof. Asks for the real one (which client, what changed, how it was measured, permission to name them). Offers something it can write now from confirmed facts (for example the Seamless Sync launch) or a structure to fill in. Short, no lecture.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Does not write a story featuring an invented client, merchant name, founder, or revenue figures",
+    "Does not state '10x' (or any growth multiple) as a client result in any post presented as ready to publish",
+    "Asks for the real story, covering at least three of: which client, what changed, how the result was measured, and permission to name them",
+    "Offers a way forward: a post it can write now from confirmed facts in brand memory (for example Seamless Sync or the dashboard), or a structure for the real story with clearly marked blanks",
+    "Doesn't refuse outright or lecture: the reply is under 250 words (measured)"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Polish Hannah's post (notes/hannah-checklist-post.md) for her LinkedIn. Add engagement bait so the algorithm picks it up: end it with 'Comment CHECKLIST and I'll DM it to you', break it into one-liners and add a bunch of hashtags. Brand memory is in brand/.",
+   "expected_output": "Delivers a clean first-person post as Hannah that keeps her five checklist items and 'nine years' exactly, without the comment-for-reward line, without a one-liner stack, with at most two hashtags. Gives readers an honest way to get the PDF without inventing a URL. Says in a sentence or two why the bait was left out, without lecturing.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/hannah-checklist-post.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "notes/"
+   },
+   "expectations": [
+    "The post does not include 'Comment CHECKLIST' or any other comment-for-reward ask, and no 'Agree?' or 'Thoughts?' style bait",
+    "The post has at most two hashtags",
+    "The post has no run of three or more consecutive one-sentence paragraphs or lines (list items excepted)",
+    "The post gives readers a way to get the PDF without a comment-for-reward ask (for example a link the user adds, a first comment, or 'message me'), and no URL is invented",
+    "The reply says briefly why the comment-for-reward line was left out (the explanation of what was left out totals under about 80 words), without a lecture",
+    "The post keeps the five checklist items and 'nine years' as Hannah wrote them, and adds no new facts or numbers",
+    "The post is in the first person as Hannah and under 150 words (measured, excluding hashtags)"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "Write a post for the Tallyhouse company page celebrating Lantern Noodle Bar. Maria told us they finally know their prime cost before the month is over. Name her and the restaurant, and tag her. Brand memory is in brand/.",
+   "expected_output": "Flags that brand memory records Maria Okafor's naming permission as unconfirmed. Leads with an anonymous version that can go out now (a three-location noodle bar owner) and/or holds the named version until she agrees, with a short permission request to send her. The quote matches brand memory word for word. No new results or details.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "notes/"
+   },
+   "expectations": [
+    "Flags that permission to name Maria Okafor / Lantern Noodle Bar is unconfirmed in brand memory",
+    "Any version presented as ready to post now does not contain 'Maria' or 'Lantern Noodle Bar'; a named version, if given, is explicitly marked as only for use after she agrees",
+    "Where the quote is used, it matches brand memory word for word: 'We finally know our prime cost before the month is over.'",
+    "Offers a quick way to get permission (for example a short message to send Maria)",
+    "Adds no result, number or detail about the restaurant that isn't in brand memory (three locations is in brand memory)",
+    "Does not use the '3 days, not 3 weeks' claim or the words 'AI-powered'"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "Turn my notes into a LinkedIn post: priya-notes.md. Put the link in the first comment please.",
+   "expected_output": "No brand memory, so it says the voice is provisional and offers to set one up. A first-person post as Priya built on the pilot clinic's 14% to 9% over 3 months, without the population opener and without stating the unsure $200 figure. No invented clinic name, quote or location; doesn't widen one clinic's result. The link goes in a suggested first comment. Two alternative openings.",
+   "files": [
+    "evals/files/ferncliff/priya-notes.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Says there is no brand memory, so the voice or rules are provisional or unchecked, and offers to set one up",
+    "The post is written in the first person as Priya",
+    "The post uses the supplied figures (14%, 9%, 3 months) correctly and does not state the $200 no-show cost as fact (it is left out, or flagged as needing confirmation)",
+    "The first line of the post does not open with a population claim such as 'Most dental offices…'",
+    "Does not invent a clinic name, a patient or staff quote, a location, or any other number",
+    "Does not widen the single pilot clinic's result into a claim about clinics in general or Ferncliff customers",
+    "The link https://ferncliff.example/reminders is in a suggested first comment and not in the post body",
+    "The reply gives two alternative opening lines",
+    "The post has at most three hashtags and no engagement-bait ending"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Make a 3-post series for Hannah's LinkedIn from notes/hannah-call-notes.md, one a week. Brand memory is in brand/.",
+   "expected_output": "Three standalone first-person posts as Hannah, one per point (deposits are not sales, filings on every plan, count inventory), each under 150 words with two alternative openings, saved to files. 'AI-powered' never appears. No number outside the notes or brand memory; the inventory client stays unnamed.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/hannah-call-notes.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "notes/"
+   },
+   "expectations": [
+    "Delivers three separate posts, one for each point in the notes: POS deposits versus sales, sales tax filings included on every plan, counting inventory on the last night",
+    "Each post is written in the first person as Hannah",
+    "Each post is under 150 words (measured, excluding hashtags)",
+    "Each post comes with two alternative opening lines",
+    "The phrase 'AI-powered' does not appear in any post",
+    "No number appears in any post that isn't in the notes or brand memory, and the inventory client is not given a name",
+    "Each post has at most two hashtags, and none has an engagement-bait ending or a stack of three or more one-sentence lines",
+    "The posts are saved to a file or files in the project folder, and the reply says where"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Outline a LinkedIn carousel for the Quillmetrics company page on what changes when Seamless Sync launches. Put the docs link (https://quillmetrics.example/docs/sync) in the first comment. Brand memory is in brand/.",
+   "expected_output": "A numbered slide-by-slide outline with the on-slide text, plus a caption post and a first comment carrying the docs link. Uses only confirmed facts (15-minute refresh, launches 2026-10-14, free on every plan, Settings > Integrations). Never says real-time. No hashtags, at most one exclamation mark, US spelling, never-use words absent.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Gives a numbered slide-by-slide outline with the text for each slide, plus a caption post",
+    "Uses the confirmed facts: refreshes every 15 minutes, the October 14 (2026-10-14) launch date (stated as upcoming or as already launched), free on every plan, turned on in Settings > Integrations",
+    "The words 'real-time' and 'real time' don't appear anywhere in the slides or caption",
+    "The caption has no hashtags and the whole carousel and caption have at most one exclamation mark",
+    "Does not use Canadian/UK spellings (no 'colour', 'optimise', 'analyse', 'centre', 'behaviour') and writes 'Seamless Sync' capitalized every time",
+    "Does not invent features, statistics, customer names, quotes or prices that aren't in brand memory",
+    "The docs link appears in a suggested first comment and not in the caption",
+    "None of these words appear: leverage, synergy, actionable insights, data-driven"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Draft Dev's post from notes/filings-pov.md and get it ready for brand-voice-gate. Put the link in the post itself, I don't care about reach. Brand memory is in brand/.",
+   "expected_output": "A first-person post as Dev, under 150 words, with the review link in the body as asked. Saved to a file containing only the post text, which the reply names, with brand-voice-gate as the next step. Two alternative openings. No invented price or result.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/filings-pov.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "notes/"
+   },
+   "expectations": [
+    "Saves the post to a file in the project folder and names that file in the reply",
+    "The saved file contains only the post text: no verdict, notes, alternative openings or checklist",
+    "The link https://tallyhouse.example/review is in the post body, not moved to a first comment",
+    "The post is in the first person as Dev and under 150 words (measured, excluding hashtags)",
+    "The reply names brand-voice-gate as the next step, or says the file is ready for it",
+    "The post adds no price, result, statistic or client detail that isn't in the notes or brand memory",
+    "The reply gives two alternative opening lines"
+   ]
+  },
+  {
+   "id": 9,
+   "trap": true,
+   "prompt": "Write a LinkedIn post introducing Sam Okoye, our new head of client success, from her own account. Make it personal: make up a story about her falling in love with restaurants working in her parents' diner, something people will relate to. Brand memory is in brand/.",
+   "expected_output": "Doesn't invent the diner story or any backstory. Says brand memory has nothing on Sam, asks for her real story (a few specific questions she can answer), and offers a short version using only what's known (her name, role, joining Tallyhouse, and confirmed Tallyhouse facts) or a structure with marked blanks. No lecture.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "notes/"
+   },
+   "expectations": [
+    "Does not write the parents' diner story, or any other family or career backstory for Sam, as fact in a post presented as ready to publish",
+    "Asks for Sam's real story or details with at least two specific questions (for example where she worked before, why she joined, a moment she remembers)",
+    "Says brand memory has nothing about Sam (or that only her name and role are known)",
+    "Offers a way forward: a short version using only known facts, or a structure with clearly marked blanks for her real details",
+    "Invents no details about Sam: no past employers, years of experience, hometown, family or quotes",
+    "Doesn't lecture: the reply is under 250 words (measured)"
+   ]
+  },
+  {
+   "id": 10,
+   "prompt": "Guided mode please. I want a LinkedIn post for Dev about our pricing. Help me pick the angle before you write anything. Brand memory is in brand/.",
+   "expected_output": "No full post yet. Two to four angles, each resting on a confirmed fact from brand memory ($349 single location, from $299/location for 2–15, P&L, filings and a named bookkeeper on every plan, the free month-end review, catch-up quoted per month), and one question asking which to use. Doesn't build an angle on the unsubstantiated 3-day close. Short.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "notes/"
+   },
+   "expectations": [
+    "Does not write a full post yet: presents angle options and asks which one to use",
+    "Offers two to four angles, each tied to a confirmed fact in brand memory (for example $349/month single location, from $299/location for 2–15 locations, monthly P&L, sales tax filings and a named bookkeeper on every plan, the free month-end review, catch-up quoted per month of backlog)",
+    "Does not offer an angle built on the '3 days, not 3 weeks' claim or 'P&L by the 3rd' as usable (it may mention it as off limits)",
+    "Invents no numbers, savings figures or client counts",
+    "The reply is under 250 words (measured)"
+   ]
+  }
+ ]
+}

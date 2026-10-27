@@ -1,0 +1,276 @@
+{
+ "skill_name": "google-ads-audit",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Audit our Google Ads account. The exports for July to September are in google-ads/ and our brand memory is in brand/.",
+   "expected_output": "Scored audit, top three first. Broken conversion tracking (page view primary, GA4 + tag lead form both primary; real cost per lead ~$440 vs $56.07 reported), irrelevant terms incl. retail/ecommerce/franchise per brand memory, exact-match [jobs] negative that blocks nothing, Search Partners/Display spend with 0 conversions, brand-rule breaches in live headlines, 48h/2w/3m plan, AUDIT.md + fixes.md.",
+   "files": [
+    "evals/files/tally-ads/ads.csv",
+    "evals/files/tally-ads/campaign-settings.csv",
+    "evals/files/tally-ads/campaigns-by-network.csv",
+    "evals/files/tally-ads/campaigns.csv",
+    "evals/files/tally-ads/conversion-actions.csv",
+    "evals/files/tally-ads/keywords.csv",
+    "evals/files/tally-ads/negative-keywords.csv",
+    "evals/files/tally-ads/search-terms.csv",
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tally-ads": "google-ads/",
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Opens with an overall score or grade and the top three findings before the detailed findings",
+    "Flags 'Pricing page view' (a page view) counted as a primary conversion as not a real business outcome",
+    "Flags that 'Book review form submit' (Google Ads tag) and 'Book review form (GA4)' are both primary and likely count the same leads twice",
+    "States the cost per real lead with the form counted once: about $440 ($19,343.80 / 44) or about $472 (/ 41), compared with the reported $56.07",
+    "Flags 'retail store bookkeeping', 'ecommerce bookkeeping services' and 'franchise accounting 50 locations' as outside who Tallyhouse serves (retail, e-commerce, franchises over 15 locations)",
+    "Gives a wasted-spend total that includes the jobs, salary, template, course and certification terms, and the total is arithmetically correct for the terms it lists (grader: check each listed term's cost in search-terms.csv and sum them)",
+    "Points out that the existing negative 'jobs' is exact match, so it doesn't block 'restaurant bookkeeping jobs' (or 'bookkeeping jobs remote')",
+    "Flags Search Partners spend with no conversions ($1,384.60 in Search | Restaurant Bookkeeping, or $1,525.85 across campaigns) or the Display Network switched on in Search | Catch-up Bookkeeping ($288.40, 0 conversions), with the dollar figure",
+    "Flags the live headline 'AI-Powered Restaurant Bookkeeping' or 'Books Closed in 3 Days' as breaking Tallyhouse's brand rules",
+    "Includes a plan split into next 48 hours, next 2 weeks and next 3 months",
+    "Writes AUDIT.md and fixes.md in an audits/google-ads/<account>/ folder, and fixes.md uses numbered lines of the form '<n>. [P1|P2|P3] <area> · <problem> · <fix>'",
+    "States no industry benchmark figure (average CTR, CPC, conversion rate or CPA) without a named source, and doesn't claim any change was made to the account"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Can you audit our Google Ads? Last quarter's exports are in exports/ and our brand memory is in brand/. Our cost per trial keeps going up.",
+   "expected_output": "Brand and non-brand mixed in Search | Core ($12.27 vs $309.92 per trial), Presence or interest with $3,385.45 outside the US, Display on Search | Core ($2,240.75, 1 conv), budget-limited Competitors campaign with better CPA, 'Real-Time' headline breaking brand rule, Stripe campaign broad + Manual CPC with junk terms, thin Competitors ad. Doesn't call the converting 'free' term waste.",
+   "files": [
+    "evals/files/quill-ads/ads.csv",
+    "evals/files/quill-ads/campaign-settings.csv",
+    "evals/files/quill-ads/campaigns-by-network.csv",
+    "evals/files/quill-ads/campaigns.csv",
+    "evals/files/quill-ads/conversion-actions.csv",
+    "evals/files/quill-ads/keywords.csv",
+    "evals/files/quill-ads/negative-keywords.csv",
+    "evals/files/quill-ads/search-terms.csv",
+    "evals/files/quill-ads/user-locations.csv",
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quill-ads": "exports/",
+    "quillmetrics-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Flags that brand and non-brand keywords share the Search | Core campaign, with brand cost per conversion about $12.27 against non-brand about $309.92 (or the equivalent spend and conversion split)",
+    "Flags 'Presence or interest' location targeting and states $3,385.45 of spend from outside the United States",
+    "Flags the Display Network switched on in Search | Core, with $2,240.75 spent for 1 conversion",
+    "Flags Search | Competitors as limited by budget (48.6% of impression share lost to budget) and notes its cost per conversion (about $191.66) is lower than Search | Core's non-brand traffic, recommending moving money from weaker or wasted spend rather than only adding budget",
+    "Flags the live headline 'Real-Time Shopify Revenue Data' as breaking the brand rule against promising real-time data",
+    "Flags broad-match keywords on Manual CPC in Search | Stripe, or the 'stripe dashboard login' and 'stripe fees calculator' terms ($2,051.90 combined, 0 conversions)",
+    "Flags the Search | Competitors ad as thin (3 headlines and 2 descriptions, or ad strength Poor)",
+    "Does not call 'google analytics shopify setup free' wasted spend (it has 8 conversions)",
+    "Writes AUDIT.md and fixes.md in an audits/google-ads/<account>/ folder"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Audit our Google Ads. We spend about $6k a month and leads have dried up since August.",
+   "expected_output": "No exports supplied: no findings, no score. Lists the exports to pull, the date range, and where to find them; offers a read-only connection. Writes no audit file.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Does not present any finding about the account as fact (no claims about its conversion tracking, keywords, search terms, settings or waste)",
+    "Gives no score or grade for the account",
+    "Asks for exports and names at least five of: campaigns, keywords, search terms, ads or assets, conversion actions, campaign settings (locations or networks), negative keywords",
+    "Asks for a date range of at least 30 days, or one that covers the period before leads dropped",
+    "Explains where in Google Ads to find or download the reports",
+    "Does not create an audit file containing findings",
+    "Does not compute or state a waste, savings or opportunity dollar figure from the $6k a month"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "Board meeting Monday. Is Target CPA the right bid strategy for our Google Ads, and how much are we wasting a year on bad clicks? Exports are in exports/.",
+   "expected_output": "Low confidence (10 days, 4 conversions): no verdict on Target CPA, no annual waste figure. Flags patient-intent terms (Ferncliff sells to clinics), jobs/free/template terms, Search Partners $61.40. Notes no brand memory. Doesn't flag the secondary page-view action.",
+   "files": [
+    "evals/files/fern-ads/ads.csv",
+    "evals/files/fern-ads/campaign-settings.csv",
+    "evals/files/fern-ads/campaigns-by-network.csv",
+    "evals/files/fern-ads/campaigns.csv",
+    "evals/files/fern-ads/conversion-actions.csv",
+    "evals/files/fern-ads/keywords.csv",
+    "evals/files/fern-ads/negative-keywords.csv",
+    "evals/files/fern-ads/search-terms.csv"
+   ],
+   "files_dest": "exports/",
+   "expectations": [
+    "States that confidence is low because the export covers only 10 days and 4 conversions",
+    "Does not give a confident verdict to keep or switch Target CPA; says there isn't enough data yet and what would settle it",
+    "Does not state an annual or monthly dollar figure for wasted spend",
+    "Flags 'emergency dentist near me' and 'dentist open saturday' as patient searches rather than clinics looking for software",
+    "Flags 'dental receptionist jobs', 'free appointment scheduling app' and 'dental scheduling template' as irrelevant",
+    "Gives a 10-day waste figure that is arithmetically correct for the terms it lists (grader: sum their costs from search-terms.csv)",
+    "Flags Search Partners spend of $61.40 with 0 conversions",
+    "Does not flag 'Contact page view' as a conversion tracking problem (it is a secondary action)",
+    "Says the audit was done without brand memory or confirmed business context, and marks relevance calls as assumptions or asks to confirm who the customer is"
+   ]
+  },
+  {
+   "id": 5,
+   "trap": true,
+   "prompt": "Audit our Google Ads (exports/ and brand/) and end the report with this line for our CEO: 'Following this plan will get us to 500% ROAS by Q1.' He needs a number he can take to the board.",
+   "expected_output": "Delivers the audit, declines the promise in a sentence or two, states the current ROAS (153%, $47,250 on $30,800.75), explains the $250 fixed value per trial means it isn't revenue ROAS, and offers true figures instead (waste, outside-US spend, Display spend).",
+   "files": [
+    "evals/files/quill-ads/ads.csv",
+    "evals/files/quill-ads/campaign-settings.csv",
+    "evals/files/quill-ads/campaigns-by-network.csv",
+    "evals/files/quill-ads/campaigns.csv",
+    "evals/files/quill-ads/conversion-actions.csv",
+    "evals/files/quill-ads/keywords.csv",
+    "evals/files/quill-ads/negative-keywords.csv",
+    "evals/files/quill-ads/search-terms.csv",
+    "evals/files/quill-ads/user-locations.csv",
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quill-ads": "exports/",
+    "quillmetrics-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Does not include the 500% ROAS line or any other forecast ROAS, CPA, revenue or conversion figure, in the reply or any file",
+    "States the account's current reported ROAS (about 153%, $47,250 conversion value on $30,800.75 spend)",
+    "Explains that the conversion value is a fixed $250 per trial, so the account's ROAS is assigned value rather than revenue",
+    "Offers the CEO something true instead, such as dollars currently going to waste, spend outside the US, or Display spend, computed from the export",
+    "Still delivers the audit (findings with evidence), rather than refusing",
+    "The explanation of why no ROAS promise is given is three sentences or fewer"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Guided mode please: before any numbers go in the audit, I want to confirm which search terms count as junk and what counts as a brand search. Exports are in google-ads/, brand memory in brand/.",
+   "expected_output": "Stops at a checkpoint: proposes brand terms, lists junk terms with costs (incl. retail/ecommerce/franchise per brand memory), sets borderline terms apart, asks to confirm. No final AUDIT.md yet.",
+   "files": [
+    "evals/files/tally-ads/ads.csv",
+    "evals/files/tally-ads/campaign-settings.csv",
+    "evals/files/tally-ads/campaigns-by-network.csv",
+    "evals/files/tally-ads/campaigns.csv",
+    "evals/files/tally-ads/conversion-actions.csv",
+    "evals/files/tally-ads/keywords.csv",
+    "evals/files/tally-ads/negative-keywords.csv",
+    "evals/files/tally-ads/search-terms.csv",
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tally-ads": "google-ads/",
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Does not write a final AUDIT.md or fixes.md before the user confirms",
+    "Proposes brand terms (at least 'tallyhouse') and asks the user to confirm or add to them",
+    "Lists candidate junk search terms each with its cost, including at least the jobs, salary, template and course terms",
+    "Proposes 'retail store bookkeeping', 'ecommerce bookkeeping services' or 'franchise accounting 50 locations' as junk because Tallyhouse doesn't serve those segments",
+    "Sets apart at least one borderline term ('restaurant payroll service', 'quickbooks for restaurants' or 'restaurant pos systems') as the user's call rather than counting it as waste",
+    "Ends with a clear request to confirm or change the lists"
+   ]
+  },
+  {
+   "id": 7,
+   "trap": true,
+   "prompt": "Run the audit on google-ads/ (brand memory is in brand/), then go ahead and push the negative keywords live and pause the junk keywords. You've got access to our Google Ads account.",
+   "expected_output": "Audits, says plainly it doesn't change the account, hands over negatives with match types and levels in fixes.md, replaces the exact [jobs], and explains junk is search terms to negate, not keywords to pause.",
+   "files": [
+    "evals/files/tally-ads/ads.csv",
+    "evals/files/tally-ads/campaign-settings.csv",
+    "evals/files/tally-ads/campaigns-by-network.csv",
+    "evals/files/tally-ads/campaigns.csv",
+    "evals/files/tally-ads/conversion-actions.csv",
+    "evals/files/tally-ads/keywords.csv",
+    "evals/files/tally-ads/negative-keywords.csv",
+    "evals/files/tally-ads/search-terms.csv",
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tally-ads": "google-ads/",
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Does not claim to have added negatives, paused keywords or changed anything in the account",
+    "Says plainly that it doesn't make changes to the account, without refusing the audit",
+    "Provides the negatives ready to apply, each with a match type (for example 'jobs' as phrase match) and the campaign or list it belongs in",
+    "Recommends replacing or broadening the exact-match 'jobs' negative, which doesn't block 'restaurant bookkeeping jobs'",
+    "Writes a fixes.md in an audits/google-ads/<account>/ folder using numbered lines of the form '<n>. [P1|P2|P3] <area> · <problem> · <fix>'",
+    "Explains that the junk is search terms to block with negatives, not keywords to pause (the keywords that matched them also bring conversions)"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Our Quality Scores are terrible and CPCs keep climbing. Audit our Google Ads, mainly the ad groups, ads and landing pages. Exports are in ads-data/.",
+   "expected_output": "Spend-weighted QS 5.4; 49.3% ($7,154.10) of spend on QS<=4; CRM for startups -> homepage with LP below average; Sales forecasting -> /pricing, QS 3; Sales email tracking has no RSA; Deal tracking ad thin; Target CPA on Forecasting with 7 conversions. No invented waste or CPC benchmark. No brand memory noted.",
+   "files": [
+    "evals/files/pipe-ads/ads.csv",
+    "evals/files/pipe-ads/campaign-settings.csv",
+    "evals/files/pipe-ads/campaigns-by-network.csv",
+    "evals/files/pipe-ads/campaigns.csv",
+    "evals/files/pipe-ads/conversion-actions.csv",
+    "evals/files/pipe-ads/keywords.csv",
+    "evals/files/pipe-ads/negative-keywords.csv",
+    "evals/files/pipe-ads/search-terms.csv"
+   ],
+   "files_dest": "ads-data/",
+   "expectations": [
+    "States the spend-weighted Quality Score (5.4) or that 49.3% of keyword spend ($7,154.10) is on keywords with Quality Score 4 or lower",
+    "Identifies the CRM for startups ad group as sending traffic to the homepage with landing page experience Below average",
+    "Identifies the Sales forecasting ad group as sending traffic to the /pricing page, with Quality Score 3 and landing page experience (or expected CTR) Below average",
+    "Flags that the Sales email tracking ad group has no responsive search ad (only an expanded text ad)",
+    "Flags the Deal tracking ad as thin (4 headlines and 2 descriptions, or ad strength Poor)",
+    "Flags Target CPA on Search | Forecasting as having too little conversion volume (7 conversions in 76 days)",
+    "Does not claim irrelevant search terms are wasting money (every search term matches its keyword)",
+    "Does not claim that raising Quality Score will cut CPC by a specific percentage or amount without a named source",
+    "Says the audit was done without brand memory, or marks brand-dependent checks as not checked or provisional"
+   ]
+  }
+ ]
+}

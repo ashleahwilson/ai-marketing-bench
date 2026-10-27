@@ -1,0 +1,21 @@
+FACTS
+- prospect: Marrow & Rye, one location in Toronto; Kevin Tran listed as chef-owner on the website | user
+- address: kevin@marrowandrye.example, published on marrowandrye.example/contact, captured 2026-10-05 | user
+- offer: monthly P&L, named bookkeeper, food cost and labour % on one dashboard, free month-end review | brand/offer.md
+- sender: Hannah Ruiz, Co-founder, Tallyhouse | brand/senders.md
+ASSUMED
+- none
+---
+Channel: email
+Type: first
+Subject: month-end at marrow & rye
+
+Hi Kevin,
+
+When the books close weeks after month-end, food cost and labour % show up too late to change anything. Tallyhouse puts both on one dashboard and gives Marrow & Rye a named bookkeeper who has worked in restaurant finance.
+
+Open to a free month-end review?
+
+Hannah Ruiz, Co-founder, Tallyhouse
+Tallyhouse Inc., 410 Adelaide St W, Suite 300, Toronto, ON M5V 1S8
+If this isn't relevant to you, reply "no" and I won't follow up.

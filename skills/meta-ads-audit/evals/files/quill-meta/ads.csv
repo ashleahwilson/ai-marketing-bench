@@ -1,0 +1,20 @@
+Reporting starts,Reporting ends,Campaign name,Ad set name,Ad name,Format,Headline,Body,Results,Result indicator,Cost per result,Amount spent (USD),Impressions,Reach,Frequency,Link clicks,CTR (link click-through rate),"CPM (cost per 1,000 impressions) (USD)"
+2026-09-01,2026-09-28,Prospecting | Free trial | Traffic,Traffic | Broad US,Dashboard demo | Static,Single image,,,0,Link clicks,,980.00,70000,37037,1.89,970,1.39,14.00
+2026-09-01,2026-09-28,Prospecting | Free trial | Traffic,Traffic | Broad US,Founder quote | Static,Single image,,,0,Link clicks,,700.00,50000,26455,1.89,586,1.17,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Shopify owners US,Shopify owners US | Static 1,Single image,,,17,Website leads,42.94,730.00,52142,30492,1.71,561,1.08,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Shopify owners US,Shopify owners US | Static 2,Single image,,,16,Website leads,45.62,730.00,52142,30492,1.71,586,1.12,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,Lookalike 1% trials | Static 1,Single image,,,14,Website leads,47.14,660.00,47142,26861,1.76,503,1.07,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,Lookalike 1% trials | Static 2,Single image,,,14,Website leads,47.14,660.00,47142,26861,1.76,529,1.12,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,Lookalike 3% trials | Static 1,Single image,,,11,Website leads,53.64,590.00,42142,23412,1.80,450,1.07,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,Lookalike 3% trials | Static 2,Single image,,,11,Website leads,53.64,590.00,42142,23412,1.80,472,1.12,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,ecommerce analytics | Static 1,Single image,,,10,Website leads,52.50,525.00,37500,20325,1.85,400,1.07,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,ecommerce analytics | Static 2,Single image,,,9,Website leads,58.33,525.00,37500,20325,1.85,416,1.11,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,Shopify Plus | Static 1,Single image,,,9,Website leads,55.00,495.00,35357,18707,1.89,376,1.06,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,Shopify Plus | Static 2,Single image,,,8,Website leads,61.88,495.00,35357,18707,1.89,392,1.11,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,Klaviyo users | Static 1,Single image,,,7,Website leads,62.86,440.00,31428,16241,1.94,331,1.05,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,Klaviyo users | Static 2,Single image,,,6,Website leads,73.33,440.00,31428,16241,1.94,348,1.11,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Broad US 25-54,Broad US 25-54 | Static 1,Single image,,,6,Website leads,63.33,380.00,27142,13708,1.98,284,1.05,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Broad US 25-54,Broad US 25-54 | Static 2,Single image,,,5,Website leads,76.00,380.00,27142,13708,1.98,298,1.10,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,DTC founders | Static 1,Single image,,,8,Website leads,80.00,640.00,45714,22574,2.03,487,1.07,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: Stripe,Stripe | Static 1,Single image,,,6,Website leads,86.67,520.00,37142,17942,2.07,391,1.05,14.00
+2026-09-01,2026-09-28,Retargeting | Site visitors 30d,RT | Visitors 30d,RT | Pricing reminder | Static,Single image,,,46,Website leads,27.39,1260.00,57272,8158,7.02,699,1.22,22.00

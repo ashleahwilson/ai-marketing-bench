@@ -1,0 +1,4 @@
+Campaign Name,Campaign Objective,Special Ad Categories,Special Ad Category Country,Ad Set Name,Optimization Goal,Custom Event Type,Attribution Spec,Countries,Age Min,Age Max,Custom Audiences,Advantage+ Audience,Placements,Daily Budget
+Trials | Sales | Prospecting,OUTCOME_SALES,None,,Trials | Advantage+ audience,OFFSITE_CONVERSIONS,START_TRIAL,7-day click or 1-day view,US,18,65,,On,Advantage+ placements,225.00
+Trials | Sales | Prospecting,OUTCOME_SALES,None,,Trials | Lookalike 1% trial starters,OFFSITE_CONVERSIONS,START_TRIAL,7-day click or 1-day view,US,18,65,"Lookalike (US, 1%) - Trial starters",On,Advantage+ placements,150.00
+Trials | Sales | Retargeting,OUTCOME_SALES,None,,RT | Visitors and engagers 30d,OFFSITE_CONVERSIONS,START_TRIAL,7-day click or 1-day view,US,18,65,Website visitors - 30 days; IG engagers - 30 days,Off,Advantage+ placements,50.00

@@ -1,0 +1,7 @@
+Campaign report
+"July 1, 2026 - September 30, 2026"
+Campaign,Campaign state,Campaign type,Budget,Budget type,Bid strategy type,Target CPA / ROAS,Clicks,Impr.,Cost,Conversions,Cost / conv.,Conv. value,Search impr. share,Search lost IS (budget),Search lost IS (rank)
+Search | Core,Enabled,Search,200.00,Daily,Target ROAS,300%,8520,515100,"22,274.75",154,144.64,"38,500.00",61.30%,0.00%,38.70%
+Search | Competitors,Enabled,Search,60.00,Daily,Maximize conversions,--,1340,17000,"4,791.55",25,191.66,"6,250.00",34.10%,48.60%,17.30%
+Search | Stripe,Enabled,Search,40.00,Daily,Manual CPC,--,1600,25000,"3,734.45",10,373.44,"2,500.00",52.00%,3.10%,44.90%
+Total: Account,,,,,,,11460,557100,"30,800.75",189,162.97,,,,

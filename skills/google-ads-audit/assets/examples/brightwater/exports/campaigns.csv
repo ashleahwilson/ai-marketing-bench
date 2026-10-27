@@ -1,0 +1,6 @@
+Campaign report
+"August 1, 2026 - September 29, 2026"
+Campaign,Campaign state,Campaign type,Budget,Budget type,Bid strategy type,Target CPA / ROAS,Clicks,Impr.,Cost,Conversions,Cost / conv.,Conv. value,Search impr. share,Search lost IS (budget),Search lost IS (rank)
+Search | Brand,Enabled,Search,10.00,Daily,Maximize clicks,--,160,400,96.40,22,4.38,0.00,95.00%,0.00%,5.00%
+Search | Physiotherapy,Enabled,Search,60.00,Daily,Maximize conversions,--,1105,20200,"3,430.25",60,57.17,0.00,48.00%,12.50%,39.50%
+Total: Account,,,,,,,1265,20600,"3,526.65",82,43.01,,,,

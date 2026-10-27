@@ -1,0 +1,7 @@
+Search keyword report
+"August 1, 2026 - September 29, 2026"
+Campaign,Ad group,Keyword,Match type,Status,Quality Score,Exp. CTR,Ad relevance,Landing page exp.,Clicks,Impr.,Cost,Conversions
+Search | Brand,Brand,brightwater physio,Exact match,Enabled,10,Above average,Above average,Above average,160,400,96.40,22
+Search | Physiotherapy,Physiotherapy,physiotherapy halifax,Phrase match,Enabled,7,Average,Above average,Average,780,13100,"2,399.15",49
+Search | Physiotherapy,Sports injury,sports injury physio,Broad match,Enabled,5,Below average,Average,Below average,325,7100,"1,031.10",11
+Total: Keywords,,,,,,,,,1265,20600,"3,526.65",82

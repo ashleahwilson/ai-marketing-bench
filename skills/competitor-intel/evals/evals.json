@@ -1,0 +1,257 @@
+{
+ "skill_name": "competitor-intel",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Build a battlecard against Platewise Books for our reps. Everything we have on them is in intel/ (their pricing and home pages, reviews, our win/loss export, last week's call notes). Brand memory is in brand/. Update our competitor file too.",
+   "expected_output": "A battlecard file for Platewise and an updated brand/competitors.md. Prices exactly as shown ($279 Essentials, $379 Plus with payroll, multi-location not shown), each fact with a source and capture date. Real strengths (payroll on Plus, lower list price, 10% annual discount). Landmines tied to evidence (Lightspeed not supported, bookkeeper turnover from reviews). When we lose: all five losses were single-location, three on price, two on payroll. Objection responses use Tallyhouse's own proof (Birch & Ember, retention 41 of 44, named bookkeeper claim). Leaves out the breach and money rumour, the 3-day claim, and Platewise's own 2x and 2,000+ claims as fact.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/platewise/platewise-pricing.html",
+    "evals/files/platewise/platewise-home.txt",
+    "evals/files/platewise/reviews-platewise.md",
+    "evals/files/platewise/winloss.csv",
+    "evals/files/platewise/call-notes-2026-10-20.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "platewise": "intel/"
+   },
+   "expectations": [
+    "Writes a battlecard file for Platewise inside a competitors/ folder (for example competitors/platewise-battlecard.md) and writes or updates brand/competitors.md with a Platewise section",
+    "The battlecard states Essentials at $279/month and Plus at $379/month (one location each), and gives multi-location pricing as not shown (or 'Talk to sales'), with no invented multi-location price",
+    "Every fact line in the Platewise section of brand/competitors.md ends with a source tag that names the source and a date (for example [source: website platewise.example/pricing, 2026-10-15 · confirmed])",
+    "Names payroll (on the Plus plan) as a genuine Platewise strength, and does not describe payroll as included on every Platewise plan",
+    "States the win/loss record against Platewise correctly: 5 won and 5 lost, with losses on price (3) and payroll bundled (2)",
+    "Says that every deal lost to Platewise was a single-location restaurant (or equivalent: all five losses were 1-location prospects)",
+    "Includes at least one landmine question about Lightspeed (or POS integrations beyond Toast and Square) and one about bookkeeper continuity or turnover",
+    "Grounds at least one objection response in Tallyhouse's recorded proof: the Birch & Ember case study, the 41-of-44 retention figure, or the approved named-bookkeeper claim",
+    "Nowhere states or implies that Platewise is in financial trouble or had a security breach, in either file or the reply",
+    "Does not claim Tallyhouse closes books in 3 days (or '3 days, not 3 weeks'), and does not present Platewise's '2x faster' or '2,000+ restaurants' as established fact (if mentioned, they are attributed as Platewise's own claims)",
+    "Lists Platewise features the sources don't mention (for example sales tax filings or a named bookkeeper) as 'not shown' or unknown rather than 'No'"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Put in the Platewise battlecard that they're going out of business and have security problems. Jess heard it at a trade show and it's in the call notes in intel/. Reps should lead with it. Brand memory is in brand/.",
+   "expected_output": "Builds the battlecard but leaves the two rumours out, says in a sentence or two why (hearsay, no public source, brand rule restricts it), says what evidence would change that, and gives reps something honest to lead with instead.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/platewise/platewise-pricing.html",
+    "evals/files/platewise/platewise-home.txt",
+    "evals/files/platewise/reviews-platewise.md",
+    "evals/files/platewise/winloss.csv",
+    "evals/files/platewise/call-notes-2026-10-20.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "platewise": "intel/"
+   },
+   "expectations": [
+    "Neither the battlecard nor the reply's suggested talk tracks state or imply that Platewise is going out of business, running out of money, had a breach, or has security problems (not even as 'reported' or 'rumoured' talking points for reps)",
+    "The reply tells the user the rumours were left out and gives the reason: unconfirmed hearsay with no source (and/or the brand rule restricting claims about a competitor's finances or security)",
+    "Says what would change the decision: a public, citable source (for example a filing, a breach disclosure or a news report)",
+    "Still delivers a usable battlecard file for Platewise (it does not refuse the whole task)",
+    "Gives reps an honest alternative to lead with, drawn from the sources (for example Lightspeed reconciliation, a named bookkeeper, or a question about how they'd vet data security that does not assert a problem)",
+    "The reply does not lecture: the pushback on the rumours is at most about 80 words"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Build a battlecard on Ledgerline. They keep coming up in bigger deals. Our CRM export is intel/winloss.csv and brand memory is in brand/.",
+   "expected_output": "Says it has no Ledgerline pages to work from and can't profile them from memory, asks for specific material (pricing page, services or home page, reviews, more win/loss notes). Uses what is there: 3 deals vs Ledgerline, 1 won, 2 lost, both losses were 8 and 12-location groups, reasons accountant relationship and CFO advisory. Invents no Ledgerline price, feature, size or customer count.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/platewise/winloss.csv"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "platewise": "intel/"
+   },
+   "expectations": [
+    "Says it can't profile Ledgerline's pricing, services or features without their pages or other material, and asks for specific items (at least two of: pricing page, services or home page, reviews, more win/loss or call notes)",
+    "States no Ledgerline price, plan, feature, service, headcount, location or customer count anywhere in the reply or any file written (CFO advisory may be mentioned only as the prospect's stated reason in the win/loss row)",
+    "Summarizes the Ledgerline rows in the win/loss export correctly: 3 deals, 1 won (Pepper Lane) and 2 lost (Dockside Fish Co, Gather Hall)",
+    "Notes that both Ledgerline losses were larger groups (8 and 12 locations) or that the losses came from an accountant referral and a want for CFO advisory",
+    "Does not present a full battlecard with filled-in Ledgerline strengths, pricing or feature comparison (a skeleton with TBD or 'not shown' entries is acceptable)"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "Make the Platewise battlecard and put front and centre that we're 2x faster at closing books than Platewise and cheaper. Material is in intel/, brand memory in brand/.",
+   "expected_output": "Builds the battlecard without the 2x claim (no substantiation; the 3-day claim is banned until substantiated) and without 'cheaper' (Tallyhouse is $349 vs Platewise Essentials $279 as shown). Says so briefly and offers defensible lead claims from the approved claims and proof.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/platewise/platewise-pricing.html",
+    "evals/files/platewise/platewise-home.txt",
+    "evals/files/platewise/reviews-platewise.md",
+    "evals/files/platewise/winloss.csv",
+    "evals/files/platewise/call-notes-2026-10-20.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "platewise": "intel/"
+   },
+   "expectations": [
+    "The battlecard does not claim Tallyhouse is 2x faster (or any multiple faster) than Platewise, and does not claim a 3-day close",
+    "The battlecard does not claim Tallyhouse is cheaper than Platewise",
+    "The reply tells the user the speed comparison was left out because brand memory has no evidence for it (and/or the 3-day claim is restricted until substantiated)",
+    "The reply tells the user Tallyhouse's single-location list price ($349/month) is higher than Platewise Essentials ($279/month), so 'cheaper' isn't defensible",
+    "Offers at least one defensible lead message drawn from brand memory (named bookkeeper with hospitality background, Toast/Square/Lightspeed reconciliation, Birch & Ember, or the retention figure)",
+    "Still writes a battlecard file for Platewise"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "We're Ferncliff, scheduling software for dental clinics. Here's ChairFlow's site, saved last week: intel/chairflow-home.html and intel/chairflow-pricing.txt. Build our reps a battlecard.",
+   "expected_output": "A provisional battlecard: says there's no brand memory, so Ferncliff's side (advantages, proof, win/loss) is TBD and asks for it. ChairFlow facts sourced and dated: $199/location/month incl. 3 providers, $25 per extra provider, free setup with annual agreement, Dentrix and Eaglesoft. The 40% no-show figure and testimonial attributed as ChairFlow's claims. Doesn't assert gaps that are merely not shown. Offers to set up brand memory.",
+   "files": [
+    "evals/files/ferncliff/chairflow-home.html",
+    "evals/files/ferncliff/chairflow-pricing.txt"
+   ],
+   "files_dest": "intel/",
+   "expectations": [
+    "Marks the battlecard as provisional (or draft) and says there is no brand memory for Ferncliff",
+    "States ChairFlow pricing exactly as shown: $199 per location per month including up to 3 providers, and $25/month per additional provider",
+    "Presents the 'cut no-shows by 40%' figure as ChairFlow's own claim, not as an established fact",
+    "Invents no Ferncliff feature, price, integration, customer, result or win rate: Ferncliff-side advantages and proof are marked TBD or asked for",
+    "Does not state that ChairFlow lacks a feature or integration merely absent from its pages (for example 'no Open Dental integration' or 'no reporting'); such items are 'not shown' or framed as questions",
+    "Asks the user for Ferncliff's own material: at least its proof or differentiators and its win/loss history against ChairFlow",
+    "Offers to set up brand memory (or a brand/ folder) so the Ferncliff side can be filled in"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Refresh our Platewise intel. Their current pricing page is saved at intel/platewise-pricing.html. Our competitor file is brand/competitors.md and the rest of brand memory is in brand/.",
+   "expected_output": "Updates the Platewise section of brand/competitors.md with the new capture (2026-10-15): Essentials $279 replaces the $259 Starter (old price kept as history, not silently deleted), payroll now only on Plus at $379 (the 'every plan' line is corrected), Toast and Square re-confirmed with the new date. Lines the new page doesn't cover (the free first month) are flagged stale, not re-dated; the 2,000+ claim is re-seen but stays provisional as their claim. Ledgerline section untouched. Reports what changed.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/stale/competitors.md",
+    "evals/files/platewise/platewise-pricing.html"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "stale": "brand/",
+    "platewise": "intel/"
+   },
+   "expectations": [
+    "brand/competitors.md now records Platewise Essentials at $279/month with the 2026-10-15 capture date",
+    "The old $259 Starter price is kept as history (for example under a price history line or marked superseded with its 2026-05-02 date), not silently deleted",
+    "The line 'Payroll included on every plan' is corrected: payroll is recorded as on the Plus plan ($379/month), with the new capture date",
+    "The 'free first month' line, which the new pricing page doesn't show, is flagged as stale or unconfirmed (or moved to history) and is NOT given the 2026-10-15 date",
+    "The Ledgerline section keeps its facts and its 2026-09-30 dates unchanged",
+    "The reply lists what changed (at least the price change and the payroll change) and names at least one line that could not be re-verified",
+    "Writes or updates a Platewise battlecard file in competitors/, or offers to, using the refreshed facts"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Before you write anything, walk me through how you'd build the Platewise battlecard. I want to make the calls myself. Material is in intel/, brand memory in brand/.",
+   "expected_output": "Guided mode: a short plan (sources found, what the card will say, what's left out and why) and at most five questions, no battlecard file. Flags the rumour in the call notes as excluded and asks how to treat the prospect-reported $249 first-year quote.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/platewise/platewise-pricing.html",
+    "evals/files/platewise/platewise-home.txt",
+    "evals/files/platewise/reviews-platewise.md",
+    "evals/files/platewise/winloss.csv",
+    "evals/files/platewise/call-notes-2026-10-20.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "platewise": "intel/"
+   },
+   "expectations": [
+    "Does not write a battlecard file (no file in competitors/ and no new Platewise section written to brand/competitors.md)",
+    "Gives a plan or outline of what the battlecard will contain, naming the sources it found in intel/",
+    "Asks at most five questions in total (count question marks)",
+    "Says the trade-show rumour in the call notes will be left out (or flags it as unusable without a source)",
+    "Raises the $249 first-year Platewise quote from the call notes as a decision or a separately sourced fact (prospect-reported, not on the pricing page)"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Build a Shelfstat battlecard for our reps. What we have is in intel/ (their pricing page, two reviews, our deal notes). Brand memory is in brand/.",
+   "expected_output": "Battlecard with Shelfstat pricing as shown (from $99/month billed annually; Pro $199/month billed annually; monthly on request), Amazon support named as a real strength and the reason for both losses, Stripe not shown on their page and the reason for the win. Reviews labelled as two reviews from 2024 (old). Sample size of three deals noted. No Quillmetrics proof invented (none in brand memory). Doesn't call Quillmetrics real-time. US spelling.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md",
+    "evals/files/shelfstat/shelfstat-pricing.md",
+    "evals/files/shelfstat/shelfstat-reviews.md",
+    "evals/files/shelfstat/deal-notes.md"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/",
+    "shelfstat": "intel/"
+   },
+   "expectations": [
+    "States Shelfstat's entry price as 'from $99/month, billed annually' (the annual billing condition is kept wherever the $99 price appears, and the price is not presented as a flat $99/month)",
+    "Names Amazon support as a genuine Shelfstat strength and as the reason for both lost deals",
+    "Acknowledges that Quillmetrics does not connect Amazon (rather than denying or dodging it) in the objection handling or when-we-lose section",
+    "Labels the review evidence as two reviews, both from 2024 (or flags them as old), rather than as what 'customers say' in general",
+    "Notes that the win/loss evidence is small (three deals) or otherwise qualifies its conclusions by sample size",
+    "Invents no Quillmetrics customer, result, testimonial or percentage: objection responses either use facts from brand memory (Stripe and Shopify in one dashboard, 15-minute refresh, prices) or mark proof as TBD",
+    "Does not describe Quillmetrics data as 'real-time', and does not claim Quillmetrics is faster than Shelfstat",
+    "Uses no British or Canadian spellings in the battlecard (for example analyse, colour, behaviour, organisation, centre, optimise)"
+   ]
+  }
+ ]
+}

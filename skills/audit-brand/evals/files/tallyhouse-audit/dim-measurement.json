@@ -1,0 +1,53 @@
+{
+ "dimension": "measurement",
+ "assessable": true,
+ "confidence": "medium",
+ "checks": [
+  {
+   "id": "M1",
+   "points": 15,
+   "max": 30,
+   "evidence": "gtag config on index.html only; pricing and contact load the library without config; about has no tag."
+  },
+  {
+   "id": "M2",
+   "points": 0,
+   "max": 30,
+   "evidence": "No conversion event in the source of any page."
+  },
+  {
+   "id": "M3",
+   "points": 15,
+   "max": 15,
+   "evidence": "No paid activity observed."
+  },
+  {
+   "id": "M4",
+   "points": 15,
+   "max": 15,
+   "evidence": "No Universal Analytics or duplicate tags."
+  },
+  {
+   "id": "M5",
+   "points": 0,
+   "max": 10,
+   "evidence": "No privacy policy link on any page."
+  }
+ ],
+ "score": 45,
+ "findings": [
+  {
+   "severity": "high",
+   "check": "M2",
+   "finding": "Form submissions not tracked",
+   "evidence": "no gtag('event') in source",
+   "fix": "Fire a lead event on submit."
+  }
+ ],
+ "strengths": [
+  "GA4 configured on the home page."
+ ],
+ "not_observable": [
+  "Tag Manager tracking not visible in saved HTML."
+ ]
+}

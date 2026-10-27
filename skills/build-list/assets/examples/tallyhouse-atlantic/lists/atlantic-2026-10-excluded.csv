@@ -1,0 +1,2 @@
+company,domain,reason,detail,sources
+Kelp & Co Seafood Market,kelpandco.example,existing customer,CRM stage is Customer,crm.csv:6

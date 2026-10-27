@@ -1,0 +1,18 @@
+{"dimension": "positioning", "assessable": true, "confidence": "low",
+ "checks": [
+  {"id": "P1", "points": 0, "max": 20, "evidence": "index: \"Payroll that just works\" names no buyer or category beyond payroll; any payroll company could say it (swap test, generic)."},
+  {"id": "P2", "points": 10, "max": 20, "evidence": "about: \"independent veterinary clinics in Ontario and British Columbia\". No exclusions on any page."},
+  {"id": "P3", "points": 20, "max": 20, "evidence": "about: \"calculates on-call pay, overtime for technicians, and relief vet contracts automatically, the parts general payroll software leaves to a spreadsheet\"."},
+  {"id": "P4", "points": 0, "max": 20, "evidence": "The about page says what Oakmere is and who it's for; the home page doesn't. About page clearer than the home page: 0."},
+  {"id": "P5", "points": 10, "max": 20, "evidence": "index subhead \"Run payroll in 5 minutes\" has no proof; the on-call claim is backed by Dr. Sam Okoye's quote. Some unsupported: 10."}
+ ],
+ "score": 40,
+ "findings": [
+  {"severity": "high", "check": "P4", "finding": "The home page hides what the about page says plainly.", "evidence": "index H1 \"Payroll that just works\" vs about \"payroll built for independent veterinary clinics in Ontario and British Columbia\".", "fix": "Use the about page's first sentence as the H1."},
+  {"severity": "high", "check": "P1", "finding": "The headline could belong to any payroll company.", "evidence": "index: \"Payroll that just works\".", "fix": "Lead with on-call pay and relief vet contracts (positioning.md, option A)."},
+  {"severity": "medium", "check": "P5", "finding": "\"Run payroll in 5 minutes\" is unsupported.", "evidence": "index subhead; no measured pay run on any page.", "fix": "Remove it, or replace it with one named client's timed pay run."},
+  {"severity": "medium", "check": "P2", "finding": "No exclusions, and the audience appears only on about.", "evidence": "index and pricing name no buyer.", "fix": "Add the audience to the home subhead and one \"not for\" line."}
+ ],
+ "strengths": ["The difference is specific and contrasted on the about page.", "The Okoye quote is named and matches the main claim."],
+ "not_observable": ["How clinics compare Oakmere with general payroll providers.", "Which message converts."],
+ "source": "positioning deep dive, 2026-10-22; report: positioning.md"}

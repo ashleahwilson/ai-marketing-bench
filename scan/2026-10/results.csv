@@ -1,0 +1,587 @@
+library,name,topic,score,grade,routing,structure,portability,evidence,safety,description_chars,body_lines,evals,published_results,version,path
+coreyhaines31_marketingskills,ab-testing,cro & pages,89,A,25,20,20,14,10,785,352,8,False,2.0.1,skills/ab-testing
+coreyhaines31_marketingskills,ad-creative,ads,80,B,25,15,20,10,10,1020,442,20,False,2.10.0,skills/ad-creative
+coreyhaines31_marketingskills,ads,outbound,82,B,25,17,20,10,10,824,464,14,False,2.4.6,skills/ads
+coreyhaines31_marketingskills,ai-seo,seo & aeo,82,B,25,17,20,10,10,1004,494,12,False,2.7.6,skills/ai-seo
+coreyhaines31_marketingskills,analytics,revops & data,85,A,25,20,20,10,10,700,307,8,False,2.0.3,skills/analytics
+coreyhaines31_marketingskills,aso,seo & aeo,76,B,25,15,20,6,10,461,310,7,False,2.0.2,skills/aso
+coreyhaines31_marketingskills,attribution,sales & deals,82,B,25,17,20,10,10,977,223,9,False,1.1.4,skills/attribution
+coreyhaines31_marketingskills,churn-prevention,outbound,78,B,25,17,20,6,10,636,420,7,False,2.0.2,skills/churn-prevention
+coreyhaines31_marketingskills,co-marketing,brand & positioning,81,B,25,20,20,6,10,430,306,7,False,2.0.2,skills/co-marketing
+coreyhaines31_marketingskills,cold-email,outbound,82,B,25,17,20,10,10,884,210,9,False,2.2.0,skills/cold-email
+coreyhaines31_marketingskills,community-marketing,cro & pages,81,B,25,20,20,6,10,629,171,7,False,2.0.1,skills/community-marketing
+coreyhaines31_marketingskills,competitor-profiling,outbound,81,B,25,20,20,6,10,690,436,7,False,2.1.3,skills/competitor-profiling
+coreyhaines31_marketingskills,competitors,seo & aeo,85,A,25,20,20,10,10,893,283,8,False,2.3.0,skills/competitors
+coreyhaines31_marketingskills,content-strategy,seo & aeo,82,B,25,17,20,10,10,659,437,8,False,2.1.3,skills/content-strategy
+coreyhaines31_marketingskills,copy-editing,content & copy,85,A,25,20,20,10,10,812,485,8,False,2.1.1,skills/copy-editing
+coreyhaines31_marketingskills,copywriting,cro & pages,85,A,25,20,20,10,10,946,282,9,False,2.1.0,skills/copywriting
+coreyhaines31_marketingskills,cro,cro & pages,78,B,25,17,20,6,10,654,194,7,False,2.0.3,skills/cro
+coreyhaines31_marketingskills,customer-research,cro & pages,82,B,25,17,20,10,10,953,304,13,False,2.0.4,skills/customer-research
+coreyhaines31_marketingskills,directory-submissions,seo & aeo,77,B,25,17,15,10,10,905,397,8,False,2.1.1,skills/directory-submissions
+coreyhaines31_marketingskills,emails,outbound,81,B,25,20,20,6,10,697,336,7,False,2.1.3,skills/emails
+coreyhaines31_marketingskills,events,outbound,81,B,25,20,20,6,10,870,127,7,False,1.0.0,skills/events
+coreyhaines31_marketingskills,free-tools,seo & aeo,81,B,25,20,20,6,10,628,186,7,False,2.0.1,skills/free-tools
+coreyhaines31_marketingskills,image,cro & pages,78,B,25,17,20,6,10,818,336,6,False,2.0.2,skills/image
+coreyhaines31_marketingskills,influencer-marketing,sales & deals,81,B,25,20,20,6,10,812,198,7,False,1.1.2,skills/influencer-marketing
+coreyhaines31_marketingskills,launch,strategy & planning,85,A,25,20,20,10,10,652,381,9,False,2.2.0,skills/launch
+coreyhaines31_marketingskills,lead-magnets,outbound,82,B,25,17,20,10,10,719,308,9,False,2.1.0,skills/lead-magnets
+coreyhaines31_marketingskills,marketing-council,content & copy,76,B,25,15,20,6,10,818,157,5,False,1.0.0,skills/marketing-council
+coreyhaines31_marketingskills,marketing-ideas,other,81,B,25,20,20,6,10,561,167,7,False,2.0.1,skills/marketing-ideas
+coreyhaines31_marketingskills,marketing-loops,outbound,82,B,25,17,20,10,10,818,111,9,False,1.4.0,skills/marketing-loops
+coreyhaines31_marketingskills,marketing-plan,cro & pages,65,C,25,15,5,10,10,1021,300,9,False,1.2.1,skills/marketing-plan
+coreyhaines31_marketingskills,marketing-psychology,cro & pages,81,B,25,20,20,6,10,600,451,6,False,2.0.0,skills/marketing-psychology
+coreyhaines31_marketingskills,offers,content & copy,76,B,25,15,20,6,10,969,151,1,False,1.0.1,skills/offers
+coreyhaines31_marketingskills,onboarding,outbound,86,A,30,20,20,6,10,624,257,7,False,2.0.1,skills/onboarding
+coreyhaines31_marketingskills,paywalls,cro & pages,81,B,25,20,20,6,10,684,223,6,False,2.0.0,skills/paywalls
+coreyhaines31_marketingskills,popups,cro & pages,81,B,25,20,20,6,10,528,450,6,False,2.0.0,skills/popups
+coreyhaines31_marketingskills,pricing,cro & pages,85,A,25,20,20,10,10,868,291,9,False,2.1.3,skills/pricing
+coreyhaines31_marketingskills,product-marketing,cro & pages,81,B,25,20,20,6,10,549,251,7,False,2.1.0,skills/product-marketing
+coreyhaines31_marketingskills,programmatic-seo,seo & aeo,81,B,25,20,20,6,10,615,238,7,False,2.1.0,skills/programmatic-seo
+coreyhaines31_marketingskills,prospecting,outbound,80,B,25,15,20,10,10,974,273,10,False,1.3.0,skills/prospecting
+coreyhaines31_marketingskills,public-relations,outbound,73,B,25,17,15,6,10,945,150,2,False,1.2.0,skills/public-relations
+coreyhaines31_marketingskills,referrals,strategy & planning,85,A,25,20,20,10,10,566,279,15,False,2.2.0,skills/referrals
+coreyhaines31_marketingskills,revops,outbound,76,B,25,15,20,6,10,684,345,7,False,2.2.0,skills/revops
+coreyhaines31_marketingskills,sales-enablement,outbound,80,B,25,15,20,10,10,1012,423,11,False,2.4.0,skills/sales-enablement
+coreyhaines31_marketingskills,schema,seo & aeo,85,A,25,20,20,10,10,526,187,9,False,2.0.2,skills/schema
+coreyhaines31_marketingskills,seo-audit,seo & aeo,82,B,25,17,20,10,10,812,492,13,False,2.2.0,skills/seo-audit
+coreyhaines31_marketingskills,signup,cro & pages,81,B,25,20,20,6,10,623,359,6,False,2.0.1,skills/signup
+coreyhaines31_marketingskills,site-architecture,seo & aeo,80,B,30,10,20,10,10,786,355,8,False,2.1.0,skills/site-architecture
+coreyhaines31_marketingskills,sms,outbound,76,B,25,15,20,6,10,748,348,7,False,1.1.0,skills/sms
+coreyhaines31_marketingskills,social,cro & pages,79,B,25,15,15,14,10,1021,452,10,False,2.3.3,skills/social
+coreyhaines31_marketingskills,video,sales & deals,77,B,25,17,15,10,10,825,330,8,False,2.2.1,skills/video
+thatrebeccarae_claude-marketing,ab-testing-framework,cro & pages,73,B,25,20,16,2,10,397,133,0,False,1.0.0,skills/ab-testing-framework
+thatrebeccarae_claude-marketing,account-structure-review,ads,70,B,25,17,16,2,10,438,457,0,False,1.0.0,skills/account-structure-review
+thatrebeccarae_claude-marketing,aeo-geo-optimizer,seo & aeo,70,B,25,17,16,2,10,400,220,0,False,1.0.0,skills/aeo-geo-optimizer
+thatrebeccarae_claude-marketing,brand-dna,seo & aeo,70,B,25,17,16,2,10,450,147,0,False,1.0.0,skills/brand-dna
+thatrebeccarae_claude-marketing,brand-voice-guidelines,brand & positioning,77,B,25,20,16,6,10,205,151,0,False,1.0.0,skills/brand-voice-guidelines
+thatrebeccarae_claude-marketing,braze,cro & pages,60,C,25,17,6,2,10,282,105,0,False,1.0.0,skills/braze
+thatrebeccarae_claude-marketing,cold-email-outreach,outbound,73,B,25,20,16,2,10,274,138,0,False,1.0.0,skills/cold-email-outreach
+thatrebeccarae_claude-marketing,competitor-ads-analyst,ads,70,B,25,17,16,2,10,312,98,0,False,1.0.0,skills/competitor-ads-analyst
+thatrebeccarae_claude-marketing,content-creator,seo & aeo,70,B,25,17,16,2,10,394,109,0,False,1.0.0,skills/content-creator
+thatrebeccarae_claude-marketing,content-pipeline,outbound,70,B,25,17,16,2,10,253,117,0,False,1.0.0,skills/content-pipeline
+thatrebeccarae_claude-marketing,content-workflow,sales & deals,60,C,15,17,16,2,10,243,115,0,False,1.0.0,skills/content-workflow
+thatrebeccarae_claude-marketing,copywriting-frameworks,outbound,73,B,25,20,16,2,10,338,182,0,False,1.0.0,skills/copywriting-frameworks
+thatrebeccarae_claude-marketing,cro-auditor,cro & pages,73,B,25,20,16,2,10,373,170,0,False,1.0.0,skills/cro-auditor
+thatrebeccarae_claude-marketing,cross-platform-audit,ads,70,B,25,17,16,2,10,536,171,0,False,1.0.0,skills/cross-platform-audit
+thatrebeccarae_claude-marketing,customer-journey-mapping,other,73,B,25,20,16,2,10,280,104,0,False,1.0.0,skills/customer-journey-mapping
+thatrebeccarae_claude-marketing,data-viz-deck,cro & pages,65,C,25,17,11,2,10,366,165,0,False,1.0.0,skills/data-viz-deck
+thatrebeccarae_claude-marketing,dep-audit,other,55,C,15,17,11,2,10,226,198,0,False,1.0.0,skills/dep-audit
+thatrebeccarae_claude-marketing,email-composer,cro & pages,60,C,15,17,16,2,10,229,101,0,False,1.0.0,skills/email-composer
+thatrebeccarae_claude-marketing,facebook-ads,ads,63,C,25,15,11,2,10,266,148,0,False,1.0.0,skills/facebook-ads
+thatrebeccarae_claude-marketing,frontend-design,other,60,C,15,17,16,2,10,308,199,0,False,1.0.0,skills/frontend-design
+thatrebeccarae_claude-marketing,github-readme,seo & aeo,45,D,15,17,1,2,10,271,274,0,False,2.0.0,skills/github-readme
+thatrebeccarae_claude-marketing,google-ads,ads,63,C,25,15,11,2,10,260,157,0,False,1.0.0,skills/google-ads
+thatrebeccarae_claude-marketing,google-analytics,cro & pages,65,C,25,17,11,2,10,268,157,0,False,1.0.0,skills/google-analytics
+thatrebeccarae_claude-marketing,google-tag-manager,analytics & reporting,70,B,25,17,16,2,10,302,131,0,False,1.0.0,skills/google-tag-manager
+thatrebeccarae_claude-marketing,html-report-builder,content & copy,60,C,15,17,16,2,10,380,130,0,False,1.0.0,skills/html-report-builder
+thatrebeccarae_claude-marketing,icp-research,sales & deals,70,B,25,17,16,2,10,293,146,0,False,1.0.0,skills/icp-research
+thatrebeccarae_claude-marketing,klaviyo-analyst,strategy & planning,65,C,25,17,11,2,10,363,382,0,False,1.1.0,skills/klaviyo-analyst
+thatrebeccarae_claude-marketing,klaviyo-developer,analytics & reporting,65,C,25,17,11,2,10,392,379,0,False,1.1.0,skills/klaviyo-developer
+thatrebeccarae_claude-marketing,landing-page-optimizer,cro & pages,73,B,25,20,16,2,10,300,105,0,False,1.0.0,skills/landing-page-optimizer
+thatrebeccarae_claude-marketing,linkedin-ads,outbound,73,B,25,20,16,2,10,357,135,0,False,1.0.0,skills/linkedin-ads
+thatrebeccarae_claude-marketing,llms-txt,seo & aeo,60,C,15,17,16,2,10,218,127,0,False,1.0.0,skills/llms-txt
+thatrebeccarae_claude-marketing,looker-studio,cro & pages,65,C,25,17,11,2,10,306,391,0,False,1.0.0,skills/looker-studio
+thatrebeccarae_claude-marketing,market-research,cro & pages,60,C,15,17,16,2,10,276,95,0,False,1.0.0,skills/market-research
+thatrebeccarae_claude-marketing,microsoft-ads,seo & aeo,63,C,25,15,11,2,10,267,136,0,False,1.0.0,skills/microsoft-ads
+thatrebeccarae_claude-marketing,pricing-strategy,cro & pages,73,B,25,20,16,2,10,248,109,0,False,1.0.0,skills/pricing-strategy
+thatrebeccarae_claude-marketing,pro-deck-builder,analytics & reporting,57,C,25,9,11,2,10,315,544,0,False,1.0.0,skills/pro-deck-builder
+thatrebeccarae_claude-marketing,pro-report-builder,content & copy,70,B,25,17,16,2,10,529,362,0,False,1.0.0,skills/pro-report-builder
+thatrebeccarae_claude-marketing,programmatic-seo,seo & aeo,73,B,25,20,16,2,10,278,112,0,False,1.0.0,skills/programmatic-seo
+thatrebeccarae_claude-marketing,release-notes,cro & pages,60,C,15,17,16,2,10,269,157,0,False,1.0.0,skills/release-notes
+thatrebeccarae_claude-marketing,remotion-video,content & copy,70,B,25,17,16,2,10,298,138,0,False,1.0.0,skills/remotion-video
+thatrebeccarae_claude-marketing,repo-health,analytics & reporting,55,C,15,17,11,2,10,230,258,0,False,1.0.0,skills/repo-health
+thatrebeccarae_claude-marketing,repo-scaffold,other,55,C,15,17,11,2,10,220,155,0,False,1.0.0,skills/repo-scaffold
+thatrebeccarae_claude-marketing,research-digest,content & copy,60,C,15,17,16,2,10,207,112,0,False,1.0.0,skills/research-digest
+thatrebeccarae_claude-marketing,retention-churn-prevention,other,73,B,25,20,16,2,10,224,103,0,False,1.0.0,skills/retention-churn-prevention
+thatrebeccarae_claude-marketing,safe-push,other,64,C,15,17,16,6,10,274,180,0,False,1.2.0,skills/safe-push
+thatrebeccarae_claude-marketing,schema-markup-generator,seo & aeo,73,B,25,20,16,2,10,345,188,0,False,1.0.0,skills/schema-markup-generator
+thatrebeccarae_claude-marketing,seo-content-writer,seo & aeo,60,C,15,17,16,2,10,240,96,0,False,1.0.0,skills/seo-content-writer
+thatrebeccarae_claude-marketing,shopify,cro & pages,65,C,25,17,11,2,10,297,212,0,False,1.0.0,skills/shopify
+thatrebeccarae_claude-marketing,social-media-strategy,cro & pages,73,B,25,20,16,2,10,270,106,0,False,1.0.0,skills/social-media-strategy
+thatrebeccarae_claude-marketing,social-preview,brand & positioning,60,C,15,17,16,2,10,243,209,0,False,1.0.0,skills/social-preview
+thatrebeccarae_claude-marketing,sync-repos,other,70,B,25,17,16,2,10,212,132,0,False,1.0.0,skills/sync-repos
+thatrebeccarae_claude-marketing,tech-diagram,sales & deals,70,B,25,17,16,2,10,306,129,0,False,1.0.0,skills/tech-diagram
+thatrebeccarae_claude-marketing,technical-seo-audit,seo & aeo,70,B,25,17,16,2,10,389,218,0,False,1.0.0,skills/technical-seo-audit
+thatrebeccarae_claude-marketing,tiktok-ads,cro & pages,73,B,25,20,16,2,10,303,132,0,False,1.0.0,skills/tiktok-ads
+thatrebeccarae_claude-marketing,utm-attribution-strategy,revops & data,73,B,25,20,16,2,10,351,172,0,False,1.0.0,skills/utm-attribution-strategy
+thatrebeccarae_claude-marketing,wasted-spend-finder,ads,70,B,25,17,16,2,10,280,151,0,False,1.0.0,skills/wasted-spend-finder
+OpenClaudia_openclaudia-skills,ab-test-setup,cro & pages,75,B,25,20,20,0,10,459,156,0,False,,skills/ab-test-setup
+OpenClaudia_openclaudia-skills,affiliate-marketing,analytics & reporting,75,B,25,20,20,0,10,301,245,0,False,,skills/affiliate-marketing
+OpenClaudia_openclaudia-skills,ahrefs-python,seo & aeo,62,C,25,12,15,0,10,386,209,0,False,,skills/ahrefs-research
+OpenClaudia_openclaudia-skills,ai-citations-report,seo & aeo,75,B,25,20,20,0,10,307,61,0,False,,skills/ai-citations-report
+OpenClaudia_openclaudia-skills,generate-image,other,63,C,25,15,13,0,10,186,133,0,False,,skills/ai-image-gen
+OpenClaudia_openclaudia-skills,apollo-outreach,outbound,75,B,25,20,20,0,10,307,171,0,False,,skills/apollo-outreach
+OpenClaudia_openclaudia-skills,backlink-audit,seo & aeo,75,B,25,20,20,0,10,289,375,0,False,,skills/backlink-audit
+OpenClaudia_openclaudia-skills,bluesky,content & copy,75,B,25,20,20,0,10,224,197,0,False,,skills/bluesky
+OpenClaudia_openclaudia-skills,brand-monitor,brand & positioning,79,B,25,20,20,4,10,360,339,0,False,,skills/brand-monitor
+OpenClaudia_openclaudia-skills,brand-dev,brand & positioning,68,C,25,15,18,0,10,201,70,0,False,,skills/brand-research
+OpenClaudia_openclaudia-skills,competitor-analysis,seo & aeo,75,B,25,20,20,0,10,534,267,0,False,,skills/competitor-analysis
+OpenClaudia_openclaudia-skills,competitor-traffic-report,analytics & reporting,75,B,25,20,20,0,10,489,86,0,False,,skills/competitor-traffic-report
+OpenClaudia_openclaudia-skills,content-calendar,cro & pages,79,B,25,20,20,4,10,415,290,0,False,,skills/content-calendar
+OpenClaudia_openclaudia-skills,content-gap-analysis,seo & aeo,75,B,25,20,20,0,10,299,201,0,False,,skills/content-gap-analysis
+OpenClaudia_openclaudia-skills,content-repurposing,cro & pages,70,B,25,15,20,0,10,301,234,0,False,,skills/content-repurposing
+OpenClaudia_openclaudia-skills,content-strategy,content & copy,75,B,25,20,20,0,10,349,276,0,False,,skills/content-strategy
+OpenClaudia_openclaudia-skills,copy-editing,cro & pages,75,B,25,20,20,0,10,340,233,0,False,,skills/copy-editing
+OpenClaudia_openclaudia-skills,copywriting,cro & pages,75,B,25,20,20,0,10,273,201,0,False,,skills/copywriting
+OpenClaudia_openclaudia-skills,demand-gen,sales & deals,75,B,25,20,20,0,10,336,223,0,False,,skills/demand-gen
+OpenClaudia_openclaudia-skills,discord-bot,content & copy,67,C,25,12,20,0,10,332,705,0,False,,skills/discord-bot
+OpenClaudia_openclaudia-skills,domain-research,research,75,B,25,20,20,0,10,279,178,0,False,,skills/domain-research
+OpenClaudia_openclaudia-skills,email-sequence,outbound,75,B,25,20,20,0,10,438,282,0,False,,skills/email-sequence
+OpenClaudia_openclaudia-skills,email-subject-lines,cro & pages,75,B,25,20,20,0,10,338,326,0,False,,skills/email-subject-lines
+OpenClaudia_openclaudia-skills,facebook-ads,ads,75,B,25,20,20,0,10,461,171,0,False,,skills/facebook-ads
+OpenClaudia_openclaudia-skills,feishu-lark,other,70,B,25,15,20,0,10,346,961,0,False,,skills/feishu-lark
+OpenClaudia_openclaudia-skills,geo-analysis,seo & aeo,75,B,25,20,20,0,10,336,61,0,False,,skills/geo-analysis
+OpenClaudia_openclaudia-skills,geo-difficulty,seo & aeo,75,B,25,20,20,0,10,355,46,0,False,,skills/geo-difficulty
+OpenClaudia_openclaudia-skills,geo-query-finder,seo & aeo,75,B,25,20,20,0,10,355,149,0,False,,skills/geo-query-finder
+OpenClaudia_openclaudia-skills,github-stars,other,79,B,25,20,20,4,10,284,69,0,False,,skills/github-stars
+OpenClaudia_openclaudia-skills,glasser-research,seo & aeo,60,C,15,20,15,0,10,344,137,0,False,,skills/glasser-research
+OpenClaudia_openclaudia-skills,google-ads,ads,75,B,25,20,20,0,10,433,257,0,False,,skills/google-ads
+OpenClaudia_openclaudia-skills,google-ads-report,ads,65,C,25,20,10,0,10,358,298,0,False,,skills/google-ads-report
+OpenClaudia_openclaudia-skills,google-analytics,cro & pages,79,B,25,20,20,4,10,382,396,0,False,,skills/google-analytics
+OpenClaudia_openclaudia-skills,google-reviews,research,70,B,25,20,15,0,10,232,107,0,False,,skills/google-reviews
+OpenClaudia_openclaudia-skills,growth-strategy,analytics & reporting,75,B,25,20,20,0,10,342,239,0,False,,skills/growth-strategy
+OpenClaudia_openclaudia-skills,gsc-portfolio-audit,seo & aeo,75,B,30,20,15,0,10,733,56,0,False,,skills/gsc-portfolio-audit
+OpenClaudia_openclaudia-skills,hubspot,sales & deals,75,B,25,20,20,0,10,296,244,0,False,,skills/hubspot
+OpenClaudia_openclaudia-skills,i18n,revops & data,68,C,25,20,13,0,10,324,269,0,False,,skills/i18n
+OpenClaudia_openclaudia-skills,icp-builder,brand & positioning,75,B,25,20,20,0,10,491,220,0,False,,skills/icp-builder
+OpenClaudia_openclaudia-skills,keyword-research,seo & aeo,75,B,25,20,20,0,10,272,395,0,False,,skills/keyword-research
+OpenClaudia_openclaudia-skills,launch-strategy,outbound,75,B,25,20,20,0,10,507,140,0,False,,skills/launch-strategy
+OpenClaudia_openclaudia-skills,lead-magnet,content & copy,75,B,25,20,20,0,10,391,448,0,False,,skills/lead-magnet
+OpenClaudia_openclaudia-skills,linkedin-ads,cro & pages,75,B,25,20,20,0,10,523,341,0,False,,skills/linkedin-ads
+OpenClaudia_openclaudia-skills,linkedin-content,cro & pages,75,B,25,20,20,0,10,285,191,0,False,,skills/linkedin-content
+OpenClaudia_openclaudia-skills,marketing-ideas,other,75,B,25,20,20,0,10,402,414,0,False,,skills/marketing-ideas
+OpenClaudia_openclaudia-skills,marketing-slides,other,75,B,25,20,20,0,10,278,84,0,False,,skills/marketing-slides
+OpenClaudia_openclaudia-skills,newsletter,content & copy,75,B,25,20,20,0,10,285,230,0,False,,skills/newsletter
+OpenClaudia_openclaudia-skills,onboarding-cro,outbound,75,B,25,20,20,0,10,409,478,0,False,,skills/onboarding-cro
+OpenClaudia_openclaudia-skills,organize-skills,analytics & reporting,73,B,25,20,18,0,10,450,83,0,False,,skills/organize-skills
+OpenClaudia_openclaudia-skills,page-cro,cro & pages,75,B,25,20,20,0,10,483,156,0,False,,skills/page-cro
+OpenClaudia_openclaudia-skills,podcast-edit,brand & positioning,68,C,25,20,13,0,10,272,429,0,False,,skills/podcast-edit
+OpenClaudia_openclaudia-skills,podcast-marketing,seo & aeo,70,B,25,15,20,0,10,266,236,0,False,,skills/podcast-marketing
+OpenClaudia_openclaudia-skills,pricing-strategy,cro & pages,75,B,25,20,20,0,10,479,147,0,False,,skills/pricing-strategy
+OpenClaudia_openclaudia-skills,product-marketing,sales & deals,75,B,25,20,20,0,10,344,238,0,False,,skills/product-marketing
+OpenClaudia_openclaudia-skills,programmatic-seo,seo & aeo,75,B,25,20,20,0,10,340,398,0,False,,skills/programmatic-seo
+OpenClaudia_openclaudia-skills,publish-article,seo & aeo,75,B,25,20,20,0,10,387,288,0,False,,skills/publish-article
+OpenClaudia_openclaudia-skills,reddit-marketing,strategy & planning,75,B,25,20,20,0,10,251,190,0,False,,skills/reddit-marketing
+OpenClaudia_openclaudia-skills,referral-program,other,79,B,25,20,20,4,10,333,376,0,False,,skills/referral-program
+OpenClaudia_openclaudia-skills,schema-markup,seo & aeo,72,B,25,17,20,0,10,334,606,0,False,,skills/schema-markup
+OpenClaudia_openclaudia-skills,search-console,seo & aeo,79,B,25,20,20,4,10,422,395,0,False,,skills/search-console
+OpenClaudia_openclaudia-skills,semrush-research,seo & aeo,79,B,25,20,20,4,10,348,291,0,False,,skills/semrush-research
+OpenClaudia_openclaudia-skills,seo-audit,seo & aeo,75,B,25,20,20,0,10,248,232,0,False,,skills/seo-audit
+OpenClaudia_openclaudia-skills,seo-content-brief,seo & aeo,75,B,25,20,20,0,10,260,203,0,False,,skills/seo-content-brief
+OpenClaudia_openclaudia-skills,serp-analyzer,seo & aeo,75,B,25,20,20,0,10,295,350,0,False,,skills/serp-analyzer
+OpenClaudia_openclaudia-skills,signup-flow-cro,cro & pages,75,B,25,20,20,0,10,382,351,0,False,,skills/signup-flow-cro
+OpenClaudia_openclaudia-skills,similarweb-traffic,seo & aeo,70,B,25,20,15,0,10,300,78,0,False,,skills/similarweb-traffic
+OpenClaudia_openclaudia-skills,slack-bot,cro & pages,65,C,25,10,20,0,10,339,1236,0,False,,skills/slack-bot
+OpenClaudia_openclaudia-skills,social-content,cro & pages,67,C,25,12,20,0,10,568,507,0,False,,skills/social-content
+OpenClaudia_openclaudia-skills,unsplash-image,other,63,C,25,15,13,0,10,228,105,0,False,,skills/stock-images
+OpenClaudia_openclaudia-skills,stripe-dispute,other,75,B,25,20,20,0,10,209,278,0,False,,skills/stripe-dispute
+OpenClaudia_openclaudia-skills,task-banner,other,75,B,25,20,20,0,10,300,62,0,False,,skills/task-banner
+OpenClaudia_openclaudia-skills,telegram-bot,cro & pages,71,B,25,12,20,4,10,346,665,0,False,,skills/telegram-bot
+OpenClaudia_openclaudia-skills,thread-writer,other,75,B,25,20,20,0,10,445,346,0,False,,skills/thread-writer
+OpenClaudia_openclaudia-skills,video-ad-analysis,ads,75,B,25,20,20,0,10,302,204,0,False,,skills/video-ad-analysis
+OpenClaudia_openclaudia-skills,wechat-moments,cro & pages,75,B,25,20,20,0,10,342,92,0,False,,skills/wechat-moments
+OpenClaudia_openclaudia-skills,write-blog,seo & aeo,75,B,25,20,20,0,10,244,393,0,False,,skills/write-blog
+OpenClaudia_openclaudia-skills,write-landing,cro & pages,72,B,25,17,20,0,10,319,545,0,False,,skills/write-landing
+OpenClaudia_openclaudia-skills,youtube-analytics,seo & aeo,75,B,25,20,20,0,10,313,196,0,False,,skills/youtube-analytics
+swan-gtm_gtm-skills,submit-skill,other,75,B,25,20,20,0,10,226,15,0,False,,skills/.system/submit-skill
+swan-gtm_gtm-skills,google-ads-audit,ads,66,C,25,15,16,0,10,701,1194,0,False,,skills/aditya-sriram/google-ads-audit
+swan-gtm_gtm-skills,meta-ads-audit,ads,66,C,25,15,16,0,10,769,1421,0,False,,skills/aditya-sriram/meta-ads-audit
+swan-gtm_gtm-skills,ai-personalization-prompts,outbound,74,B,25,17,18,4,10,337,72,0,False,,skills/alex-vacca/ai-personalization-prompts
+swan-gtm_gtm-skills,atl-btl-messaging,brand & positioning,77,B,25,20,18,4,10,272,132,0,False,,skills/alex-vacca/atl-btl-messaging
+swan-gtm_gtm-skills,bridgebound-firmographic-15,outbound,72,B,25,20,13,4,10,267,96,0,False,,skills/alex-vacca/bridgebound-firmographic-15
+swan-gtm_gtm-skills,bridgebound-history-16,outbound,77,B,25,20,18,4,10,252,100,0,False,,skills/alex-vacca/bridgebound-history-16
+swan-gtm_gtm-skills,bridgebound-in-market-20,outbound,72,B,25,20,13,4,10,244,95,0,False,,skills/alex-vacca/bridgebound-in-market-20
+swan-gtm_gtm-skills,bridgebound-relationship-39,other,77,B,25,20,18,4,10,297,121,0,False,,skills/alex-vacca/bridgebound-relationship-39
+swan-gtm_gtm-skills,bridgebound-symptoms-11,other,77,B,25,20,18,4,10,255,94,0,False,,skills/alex-vacca/bridgebound-symptoms-11
+swan-gtm_gtm-skills,buying-signals-6,outbound,72,B,25,20,13,4,10,292,121,0,False,,skills/alex-vacca/buying-signals-6
+swan-gtm_gtm-skills,clay-buying-signals-5,outbound,72,B,25,20,13,4,10,208,143,0,False,,skills/alex-vacca/clay-buying-signals-5
+swan-gtm_gtm-skills,clay-enrichment-9step,revops & data,69,C,25,17,13,4,10,215,76,0,False,,skills/alex-vacca/clay-enrichment-9step
+swan-gtm_gtm-skills,clay-expert,sales & deals,56,C,25,15,6,0,10,494,96,0,False,,skills/alex-vacca/clay-expert
+swan-gtm_gtm-skills,cold-call-scripts,outbound,77,B,25,20,18,4,10,195,84,0,False,,skills/alex-vacca/cold-call-scripts
+swan-gtm_gtm-skills,cold-email-4-sequence,outbound,77,B,25,20,18,4,10,301,73,0,False,,skills/alex-vacca/cold-email-4-sequence
+swan-gtm_gtm-skills,cold-email-strategist,outbound,70,B,25,15,16,4,10,469,145,0,False,,skills/alex-vacca/cold-email-strategist
+swan-gtm_gtm-skills,cold-email-templates-34,outbound,74,B,25,17,18,4,10,263,66,0,False,,skills/alex-vacca/cold-email-templates-34
+swan-gtm_gtm-skills,email-1-variations-7,outbound,77,B,25,20,18,4,10,306,157,0,False,,skills/alex-vacca/email-1-variations-7
+swan-gtm_gtm-skills,email-metrics-benchmarks,outbound,77,B,25,20,18,4,10,270,139,0,False,,skills/alex-vacca/email-metrics-benchmarks
+swan-gtm_gtm-skills,email-writing-frameworks,outbound,77,B,25,20,18,4,10,286,116,0,False,,skills/alex-vacca/email-writing-frameworks
+swan-gtm_gtm-skills,frontal-messaging-templates,cro & pages,77,B,25,20,18,4,10,288,135,0,False,,skills/alex-vacca/frontal-messaging-templates
+swan-gtm_gtm-skills,gtm-philosophy,outbound,77,B,25,20,18,4,10,323,91,0,False,,skills/alex-vacca/gtm-philosophy
+swan-gtm_gtm-skills,gtm-plays-11,outbound,77,B,25,20,18,4,10,306,89,0,False,,skills/alex-vacca/gtm-plays-11
+swan-gtm_gtm-skills,inbound-triggers-30,outbound,77,B,25,20,18,4,10,305,95,0,False,,skills/alex-vacca/inbound-triggers-30
+swan-gtm_gtm-skills,josh-braun-copywriting,outbound,77,B,25,20,18,4,10,256,68,0,False,,skills/alex-vacca/josh-braun-copywriting
+swan-gtm_gtm-skills,lead-sources-guide,outbound,72,B,25,20,13,4,10,278,115,0,False,,skills/alex-vacca/lead-sources-guide
+swan-gtm_gtm-skills,linkedin-campaign-complete,outbound,74,B,25,17,18,4,10,270,83,0,False,,skills/alex-vacca/linkedin-campaign-complete
+swan-gtm_gtm-skills,linkedin-limits-warmup,other,77,B,25,20,18,4,10,251,113,0,False,,skills/alex-vacca/linkedin-limits-warmup
+swan-gtm_gtm-skills,linkedin-success-factors,outbound,77,B,25,20,18,4,10,246,123,0,False,,skills/alex-vacca/linkedin-success-factors
+swan-gtm_gtm-skills,list-architect,outbound,66,C,25,15,16,0,10,442,106,0,False,,skills/alex-vacca/list-architect
+swan-gtm_gtm-skills,list-building-tips,outbound,72,B,25,20,13,4,10,254,105,0,False,,skills/alex-vacca/list-building-tips
+swan-gtm_gtm-skills,outbound-triggers-6,outbound,77,B,25,20,18,4,10,267,142,0,False,,skills/alex-vacca/outbound-triggers-6
+swan-gtm_gtm-skills,outreach-4-categories,outbound,77,B,25,20,18,4,10,238,98,0,False,,skills/alex-vacca/outreach-4-categories
+swan-gtm_gtm-skills,personalization-6-buckets,outbound,77,B,25,20,18,4,10,279,139,0,False,,skills/alex-vacca/personalization-6-buckets
+swan-gtm_gtm-skills,personalization-hooks,outbound,77,B,25,20,18,4,10,254,118,0,False,,skills/alex-vacca/personalization-hooks
+swan-gtm_gtm-skills,personalization-playbooks,outbound,77,B,25,20,18,4,10,257,140,0,False,,skills/alex-vacca/personalization-playbooks
+swan-gtm_gtm-skills,sdr-master-prompts,outbound,77,B,25,20,18,4,10,289,139,0,False,,skills/alex-vacca/sdr-master-prompts
+swan-gtm_gtm-skills,sdr-outbound-rules,outbound,77,B,25,20,18,4,10,235,143,0,False,,skills/alex-vacca/sdr-outbound-rules
+swan-gtm_gtm-skills,signal-sourcer,outbound,72,B,25,15,18,4,10,467,100,0,False,,skills/alex-vacca/signal-sourcer
+swan-gtm_gtm-skills,competitor-monitoring,outbound,71,B,25,20,16,0,10,694,71,0,False,,skills/alon-goldenberg/competitor-monitoring
+swan-gtm_gtm-skills,competitor-positioning,sales & deals,71,B,25,20,16,0,10,635,75,0,False,,skills/alon-goldenberg/competitor-positioning
+swan-gtm_gtm-skills,meeting-prep,brand & positioning,71,B,25,20,16,0,10,695,89,0,False,,skills/alon-goldenberg/meeting-prep
+swan-gtm_gtm-skills,seo-intel,seo & aeo,68,C,25,17,16,0,10,739,66,0,False,,skills/alon-goldenberg/seo-intel
+swan-gtm_gtm-skills,account-research-brief,outbound,71,B,25,20,16,0,10,309,37,0,False,,skills/amir-baldiga/account-research-brief
+swan-gtm_gtm-skills,icp-lookalike-expansion,brand & positioning,71,B,25,20,16,0,10,331,35,0,False,,skills/amir-baldiga/icp-lookalike-expansion
+swan-gtm_gtm-skills,lookalike-candidate-sourcing,other,71,B,25,20,16,0,10,270,39,0,False,,skills/amir-baldiga/lookalike-candidate-sourcing
+swan-gtm_gtm-skills,personalized-outbound-ab-test,outbound,71,B,25,20,16,0,10,335,41,0,False,,skills/amir-baldiga/personalized-outbound-ab-test
+swan-gtm_gtm-skills,call-kpi-scoring,sales & deals,56,C,10,20,16,0,10,1195,45,0,False,,skills/amit-rotstein/call-kpi-scoring
+swan-gtm_gtm-skills,meddpicc-gap-audit,outbound,71,B,25,20,16,0,10,883,43,0,False,,skills/amit-rotstein/meddpicc-gap-audit
+swan-gtm_gtm-skills,account-tier-scoring,outbound,73,B,25,20,18,0,10,805,176,0,False,,skills/amos-bar-joseph/account-tier-scoring
+swan-gtm_gtm-skills,champion-move-detection,outbound,63,C,15,20,18,0,10,576,160,0,False,,skills/ariel-cohen/champion-move-detection
+swan-gtm_gtm-skills,closed-won-replication-play,sales & deals,73,B,25,20,18,0,10,364,155,0,False,,skills/ariel-cohen/closed-won-replication-play
+swan-gtm_gtm-skills,conference-booking-links,other,73,B,25,20,18,0,10,275,44,0,False,,skills/ariel-cohen/conference-booking-links
+swan-gtm_gtm-skills,conference-personal-plan,brand & positioning,63,C,15,20,18,0,10,270,27,0,False,,skills/ariel-cohen/conference-personal-plan
+swan-gtm_gtm-skills,conference-shared-calendar,other,63,C,25,20,8,0,10,267,35,0,False,,skills/ariel-cohen/conference-shared-calendar
+swan-gtm_gtm-skills,customer-expansion-scoring,brand & positioning,73,B,25,20,18,0,10,348,147,0,False,,skills/ariel-cohen/customer-expansion-scoring
+swan-gtm_gtm-skills,event-room-intelligence,analytics & reporting,61,C,15,20,16,0,10,737,86,0,False,,skills/ariel-cohen/event-room-intelligence
+swan-gtm_gtm-skills,handle-demo-request,revops & data,71,B,25,20,16,0,10,624,123,0,False,,skills/ariel-cohen/handle-demo-request
+swan-gtm_gtm-skills,handle-linkedin-connection-request-signal,outbound,71,B,25,20,16,0,10,773,252,0,False,,skills/ariel-cohen/handle-linkedin-connection-request-signal
+swan-gtm_gtm-skills,handle-linkedin-profile-view-signal,outbound,68,C,25,15,18,0,10,412,296,0,False,,skills/ariel-cohen/handle-linkedin-profile-view-signal
+swan-gtm_gtm-skills,influencer-post-engager-capture,revops & data,68,C,25,15,18,0,10,415,182,0,False,,skills/ariel-cohen/influencer-post-engager-capture
+swan-gtm_gtm-skills,linkedin-dm-signal-classifier,outbound,60,C,15,17,18,0,10,534,607,0,False,,skills/ariel-cohen/linkedin-dm-signal-classifier
+swan-gtm_gtm-skills,linkedin-engagement-handler,revops & data,73,B,25,20,18,0,10,483,186,0,False,,skills/ariel-cohen/linkedin-engagement-handler
+swan-gtm_gtm-skills,reverse-etl-activation,cro & pages,73,B,25,20,18,0,10,934,35,0,False,,skills/austin-hay/reverse-etl-activation
+swan-gtm_gtm-skills,call-followup-sweep,other,71,B,25,20,16,0,10,608,72,0,False,,skills/boaz-descalo/call-followup-sweep
+swan-gtm_gtm-skills,company-domain-resolver,outbound,68,C,25,17,16,0,10,655,74,0,False,,skills/boaz-descalo/company-domain-resolver
+swan-gtm_gtm-skills,event-account-plan,outbound,68,C,25,17,16,0,10,761,103,0,False,,skills/boaz-descalo/event-account-plan
+swan-gtm_gtm-skills,signal-to-campaign,outbound,73,B,25,20,18,0,10,410,69,0,False,,skills/bojan-berisavljevic/signal-to-campaign
+swan-gtm_gtm-skills,vc-portfolio-research,sales & deals,73,B,25,20,18,0,10,481,54,0,False,,skills/brad-smith/vc-portfolio-research
+swan-gtm_gtm-skills,icp-fit-and-buying-readiness,brand & positioning,68,C,25,17,16,0,10,539,335,0,False,,skills/brian-carroll/icp-fit-and-buying-readiness
+swan-gtm_gtm-skills,linkedin-ads-ctr-signal,outbound,63,C,15,20,18,0,10,385,52,0,False,,skills/brianne-thomas/linkedin-ads-ctr-signal
+swan-gtm_gtm-skills,linkedin-event-attendee-monitor,outbound,73,B,25,20,18,0,10,373,73,0,False,,skills/brianne-thomas/linkedin-event-attendee-monitor
+swan-gtm_gtm-skills,positioning-and-messaging,brand & positioning,71,B,25,20,16,0,10,808,204,0,False,,skills/chris-rodde/positioning-and-messaging
+swan-gtm_gtm-skills,52-newsletter-ideas,cro & pages,73,B,25,20,18,0,10,869,143,0,False,,skills/daniel-bustamante/52-newsletter-ideas
+swan-gtm_gtm-skills,email-content-ideas,cro & pages,73,B,25,20,18,0,10,891,77,0,False,,skills/daniel-bustamante/email-content-ideas
+swan-gtm_gtm-skills,email-copy-optimizer,cro & pages,73,B,25,20,18,0,10,752,154,0,False,,skills/daniel-bustamante/email-copy-optimizer
+swan-gtm_gtm-skills,email-subject-lines,cro & pages,73,B,25,20,18,0,10,737,234,0,False,,skills/daniel-bustamante/email-subject-lines
+swan-gtm_gtm-skills,i-made-this-for-you-email,cro & pages,73,B,25,20,18,0,10,917,114,0,False,,skills/daniel-bustamante/i-made-this-for-you-email
+swan-gtm_gtm-skills,lead-magnet-welcome-email,content & copy,73,B,25,20,18,0,10,582,98,0,False,,skills/daniel-bustamante/lead-magnet-welcome-email
+swan-gtm_gtm-skills,linkedin-post-to-newsletter,cro & pages,73,B,25,20,18,0,10,719,156,0,False,,skills/daniel-bustamante/linkedin-post-to-newsletter
+swan-gtm_gtm-skills,newsletter-format,cro & pages,73,B,25,20,18,0,10,942,364,0,False,,skills/daniel-bustamante/newsletter-format
+swan-gtm_gtm-skills,newsletter-landing-page,cro & pages,73,B,25,20,18,0,10,692,148,0,False,,skills/daniel-bustamante/newsletter-landing-page
+swan-gtm_gtm-skills,newsletter-value-prop,cro & pages,73,B,25,20,18,0,10,744,106,0,False,,skills/daniel-bustamante/newsletter-value-prop
+swan-gtm_gtm-skills,newsletter-welcome-email,outbound,73,B,25,20,18,0,10,724,105,0,False,,skills/daniel-bustamante/newsletter-welcome-email
+swan-gtm_gtm-skills,newsletter-welcome-gift,cro & pages,73,B,25,20,18,0,10,865,99,0,False,,skills/daniel-bustamante/newsletter-welcome-gift
+swan-gtm_gtm-skills,newsletter-welcome-sequence,outbound,73,B,25,20,18,0,10,637,182,0,False,,skills/daniel-bustamante/newsletter-welcome-sequence
+swan-gtm_gtm-skills,pain-is-the-pitch,cro & pages,73,B,25,20,18,0,10,774,111,0,False,,skills/daniel-bustamante/pain-is-the-pitch
+swan-gtm_gtm-skills,weekly-roundup-email,cro & pages,73,B,25,20,18,0,10,767,108,0,False,,skills/daniel-bustamante/weekly-roundup-email
+swan-gtm_gtm-skills,founder-post-triggers-24,brand & positioning,75,B,25,20,16,4,10,445,104,0,False,,skills/danni-chen/founder-post-triggers-24
+swan-gtm_gtm-skills,launch-window-mechanics,outbound,75,B,25,20,16,4,10,695,120,0,False,,skills/danni-chen/launch-window-mechanics
+swan-gtm_gtm-skills,conference-recommendation,brand & positioning,73,B,25,20,18,0,10,438,143,0,False,,skills/dave-engel/conference-recommendation
+swan-gtm_gtm-skills,give-first-cold-email,outbound,68,C,25,17,16,0,10,641,91,0,False,,skills/dima-bilous/give-first-cold-email
+swan-gtm_gtm-skills,signal-interpreter,outbound,73,B,25,20,18,0,10,343,269,0,False,,skills/din-arbel/signal-interpreter
+swan-gtm_gtm-skills,warm-intro-intelligence,outbound,68,C,25,15,18,0,10,532,154,0,False,,skills/din-arbel/warm-intro-intelligence
+swan-gtm_gtm-skills,hiring-radar,outbound,68,C,25,17,16,0,10,529,92,0,False,,skills/dusan-vystrcil/hiring-radar
+swan-gtm_gtm-skills,pre-call-script,outbound,71,B,25,20,16,0,10,808,92,0,False,,skills/dyanesh-perumal/pre-call-script
+swan-gtm_gtm-skills,ai-visibility-prompt-research,seo & aeo,73,B,25,20,18,0,10,844,31,0,False,,skills/elad-hefetz/ai-visibility-prompt-research
+swan-gtm_gtm-skills,leaked-demand-recovery,outbound,71,B,25,20,16,0,10,641,76,0,False,,skills/eliezer-cohen/leaked-demand-recovery
+swan-gtm_gtm-skills,linkedin-abm-ad-design,outbound,63,C,25,10,18,0,10,594,151,0,False,,skills/emilia-korczynska/linkedin-abm-ad-design
+swan-gtm_gtm-skills,linkedin-abm-audit,outbound,75,B,30,17,18,0,10,778,169,0,False,,skills/emilia-korczynska/linkedin-abm-audit
+swan-gtm_gtm-skills,linkedin-abm-monthly-report,outbound,78,B,30,20,18,0,10,742,135,0,False,,skills/emilia-korczynska/linkedin-abm-monthly-report
+swan-gtm_gtm-skills,linkedin-abm-strategy-planner,outbound,70,B,25,17,18,0,10,492,107,0,False,,skills/emilia-korczynska/linkedin-abm-strategy-planner
+swan-gtm_gtm-skills,audience-icp-filter,outbound,63,C,25,17,11,0,10,658,68,0,False,,skills/erwann-lefevre/audience-icp-filter
+swan-gtm_gtm-skills,campaign-challenger,outbound,71,B,25,20,16,0,10,599,67,0,False,,skills/erwann-lefevre/campaign-challenger
+swan-gtm_gtm-skills,multichannel-campaign-builder,outbound,66,C,25,15,16,0,10,630,67,0,False,,skills/erwann-lefevre/multichannel-campaign-builder
+swan-gtm_gtm-skills,weekly-performance-advisor,outbound,71,B,25,20,16,0,10,555,72,0,False,,skills/erwann-lefevre/weekly-performance-advisor
+swan-gtm_gtm-skills,won-deal-icp-finder,sales & deals,75,B,25,20,16,4,10,669,57,0,False,,skills/erwann-lefevre/won-deal-icp-finder
+swan-gtm_gtm-skills,b2b-saas-painpoint-seo-audit,sales & deals,73,B,25,20,18,0,10,195,48,0,False,,skills/gaetano-romeo/b2b-saas-painpoint-seo-audit
+swan-gtm_gtm-skills,linkedin-enterprise-ads-audit,cro & pages,73,B,25,20,18,0,10,183,48,0,False,,skills/gaetano-romeo/linkedin-enterprise-ads-audit
+swan-gtm_gtm-skills,zero-click-organic-pipeline-audit,sales & deals,73,B,25,20,18,0,10,175,48,0,False,,skills/gaetano-romeo/zero-click-organic-pipeline-audit
+swan-gtm_gtm-skills,discovery-to-demo-bridge,sales & deals,71,B,25,20,16,0,10,716,145,0,False,,skills/gal-aga/discovery-to-demo-bridge
+swan-gtm_gtm-skills,multi-threading-coach,sales & deals,71,B,25,20,16,0,10,743,141,0,False,,skills/gal-aga/multi-threading-coach
+swan-gtm_gtm-skills,mutual-action-plan-builder,sales & deals,71,B,25,20,16,0,10,800,204,0,False,,skills/gal-aga/mutual-action-plan-builder
+swan-gtm_gtm-skills,roi-business-case,sales & deals,71,B,25,20,16,0,10,656,131,0,False,,skills/gal-aga/roi-business-case
+swan-gtm_gtm-skills,buying-group,sales & deals,61,C,15,20,16,0,10,333,158,0,False,,skills/gal-tamir/buying-group
+swan-gtm_gtm-skills,sequence-writer,outbound,71,B,25,20,16,0,10,359,177,0,False,,skills/gal-tamir/sequence-writer
+swan-gtm_gtm-skills,territory-signal-digest,outbound,61,C,15,20,16,0,10,310,137,0,False,,skills/gal-tamir/territory-signal-digest
+swan-gtm_gtm-skills,anti-ai-slop-writing,outbound,68,C,25,17,16,0,10,471,42,0,False,,skills/gali-firon/anti-ai-slop-writing
+swan-gtm_gtm-skills,gtm-command-center,content & copy,71,B,25,20,16,0,10,530,32,0,False,,skills/gali-firon/gtm-command-center
+swan-gtm_gtm-skills,human-mannerisms,outbound,71,B,25,20,16,0,10,541,48,0,False,,skills/gali-firon/human-mannerisms
+swan-gtm_gtm-skills,linkedin-ghostwriting,content & copy,71,B,25,20,16,0,10,623,40,0,False,,skills/gali-firon/linkedin-ghostwriting
+swan-gtm_gtm-skills,media-pr-outreach,analytics & reporting,71,B,25,20,16,0,10,460,39,0,False,,skills/gali-firon/media-pr-outreach
+swan-gtm_gtm-skills,rfp-response,outbound,71,B,25,20,16,0,10,493,41,0,False,,skills/gali-firon/rfp-response
+swan-gtm_gtm-skills,visual-argument-review,brand & positioning,71,B,25,20,16,0,10,519,48,0,False,,skills/gali-firon/visual-argument-review
+swan-gtm_gtm-skills,acquired-brand-gtm-integration,sales & deals,61,C,15,20,16,0,10,303,80,0,False,,skills/gerrit-kesten/acquired-brand-gtm-integration
+swan-gtm_gtm-skills,webinar-to-qualified-pipeline,sales & deals,61,C,15,20,16,0,10,342,86,0,False,,skills/gerrit-kesten/webinar-to-qualified-pipeline
+swan-gtm_gtm-skills,ai-visibility-sampling,other,71,B,25,20,16,0,10,376,31,0,False,,skills/huxley-peckham/ai-visibility-sampling
+swan-gtm_gtm-skills,citation-gap-outreach,brand & positioning,71,B,25,20,16,0,10,410,31,0,False,,skills/huxley-peckham/citation-gap-outreach
+swan-gtm_gtm-skills,local-ai-visibility,other,71,B,25,20,16,0,10,376,27,0,False,,skills/huxley-peckham/local-ai-visibility
+swan-gtm_gtm-skills,audit-swan,other,63,C,25,20,8,0,10,232,146,0,False,,skills/ido-goldberg/audit-swan
+swan-gtm_gtm-skills,battlecard,sales & deals,63,C,25,20,8,0,10,191,88,0,False,,skills/ido-goldberg/battlecard
+swan-gtm_gtm-skills,brief,sales & deals,53,D,15,20,8,0,10,180,80,0,False,,skills/ido-goldberg/brief
+swan-gtm_gtm-skills,build-list,outbound,60,C,25,17,8,0,10,201,243,0,False,,skills/ido-goldberg/build-list
+swan-gtm_gtm-skills,clear-my-desk,outbound,53,D,15,20,8,0,10,178,72,0,False,,skills/ido-goldberg/clear-my-desk
+swan-gtm_gtm-skills,community-radar,brand & positioning,53,D,15,20,8,0,10,176,110,0,False,,skills/ido-goldberg/community-radar
+swan-gtm_gtm-skills,event-radar,outbound,63,C,25,20,8,0,10,179,101,0,False,,skills/ido-goldberg/event-radar
+swan-gtm_gtm-skills,handle-reply,outbound,53,D,15,20,8,0,10,162,66,0,False,,skills/ido-goldberg/handle-reply
+swan-gtm_gtm-skills,icp,brand & positioning,60,C,25,17,8,0,10,182,107,0,False,,skills/ido-goldberg/icp
+swan-gtm_gtm-skills,inbox-zero,team & workflow,68,C,25,20,13,0,10,198,54,0,False,,skills/ido-goldberg/inbox-zero
+swan-gtm_gtm-skills,map-contacts,outbound,53,D,15,20,8,0,10,185,76,0,False,,skills/ido-goldberg/map-contacts
+swan-gtm_gtm-skills,multi-thread-deals,sales & deals,53,D,15,20,8,0,10,157,105,0,False,,skills/ido-goldberg/multi-thread-deals
+swan-gtm_gtm-skills,pipeline-review,sales & deals,53,D,15,20,8,0,10,166,105,0,False,,skills/ido-goldberg/pipeline-review
+swan-gtm_gtm-skills,post-radar,other,53,D,15,20,8,0,10,155,96,0,False,,skills/ido-goldberg/post-radar
+swan-gtm_gtm-skills,reach-out,outbound,73,B,25,20,18,0,10,798,72,0,False,,skills/ido-goldberg/reach-out
+swan-gtm_gtm-skills,research,outbound,48,D,15,15,8,0,10,173,104,0,False,,skills/ido-goldberg/research
+swan-gtm_gtm-skills,score,outbound,65,C,25,17,13,0,10,173,157,0,False,,skills/ido-goldberg/score
+swan-gtm_gtm-skills,skillify,other,63,C,25,20,8,0,10,155,106,0,False,,skills/ido-goldberg/skillify
+swan-gtm_gtm-skills,visitor-radar,outbound,53,D,15,20,8,0,10,164,103,0,False,,skills/ido-goldberg/visitor-radar
+swan-gtm_gtm-skills,cold-email-inbox-warmup,outbound,71,B,25,20,16,0,10,270,28,0,False,,skills/imad-badreddine/cold-email-inbox-warmup
+swan-gtm_gtm-skills,cold-email-preflight,outbound,61,C,15,20,16,0,10,235,27,0,False,,skills/imad-badreddine/cold-email-preflight
+swan-gtm_gtm-skills,linkedin-7-day-warmup,brand & positioning,71,B,25,20,16,0,10,343,29,0,False,,skills/imad-badreddine/linkedin-7-day-warmup
+swan-gtm_gtm-skills,multi-sender-rotation,outbound,71,B,25,20,16,0,10,339,28,0,False,,skills/imad-badreddine/multi-sender-rotation
+swan-gtm_gtm-skills,1-to-1-abm-ads,outbound,63,C,25,15,13,0,10,238,38,0,False,,skills/ivan-falco/1-to-1-abm-ads
+swan-gtm_gtm-skills,abm-measurement-framework,outbound,77,B,25,20,18,4,10,167,465,0,False,,skills/ivan-falco/abm-measurement-framework
+swan-gtm_gtm-skills,abm-on-meta,outbound,73,B,25,20,18,0,10,196,127,0,False,,skills/ivan-falco/abm-on-meta
+swan-gtm_gtm-skills,abm-retargeting-framework,outbound,73,B,25,20,18,0,10,179,378,0,False,,skills/ivan-falco/abm-retargeting-framework
+swan-gtm_gtm-skills,account-selection-framework,outbound,73,B,25,20,18,0,10,217,268,0,False,,skills/ivan-falco/account-selection-framework
+swan-gtm_gtm-skills,ad-copywriting,cro & pages,73,B,25,20,18,0,10,149,325,0,False,,skills/ivan-falco/ad-copywriting
+swan-gtm_gtm-skills,ad-personas,brand & positioning,73,B,25,20,18,0,10,136,67,0,False,,skills/ivan-falco/ad-personas
+swan-gtm_gtm-skills,ads-budget-allocation,strategy & planning,73,B,25,20,18,0,10,129,38,0,False,,skills/ivan-falco/ads-budget-allocation
+swan-gtm_gtm-skills,ads-campaign-planning,strategy & planning,73,B,25,20,18,0,10,136,40,0,False,,skills/ivan-falco/ads-campaign-planning
+swan-gtm_gtm-skills,ads-channel-selection,outbound,73,B,25,20,18,0,10,142,64,0,False,,skills/ivan-falco/ads-channel-selection
+swan-gtm_gtm-skills,ads-measurement-scorecard,ads,73,B,25,20,18,0,10,145,121,0,False,,skills/ivan-falco/ads-measurement-scorecard
+swan-gtm_gtm-skills,ads-offers-strategy,strategy & planning,77,B,25,20,18,4,10,148,81,0,False,,skills/ivan-falco/ads-offers-strategy
+swan-gtm_gtm-skills,ads-optimization-signals,outbound,73,B,25,20,18,0,10,135,118,0,False,,skills/ivan-falco/ads-optimization-signals
+swan-gtm_gtm-skills,ads-outbound-signaling-guide,outbound,73,B,25,20,18,0,10,181,286,0,False,,skills/ivan-falco/ads-outbound-signaling-guide
+swan-gtm_gtm-skills,ads-scaling-quadrant,cro & pages,73,B,25,20,18,0,10,140,62,0,False,,skills/ivan-falco/ads-scaling-quadrant
+swan-gtm_gtm-skills,ads-writing-style,brand & positioning,73,B,25,20,18,0,10,130,57,0,False,,skills/ivan-falco/ads-writing-style
+swan-gtm_gtm-skills,advantage-plus,team & workflow,73,B,25,20,18,0,10,157,226,0,False,,skills/ivan-falco/advantage-plus
+swan-gtm_gtm-skills,creating-campaigns-ads-audiences,other,68,C,25,15,18,0,10,136,82,0,False,,skills/ivan-falco/creating-campaigns-ads-audiences
+swan-gtm_gtm-skills,creative-cadence-operating-system,cro & pages,73,B,25,20,18,0,10,153,371,0,False,,skills/ivan-falco/creative-cadence-operating-system
+swan-gtm_gtm-skills,creative-fatigue-detection,outbound,73,B,25,20,18,0,10,138,188,0,False,,skills/ivan-falco/creative-fatigue-detection
+swan-gtm_gtm-skills,demand-lifecycle,ads,73,B,25,20,18,0,10,137,130,0,False,,skills/ivan-falco/demand-lifecycle
+swan-gtm_gtm-skills,google-ads,ads,73,B,25,20,18,0,10,446,80,0,False,,skills/ivan-falco/google-ads
+swan-gtm_gtm-skills,lead-form-optimization,cro & pages,73,B,25,20,18,0,10,148,126,0,False,,skills/ivan-falco/lead-form-optimization
+swan-gtm_gtm-skills,linkedin-abm-1to1-few-many,outbound,73,B,25,20,18,0,10,240,250,0,False,,skills/ivan-falco/linkedin-abm-1to1-few-many
+swan-gtm_gtm-skills,linkedin-ads,ads,68,C,25,15,18,0,10,595,62,0,False,,skills/ivan-falco/linkedin-ads
+swan-gtm_gtm-skills,linkedin-ads-abm-guide,outbound,73,B,25,20,18,0,10,167,284,0,False,,skills/ivan-falco/linkedin-ads-abm-guide
+swan-gtm_gtm-skills,linkedin-ads-audience-guide,outbound,73,B,25,20,18,0,10,202,440,0,False,,skills/ivan-falco/linkedin-ads-audience-guide
+swan-gtm_gtm-skills,message-validation,other,73,B,25,20,18,0,10,152,170,0,False,,skills/ivan-falco/message-validation
+swan-gtm_gtm-skills,meta-ads,ads,68,C,25,15,18,0,10,409,96,0,False,,skills/ivan-falco/meta-ads
+swan-gtm_gtm-skills,meta-ads-operating-system,cro & pages,73,B,25,20,18,0,10,178,464,0,False,,skills/ivan-falco/meta-ads-operating-system
+swan-gtm_gtm-skills,meta-api-reference,other,68,C,25,15,18,0,10,169,887,0,False,,skills/ivan-falco/meta-api-reference
+swan-gtm_gtm-skills,meta-audience-strategy,ads,73,B,25,20,18,0,10,170,159,0,False,,skills/ivan-falco/meta-audience-strategy
+swan-gtm_gtm-skills,meta-b2b-overview,other,73,B,25,20,18,0,10,171,99,0,False,,skills/ivan-falco/meta-b2b-overview
+swan-gtm_gtm-skills,meta-campaign-structure,strategy & planning,73,B,25,20,18,0,10,167,242,0,False,,skills/ivan-falco/meta-campaign-structure
+swan-gtm_gtm-skills,meta-capi-and-events,outbound,73,B,25,20,18,0,10,152,88,0,False,,skills/ivan-falco/meta-capi-and-events
+swan-gtm_gtm-skills,meta-creative-strategy,ads,73,B,25,20,18,0,10,148,241,0,False,,skills/ivan-falco/meta-creative-strategy
+swan-gtm_gtm-skills,meta-offer-strategy,content & copy,73,B,25,20,18,0,10,153,180,0,False,,skills/ivan-falco/meta-offer-strategy
+swan-gtm_gtm-skills,meta-onboarding,ads,68,C,25,20,13,0,10,288,89,0,False,,skills/ivan-falco/meta-onboarding
+swan-gtm_gtm-skills,meta-optimization-playbook,outbound,73,B,25,20,18,0,10,141,320,0,False,,skills/ivan-falco/meta-optimization-playbook
+swan-gtm_gtm-skills,meta-reporting,outbound,68,C,25,15,18,0,10,375,55,0,False,,skills/ivan-falco/meta-reporting
+swan-gtm_gtm-skills,meta-setup-and-tracking,ads,73,B,25,20,18,0,10,141,165,0,False,,skills/ivan-falco/meta-setup-and-tracking
+swan-gtm_gtm-skills,meta-third-party-conversion-tracking,outbound,77,B,25,20,18,4,10,142,68,0,False,,skills/ivan-falco/meta-third-party-conversion-tracking
+swan-gtm_gtm-skills,persona-mapping-framework,outbound,73,B,25,20,18,0,10,223,287,0,False,,skills/ivan-falco/persona-mapping-framework
+swan-gtm_gtm-skills,scale-b2b-qualified-pipeline,sales & deals,73,B,25,20,18,0,10,186,135,0,False,,skills/ivan-falco/scale-b2b-qualified-pipeline
+swan-gtm_gtm-skills,bench-strength-and-succession,cro & pages,71,B,25,20,16,0,10,647,40,0,False,,skills/jason-mesiarik/bench-strength-and-succession
+swan-gtm_gtm-skills,board-meeting-prep,cro & pages,71,B,25,20,16,0,10,578,46,0,False,,skills/jason-mesiarik/board-meeting-prep
+swan-gtm_gtm-skills,hiring-scorecard,cro & pages,66,C,25,15,16,0,10,631,40,0,False,,skills/jason-mesiarik/hiring-scorecard
+swan-gtm_gtm-skills,investor-update,outbound,71,B,25,20,16,0,10,674,40,0,False,,skills/jason-mesiarik/investor-update
+swan-gtm_gtm-skills,leadership-development-diagnostic,cro & pages,66,C,25,15,16,0,10,686,40,0,False,,skills/jason-mesiarik/leadership-development-diagnostic
+swan-gtm_gtm-skills,account-health-audit,revops & data,73,B,25,20,18,0,10,689,173,0,False,,skills/jeremy-hurst/account-health-audit
+swan-gtm_gtm-skills,conference-meeting-cards,sales & deals,60,C,15,17,18,0,10,665,88,0,False,,skills/jeremy-hurst/conference-meeting-cards
+swan-gtm_gtm-skills,expansion-opportunity-analysis,outbound,73,B,25,20,18,0,10,607,180,0,False,,skills/jeremy-hurst/expansion-opportunity-analysis
+swan-gtm_gtm-skills,outreach-execution,outbound,70,B,25,17,18,0,10,645,224,0,False,,skills/jeremy-hurst/outreach-execution
+swan-gtm_gtm-skills,post-conference-outreach,research,73,B,25,20,18,0,10,557,323,0,False,,skills/jeremy-hurst/post-conference-outreach
+swan-gtm_gtm-skills,post-meeting-execution,sales & deals,73,B,25,20,18,0,10,651,217,0,False,,skills/jeremy-hurst/post-meeting-execution
+swan-gtm_gtm-skills,pre-conference-outreach,outbound,73,B,25,20,18,0,10,522,259,0,False,,skills/jeremy-hurst/pre-conference-outreach
+swan-gtm_gtm-skills,google-ads-budget-portfolio-reallocation,strategy & planning,73,B,25,20,18,0,10,408,56,0,False,,skills/john-williams/google-ads-budget-portfolio-reallocation
+swan-gtm_gtm-skills,google-ads-pmax-asset-groups,outbound,73,B,25,20,18,0,10,375,58,0,False,,skills/john-williams/google-ads-pmax-asset-groups
+swan-gtm_gtm-skills,google-ads-ppc-math,sales & deals,73,B,25,20,18,0,10,439,54,0,False,,skills/john-williams/google-ads-ppc-math
+swan-gtm_gtm-skills,google-ads-quality-score-diagnosis,cro & pages,73,B,25,20,18,0,10,383,55,0,False,,skills/john-williams/google-ads-quality-score-diagnosis
+swan-gtm_gtm-skills,google-ads-write-safety,ads,71,B,25,20,16,0,10,469,59,0,False,,skills/john-williams/google-ads-write-safety
+swan-gtm_gtm-skills,track-contact-job-changes,outbound,68,C,25,15,18,0,10,839,70,0,False,,skills/jorge-macias/track-contact-job-changes
+swan-gtm_gtm-skills,email-deliverability,other,66,C,25,15,16,0,10,417,35,0,False,,skills/joshua-waldman/email-deliverability
+swan-gtm_gtm-skills,panel-debrief-alignment,team & workflow,71,B,25,20,16,0,10,829,150,0,False,,skills/justin-blij/panel-debrief-alignment
+swan-gtm_gtm-skills,sales-hire-offer-close,outbound,71,B,25,20,16,0,10,891,152,0,False,,skills/justin-blij/sales-hire-offer-close
+swan-gtm_gtm-skills,sales-hire-scorecard,other,71,B,25,20,16,0,10,795,143,0,False,,skills/justin-blij/sales-hire-scorecard
+swan-gtm_gtm-skills,abm-account-engagement-report,outbound,73,B,25,20,18,0,10,407,142,0,False,,skills/justin-rowe/abm-account-engagement-report
+swan-gtm_gtm-skills,company-recon,research,73,B,25,20,18,0,10,372,91,0,False,,skills/justin-rowe/company-recon
+swan-gtm_gtm-skills,competitive-white-space,brand & positioning,73,B,25,20,18,0,10,352,123,0,False,,skills/justin-rowe/competitive-white-space
+swan-gtm_gtm-skills,linkedin-ads-35-point-audit,ads,73,B,25,20,18,0,10,383,186,0,False,,skills/justin-rowe/linkedin-ads-35-point-audit
+swan-gtm_gtm-skills,linkedin-ads-monthly-report,cro & pages,73,B,25,20,18,0,10,358,170,0,False,,skills/justin-rowe/linkedin-ads-monthly-report
+swan-gtm_gtm-skills,linkedin-audience-segment-diagnostic,brand & positioning,73,B,25,20,18,0,10,420,171,0,False,,skills/justin-rowe/linkedin-audience-segment-diagnostic
+swan-gtm_gtm-skills,linkedin-audience-targeting-worksheet,outbound,73,B,25,20,18,0,10,442,208,0,False,,skills/justin-rowe/linkedin-audience-targeting-worksheet
+swan-gtm_gtm-skills,linkedin-conversion-tracking,revops & data,73,B,25,20,18,0,10,465,153,0,False,,skills/justin-rowe/linkedin-conversion-tracking
+swan-gtm_gtm-skills,linkedin-frequency-penetration-diagnostic,other,73,B,25,20,18,0,10,429,129,0,False,,skills/justin-rowe/linkedin-frequency-penetration-diagnostic
+swan-gtm_gtm-skills,marketing-ecosystem-diagnostic,strategy & planning,73,B,25,20,18,0,10,406,131,0,False,,skills/justin-rowe/marketing-ecosystem-diagnostic
+swan-gtm_gtm-skills,account-intelligence-analyst,brand & positioning,73,B,25,20,18,0,10,854,219,0,False,,skills/katya-tarapovskaia/account-intelligence-analyst
+swan-gtm_gtm-skills,call-scorecards,outbound,73,B,25,20,18,0,10,545,38,0,False,,skills/kevin-kd-dorsey/call-scorecards
+swan-gtm_gtm-skills,sales-playbook-foundations,other,73,B,25,20,18,0,10,423,40,0,False,,skills/kevin-kd-dorsey/sales-playbook-foundations
+swan-gtm_gtm-skills,auto-reply-is-not-a-reply,outbound,71,B,25,20,16,0,10,352,54,0,False,,skills/lucas-godtfredsen/auto-reply-is-not-a-reply
+swan-gtm_gtm-skills,inbox-warm-up-ramp,other,71,B,25,20,16,0,10,304,59,0,False,,skills/lucas-godtfredsen/inbox-warm-up-ramp
+swan-gtm_gtm-skills,never-guess-an-email,revops & data,71,B,25,20,16,0,10,387,58,0,False,,skills/lucas-godtfredsen/never-guess-an-email
+swan-gtm_gtm-skills,category-of-one-positioning,outbound,73,B,25,20,18,0,10,777,57,0,False,,skills/luke-shalom/category-of-one-positioning
+swan-gtm_gtm-skills,outreach-messaging,outbound,70,B,25,17,18,0,10,676,128,0,False,,skills/maja-voje/outreach-messaging
+swan-gtm_gtm-skills,ai-pricing-model-picker,strategy & planning,73,B,25,20,18,0,10,519,46,0,False,,skills/manny-medina/ai-pricing-model-picker
+swan-gtm_gtm-skills,credit-packaging,sales & deals,73,B,25,20,18,0,10,621,38,0,False,,skills/manny-medina/credit-packaging
+swan-gtm_gtm-skills,roi-proof-generator,team & workflow,73,B,25,20,18,0,10,599,45,0,False,,skills/manny-medina/roi-proof-generator
+swan-gtm_gtm-skills,creator-programme-qbr,cro & pages,73,B,25,20,18,0,10,249,84,0,False,,skills/maxwell-nimmo/creator-programme-qbr
+swan-gtm_gtm-skills,draft-creator-campaign-brief,content & copy,73,B,25,20,18,0,10,230,86,0,False,,skills/maxwell-nimmo/draft-creator-campaign-brief
+swan-gtm_gtm-skills,estimate-creator-rate,sales & deals,73,B,25,20,18,0,10,249,88,0,False,,skills/maxwell-nimmo/estimate-creator-rate
+swan-gtm_gtm-skills,negotiate-creator-rate,sales & deals,73,B,25,20,18,0,10,267,84,0,False,,skills/maxwell-nimmo/negotiate-creator-rate
+swan-gtm_gtm-skills,set-creator-benchmarks,cro & pages,73,B,25,20,18,0,10,285,84,0,False,,skills/maxwell-nimmo/set-creator-benchmarks
+swan-gtm_gtm-skills,b2b-demo-builder,outbound,71,B,25,20,16,0,10,349,76,0,False,,skills/monica-dinu/b2b-demo-builder
+swan-gtm_gtm-skills,bridge-before-cold,outbound,73,B,25,20,18,0,10,543,76,0,False,,skills/nadav-david/bridge-before-cold
+swan-gtm_gtm-skills,earned-autonomy,team & workflow,73,B,25,20,18,0,10,558,72,0,False,,skills/nadav-david/earned-autonomy
+swan-gtm_gtm-skills,inbound-is-data,outbound,73,B,25,20,18,0,10,618,65,0,False,,skills/nadav-david/inbound-is-data
+swan-gtm_gtm-skills,recent-discourse-sweep,content & copy,71,B,25,20,16,0,10,607,51,0,False,,skills/nadav-david/recent-discourse-sweep
+swan-gtm_gtm-skills,reply-pull-gate,outbound,73,B,25,20,18,0,10,497,66,0,False,,skills/nadav-david/reply-pull-gate
+swan-gtm_gtm-skills,deal-blocker-maneuvers,sales & deals,73,B,30,17,16,0,10,911,149,0,False,,skills/nikhil-mirza/deal-blocker-maneuvers
+swan-gtm_gtm-skills,account-org-mapping,research,71,B,25,20,16,0,10,346,88,0,False,,skills/nylan-richard/account-org-mapping
+swan-gtm_gtm-skills,bulk-contact-enrichment,revops & data,71,B,25,20,16,0,10,326,105,0,False,,skills/nylan-richard/bulk-contact-enrichment
+swan-gtm_gtm-skills,candidate-sourcing-and-ranking,strategy & planning,71,B,25,20,16,0,10,368,87,0,False,,skills/nylan-richard/candidate-sourcing-and-ranking
+swan-gtm_gtm-skills,crm-enrichment-sync,revops & data,71,B,25,20,16,0,10,334,101,0,False,,skills/nylan-richard/crm-enrichment-sync
+swan-gtm_gtm-skills,icp-contact-search-and-enrichment,revops & data,71,B,25,20,16,0,10,347,97,0,False,,skills/nylan-richard/icp-contact-search-and-enrichment
+swan-gtm_gtm-skills,people-lookalike-ranking,outbound,71,B,25,20,16,0,10,323,87,0,False,,skills/nylan-richard/people-lookalike-ranking
+swan-gtm_gtm-skills,customer-health-actions,outbound,61,C,15,20,16,0,10,458,112,0,False,,skills/omer-levy/customer-health-actions
+swan-gtm_gtm-skills,enrich-contact,revops & data,61,C,15,20,16,0,10,328,96,0,False,,skills/omer-levy/enrich-contact
+swan-gtm_gtm-skills,lusha-prospector,outbound,61,C,15,20,16,0,10,310,56,0,False,,skills/omer-levy/lusha-prospector
+swan-gtm_gtm-skills,prospect-to-outreach,outbound,61,C,15,20,16,0,10,384,81,0,False,,skills/omer-levy/prospect-to-outreach
+swan-gtm_gtm-skills,prospect-to-pipeline,outbound,61,C,15,20,16,0,10,386,156,0,False,,skills/omer-levy/prospect-to-pipeline
+swan-gtm_gtm-skills,ambassador-finder,outbound,76,B,30,20,16,0,10,719,59,0,False,,skills/osnat-lidor/ambassador-finder
+swan-gtm_gtm-skills,viral-linkedin-lead-magnet-post,cro & pages,71,B,25,20,16,0,10,527,101,0,False,,skills/pete-mientkiewicz/viral-linkedin-lead-magnet-post
+swan-gtm_gtm-skills,hiring-signal-verification,outbound,76,B,30,20,16,0,10,875,93,0,False,,skills/peter-borkovich/hiring-signal-verification
+swan-gtm_gtm-skills,competitor-connection-displacement,outbound,71,B,25,20,16,0,10,309,40,0,False,,skills/peter-cools/competitor-connection-displacement
+swan-gtm_gtm-skills,outbound-strategy,outbound,71,B,25,20,16,0,10,330,59,0,False,,skills/peter-cools/outbound-strategy
+swan-gtm_gtm-skills,signal-anchored-message,outbound,71,B,25,20,16,0,10,336,36,0,False,,skills/peter-cools/signal-anchored-message
+swan-gtm_gtm-skills,signal-timing,outbound,71,B,25,20,16,0,10,288,37,0,False,,skills/peter-cools/signal-timing
+swan-gtm_gtm-skills,website-to-signals,outbound,71,B,25,20,16,0,10,325,40,0,False,,skills/peter-cools/website-to-signals
+swan-gtm_gtm-skills,pull-call-review,sales & deals,68,C,25,17,16,0,10,739,163,0,False,,skills/rob-snyder/pull-call-review
+swan-gtm_gtm-skills,audit-the-base-not-the-rate,sales & deals,71,B,25,20,16,0,10,685,86,0,False,,skills/roman-palii/audit-the-base-not-the-rate
+swan-gtm_gtm-skills,abm-engagement-scoring,outbound,69,C,25,12,18,4,10,762,585,0,False,,skills/rutger-katz/abm-engagement-scoring
+swan-gtm_gtm-skills,closed-lost-revival,outbound,73,B,25,20,18,0,10,975,139,0,False,,skills/rutger-katz/closed-lost-revival
+swan-gtm_gtm-skills,crm-migration-consolidation,revops & data,60,C,20,17,13,0,10,1401,561,0,False,,skills/rutger-katz/crm-migration-consolidation
+swan-gtm_gtm-skills,cs-operations,outbound,73,B,25,20,18,0,10,873,401,0,False,,skills/rutger-katz/cs-operations
+swan-gtm_gtm-skills,data-enrichment,outbound,73,B,25,20,18,0,10,719,350,0,False,,skills/rutger-katz/data-enrichment
+swan-gtm_gtm-skills,deal-desk-operations,sales & deals,73,B,25,20,18,0,10,741,270,0,False,,skills/rutger-katz/deal-desk-operations
+swan-gtm_gtm-skills,deal-qualification-gates,sales & deals,68,C,20,20,18,0,10,1182,80,0,False,,skills/rutger-katz/deal-qualification-gates
+swan-gtm_gtm-skills,deal-velocity-engineer,sales & deals,77,B,25,20,18,4,10,763,428,0,False,,skills/rutger-katz/deal-velocity-engineer
+swan-gtm_gtm-skills,expansion-revenue-architect,outbound,73,B,25,20,18,0,10,977,334,0,False,,skills/rutger-katz/expansion-revenue-architect
+swan-gtm_gtm-skills,gtm-compensation,outbound,70,B,25,17,18,0,10,715,426,0,False,,skills/rutger-katz/gtm-compensation
+swan-gtm_gtm-skills,gtm-data-architecture,revops & data,70,B,25,17,18,0,10,922,361,0,False,,skills/rutger-katz/gtm-data-architecture
+swan-gtm_gtm-skills,gtm-planning,outbound,65,C,25,12,18,0,10,856,546,0,False,,skills/rutger-katz/gtm-planning
+swan-gtm_gtm-skills,icp-builder,sales & deals,70,B,25,17,18,0,10,1019,249,0,False,,skills/rutger-katz/icp-builder
+swan-gtm_gtm-skills,lead-routing,outbound,73,B,25,20,18,0,10,974,392,0,False,,skills/rutger-katz/lead-routing
+swan-gtm_gtm-skills,marketing-operations,sales & deals,70,B,25,17,18,0,10,917,435,0,False,,skills/rutger-katz/marketing-operations
+swan-gtm_gtm-skills,onboarding-activation,brand & positioning,73,B,25,20,18,0,10,733,65,0,False,,skills/rutger-katz/onboarding-activation
+swan-gtm_gtm-skills,operating-cadence-designer,outbound,73,B,25,20,18,0,10,944,478,0,False,,skills/rutger-katz/operating-cadence-designer
+swan-gtm_gtm-skills,partner-channel-operations,sales & deals,70,B,25,17,18,0,10,1018,621,0,False,,skills/rutger-katz/partner-channel-operations
+swan-gtm_gtm-skills,partner-ecosystem-architect,sales & deals,70,B,25,17,18,0,10,924,490,0,False,,skills/rutger-katz/partner-ecosystem-architect
+swan-gtm_gtm-skills,pipeline-visibility,sales & deals,73,B,25,20,18,0,10,903,381,0,False,,skills/rutger-katz/pipeline-visibility
+swan-gtm_gtm-skills,positioning-messaging-designer,brand & positioning,70,B,25,17,18,0,10,884,379,0,False,,skills/rutger-katz/positioning-messaging-designer
+swan-gtm_gtm-skills,pricing-monetisation-ops,analytics & reporting,67,C,25,14,18,0,10,843,563,0,False,,skills/rutger-katz/pricing-monetisation-ops
+swan-gtm_gtm-skills,procurement-navigation,sales & deals,73,B,25,20,18,0,10,766,64,0,False,,skills/rutger-katz/procurement-navigation
+swan-gtm_gtm-skills,qbr-ebr-builder,other,68,C,20,20,18,0,10,1123,94,0,False,,skills/rutger-katz/qbr-ebr-builder
+swan-gtm_gtm-skills,renewal-save-motion,outbound,68,C,20,20,18,0,10,1155,79,0,False,,skills/rutger-katz/renewal-save-motion
+swan-gtm_gtm-skills,revenue-operating-cadence,sales & deals,70,B,25,17,18,0,10,802,513,0,False,,skills/rutger-katz/revenue-operating-cadence
+swan-gtm_gtm-skills,revops-change-management,revops & data,70,B,25,17,18,0,10,849,401,0,False,,skills/rutger-katz/revops-change-management
+swan-gtm_gtm-skills,revops-crisis,sales & deals,65,C,20,17,18,0,10,1044,397,0,False,,skills/rutger-katz/revops-crisis
+swan-gtm_gtm-skills,revops-data-governance,revops & data,70,B,25,17,18,0,10,677,546,0,False,,skills/rutger-katz/revops-data-governance
+swan-gtm_gtm-skills,revops-diagnostic,sales & deals,67,C,25,14,18,0,10,694,686,0,False,,skills/rutger-katz/revops-diagnostic
+swan-gtm_gtm-skills,revops-forecasting,sales & deals,70,B,25,17,18,0,10,650,252,0,False,,skills/rutger-katz/revops-forecasting
+swan-gtm_gtm-skills,revops-handoffs,outbound,70,B,25,17,18,0,10,759,241,0,False,,skills/rutger-katz/revops-handoffs
+swan-gtm_gtm-skills,revops-hubspot,sales & deals,70,B,25,17,18,0,10,709,410,0,False,,skills/rutger-katz/revops-hubspot
+swan-gtm_gtm-skills,revops-metrics,sales & deals,67,C,25,14,18,0,10,832,647,0,False,,skills/rutger-katz/revops-metrics
+swan-gtm_gtm-skills,revops-org-chart,revops & data,70,B,25,17,18,0,10,839,299,0,False,,skills/rutger-katz/revops-org-chart
+swan-gtm_gtm-skills,revops-revenue-planning,sales & deals,63,C,25,15,13,0,10,875,446,0,False,,skills/rutger-katz/revops-revenue-planning
+swan-gtm_gtm-skills,revops-salesforce,sales & deals,68,C,25,15,18,0,10,979,198,0,False,,skills/rutger-katz/revops-salesforce
+swan-gtm_gtm-skills,revops-strategy,sales & deals,73,B,25,20,18,0,10,930,363,0,False,,skills/rutger-katz/revops-strategy
+swan-gtm_gtm-skills,revops-tech-stack,revops & data,67,C,25,14,18,0,10,1015,523,0,False,,skills/rutger-katz/revops-tech-stack
+swan-gtm_gtm-skills,sales-methodology,sales & deals,65,C,25,12,18,0,10,1007,681,0,False,,skills/rutger-katz/sales-methodology
+swan-gtm_gtm-skills,sales-ramp-enablement,sales & deals,73,B,25,20,18,0,10,739,54,0,False,,skills/rutger-katz/sales-ramp-enablement
+swan-gtm_gtm-skills,trial-poc-conversion,outbound,73,B,25,20,18,0,10,702,71,0,False,,skills/rutger-katz/trial-poc-conversion
+swan-gtm_gtm-skills,win-loss-program,sales & deals,73,B,25,20,18,0,10,836,60,0,False,,skills/rutger-katz/win-loss-program
+swan-gtm_gtm-skills,beehiiv-newsletter-report,cro & pages,70,B,25,17,18,0,10,489,144,0,False,,skills/ryan-estes/beehiiv-newsletter-report
+swan-gtm_gtm-skills,abm-signal-watchlist,outbound,71,B,25,20,16,0,10,270,65,0,False,,skills/ryan-iyengar/abm-signal-watchlist
+swan-gtm_gtm-skills,build-and-fill-a-tam,other,71,B,25,20,16,0,10,234,70,0,False,,skills/ryan-iyengar/build-and-fill-a-tam
+swan-gtm_gtm-skills,crm-health-scoring,other,71,B,25,20,16,0,10,248,67,0,False,,skills/ryan-iyengar/crm-health-scoring
+swan-gtm_gtm-skills,evidence-based-call-scoring,sales & deals,71,B,25,20,16,0,10,246,66,0,False,,skills/ryan-iyengar/evidence-based-call-scoring
+swan-gtm_gtm-skills,governed-crm-cleanup,other,71,B,25,20,16,0,10,251,65,0,False,,skills/ryan-iyengar/governed-crm-cleanup
+swan-gtm_gtm-skills,hygiene-gated-outbound,outbound,61,C,15,20,16,0,10,244,63,0,False,,skills/ryan-iyengar/hygiene-gated-outbound
+swan-gtm_gtm-skills,resolve-before-create,revops & data,61,C,15,20,16,0,10,230,61,0,False,,skills/ryan-iyengar/resolve-before-create
+swan-gtm_gtm-skills,trigger-based-outbound,outbound,71,B,25,20,16,0,10,339,61,0,False,,skills/ryan-iyengar/trigger-based-outbound
+swan-gtm_gtm-skills,competitive-intelligence-radar,brand & positioning,73,B,25,20,18,0,10,502,39,0,False,,skills/sabahudin-murtic/competitive-intelligence-radar
+swan-gtm_gtm-skills,seo-business-context,sales & deals,73,B,25,20,18,0,10,476,165,0,False,,skills/sam-dunning/seo-business-context
+swan-gtm_gtm-skills,seo-business-fit-filter,sales & deals,73,B,25,20,18,0,10,502,158,0,False,,skills/sam-dunning/seo-business-fit-filter
+swan-gtm_gtm-skills,seo-keyword-validation,sales & deals,73,B,25,20,18,0,10,481,131,0,False,,skills/sam-dunning/seo-keyword-validation
+swan-gtm_gtm-skills,seo-opportunity-extraction,outbound,73,B,25,20,18,0,10,429,141,0,False,,skills/sam-dunning/seo-opportunity-extraction
+swan-gtm_gtm-skills,seo-serp-qualification,sales & deals,73,B,25,20,18,0,10,451,124,0,False,,skills/sam-dunning/seo-serp-qualification
+swan-gtm_gtm-skills,seo-topic-prioritization,outbound,73,B,25,20,18,0,10,438,174,0,False,,skills/sam-dunning/seo-topic-prioritization
+swan-gtm_gtm-skills,seo-topic-research-pipeline,outbound,73,B,25,20,18,0,10,606,459,0,False,,skills/sam-dunning/seo-topic-research-pipeline
+swan-gtm_gtm-skills,seo-topic-shaping,sales & deals,73,B,25,20,18,0,10,482,124,0,False,,skills/sam-dunning/seo-topic-shaping
+swan-gtm_gtm-skills,pavilion-event-concierge,other,58,C,15,15,18,0,10,197,150,0,False,,skills/sam-jacobs/pavilion-event-concierge
+swan-gtm_gtm-skills,profitable-efficient-growth,revops & data,73,B,25,20,18,0,10,848,252,0,False,,skills/sam-jacobs/profitable-efficient-growth
+swan-gtm_gtm-skills,move-gtm-diagnostic,outbound,71,B,25,20,16,0,10,701,117,0,False,,skills/sangram-vajre/move-gtm-diagnostic
+swan-gtm_gtm-skills,revenue-engine-maturity-diagnostic,outbound,71,B,25,20,16,0,10,716,44,0,False,,skills/scott-wueschinski/revenue-engine-maturity-diagnostic
+swan-gtm_gtm-skills,dev-tool-pricing,analytics & reporting,71,B,25,20,16,0,10,487,61,0,False,,skills/shane-oconnor/dev-tool-pricing
+swan-gtm_gtm-skills,founder-led-sales,sales & deals,71,B,25,20,16,0,10,563,46,0,False,,skills/shane-oconnor/founder-led-sales
+swan-gtm_gtm-skills,positioning-and-story,brand & positioning,71,B,25,20,16,0,10,498,57,0,False,,skills/shane-oconnor/positioning-and-story
+swan-gtm_gtm-skills,account-progression-staging,outbound,68,C,20,20,18,0,10,1325,160,0,False,,skills/steve-armenti/account-progression-staging
+swan-gtm_gtm-skills,track-champion-job-changes,outbound,76,B,30,20,16,0,10,965,163,0,False,,skills/sung-jo/track-champion-job-changes
+swan-gtm_gtm-skills,campaign-benchmarking,outbound,73,B,25,20,18,0,10,558,44,0,False,,skills/tanyo-gochev/campaign-benchmarking
+swan-gtm_gtm-skills,cold-email-first-touch,outbound,73,B,25,20,18,0,10,570,66,0,False,,skills/tanyo-gochev/cold-email-first-touch
+swan-gtm_gtm-skills,cold-offer-architect,outbound,73,B,25,20,18,0,10,656,55,0,False,,skills/tanyo-gochev/cold-offer-architect
+swan-gtm_gtm-skills,email-sequence,outbound,73,B,25,20,18,0,10,561,51,0,False,,skills/tanyo-gochev/email-sequence
+swan-gtm_gtm-skills,icp-matrix-builder,outbound,73,B,25,20,18,0,10,662,51,0,False,,skills/tanyo-gochev/icp-matrix-builder
+swan-gtm_gtm-skills,linkedin-inmail,outbound,73,B,25,20,18,0,10,548,52,0,False,,skills/tanyo-gochev/linkedin-inmail
+swan-gtm_gtm-skills,objection-mining,outbound,73,B,25,20,18,0,10,574,52,0,False,,skills/tanyo-gochev/objection-mining
+swan-gtm_gtm-skills,outbound-performance-diagnosis,outbound,73,B,25,20,18,0,10,604,44,0,False,,skills/tanyo-gochev/outbound-performance-diagnosis
+swan-gtm_gtm-skills,saas-lifecycle,cro & pages,73,B,25,20,18,0,10,640,51,0,False,,skills/tanyo-gochev/saas-lifecycle
+swan-gtm_gtm-skills,stage-aware-follow-up,outbound,73,B,25,20,18,0,10,636,56,0,False,,skills/tanyo-gochev/stage-aware-follow-up
+swan-gtm_gtm-skills,tam-builder,analytics & reporting,73,B,25,20,18,0,10,598,45,0,False,,skills/tanyo-gochev/tam-builder
+swan-gtm_gtm-skills,patent-backed-seo-quick-wins,seo & aeo,71,B,25,20,16,0,10,651,36,0,False,,skills/thebigasif/patent-backed-seo-quick-wins
+swan-gtm_gtm-skills,find-buyers-in-linkedin-comments,outbound,71,B,25,20,16,0,10,698,77,0,False,,skills/thomas-maitre/find-buyers-in-linkedin-comments
+swan-gtm_gtm-skills,hiring-signal-prospecting,outbound,71,B,25,20,16,0,10,561,60,0,False,,skills/thomas-maitre/hiring-signal-prospecting
+swan-gtm_gtm-skills,icp-to-linkedin-search,brand & positioning,71,B,25,20,16,0,10,617,63,0,False,,skills/thomas-maitre/icp-to-linkedin-search
+swan-gtm_gtm-skills,linkedin-comment-and-invite-writer,outbound,71,B,25,20,16,0,10,569,65,0,False,,skills/thomas-maitre/linkedin-comment-and-invite-writer
+swan-gtm_gtm-skills,linkedin-limits-and-safety,analytics & reporting,71,B,25,20,16,0,10,658,59,0,False,,skills/thomas-maitre/linkedin-limits-and-safety
+swan-gtm_gtm-skills,build-influencer-marketing-strategy,brand & positioning,73,B,25,20,18,0,10,443,179,0,False,,skills/thomas-marcelle/build-influencer-marketing-strategy
+swan-gtm_gtm-skills,creator-deal-pricing,sales & deals,73,B,25,20,18,0,10,383,32,0,False,,skills/thomas-marcelle/creator-deal-pricing
+swan-gtm_gtm-skills,creator-led-growth-90-days,sales & deals,73,B,25,20,18,0,10,398,34,0,False,,skills/thomas-marcelle/creator-led-growth-90-days
+swan-gtm_gtm-skills,find-b2b-creators-linkedin,brand & positioning,73,B,25,20,18,0,10,345,27,0,False,,skills/thomas-marcelle/find-b2b-creators-linkedin
+swan-gtm_gtm-skills,forecast-creator-pipeline,sales & deals,73,B,25,20,18,0,10,394,30,0,False,,skills/thomas-marcelle/forecast-creator-pipeline
+swan-gtm_gtm-skills,founder-employees-or-creators,outbound,73,B,25,20,18,0,10,407,30,0,False,,skills/thomas-marcelle/founder-employees-or-creators
+swan-gtm_gtm-skills,linkedin-creator-campaign-launch,sales & deals,73,B,25,20,18,0,10,362,34,0,False,,skills/thomas-marcelle/linkedin-creator-campaign-launch
+swan-gtm_gtm-skills,measure-creator-roi,content & copy,73,B,25,20,18,0,10,380,36,0,False,,skills/thomas-marcelle/measure-creator-roi
+swan-gtm_gtm-skills,write-b2b-sponsored-post,outbound,73,B,25,20,18,0,10,369,31,0,False,,skills/thomas-marcelle/write-b2b-sponsored-post
+swan-gtm_gtm-skills,b2b-cold-email-copywriting,outbound,73,B,25,20,18,0,10,638,200,0,False,,skills/tim-yakubson/b2b-cold-email-copywriting
+swan-gtm_gtm-skills,data-quality,revops & data,61,C,15,20,16,0,10,342,158,0,False,,skills/udi-cohen/data-quality
+swan-gtm_gtm-skills,enrich-company,outbound,61,C,15,20,16,0,10,360,132,0,False,,skills/udi-cohen/enrich-company
+swan-gtm_gtm-skills,icp-score-and-route,outbound,61,C,15,20,16,0,10,307,140,0,False,,skills/udi-cohen/icp-score-and-route
+swan-gtm_gtm-skills,pipeline-signal-review,outbound,61,C,15,20,16,0,10,296,154,0,False,,skills/udi-cohen/pipeline-signal-review
+swan-gtm_gtm-skills,brand-mention-monitor,cro & pages,71,B,25,20,16,0,10,618,72,0,False,,skills/uri-knorovich/brand-mention-monitor
+swan-gtm_gtm-skills,company-deep-dive,analytics & reporting,71,B,25,20,16,0,10,726,81,0,False,,skills/uri-knorovich/company-deep-dive
+swan-gtm_gtm-skills,launch-monitor,outbound,73,B,30,17,16,0,10,731,63,0,False,,skills/uri-knorovich/launch-monitor
+swan-gtm_gtm-skills,market-finder,outbound,73,B,30,17,16,0,10,738,95,0,False,,skills/uri-knorovich/market-finder
+swan-gtm_gtm-skills,b2b-case-study-production,team & workflow,71,B,25,20,16,0,10,518,44,0,False,,skills/vesselin-malev/b2b-case-study-production
+swan-gtm_gtm-skills,content-de-slop-ai,outbound,68,C,25,17,16,0,10,532,58,0,False,,skills/vesselin-malev/content-de-slop-ai
+swan-gtm_gtm-skills,founder-persona-ops,sales & deals,71,B,25,20,16,0,10,536,78,0,False,,skills/vesselin-malev/founder-persona-ops
+swan-gtm_gtm-skills,multi-account-content-fleet,content & copy,71,B,25,20,16,0,10,544,65,0,False,,skills/vesselin-malev/multi-account-content-fleet
+swan-gtm_gtm-skills,quora-authority-answering,other,71,B,25,20,16,0,10,449,74,0,False,,skills/vesselin-malev/quora-authority-answering
+swan-gtm_gtm-skills,reddit-authority-commenting,outbound,71,B,25,20,16,0,10,608,74,0,False,,skills/vesselin-malev/reddit-authority-commenting
+swan-gtm_gtm-skills,b2b-affiliate-program-playbook,outbound,73,B,25,20,18,0,10,721,58,0,False,,skills/victor-moen/b2b-affiliate-program-playbook
+swan-gtm_gtm-skills,advocate-voice-tuning,brand & positioning,73,B,25,20,18,0,10,356,27,0,False,,skills/yahav-fuchs/advocate-voice-tuning
+swan-gtm_gtm-skills,aeo-citation-drill-down,seo & aeo,73,B,25,20,18,0,10,401,30,0,False,,skills/yahav-fuchs/aeo-citation-drill-down
+swan-gtm_gtm-skills,aeo-score-audit,seo & aeo,73,B,25,20,18,0,10,387,26,0,False,,skills/yahav-fuchs/aeo-score-audit
+swan-gtm_gtm-skills,aeo-visibility-tracking,seo & aeo,68,C,25,20,13,0,10,398,24,0,False,,skills/yahav-fuchs/aeo-visibility-tracking
+swan-gtm_gtm-skills,reddit-account-health,outbound,73,B,25,20,18,0,10,378,28,0,False,,skills/yahav-fuchs/reddit-account-health
+swan-gtm_gtm-skills,reddit-account-warmup,brand & positioning,73,B,25,20,18,0,10,381,33,0,False,,skills/yahav-fuchs/reddit-account-warmup
+swan-gtm_gtm-skills,reddit-attribution-tracking,sales & deals,73,B,25,20,18,0,10,371,32,0,False,,skills/yahav-fuchs/reddit-attribution-tracking
+swan-gtm_gtm-skills,reddit-brand-mention-triage,outbound,68,C,25,20,13,0,10,370,24,0,False,,skills/yahav-fuchs/reddit-brand-mention-triage
+swan-gtm_gtm-skills,reddit-campaign-launcher,brand & positioning,68,C,25,20,13,0,10,400,21,0,False,,skills/yahav-fuchs/reddit-campaign-launcher
+swan-gtm_gtm-skills,reddit-comment-safety,brand & positioning,73,B,25,20,18,0,10,388,36,0,False,,skills/yahav-fuchs/reddit-comment-safety
+swan-gtm_gtm-skills,subreddit-pre-post-check,other,58,C,15,20,13,0,10,342,19,0,False,,skills/yahav-fuchs/subreddit-pre-post-check
+swan-gtm_gtm-skills,subreddit-research,content & copy,68,C,25,20,13,0,10,356,20,0,False,,skills/yahav-fuchs/subreddit-research
+swan-gtm_gtm-skills,account-intelligence,outbound,61,C,15,20,16,0,10,391,212,0,False,,skills/yoni-tserruya/account-intelligence
+swan-gtm_gtm-skills,competitor-intel,outbound,61,C,15,20,16,0,10,355,187,0,False,,skills/yoni-tserruya/competitor-intel
+swan-gtm_gtm-skills,customer-health,outbound,61,C,15,20,16,0,10,341,173,0,False,,skills/yoni-tserruya/customer-health
+swan-gtm_gtm-skills,outreach-personalization,outbound,71,B,25,20,16,0,10,389,167,0,False,,skills/yoni-tserruya/outreach-personalization
+swan-gtm_gtm-skills,tam-from-verified-data,outbound,71,B,25,20,16,0,10,381,164,0,False,,skills/yoni-tserruya/tam-from-verified-data

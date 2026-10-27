@@ -1,0 +1,86 @@
+=====
+CONTACT: Luis Ortega <luis@corbel.example> | Corbel Software
+CLASS: interested
+ACTION: reply
+NEXT: answer price; Maya to confirm Pipedrive and Canadian data storage
+FOLLOW-UP: 2026-11-16
+REPLY:
+> This could help. What does it cost for 12 reps, and do you work with Pipedrive? We'd also need our data stored in Canada.
+FACTS
+- price: Team plan $49/user/month, billed annually, minimum 5 users | brand/offer.md
+- integrations: Salesforce and HubSpot | brand/offer.md
+- entry offer: free 14-day trial on the Team plan | brand/offer.md
+NEEDS YOU
+- Luis (Corbel) asked whether Pipewise works with Pipedrive. Only Salesforce and HubSpot are on record. Answer by 2026-11-16 to keep the thread warm.
+- Luis needs Corbel's data stored in Canada. Data location isn't in brand memory. Answer by 2026-11-16 to keep the thread warm.
+---
+To: luis@corbel.example
+Kind: reply
+Subject: Re: forecast calls
+
+Hi Luis,
+
+The Team plan is $49 per user a month, billed annually, so for 12 reps you'd be on that plan.
+
+Today we connect to Salesforce and HubSpot. I'll confirm where we stand on Pipedrive, and where your data would be stored, and come back to you.
+
+If it helps in the meantime, there's a free 14-day trial on the Team plan.
+
+Maya
+=====
+CONTACT: Ruth Amsel <ruth@halden.example> | Halden Analytics
+CLASS: referral
+ACTION: reply
+NEXT: thank Ruth; first email to Victor once his address basis is confirmed
+FOLLOW-UP: none
+REPLY:
+> Not me. Victor Lindqvist runs sales ops: victor@halden.example
+FACTS
+- referral: Ruth said Victor Lindqvist runs sales ops | prospect
+- offer: weekly forecast from deal activity, risk flag on every deal; Salesforce and HubSpot | brand/offer.md
+- proof: Ardent Labs (40 reps) forecast within 5% of close for three straight quarters | brand/proof.md
+- sender: Maya Chen, Founder, Pipewise; Pipewise Inc., 1188 West Georgia St, Suite 1500, Vancouver, BC V6E 4A2 | brand/senders.md
+NEEDS YOU
+- Victor's address came from Ruth's reply, not a published source. Confirm it's listed on Halden's site before sending (CASL).
+---
+To: ruth@halden.example
+Kind: thanks
+Subject: Re: forecast calls
+
+Thanks, Ruth. I'll get in touch with Victor.
+
+Maya
+---
+To: victor@halden.example
+Kind: referral-first
+Subject: forecast calls at halden
+
+Hi Victor,
+
+Ruth Amsel said you run sales ops at Halden, so I'm writing to you rather than her.
+
+Pipewise builds the weekly forecast from deal activity in Salesforce or HubSpot and flags every deal at risk, so the forecast call starts from data rather than gut feel. Ardent Labs (40 reps) landed within 5% of close three quarters running.
+
+Worth a look at how it would read your pipeline?
+
+Maya Chen, Founder, Pipewise
+Pipewise Inc., 1188 West Georgia St, Suite 1500, Vancouver, BC V6E 4A2
+If this isn't relevant, reply "no" and I won't follow up.
+=====
+CONTACT: Greg Pollard <greg@talvo.example> | Talvo
+CLASS: unsubscribe
+ACTION: confirm
+NEXT: suppressed; all sequences stopped
+FOLLOW-UP: none
+REPLY:
+> Stop emailing me.
+FACTS
+- none
+NEEDS YOU
+- none
+---
+To: greg@talvo.example
+Kind: confirm
+Subject: Re: forecast calls
+
+Done, you're off the list. Maya

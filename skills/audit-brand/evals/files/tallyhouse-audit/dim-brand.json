@@ -1,0 +1,53 @@
+{
+ "dimension": "brand",
+ "assessable": true,
+ "confidence": "medium",
+ "checks": [
+  {
+   "id": "B1",
+   "points": 12,
+   "max": 25,
+   "evidence": "Home copy is plain and practical; inner pages are stubs with differing title formats."
+  },
+  {
+   "id": "B2",
+   "points": 0,
+   "max": 25,
+   "evidence": "index.html banner \"New: AI-powered bookkeeping for restaurant groups\" sits above \"A real bookkeeper who knows restaurants, not a chatbot\"."
+  },
+  {
+   "id": "B3",
+   "points": 20,
+   "max": 20,
+   "evidence": "Named testimonial: Maria Okafor, owner, Lantern Noodle Bar (3 locations), index.html."
+  },
+  {
+   "id": "B4",
+   "points": 10,
+   "max": 20,
+   "evidence": "/img/dashboard.png has no alt text; title formats differ (\"Tallyhouse | Restaurant Bookkeeping\" vs \"Pricing | Tallyhouse\")."
+  },
+  {
+   "id": "B5",
+   "points": 5,
+   "max": 10,
+   "evidence": "No Tallyhouse brand memory supplied; fallback: B1 and B2 not both full, so 5."
+  }
+ ],
+ "score": 47,
+ "findings": [
+  {
+   "severity": "high",
+   "check": "B2",
+   "finding": "AI-powered banner contradicts the not-a-chatbot promise",
+   "evidence": "index.html",
+   "fix": "Remove the banner."
+  }
+ ],
+ "strengths": [
+  "Named, specific testimonial."
+ ],
+ "not_observable": [
+  "Brand perception and recall."
+ ]
+}

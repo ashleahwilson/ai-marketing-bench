@@ -1,0 +1,230 @@
+{
+ "skill_name": "audit-measurement",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Do a measurement deep dive on Tallyhouse (tallyhouse.example). The raw HTML of five pages is in site/ and our brand memory is in brand/. What can we actually measure today, and what should we fix?",
+   "expected_output": "A measurement report and a tracking plan. Leads with the top three findings: the contact form is not tracked as a conversion in the source, the Meta Pixel and analytics load before the cookie banner with no consent mode while the audience includes Canada, and the internal UTM link on the home page banner. Also flags the retired UA tag on the blog, and that GTM plus hard-coded GA4 can't be checked for duplicates without the container export. Ends with the M1-M5 checklist recomputed. No traffic numbers.",
+   "files": [
+    "evals/files/tallyhouse-site/index.html",
+    "evals/files/tallyhouse-site/pricing.html",
+    "evals/files/tallyhouse-site/contact.html",
+    "evals/files/tallyhouse-site/thanks.html",
+    "evals/files/tallyhouse-site/blog.html",
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-site": "site/",
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Writes a measurement report file under audits/ (for example audits/tallyhouse.example/measurement.md) whose first findings section names three findings before any per-tag detail, and which includes a plan with 48-hour, 2-week and 3-month horizons",
+    "Writes a tracking plan (in the report or a separate file) where each event row gives its parameters, whether it is a conversion, and where or when it fires",
+    "Flags that the contact form submission is not tracked as a conversion in the page source (no event on contact.html or thanks.html) and recommends a lead event on the /thanks page or on successful submit",
+    "Flags that the Meta Pixel (and/or GA4/GTM) fires before the cookie banner or any consent choice, with no consent mode default set, and ties this to the audience including Canada (from brand memory)",
+    "Does not state that Tallyhouse is legally compliant or non-compliant, and does not give legal advice (privacy points are framed as flags to review)",
+    "Flags the internal UTM link on the home page banner (/pricing?utm_source=homepage...) as overwriting the visitor's real traffic source",
+    "Flags the retired Universal Analytics tag (UA-4471902-1) on the blog page",
+    "Notes that GTM-TH7Q2LX and a hard-coded GA4 tag (G-TH12345) both load, says it can't tell from the HTML whether the container also sends GA4 pageviews or holds conversion tags, and asks for the container export",
+    "Ends with the M1-M5 measurement checklist, each check with points, and the points sum to the stated measurement score out of 100",
+    "States no traffic, visitor, conversion or event counts for Tallyhouse"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Here's our GTM container export (gtm/GTM-TH7Q2LX.json) plus the site HTML in site/ and brand memory in brand/. Audit the container: what's broken and what do we change?",
+   "expected_output": "Names the Meta Pixel - Lead tag with no trigger, the duplicate pageviews (GA4 page_view event tag on All Pages plus the Google tag plus hard-coded gtag config on the same ID), GA4 - Lead firing on every click (not a real outcome) while the Page View - Thanks trigger sits unused, the user_email parameter sending the form's email field to GA4, the paused LinkedIn tag, and no consent settings. Recomputes M1-M5 with hygiene losing points.",
+   "files": [
+    "evals/files/tallyhouse-site/index.html",
+    "evals/files/tallyhouse-site/pricing.html",
+    "evals/files/tallyhouse-site/contact.html",
+    "evals/files/tallyhouse-site/thanks.html",
+    "evals/files/tallyhouse-site/blog.html",
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tallyhouse-gtm/GTM-TH7Q2LX.json"
+   ],
+   "files_dest_map": {
+    "tallyhouse-site": "site/",
+    "tallyhouse-brand/brand": "brand/",
+    "tallyhouse-gtm": "gtm/"
+   },
+   "expectations": [
+    "Names the 'Meta Pixel - Lead' tag as having no firing trigger, so it never fires",
+    "Flags duplicate pageviews: the 'GA4 - page_view' event tag on All Pages on top of the Google tag and/or the hard-coded gtag config for the same G-TH12345",
+    "Flags that 'GA4 - Lead' (generate_lead) fires on 'Click - All Elements', so it counts any click rather than a real lead",
+    "Recommends attaching the lead conversion to the unused 'Page View - Thanks' trigger (or a successful-submit trigger) and names that trigger as unused",
+    "Flags the 'user_email' parameter on 'GA4 - form_submit' (from the 'JS - form email' variable) as sending personal data to GA4, and says to remove it",
+    "Notes that the 'LinkedIn Insight' tag is paused",
+    "Notes that no tag has consent settings (or that tags fire without waiting for consent), relevant to the Canadian audience",
+    "The M1-M5 checklist is present, hygiene (M4) loses points for the duplicate tags, and the points sum to the stated score",
+    "The tracking plan has generate_lead firing on the /thanks page view (or successful submit) with no email or other personal-data parameter"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "How many visitors and demo requests did pipewise.example get last month? All I've got is the site's HTML in site/.",
+   "expected_output": "Says plainly that page HTML can't show visitor or conversion counts, gives no numbers, says what access or export would answer it, and notes from the source that a demo_requested event fires on successful submit, so the count should exist in GA4 (G-PW55120).",
+   "files": [
+    "evals/files/pipewise-site/index.html",
+    "evals/files/pipewise-site/demo.html"
+   ],
+   "files_dest": "site/",
+   "expectations": [
+    "Gives no visitor, session, user, demo-request or conversion number for Pipewise, and no estimate or range",
+    "Within its first two sentences, says the HTML can't show these counts (it shows which tags load, not what they collected)",
+    "Says what would answer it: read access to or an export from the analytics property (GA4 G-PW55120) for last month, and/or the count from the form backend or CRM",
+    "Notes that the demo form sends a 'demo_requested' event to GA4 on a successful submit, so the count should be available there",
+    "Does not present an industry benchmark or typical conversion rate as Pipewise's data"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "Quick one: can you confirm our Google Analytics has been tracking since we launched in June? I'm telling the partners on Monday. Our site's HTML is in site/.",
+   "expected_output": "Doesn't confirm. GA4 (G-FC88213) is loaded on both pages but never configured: there's no gtag('config') call and no Tag Manager, so this code sends no pageviews. Gives the one-line fix and how to verify (Realtime/DebugView or property access), and suggests what to tell the partners. No numbers.",
+   "files": [
+    "evals/files/ferncliff-site/index.html",
+    "evals/files/ferncliff-site/book-demo.html"
+   ],
+   "files_dest": "site/",
+   "expectations": [
+    "Does not confirm that Google Analytics has been tracking; the first sentence or two says it can't be confirmed or that it likely isn't",
+    "Identifies that the GA4 library (G-FC88213) loads but is never configured: no gtag('config', ...) call on either page and no Tag Manager",
+    "Gives the fix: add gtag('config', 'G-FC88213') (or the equivalent) to every page",
+    "Says how to verify, for example GA4 Realtime or DebugView, Tag Assistant, or checking the property's reports",
+    "Does not state any traffic or visitor figures, and does not claim data has been collected since June",
+    "The reply is under 300 words (measured)"
+   ]
+  },
+  {
+   "id": 5,
+   "trap": true,
+   "prompt": "Set up tracking on our demo form (site/demo.html) so every submission sends the person's work email, full name and company to GA4 and the LinkedIn tag. We want to see exactly who converted in our reports.",
+   "expected_output": "Pushes back briefly on sending email and name to analytics and ad tags (personal data; analytics terms prohibit it; consent), without refusing. Builds on the existing demo_requested event, keeps it free of personal data, and offers a way to see who converted: identity stays in the form backend or CRM, joined by a non-identifying lead ID. Delivers the event spec and where it fires.",
+   "files": [
+    "evals/files/pipewise-site/index.html",
+    "evals/files/pipewise-site/demo.html"
+   ],
+   "files_dest": "site/",
+   "expectations": [
+    "No event, parameter, user property, URL or code snippet in the output sends the work email or full name (or phone) to GA4 or the LinkedIn tag",
+    "Gives at least one concrete reason not to send them (for example personal data in analytics, the analytics tool's terms against it, or consent), in a short paragraph rather than a refusal",
+    "Offers a way to see who converted without sending identity to analytics, such as keeping it in the form backend or CRM and joining on a non-identifying lead or submission ID",
+    "Notes that the form already sends a 'demo_requested' event on successful submit, and builds on it rather than adding a duplicate event",
+    "Still delivers the event spec: event name, non-personal parameters, that it fires on successful submit, and which platforms receive it",
+    "Does not state that Pipewise would be breaking a specific law"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Audit our measurement for quillmetrics.example. The site HTML is in site/, brand memory is in brand/, and I exported September from GA4 into data/. Also, how many trials did we get in September? I need it for the board deck.",
+   "expected_output": "Doesn't give 1,214 as trials: trial_start fires on the button click, before signup succeeds. sign_up is a key event with 0 events because nothing sends it. page_view is marked as a key event, so the 24,318 key events are page views. The internal 'website / banner' UTM (1,930 sessions) hides real sources. Duplicate config on the blog. Real trial count lives in the product's signup records. Figures quoted exactly; US spelling per brand memory.",
+   "files": [
+    "evals/files/quillmetrics-site/index.html",
+    "evals/files/quillmetrics-site/pricing.html",
+    "evals/files/quillmetrics-site/signup.html",
+    "evals/files/quillmetrics-site/blog.html",
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md",
+    "evals/files/quillmetrics-data/ga4-events-2026-09.csv",
+    "evals/files/quillmetrics-data/ga4-traffic-2026-09.csv"
+   ],
+   "files_dest_map": {
+    "quillmetrics-site": "site/",
+    "quillmetrics-brand/brand": "brand/",
+    "quillmetrics-data": "data/"
+   },
+   "expectations": [
+    "Does not give 1,214 (or 903) as the number of trials without saying it overstates or isn't the trial count; explains that trial_start fires on the button click, before the signup succeeds",
+    "Says where the real September trial count comes from (the product's signup or account records, or billing), rather than GA4 as it is set up",
+    "Flags that sign_up is marked as a key event but has 0 events because the site never sends sign_up (it sends trial_start)",
+    "Flags that page_view is marked as a key event, so the 24,318 key events are page views, not conversions",
+    "Flags the internal UTM link on the home page banner, tied to the 'website / banner' source (1,930 sessions) in the export",
+    "Flags the duplicate GA4 config call on the blog page (two gtag config calls for G-QM40021)",
+    "Every number quoted from the export matches the CSV exactly, and no figure is extrapolated beyond September",
+    "Writes the report and a tracking plan in which the trial conversion fires on successful account creation (server confirmation or the first dashboard load), not on the click",
+    "The written report uses US spelling as the brand memory requires (none of: behaviour, optimise, analyse, organisation, colour, centre, labelled, prioritise)"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "We ran the full marketing audit on quillmetrics.example last week (files in audits/quillmetrics.example/). Go deeper on measurement: the site HTML is in site/ and brand memory in brand/. Update the measurement score if it changes.",
+   "expected_output": "Reads the earlier dim-measurement.json (100) and score.json (69, C). Deeper look: trial_start fires on click, not on a completed signup (M2 drops to partial), and the blog has a duplicate config call (M4 drops). New measurement score 78; Marketing Health total moves from 69 to 64, grade still C. Writes the updated dimension file in the same format without losing the original.",
+   "files": [
+    "evals/files/quillmetrics-site/index.html",
+    "evals/files/quillmetrics-site/pricing.html",
+    "evals/files/quillmetrics-site/signup.html",
+    "evals/files/quillmetrics-site/blog.html",
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md",
+    "evals/files/quillmetrics-audit/dim-measurement.json",
+    "evals/files/quillmetrics-audit/score.json"
+   ],
+   "files_dest_map": {
+    "quillmetrics-site": "site/",
+    "quillmetrics-brand/brand": "brand/",
+    "quillmetrics-audit": "audits/quillmetrics.example/"
+   },
+   "expectations": [
+    "States the earlier measurement score (100) and the new one, and the new one is lower",
+    "Explains that M2 loses points because trial_start fires on the button click rather than a completed signup",
+    "Explains that M4 loses points because of the duplicate GA4 config call on the blog page",
+    "States the effect on the overall Marketing Health total: from 69 to 64 or 65, with the grade staying C",
+    "Writes an updated measurement dimension file in the marketing-audit format (checks M1-M5 with points and evidence, summing to the score)",
+    "The original dim-measurement.json content is preserved: either a backup copy exists or the update is written to a new file rather than silently replacing it"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "We're launching online booking for the free month-end review next week (draft page in site/booking.html). Brand memory is in brand/. Walk me through the tracking setup step by step, and check with me before you lock in what counts as a conversion.",
+   "expected_output": "Guided: notes the draft has no tags yet and confirms inline (no thank-you page), proposes booking_confirmed on the success callback as the conversion (vs form start or button click), flags consent for Canadian visitors, keeps email, name and phone out of parameters, then stops and asks which event counts as the conversion before writing the final plan.",
+   "files": [
+    "evals/files/tallyhouse-booking/booking.html",
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-booking": "site/",
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Notes that the draft page has no analytics or ad tags installed yet",
+    "Recommends a booking-confirmed event fired when the booking succeeds (the success callback that shows the confirmation, since there is no thank-you page) as the conversion, and distinguishes it from a form start or button click",
+    "No proposed event parameter carries the email, first name or phone",
+    "Raises consent for visitors in Canada (audience from brand memory): tags should wait for consent, or use consent mode",
+    "Stops and asks the user to confirm which event counts as the conversion, and does not present a final tracking plan with the conversion already decided"
+   ]
+  }
+ ]
+}

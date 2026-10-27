@@ -1,0 +1,16 @@
+{"dimension": "positioning", "assessable": true, "confidence": "medium",
+ "checks": [
+  {"id": "P1", "points": 10, "max": 20, "evidence": "index.html H1 \"Close your books in 3 days, not 3 weeks.\" states a benefit; that it is restaurant bookkeeping is clear only from the subhead (\"Tallyhouse connects to your POS, payroll and suppliers...\"). Partial."},
+  {"id": "P2", "points": 20, "max": 20, "evidence": "index.html \"Built for independent restaurants and small groups (1–15 locations)\"; about.html \"We don't serve retail, e-commerce or franchises with more than 15 locations.\" Specific audience plus exclusions."},
+  {"id": "P3", "points": 10, "max": 20, "evidence": "Specific differences (hospitality-finance bookkeepers on about.html, POS reconciliation on index.html) but no alternative named or contrasted. Partial."},
+  {"id": "P4", "points": 20, "max": 20, "evidence": "index, pricing, about and contact describe the same product, audience (restaurants, 1–15 locations) and core benefit."},
+  {"id": "P5", "points": 0, "max": 20, "evidence": "The headline claim \"3 days, not 3 weeks\" has no proof on any page; the only testimonial (Maria Okafor) is about prime cost, not speed. 0."}
+ ],
+ "score": 60,
+ "findings": [
+  {"severity": "high", "check": "P5", "finding": "The headline's 3-day claim is unsupported.", "evidence": "index.html H1; the Okafor quote does not mention timing.", "fix": "Quote one client's measured close time with name and business, or change the H1 to a claim you can show."},
+  {"severity": "medium", "check": "P1", "finding": "The H1 says the benefit, not the category.", "evidence": "index.html H1.", "fix": "\"Restaurant bookkeeping that closes your books in 3 days.\""},
+  {"severity": "medium", "check": "P3", "finding": "No alternative is named or contrasted.", "evidence": "No page names what buyers use today.", "fix": "One comparison line under the H1."}
+ ],
+ "strengths": ["Audience is specific, with exclusions on about.html.", "All four pages tell the same story."],
+ "not_observable": ["How buyers compare Tallyhouse with others."]}

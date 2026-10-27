@@ -1,0 +1,12 @@
+Campaign Name,Campaign Objective,Special Ad Categories,Special Ad Category Country,Ad Set Name,Optimization Goal,Custom Event Type,Attribution Spec,Countries,Age Min,Age Max,Custom Audiences,Advantage+ Audience,Placements,Daily Budget
+Prospecting | Free trial | Traffic,OUTCOME_TRAFFIC,None,,Traffic | Broad US,LINK_CLICKS,,7-day click or 1-day view,US,18,65,,Off,Advantage+ placements,60.00
+Trials | Conversions | 9 audiences,OUTCOME_LEADS,None,,TR | Shopify owners US,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,US,18,65,,Off,"Manual: Facebook Feed, Instagram Feed, Audience Network",52.14
+Trials | Conversions | 9 audiences,OUTCOME_LEADS,None,,TR | Lookalike 1% trials,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,US,18,65,"Lookalike (US, 1%) - Trial starters",Off,"Manual: Facebook Feed, Instagram Feed, Audience Network",47.14
+Trials | Conversions | 9 audiences,OUTCOME_LEADS,None,,TR | Lookalike 3% trials,OFFSITE_CONVERSIONS,LEAD,1-day click,US,18,65,"Lookalike (US, 3%) - Trial starters",Off,"Manual: Facebook Feed, Instagram Feed, Audience Network",42.14
+Trials | Conversions | 9 audiences,OUTCOME_LEADS,None,,TR | Interest: ecommerce analytics,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,US,18,65,,Off,"Manual: Facebook Feed, Instagram Feed, Audience Network",37.50
+Trials | Conversions | 9 audiences,OUTCOME_LEADS,None,,TR | Interest: Shopify Plus,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,US,18,65,,Off,"Manual: Facebook Feed, Instagram Feed, Audience Network",35.36
+Trials | Conversions | 9 audiences,OUTCOME_LEADS,None,,TR | Interest: Klaviyo users,OFFSITE_CONVERSIONS,LEAD,1-day click,US,18,65,,Off,"Manual: Facebook Feed, Instagram Feed, Audience Network",31.43
+Trials | Conversions | 9 audiences,OUTCOME_LEADS,None,,TR | Broad US 25-54,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,US,25,54,,Off,"Manual: Facebook Feed, Instagram Feed, Audience Network",27.14
+Trials | Conversions | 9 audiences,OUTCOME_LEADS,None,,TR | Interest: DTC founders,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,US,18,65,,Off,"Manual: Facebook Feed, Instagram Feed, Audience Network",22.86
+Trials | Conversions | 9 audiences,OUTCOME_LEADS,None,,TR | Interest: Stripe,OFFSITE_CONVERSIONS,LEAD,1-day click,US,18,65,,Off,"Manual: Facebook Feed, Instagram Feed, Audience Network",18.57
+Retargeting | Site visitors 30d,OUTCOME_SALES,None,,RT | Visitors 30d,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,US,18,65,Website visitors - 30 days,Off,Advantage+ placements,45.00

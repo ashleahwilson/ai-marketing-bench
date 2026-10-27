@@ -1,0 +1,5 @@
+customer,type,locations,city,province,monthly_fee,status,signed,source
+Lantern Noodle Bar,restaurant group,3,Toronto,ON,897,won,2026-03-02,referral
+Saltbox Kitchen,single restaurant,1,Hamilton,ON,349,won,2026-05-11,search
+Copper Kettle Café,single restaurant,1,Vancouver,BC,349,won,2026-07-20,search
+Northline Taverns,restaurant group,6,Calgary,AB,,lost,2026-08-04,outbound

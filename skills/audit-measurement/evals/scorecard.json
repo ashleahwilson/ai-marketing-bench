@@ -1,0 +1,36 @@
+{
+ "skill": "audit-measurement",
+ "version": "1.2.0",
+ "date": "2026-10-24",
+ "status": "Meets the Bench Standard bar on both Opus and Haiku: 56/56 with the skill in the final round on each, against 34 (no skill, Haiku), 41 (no skill, Opus) and 44 (comparison skill, Haiku). Never worse on the three traps, and no invented facts in any with-skill output in the final round.",
+ "method": "8 evals (3 traps), expectations written before any run. Round 1 ran the skill, no skill, and the comparison skill (Corey Haines' analytics-tracking 1.1.0) on Haiku, and the skill and no skill on Opus, in fresh headless agents graded blind by a separate Opus grader. Two round-1 Haiku runs on eval 2 (no skill, comparison skill) answered that they weren't allowed to open the files; both were rerun once and regraded. The comparison skill then completed the audit; the no-skill run refused again and its 0/9 stands. Rounds 2 and 3 re-ran the skill as it was revised (round 3 on Haiku and Opus).",
+ "results": [
+  {"config": "with skill, Opus (v1.2.0, round 3)", "passed": 56, "total": 56},
+  {"config": "with skill, Opus (v1.0.0, round 1)", "passed": 56, "total": 56},
+  {"config": "no skill, Opus", "passed": 41, "total": 56},
+  {"config": "with skill, Haiku (v1.2.0, round 3)", "passed": 56, "total": 56},
+  {"config": "comparison skill (analytics-tracking), Haiku", "passed": 44, "total": 56},
+  {"config": "no skill, Haiku", "passed": 34, "total": 56}
+ ],
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 54,
+  "2 (v1.1.0)": 55,
+  "3 (v1.2.0)": 56,
+  "out_of": 56
+ },
+ "traps": {
+  "eval 3 (visitors from HTML only)": {"with skill Haiku r3": "5/5", "with skill Opus r3": "5/5", "no skill Haiku": "5/5", "no skill Opus": "5/5", "comparison Haiku": "5/5"},
+  "eval 4 (GA4 loaded, never configured)": {"with skill Haiku r3": "6/6", "with skill Opus r3": "6/6", "no skill Haiku": "4/6", "no skill Opus": "4/6", "comparison Haiku": "4/6"},
+  "eval 5 (send emails to analytics)": {"with skill Haiku r3": "6/6", "with skill Opus r3": "6/6", "no skill Haiku": "5/6", "no skill Opus": "3/6", "comparison Haiku": "6/6"}
+ },
+ "losses_and_open_issues": [
+  "Round 1, with skill Haiku: the yes/no GA4 answer ran 307 words (limit 300), and a 'behaviour' appeared in the dimension JSON of a US-spelling brand. Fixed in 1.1.0 (200-word Answer mode, self-check on every file)",
+  "Round 2, with skill Haiku: in Guided mode it said consent 'needs review' without saying tags should wait for consent. Fixed in 1.2.0",
+  "Round 2, with skill Haiku: plan rows proposed pages that don't exist (a /thanks page on a site that sends users to its dashboard, a /welcome page) and a campaign value not in the source; recommendations, not claims, but fixed in 1.2.0",
+  "Round 3, with skill Haiku: a LinkedIn conversion_id left as a 'TBD' string inside a code snippet; some replies still use checklist codes ('M4 0/15') and the word 'rubric'; one reply called the whole brand memory provisional when only personas are",
+  "Round 3, with skill Opus: called all 1,930 internal-UTM sessions 'from somewhere else', an overstatement",
+  "Round 3: both with-skill runs scored 100%, so these evals no longer separate future versions; harder expectations (placeholders in code, internals in replies, answering the direct question first) are needed next",
+  "Without the skill: no-skill Haiku refused the GTM audit twice, saying it could only read the task file; no-skill Opus named laws as conclusions ('Law 25 requires opt-in consent', 'a compliance gap'), replaced a real GA4 ID with a placeholder, ran to 1,765 words in a guided task, and quoted unsourced thresholds; the comparison skill invented an 'event library' event name and leaked its own internals; none of the three non-skill configs backed up the earlier audit file before overwriting it",
+  "Expectations that check the skill's own format (the M1-M5 checklist, the audits/ path, three plan horizons) favour the skill by design; the grader flagged them"
+ ]
+}

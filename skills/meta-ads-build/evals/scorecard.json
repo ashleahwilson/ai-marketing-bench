@@ -1,0 +1,69 @@
+{
+ "skill": "meta-ads-build",
+ "version": "1.2.0",
+ "date": "2026-10-24",
+ "status": "Partly meets the Bench Standard bar. It beats no skill and the comparison skill on total on both models and is never worse on traps; Haiku (v1.2.0) scored 69/69 with no invented facts. Fails the no-invented-facts item on Opus: in the final round Opus (also 69/69) added small unsourced details (what a Ferncliff demo involves, and an assumed website-visitor exclusion audience in three builds).",
+ "method": "8 evals (4 traps), expectations written before any run. Round 1 ran the skill, no skill, and the closest public skill (Corey Haines' ad-creative 1.1.0) on Haiku, and the skill and no skill on Opus, in fresh headless agents graded blind by a separate Opus grader. Rounds 2 and 3 re-ran the skill as it was revised (Opus again in round 3). One expectation (eval 1, prices) was clarified after the round 3 grader showed it penalized a correctly labelled group price; every eval-1 run in every round was re-graded on it by a fresh grader (only the round 3 Opus result changed, 11 to 12).",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 69,
+   "total": 69
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 68,
+   "total": 69
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 50,
+   "total": 69
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 69,
+   "total": 69
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 46,
+   "total": 69
+  },
+  {
+   "config": "comparison skill (ad-creative), Haiku",
+   "passed": 50,
+   "total": 69
+  }
+ ],
+ "traps": {
+  "evals": [
+   2,
+   3,
+   4,
+   6
+  ],
+  "with_skill_haiku_round_3": "31/31",
+  "with_skill_opus_round_3": "31/31",
+  "no_skill_haiku": "19/31",
+  "no_skill_opus": "20/31",
+  "comparison_skill_haiku": "24/31"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 68,
+  "2 (v1.1.0)": 69,
+  "3 (v1.2.0)": 69,
+  "out_of": 69
+ },
+ "losses_and_open_issues": [
+  "Round 1, with skill: Haiku's month-end build had no 9:16 asset (fixed in 1.1.0); Opus wrote a paid creator who 'spent a week' with Pipewise, a claimed experience not on record (fixed in 1.1.0)",
+  "Round 3, with skill, Opus: invented details about what a Ferncliff demo involves ('Bring your busiest day; we'll walk through it'), and assumed a 'website visitors, 180 days' exclusion audience not on record in evals 2, 6 and 7",
+  "Round 3, Opus eval 2: one image brief (unopened envelopes, 'Get your books caught up') sits close to describing the reader's situation",
+  "Haiku holds back at times: dropped the Pipewise price in eval 4 over a non-conflict, and flags 'tight margins' as a personal attribute",
+  "Guided mode batches its five questions instead of going one decision at a time; no expectation tests this",
+  "The exported ads.csv is bulk-upload style, not import-ready: budgets and links can be placeholders and columns need mapping to the account's import template",
+  "Build files show working scaffolding to the user (Mode, FACTS/OPEN source tags, [visual] tags on hooks)",
+  "Round 1, without the skill: no-skill Opus wrote first-person lines for Tomas Reyes and a Kestrel Cloud script, and invented Ferncliff features and a cost-per-demo range; no-skill and comparison-skill Haiku kept a 10 km radius on the job ad; no-skill Haiku kept the 'drowning in debt' hook as a variant; ad-creative invented Ferncliff benefits ('Fill More Chairs This Month')",
+  "Every run, all configs, left the user's drafts and audit file unchanged"
+ ]
+}

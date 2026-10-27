@@ -1,0 +1,1 @@
+Write the emails for restaurants that just bought catch-up bookkeeping. They need to upload bank and POS statements for the backlog months at https://tallyhouse.example/upload. Once they're caught up, invite them onto the monthly plan. Brand memory is in brand/.

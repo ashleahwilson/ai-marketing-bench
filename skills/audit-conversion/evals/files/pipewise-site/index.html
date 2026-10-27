@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipewise | Pipeline forecasting for B2B sales teams</title>
+<meta name="description" content="Pipewise ranks today's deals by how likely they are to close this month. For sales teams of 10 to 100 reps.">
+<link rel="canonical" href="https://pipewise.example/">
+<link rel="stylesheet" href="/css/site.css">
+<script defer src="/js/site.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PW24680"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PW24680');</script>
+</head><body>
+<nav><a href="/">Pipewise</a> <a href="/pricing">Pricing</a> <a href="#walkthrough" class="btn">Book a forecast walkthrough</a></nav>
+<h1>Know which deal to call first.</h1>
+<p>Pipewise ranks today's deals by how likely they are to close this month, for sales teams of 10 to 100 reps. Open it at 9, make the first call by 9:05.</p>
+<a href="#walkthrough" class="btn btn-primary">Book a forecast walkthrough</a>
+<img src="/img/ranked-deals.png" width="1200" height="720" alt="Pipewise list of today's deals ranked by likelihood to close">
+<h2>What changes in the first week</h2>
+<ul>
+<li>Every rep starts the day with a ranked call list</li>
+<li>Your forecast updates as deals move, not at the Friday meeting</li>
+<li>Connects to the CRM you already use; no new data entry</li>
+</ul>
+<h2 id="walkthrough">Book a forecast walkthrough</h2>
+<p>30 minutes with your own pipeline data. You'll see which deals Pipewise would rank first this week.</p>
+<blockquote>"Our forecast calls went from an hour of guessing to fifteen minutes." — Mira Osei, VP Sales, Ardent Labs (40 reps)</blockquote>
+<form action="/api/walkthrough" method="post">
+<label for="w-name">Name</label><input id="w-name" name="name" autocomplete="name" required>
+<label for="w-email">Work email</label><input id="w-email" name="email" type="email" autocomplete="email" required aria-describedby="w-email-err">
+<span id="w-email-err" class="field-error" aria-live="polite"></span>
+<label for="w-company">Company</label><input id="w-company" name="company" autocomplete="organization" required>
+<label for="w-reps">Number of reps (optional)</label><select id="w-reps" name="reps"><option value="">Choose one</option><option>10–25</option><option>26–50</option><option>51–100</option></select>
+<button type="submit" class="btn btn-primary">Book a forecast walkthrough</button>
+<p class="form-note">You'll get an email within one business day with three times to choose from. We use your details only to arrange the walkthrough. <a href="/privacy">Privacy policy</a>.</p>
+</form>
+<footer><a href="/pricing">Pricing</a> · <a href="/privacy">Privacy</a> · Pipewise, Toronto and Seattle</footer>
+</body></html>

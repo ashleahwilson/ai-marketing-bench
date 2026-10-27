@@ -1,0 +1,12 @@
+Account Name,Website,Employees,CRM,Country,City,First Name,Last Name,Title,Email,Lifecycle Stage,Do Not Contact,Last Funding
+Kestrel Freight Ltd.,kestrelfreight.example,220,Salesforce,Canada,Vancouver,Arjun,Mehta,VP Sales,arjun.mehta@kestrelfreight.example,Prospect,No,Series B 2026-03
+KESTREL FREIGHT,,220,Salesforce,Canada,Vancouver,Leah,Moreau,RevOps Manager,leah.moreau@kestrelfreight.example,Prospect,No,
+Summit Roofing,summitroofingco.example,140,HubSpot,US,Denver,Carl,Jensen,Sales Director,carl@summitroofingco.example,Prospect,No,
+Summit Roofing,summitroof.example,35,,Canada,Calgary,Mona,Haddad,Owner,mona@summitroof.example,Prospect,No,
+Brightwater Logistics,brightwaterlogistics.example,480,HubSpot,US,Chicago,Tess,Romano,Head of Sales,tess@brightwaterlogistics.example,Prospect,No,Series A 2025-11
+Halcyon Health Systems,halcyonhealth.example,3500,Salesforce,US,Boston,Mark,Feld,VP Sales,mark.feld@halcyonhealth.example,Prospect,No,
+Orchard Lane Software,orchardlane.example,90,Pipedrive,US,Austin,Nina,Cho,CEO,nina@orchardlane.example,Customer,No,Seed 2024-06
+Vantage Point Media,vantagepointmedia.example,60,HubSpot,US,New York,Greg,Liu,Sales Director,greg@vantagepointmedia.example,Prospect,Yes,
+Lindqvist Maschinenbau GmbH,lindqvist-mb.example,310,Salesforce,Germany,Munich,Katrin,Vogel,Head of Sales,k.vogel@lindqvist-mb.example,Prospect,No,
+Ashdown Analytics Ltd,ashdownanalytics.example,75,HubSpot,UK,Leeds,Priya,Nair,Revenue Operations Lead,priya@ashdownanalytics.example,Prospect,No,Series A 2026-07
+Cobalt Ridge Partners,cobaltridge.example,,Salesforce,US,Denver,Sam,Ortiz,VP Sales,sam@cobaltridge.example,Prospect,No,

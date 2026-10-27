@@ -1,0 +1,13 @@
+Search keyword report
+"July 1, 2026 - September 30, 2026"
+Campaign,Ad group,Keyword,Match type,Status,Quality Score,Exp. CTR,Ad relevance,Landing page exp.,Clicks,Impr.,Cost,Conversions
+Search | Core,Brand,quillmetrics,Phrase match,Enabled,10,Above average,Above average,Above average,750,2300,852.60,58
+Search | Core,Brand,quill metrics,Broad match,Enabled,8,Above average,Average,Above average,260,800,276.00,34
+Search | Core,Shopify analytics,shopify analytics,Broad match,Enabled,6,Average,Average,Average,3790,71000,"12,735.45",43
+Search | Core,Shopify analytics,shopify revenue dashboard,Phrase match,Enabled,8,Above average,Above average,Average,820,12000,"2,960.15",12
+Search | Core,Shopify analytics,shopify reporting,Broad match,Enabled,5,Below average,Average,Average,1000,19000,"3,209.80",6
+Search | Competitors,Competitors,shopify analytics alternative,Phrase match,Enabled,7,Average,Above average,Average,510,6000,"1,840.50",11
+Search | Competitors,Competitors,best shopify analytics app,Broad match,Enabled,6,Average,Average,Average,830,11000,"2,951.05",14
+Search | Stripe,Stripe revenue,stripe revenue analytics,Broad match,Enabled,6,Average,Average,Average,570,9000,"1,682.55",10
+Search | Stripe,Stripe revenue,stripe dashboard,Broad match,Enabled,3,Below average,Below average,Below average,1030,16000,"2,051.90",0
+Total: Keywords,,,,,,,,,9560,147100,"28,560.00",188

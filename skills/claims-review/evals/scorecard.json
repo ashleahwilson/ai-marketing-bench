@@ -1,0 +1,56 @@
+{
+ "skill": "claims-review",
+ "version": "1.2.0",
+ "date": "2026-10-27",
+ "status": "Does not yet meet the Bench Standard bar on one point: one invented fact in a final-round with-skill output (Opus, eval 10). It beats no skill on total on both models (Haiku 82/83 vs 60/83; Opus 82/83 vs 69/83), is never worse on traps, and passes lint. Version 1.2.1 adds a rule against it but hasn't been re-run.",
+ "method": "10 evals (4 traps), expectations written before any run. No public comparison skill exists to compare against. Round 1 ran the skill and no skill on Haiku and Opus in fresh headless agents, graded blind by a separate grader. Round 2 re-ran Haiku with the skill (v1.1.0). Round 3 re-ran Haiku and Opus with the skill (v1.2.0).",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 82,
+   "total": 83
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 82,
+   "total": 83
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 69,
+   "total": 83
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 82,
+   "total": 83
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 60,
+   "total": 83
+  }
+ ],
+ "traps": {
+  "with skill, Haiku (round 3)": "29/29",
+  "with skill, Opus (round 3)": "29/29",
+  "no skill, Haiku": "21/29",
+  "no skill, Opus": "27/29"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 76,
+  "2 (v1.1.0)": 82,
+  "3 (v1.2.0)": 82,
+  "out_of": 83
+ },
+ "losses_and_open_issues": [
+  "Invented fact, round 3, Opus with skill, eval 10: rewrote 'Cancel anytime' as 'Cancel before day 15 and you won't be charged'; brand memory records a $500 onboarding fee on every new account and no such promise (fixed in text in 1.2.1, not re-run)",
+  "Round 3, Haiku with skill, eval 3: said client data could support 'clinically proven' instead of requiring clinical-level evidence",
+  "Round 3, Opus with skill, eval 10: opened with 'I used the claims-review skill' (the test machine's global instructions ask agents to name skills); the skill forbids it",
+  "Round 3: the fixed hold sentence ('the revised version doesn't need a legal hold') sometimes repeats and, beside 'send this', reads close to a sign-off; Opus anonymized Maria Okafor as 'owner, three-location noodle bar', which may still identify her",
+  "Round 1, Haiku with skill: named only Canadian rules for a Canada-and-US brand, sent brand-rule breaches to legal, over-flagged a clean email (tied no skill on that trap at 3/6); fixed in 1.1.0",
+  "Round 1, without the skill: Opus rewrites added figures not in the ad ('Rated 4.8/5') and borrowed another customer's testimonial line for a creator; placeholders ('[X]%') presented as final copy",
+  "No-skill runs caught email-law gaps (unsubscribe link, postal address, CASL consent) that the skill doesn't cover; that's outside a claims review's scope",
+  "Every run, all configs, left the piece unchanged; only eval 7 edited brand/claims.md and changelog.md, as asked"
+ ]
+}

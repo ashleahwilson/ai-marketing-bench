@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a walkthrough | Ferncliff</title>
+<link rel="stylesheet" href="/css/main.css">
+<script src="/js/jquery-3.7.1.min.js"></script>
+</head><body>
+<nav><a href="/">Ferncliff</a> <a href="/pricing">Pricing</a></nav>
+<h1>Book your walkthrough</h1>
+<form action="/api/book" method="post" novalidate>
+<label for="f1">First name</label><input id="f1" name="first_name" required>
+<label for="f2">Last name</label><input id="f2" name="last_name" required>
+<label for="f3">Email</label><input id="f3" name="email" type="email" required>
+<input name="phone" type="tel" placeholder="Phone" required>
+<input name="clinic" placeholder="Clinic name" required>
+<input name="chairs" placeholder="Number of chairs" required>
+<select name="pms" required><option value="">Practice management software</option><option>Dentrix</option><option>Eaglesoft</option><option>Open Dental</option><option>Other</option></select>
+<select name="heard" required><option value="">How did you hear about us?</option><option>Google</option><option>Colleague</option><option>Conference</option><option>Other</option></select>
+<textarea name="message" placeholder="Anything else?"></textarea>
+<button type="submit">Send</button>
+</form>
+</body></html>

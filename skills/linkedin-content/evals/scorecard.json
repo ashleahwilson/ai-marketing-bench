@@ -1,0 +1,73 @@
+{
+ "skill": "linkedin-content",
+ "version": "1.2.0",
+ "date": "2026-10-23",
+ "status": "Beats no skill and the comparison skill on total and on every trap, on both models (v1.2.0: 71/71 on Haiku and on Opus). Not yet fully at the bar on invented facts: no with-skill output invented a name, number, quote or story, but outputs on both models occasionally add a small unsupported implication or reason (Opus: 'That's why sales tax filings come with every plan', 'your bookkeeper will set one up'; Haiku widened 'hospitality finance' to 'restaurant and hospitality finance'). Check added connective claims before posting.",
+ "method": "10 evals (4 traps), expectations written before any run. Round 1 ran the skill, no skill, and the comparison skill (Corey Haines' social-content 1.2.0) on Haiku, and the skill and no skill on Opus, in fresh headless agents graded blind by a separate Opus grader. Two expectations the grader showed were ambiguous (eval 3's 'briefly' limit and eval 7's launch-date tense) were clarified after round 1 and every round-1 config was re-graded on them. Rounds 2 and 3 re-ran the skill as it was revised (round 3 on Haiku and Opus).",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 71,
+   "total": 71
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 70,
+   "total": 71
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 51,
+   "total": 71
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 71,
+   "total": 71
+  },
+  {
+   "config": "with skill, Haiku (v1.0.0, round 1)",
+   "passed": 66,
+   "total": 71
+  },
+  {
+   "config": "comparison skill (social-content), Haiku",
+   "passed": 46,
+   "total": 71
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 41,
+   "total": 71
+  }
+ ],
+ "traps_round_1": {
+  "evals": [
+   2,
+   3,
+   4,
+   9
+  ],
+  "with-skill-haiku": "21/24",
+  "with-skill-opus": "23/24",
+  "no-skill-haiku": "10/24",
+  "no-skill-opus": "16/24",
+  "comparison-skill-haiku": "12/24"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 66,
+  "2 (v1.1.0)": 68,
+  "3 (v1.2.0)": 71,
+  "out_of": 71
+ },
+ "losses_and_open_issues": [
+  "Round 1, with skill: Haiku ended two series posts on closing questions read as comment bait, dropped a past launch date, ran a needs-input reply to 260 words, and said the voice wasn't reviewed when voice.md says it was (an invented characterization); both models explained the declined bait twice (fixed in 1.1.0)",
+  "Round 2, Haiku: guided and needs-input replies over 250 words, no brand-memory offer with no brand/, user's .example links flagged as placeholders, 'Ready to post' with checks open (fixed in 1.2.0)",
+  "Round 3: small unsupported implications on both models (Opus eval 8 'That's why sales tax filings come with every plan', eval 4 'your bookkeeper will set one up', eval 7 'No exporting from one tool'; Haiku eval 4 'restaurant and hospitality finance')",
+  "Round 3, Haiku: series post 1 kept a logic problem from the notes (fees come out of deposits yet owners 'overstate' sales) and said 'Nothing' to check; held back in eval 8 with an unneeded confirmation gate",
+  "Both models sometimes cite brand file names or field syntax to the user ('named: unconfirmed', 'brand/offer.md')",
+  "Ceiling effect in round 3: both with-skill configs scored 71/71, so the set should gain expectations for internal logic and unsupported connective claims",
+  "Without the skill: Haiku and the comparison skill wrote the invented diner backstory (eval 9) and kept the comment-for-reward bait (eval 3); no-skill Opus kept the bait, invented 'See you Tuesday at 2' and '5 fewer per 100' (eval 5), and used 'real-time' against a brand rule (eval 7); the comparison skill invented 'Setup is under 5 minutes' and thanked Maria by name with permission unconfirmed",
+  "Every with-skill run left the user's original files unchanged"
+ ]
+}

@@ -1,0 +1,34 @@
+Search terms report
+"July 1, 2026 - September 30, 2026"
+Search term,Match type,Campaign,Ad group,Keyword,Added/Excluded,Clicks,Impr.,Cost,Conversions
+tallyhouse,Exact match,Search | Brand,Brand,tallyhouse,None,410,980,512.40,38
+tallyhouse bookkeeping,Phrase match,Search | Brand,Brand,tallyhouse bookkeeping,None,205,520,301.10,19
+tallyhouse login,Phrase match,Search | Brand,Brand,tallyhouse,None,96,300,88.20,0
+tallyhouse reviews,Phrase match,Search | Brand,Brand,tallyhouse,None,120,410,160.30,9
+tallyhouse pricing,Phrase match,Search | Brand,Brand,tallyhouse,None,140,380,178.50,4
+restaurant bookkeeping,Exact match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping,None,1210,15800,"3,410.25",79
+restaurant bookkeeping services,Broad match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping service,None,760,10400,"2,186.40",48
+bookkeeping for restaurants,Phrase match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,bookkeeping for restaurants,None,590,7300,"1,644.90",39
+restaurant bookkeeper near me,Broad match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping,None,350,5100,980.15,22
+restaurant accountant,Exact match,Search | Restaurant Bookkeeping,Restaurant accountant,restaurant accountant,None,520,7900,"1,512.60",30
+accountant for restaurants toronto,Broad match,Search | Restaurant Bookkeeping,Restaurant accountant,restaurant accountant,None,240,3300,702.35,14
+restaurant cpa firm,Broad match,Search | Restaurant Bookkeeping,Restaurant accountant,restaurant cpa,None,210,3100,655.20,9
+bar bookkeeping,Exact match,Search | Restaurant Bookkeeping,Bar bookkeeping,bar bookkeeping,None,180,2400,488.70,11
+bookkeeping for bars and pubs,Broad match,Search | Restaurant Bookkeeping,Bar bookkeeping,bar bookkeeping,None,150,2100,401.30,8
+restaurant bookkeeping jobs,Broad match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping,None,160,3900,412.80,0
+bookkeeper salary toronto,Broad match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping,None,95,2600,236.45,0
+free restaurant bookkeeping template excel,Broad match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping,None,130,2900,318.60,0
+bookkeeping course online,Broad match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping service,None,110,3100,274.90,0
+restaurant accounting certification,Broad match,Search | Restaurant Bookkeeping,Restaurant accountant,restaurant accountant,None,70,1800,189.25,0
+retail store bookkeeping,Broad match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping service,None,125,2300,362.70,0
+ecommerce bookkeeping services,Broad match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping service,None,105,2000,298.15,0
+franchise accounting 50 locations,Broad match,Search | Restaurant Bookkeeping,Restaurant accountant,restaurant accountant,None,80,1500,241.60,0
+restaurant payroll service,Broad match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping service,None,160,2800,455.30,2
+quickbooks for restaurants,Broad match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping,None,190,3600,520.85,4
+restaurant pos systems,Broad match,Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping,None,120,2700,333.40,0
+catch up bookkeeping,Exact match,Search | Catch-up Bookkeeping,Catch-up bookkeeping,catch up bookkeeping,None,290,6200,980.40,4
+behind on bookkeeping restaurant,Broad match,Search | Catch-up Bookkeeping,Catch-up bookkeeping,behind on bookkeeping,None,180,4100,610.25,3
+catch up bookkeeping cost,Broad match,Search | Catch-up Bookkeeping,Catch-up bookkeeping,catch up bookkeeping,None,120,2500,402.10,2
+bookkeeping jobs remote,Broad match,Search | Catch-up Bookkeeping,Catch-up bookkeeping,catch up bookkeeping,None,60,1900,196.30,0
+Total: Search terms,,,,,,7176,103890,"19,055.40",345
+Total: Account,,,,,,7176,103890,"19,343.80",345

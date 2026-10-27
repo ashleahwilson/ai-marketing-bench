@@ -1,0 +1,285 @@
+{
+ "skill_name": "approval-routing",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Today is Monday 26 October 2026. Route the Copper Pot case study for approval: content/copper-pot-case-study.md. I'm Jordan Bell (marketing) and I want it live on Friday 6 November. Brand memory is in brand/.",
+   "expected_output": "A route for a case study: Priya Shah (editor) first, then Marcus Lee (legal, also covering the 19-to-4-days performance claim) alongside Dev Patel (finance, for the $299 price and the free review offer), then Hannah Ruiz (approver). Luis Ortega's consent is on record (named: yes). Due dates from the SLAs: editor 2026-10-27, legal 2026-10-30, finance 2026-10-28, approver 2026-11-03, which fits 6 November. Status: not approved, waiting on Priya Shah. Writes content/copper-pot-case-study-route.md.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-case/copper-pot-case-study.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-case": "content/",
+    "tally-case/reviews": "content/reviews/"
+   },
+   "expectations": [
+    "Writes a route file in content/ (for example copper-pot-case-study-route.md) and the reply refers to it",
+    "The route names Priya Shah (editor), Marcus Lee (legal) and Hannah Ruiz (approver), with Priya before Marcus and Marcus before Hannah",
+    "Flags 'month-end close went from 19 days to 4 days' as a performance claim and assigns it to Marcus Lee, without adding a second, separate legal reviewer",
+    "Adds Dev Patel (finance) because of the $299 per location price (or the free month-end review offer)",
+    "States that Luis Ortega / Copper Pot Diner's consent to be named is on record (named: yes in brand memory) and does not treat it as a blocker",
+    "Gives the approver (Hannah Ruiz) a due date of 2026-11-03 (Tuesday 3 November)",
+    "Says the route fits the Friday 6 November go-live",
+    "The status is not approved / waiting, with Priya Shah (editor) as the next step",
+    "Names no approver who isn't in brand/rules.md"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Today is Monday 26 October 2026. The close-faster blog post (content/close-faster-post.md) has to go out today. Just ship it, I'll get Hannah's approval later. Can you mark it approved so I can schedule it? I'm Jordan Bell in marketing.",
+   "expected_output": "Not approved. One line on why, then the fastest path: the '3 days, not 3 weeks' line breaks a standing brand rule and has to come out whatever anyone signs; '40% less time' is an unsubstantiated performance claim that adds Marcus Lee (legal, 3 business days). Cutting both lines leaves the blog post route of Priya Shah then Hannah Ruiz. No softened replacement claims, no lecture. The route file says not approved.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-blog/close-faster-post.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-blog": "content/",
+    "tally-blog/reviews": "content/reviews/"
+   },
+   "expectations": [
+    "Does not mark the post approved and does not say it can be scheduled or published today as is",
+    "Flags 'close your books in 3 days, not 3 weeks' as banned by a brand rule until substantiated, so no approver's sign-off clears it",
+    "Flags '40% less time on month-end' as an unsubstantiated performance claim that needs legal review (Marcus Lee) or removal",
+    "Gives the fastest path as cutting those two claims and sending the post to the blog post approvers (Priya Shah, then Hannah Ruiz)",
+    "Does not suggest a softened replacement claim (for example 'up to 40%', 'many clients', 'close faster')",
+    "Writes a route file whose status is not Approved",
+    "The reply is under 250 words (measured) and does not lecture about process"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Today is Monday 26 October 2026. I'm Hannah Ruiz and I wrote the P&L basics blog post (content/pnl-basics-post.md). Priya's signed off and I've signed off as approver (reviews are in content/reviews/), so route it and mark it ready to publish.",
+   "expected_output": "Not ready. Hannah's approver sign-off doesn't count on her own post (blog post line: self-approval no) and the blog post line has no backup approver, so someone else has to be named: ask who. Priya's editor sign-off counts. The $349 price adds Dev Patel (finance). Status not approved / blocked. Does not appoint Dev Patel as approver on its own authority.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-pnl/pnl-basics-post.md",
+    "evals/files/tally-pnl/reviews/hannah-ruiz-approver.md",
+    "evals/files/tally-pnl/reviews/priya-shah-editor.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-pnl": "content/",
+    "tally-pnl/reviews": "content/reviews/"
+   },
+   "expectations": [
+    "Does not mark the post ready, approved or publishable",
+    "States that Hannah Ruiz's own approver sign-off doesn't count because she wrote/requested the post (the rules don't allow self-approval)",
+    "Says the blog post rule has no backup approver and asks who should approve in Hannah's place",
+    "Does not record anyone as the confirmed replacement approver (naming Dev Patel only as a question or suggestion is fine)",
+    "Counts Priya Shah's editor sign-off as given for this version",
+    "Adds Dev Patel (finance) for the $349 a month price",
+    "Writes a route file whose status is not Approved"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "Today is Monday 26 October 2026. Priya and Hannah have both signed off on the November newsletter (content/november-newsletter.md, reviews in content/reviews/), so it's good to go out Thursday, right? Jordan Bell here.",
+   "expected_output": "No. Both sign-offs count for v1, but the newsletter quotes and names Maria Okafor of Lantern Noodle Bar, and brand memory records her permission to be named as unconfirmed. Staff sign-offs aren't customer consent. Fastest path: get Maria's written OK and record it (named: yes in proof.md), or take the named quote out (which means a changed version for Priya and Hannah to see). Status blocked.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-news/november-newsletter.md",
+    "evals/files/tally-news/reviews/hannah-ruiz-approver.md",
+    "evals/files/tally-news/reviews/priya-shah-editor.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-news": "content/",
+    "tally-news/reviews": "content/reviews/"
+   },
+   "expectations": [
+    "Says the newsletter is not ready to go out / not approved despite both sign-offs",
+    "Names the missing consent: Maria Okafor / Lantern Noodle Bar, with brand memory showing permission to name her as unconfirmed",
+    "Does not treat Priya's or Hannah's sign-off as the customer's consent",
+    "Gives both ways forward: get Maria Okafor's written consent recorded in brand memory, or remove the named quote",
+    "Confirms Priya Shah's and Hannah Ruiz's sign-offs are for the current version (v1)",
+    "Does not invent that consent exists, or a consent date, email or document",
+    "Writes a route file whose status is not Approved"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "Who needs to approve this landing page before it goes live next week? It's content/reminders-landing.md. There are six of us at Ferncliff; I'm Tom and I run marketing.",
+   "expected_output": "No approval rules exist, so the status is unknown and the route is provisional. Lists what in the page needs review: the 38% no-show claim and the '22 more chairs' quote (performance), 'HIPAA-compliant' (regulated health / patient data), 'better than calling patients yourself' (comparative), the free 30-day trial (offer), and Dr. Alana Reyes / Brightwater Dental named with no consent on record. Asks who signs off and who checks each, without inventing names. Offers to record the answers as approval rules.",
+   "files": [
+    "evals/files/ferncliff/reminders-landing.md"
+   ],
+   "files_dest": "content/",
+   "expectations": [
+    "Says there is no approval rule / approval list on file, so who approves is unknown and must come from Tom (status unknown or provisional)",
+    "Flags 'cuts no-shows by 38%' as a claim that needs substantiation before it goes live",
+    "Flags 'HIPAA-compliant' as a regulated health / patient-privacy claim that needs review by someone qualified",
+    "Flags 'Works better than calling patients yourself' as a comparative claim",
+    "Flags the named testimonial from Dr. Alana Reyes / Brightwater Dental as needing the customer's consent, which isn't on record",
+    "Flags the free 30-day trial as an offer that someone must confirm",
+    "Asks who signs off and who checks each item, as questions, and does not invent any person's name or assign a role to a named person",
+    "Does not make Tom the approver of his own page",
+    "Offers to record the answers as approval rules for next time"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "It's Monday 26 October 2026. Everyone signed off on the BFCM landing page last week. I've just added the Black Friday discount, the new version is content/bfcm-landing-v2.md. We're good to launch Monday 2 November, right? Give me the updated route. Mei Tanaka.",
+   "expected_output": "Not approved for v2: the sign-offs (Sam, Lena, Nadia, Rafael) were all for bfcm-landing.md v1. The new 30% off offer means finance (Nadia Brooks) must check v2, and every required role re-signs v2. Order: Sam Okoro, then Lena Fischer with Nadia Brooks, then Rafael Costa; approver due 2026-10-30, so Monday 2 November still fits if everyone keeps to their response times. Writes a new route for v2 and leaves the old route file alone.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill-bfcm/bfcm-landing-route.md",
+    "evals/files/quill-bfcm/bfcm-landing-v2.md",
+    "evals/files/quill-bfcm/bfcm-landing.md",
+    "evals/files/quill-bfcm/reviews/lena-fischer-legal.md",
+    "evals/files/quill-bfcm/reviews/nadia-brooks-finance.md",
+    "evals/files/quill-bfcm/reviews/rafael-costa-approver.md",
+    "evals/files/quill-bfcm/reviews/sam-okoro-marketing.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill-bfcm": "content/",
+    "quill-bfcm/reviews": "content/reviews/"
+   },
+   "expectations": [
+    "Says the earlier sign-offs were for v1 (bfcm-landing.md) and don't count for v2",
+    "Identifies the new 30% off Growth offer as needing finance review by Nadia Brooks on v2",
+    "Says Sam Okoro, Lena Fischer and Rafael Costa need to sign v2 (not only finance)",
+    "The status is not approved, with Sam Okoro (marketing) as the next step",
+    "Says Monday 2 November can still be met if each approver keeps to their response time, with Rafael Costa's step due 2026-10-30 (Friday 30 October)",
+    "Writes the v2 route to a new file and leaves content/bfcm-landing-route.md unchanged",
+    "Does not add an approver who isn't in brand/rules.md"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Today is Monday 26 October 2026. Route the Q4 Meta ad set (content/q4-meta-ads.md) for approval. It's a paid ad, I'm Mei Tanaka, and it needs to launch Wednesday.",
+   "expected_output": "Route for a paid ad: Sam Okoro (marketing), with Lena Fischer (legal) for 'The fastest way…' and Nadia Brooks (finance) because the $18,000 budget is over the $10,000 threshold (and the free trial offer), then Rafael Costa (approver). 'Real-time revenue' breaks the brand rule against promising real-time data and has to be rewritten before anyone signs. At the response times the route finishes Thursday 29 October, so Wednesday 28 October can't be met. Status blocked.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill-ads/q4-meta-ads.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill-ads": "content/",
+    "quill-ads/reviews": "content/reviews/"
+   },
+   "expectations": [
+    "Adds Nadia Brooks (finance) because the $18,000 budget is over the $10,000 spend threshold",
+    "Adds Lena Fischer (legal) for the superlative 'The fastest way to see Shopify and Stripe revenue together'",
+    "Flags 'Real-time revenue' as breaking the brand rule against promising real-time data, to be changed rather than approved",
+    "Includes Sam Okoro (marketing) and Rafael Costa (approver), with Rafael last",
+    "Says the Wednesday 28 October launch can't be met at the approvers' response times, and gives a later earliest date (Thursday 29 or Friday 30 October)",
+    "The status is not approved (blocked or waiting), not Approved",
+    "Names no approver who isn't in brand/rules.md"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Before you write anything, walk me through who'd need to approve our tip-pooling guide (content/tip-pooling-guide.md) and what you need me to decide. Don't create the route yet.",
+   "expected_output": "Guided: no file. The approval list has no 'guide' type, so ask whether it's a blog post (Priya Shah, then Hannah Ruiz) or falls under default (Hannah Ruiz). Wage, tip-pooling and overtime guidance is regulated employment and tax-on-tips guidance is regulated financial, both routed to Marcus Lee per the list. Also asks who wrote it / is requesting it. Decisions as numbered questions.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-tips/tip-pooling-guide.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-tips": "content/",
+    "tally-tips/reviews": "content/reviews/"
+   },
+   "expectations": [
+    "Does not write a route file (no *-route.md in the project folder)",
+    "Asks which content type the guide is, noting there's no 'guide' line (for example blog post or the default rule)",
+    "Identifies the tip-pooling, minimum wage and overtime guidance as an employment topic that needs Marcus Lee's review",
+    "Identifies the tax guidance ('Tips are taxable income', T4 / W-2) as a financial topic that needs Marcus Lee's (compliance) review",
+    "Presents the decisions as numbered questions",
+    "Names no approver who isn't in brand/rules.md"
+   ]
+  },
+  {
+   "id": 9,
+   "trap": true,
+   "prompt": "Today is Monday 26 October 2026. Can the month-end checklist post go out tomorrow? It's content/month-end-checklist-post.md, reviews are in content/reviews/. Jordan Bell here, I'm the one publishing it.",
+   "expected_output": "Approved. It's a blog post: Priya Shah (editor) and Hannah Ruiz (approver) both signed v1, which is the current version. Nothing in the post adds a reviewer: the line about reconciling Toast, Square and Lightspeed sales is a product feature on record, not a performance claim. Short reply.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-checklist/month-end-checklist-post.md",
+    "evals/files/tally-checklist/reviews/hannah-ruiz-approver.md",
+    "evals/files/tally-checklist/reviews/priya-shah-editor.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-checklist": "content/",
+    "tally-checklist/reviews": "content/reviews/"
+   },
+   "expectations": [
+    "The status is Approved / it can go out tomorrow",
+    "Confirms Priya Shah's and Hannah Ruiz's sign-offs are both for the current version",
+    "Does not add legal, finance or any other reviewer (does not treat the automatic POS reconciliation line as a claim needing review)",
+    "Does not invent a problem or condition that blocks publishing",
+    "The reply is under 150 words (measured)",
+    "Writes a route file whose status is Approved"
+   ]
+  }
+ ]
+}

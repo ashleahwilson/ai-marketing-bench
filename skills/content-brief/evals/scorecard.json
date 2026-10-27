@@ -1,0 +1,66 @@
+{
+ "skill": "content-brief",
+ "version": "1.2.0",
+ "date": "2026-10-23",
+ "status": "Partly meets the Bench Standard bar. It beats no skill and the comparison skill on total on both models (58/58 vs 30-38/58), is never worse on traps (all four passed by every with-skill run), and passes lint. The 'no invented facts' item is not fully met: the final round's with-skill outputs, on both Haiku and Opus, still contained small unsourced details that no expectation catches (what the free review covers, a planned launch date treated as past, a widened feature description). No invented statistics, search volumes, URLs, prices or customer results were found in any with-skill output.",
+ "method": "9 evals (4 traps), expectations written before any run. Round 1 ran the skill, no skill, and the comparison skill (Corey Haines' content-strategy 1.1.0) on Haiku, and the skill and no skill on Opus, each in a fresh headless agent, graded blind by a separate Opus grader that read only evals.json and the fixtures. Rounds 2 and 3 re-ran the skill as revised (Haiku; Haiku and Opus in round 3) and were graded blind the same way.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 58,
+   "total": 58
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 58,
+   "total": 58
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 38,
+   "total": 58
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 58,
+   "total": 58
+  },
+  {
+   "config": "with skill, Haiku (v1.0.0, round 1)",
+   "passed": 58,
+   "total": 58
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 30,
+   "total": 58
+  },
+  {
+   "config": "comparison skill (content-strategy), Haiku",
+   "passed": 34,
+   "total": 58
+  }
+ ],
+ "traps": {
+  "with skill (all rounds, both models)": "4/4 evals, 22/22 expectations",
+  "no skill, Opus": "10/22",
+  "no skill, Haiku": "9/22",
+  "comparison skill, Haiku": "12/22"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 58,
+  "2 (v1.1.0)": 58,
+  "3 (v1.2.0)": 58,
+  "out_of": 58
+ },
+ "losses_and_open_issues": [
+  "No with-skill test lost in any round; the comparisons lost on brief format, ignoring brand memory, not asking when goal and CTA were missing (eval 5), and writing the piece instead of a brief",
+  "Invented details, round 3, with skill: Opus described what the free month-end review covers (eval 2) and treated the planned 2026-10-14 launch as having happened (eval 8); Haiku listed the launch as a must-include while asking to confirm it (eval 7); Opus widened the SMS reminder to 'without the front desk lifting a finger' (eval 6)",
+  "Round 2, Haiku: an unsourced generalization in an angle ('most of the reader's week is spent on missed and late confirmations') and an unsourced claim about US spelling in searches; fixed in 1.2.0 for those cases, but round 3 shows widening still happens",
+  "Round 1, Haiku: named the skill in replies and named a person from outside brand memory as 'who can answer'; fixed in 1.1.0. Round 3 Haiku still named 'the brand-memory skill' once and showed absolute file paths",
+  "Round 3, Haiku eval 6 applied Canadian spelling to a client with no brand memory, citing the runner's own global writing rules (environment leakage, not skill text)",
+  "Without the skill: no-skill Haiku stated 'Our average close time is 3 days' as fact (eval 4) and led an email with the unsourced 60% statistic (eval 9); no-skill runs cited a study from memory and stated an industry profit-margin figure",
+  "Every with-skill run scored 100%, so the suite no longer discriminates between rounds; next version should add expectations for describing an offer's contents and for treating future dates as past",
+  "The 'inside briefs/' and nine-field expectations reward the hand-off format only this skill teaches, which widens the gap against no skill; the substantive trap expectations alone still favour the skill (22/22 vs at most 12/22)"
+ ]
+}

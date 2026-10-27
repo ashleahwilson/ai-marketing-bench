@@ -1,0 +1,84 @@
+{
+ "skill": "icp",
+ "version": "1.2.0",
+ "date": "2026-10-23",
+ "status": "Partly meets the Bench Standard bar. It beats no skill and the comparison skill on total on both models (Haiku 64/66 and Opus 65-66/66 vs 41/66 and 48/66 without and 35/66 for the comparison skill), is never worse on traps (with skill 35/35 trap expectations on both models in rounds 1 and 3; 34/35 for Haiku in round 2), and passes lint. The 'no invented facts' item is not fully met: final-round outputs still had small unsourced details (Haiku paraphrased a version 1 line inside quote marks and mislabelled two segment counts; Opus added three small unsupported asides). No invented market sizes, benchmarks, persona quotes from a customer, customer names or statistics were found in any with-skill output in any round.",
+ "method": "9 evals (5 traps), expectations written before any run. Round 1 ran the skill, no skill, and the comparison skill (sales-icp from the 'sales' suite) on Haiku, and the skill and no skill on Opus, each in a fresh headless agent, graded blind by a separate headless Opus grader that read only evals.json and the fixtures and recomputed every count from the CSVs. Rounds 2 and 3 re-ran the skill as revised on Haiku and Opus and were graded blind the same way. The eval 7 fixture rubric was converted to the new hand-off format before round 3 (same criteria and points).",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 66,
+   "total": 66
+  },
+  {
+   "config": "with skill, Opus (v1.1.0, round 2)",
+   "passed": 66,
+   "total": 66
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 65,
+   "total": 66
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 48,
+   "total": 66
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 64,
+   "total": 66
+  },
+  {
+   "config": "with skill, Haiku (v1.1.0, round 2)",
+   "passed": 61,
+   "total": 66
+  },
+  {
+   "config": "with skill, Haiku (v1.0.0, round 1)",
+   "passed": 64,
+   "total": 66
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 41,
+   "total": 66
+  },
+  {
+   "config": "comparison skill (sales-icp), Haiku",
+   "passed": 35,
+   "total": 66
+  }
+ ],
+ "traps": {
+  "with skill, Haiku (rounds 1, 2, 3)": "35/35, 34/35, 35/35 expectations across evals 2-6",
+  "with skill, Opus (rounds 1, 2, 3)": "35/35, 35/35, 35/35",
+  "no skill, Haiku": "26/35",
+  "no skill, Opus": "25/35",
+  "comparison skill, Haiku": "22/35"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 64,
+  "2 (v1.1.0)": 61,
+  "3 (v1.2.0)": 64,
+  "out_of": 66
+ },
+ "losses_and_open_issues": [
+  "Round 3, Haiku, eval 7: never stated the old single-location churn (4 of 11) next to the new 6 of 11, and its history line paraphrased the version 1 segment line inside quote marks ('with a moderate churn rate'), which the grader counted as an invented quote",
+  "Round 3, Haiku, eval 8: created brand/audiences.md without saying there was no brand memory or offering to set it up",
+  "Round 3, Haiku: mislabelled counts: '11 of 17 won' tagged as single-location general dentistry (11 of 17 is all single-location clinics; general dentistry alone is 11 of 14) in eval 4; specialty segments described as '2 to 5' and '1 or 2' records each (2 each) in evals 1 and 5; a churn reason cited to the win/loss notes when it is only in the CSV (eval 5)",
+  "Round 3, Opus: small unsupported asides: 'payroll requests usually surface on a call or in a job post' (eval 1); 'find this from the checkout or a Stripe badge' and suggestions to review 'your last 20 paying customers' when the user had no customer list (eval 2); a persona line attributing two PMS-calendar losses to single-location clinics when one was a 4-location group (eval 8)",
+  "Round 3, Haiku, eval 3: says 4 records are too few to pick a segment, but its provisional rubric still scores single restaurants twice (as type and as 1 location), leaning toward a winner",
+  "Round 2, Haiku (v1.1.0): left a 0-of-4 segment (20+ locations) able to outscore single-location clinics when there was no brand memory, didn't flag 2 blank verticals (eval 8); named no source for the churn benchmark (eval 5); didn't label small segments in Guided mode (eval 9). Fixed in 1.2.0; round 3 passed all four",
+  "Round 1 (v1.0.0), both models, eval 8: gave 20+ location groups negative points with no Disqualifiers section; Haiku eval 9 labelled small segments only as 'hypothesis'; mislabelled figures (a cross-tab row quoted as a whole band) and a few hand counts (Opus: 'spreadsheets 11 of 13', 'ChairTime 4 losses'). Fixed in 1.1.0",
+  "Every run leaves icp/analysis.json (the analysis dump, with absolute paths) in the user's project. No reply mentions it and it has no small-sample percentages, but it is clutter",
+  "Part of the comparison gap comes from the hand-off convention: six expectations require the rubric at icp/scoring.md, a path the prompts don't name. No-skill and comparison runs lose those even when their content is right; the grader flagged this as partly unfair to them",
+  "Comparisons, round 1: no-skill and comparison runs gave percentages on samples under 10 in evals 3, 4, 5, 7 and 8, overrode the user's tier choice (no-skill Opus, eval 4), overwrote the version 1 rubric (eval 7) and edited brand files they shouldn't have. The comparison skill invented persona quotes, cycle lengths, growth rates, competitors, events and dental-office counts 'from memory', and leaked its own name in every reply"
+ ],
+ "source_iterations": [
+  "iteration-1",
+  "iteration-2",
+  "iteration-3"
+ ]
+}

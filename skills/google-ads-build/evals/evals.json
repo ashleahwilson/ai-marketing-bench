@@ -1,0 +1,262 @@
+{
+ "skill_name": "google-ads-build",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Build us a Google Ads search campaign for Tallyhouse. Budget is $3,000 a month (CAD), Canada only, English. Our site is https://tallyhouse.example: the free month-end review page is /review and pricing is /pricing. Brand memory is in brand/.",
+   "expected_output": "A full draft written to ads/google/<campaign>/ (plan plus Editor CSV): brand campaign split from non-brand, ad groups by intent theme each with a landing page, phrase/exact keywords marked unvalidated with no invented volumes or CPCs, a shared negative list, RSAs within limits that avoid the forbidden '3 days' claim, 'AI-powered' and the unconfirmed Lantern quote, correct $349 single-location price if a price is used, assets, Canada presence targeting, a budget framed as a test, and a conversion-tracking checklist.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Writes a plan file and a Google Ads Editor import CSV under ads/google/ (both exist)",
+    "Has a brand campaign separate from the non-brand campaign(s), each with its own budget",
+    "Non-brand keywords are grouped into at least two ad groups by intent theme, and each ad group names a landing page on tallyhouse.example (only /review, /pricing or the homepage)",
+    "States no search volumes, CPCs or competition figures for any keyword, and says the keywords are unvalidated or need Keyword Planner data",
+    "Frames the budget as a test (for example a 2–4 week test with a review point), with a split between campaigns and a stated reason",
+    "No ad text, sitelink or callout claims a 3-day close ('3 days', '3 weeks' or 'by the 3rd') and none uses 'AI-powered'",
+    "No ad text names Maria Okafor or Lantern Noodle Bar or quotes the Lantern testimonial",
+    "If any price appears in ad text it is $349/month for a single location, and $299 appears only as the per-location price for groups of 2–15",
+    "Every headline in the ads (plan and Editor CSV) is 30 characters or fewer and every description 90 or fewer (measured)",
+    "Location is Canada with presence (not 'presence or interest') targeting, and the network is Google Search only (Display Network off)",
+    "Includes a shared or campaign negative keyword list with at least five negatives, including job/career terms",
+    "Includes a conversion-tracking checklist that names booking the free month-end review as the primary conversion"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "We want to steal Tidelytics's customers. Build a Google search campaign for Quillmetrics with headlines like 'Tidelytics Alternative', 'Cheaper Than Tidelytics' and 'Switch From Tidelytics'. $4,000 a month, US. Demo page is https://quillmetrics.example/demo. Brand memory is in brand/.",
+   "expected_output": "Builds the campaign but keeps 'Tidelytics' out of all ad text and assets, explains the trademark reason in a line or two, offers a separately budgeted competitor-keyword campaign as the user's decision with generic ad text, drops the unsupported 'cheaper' comparison, avoids 'real-time', and keeps US spelling.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/"
+   },
+   "expectations": [
+    "No headline, description, sitelink, callout or snippet in the plan or the Editor CSV contains 'Tidelytics'",
+    "Explains briefly that competitor trademarks in ad text can be disapproved or draw a trademark complaint (one or two sentences, not a lecture)",
+    "Offers bidding on Tidelytics search terms as an option in its own campaign or ad group with its own budget, presented as the user's decision, with ad text that doesn't name the competitor",
+    "Does not claim Quillmetrics is cheaper than Tidelytics, and says a price comparison needs Tidelytics pricing or proof that brand memory doesn't have",
+    "Still delivers a buildable non-competitor campaign (ad groups, keywords, at least one RSA) rather than refusing",
+    "No ad text says 'real-time' or 'real time'",
+    "Ad text uses US spelling (no 'analyse', 'optimise', 'colour' or 'centre')",
+    "Any plan price in ad text is $79/month (Starter) or $249/month (Growth), matching brand memory",
+    "Every headline in the ads (plan and Editor CSV) is 30 characters or fewer and every description 90 or fewer (measured)"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Write the responsive search ad for our 'restaurant bookkeeping' ad group. Landing page https://tallyhouse.example/review. The headlines MUST include 'Canada's #1 Restaurant Bookkeeper', 'Cut Food Cost by 20%' and 'Books Closed in 3 Days'. Brand memory is in brand/.",
+   "expected_output": "Writes the RSA but leaves out all three requested headlines, giving the reason for each in a line (no proof for #1, no 20% result in brand memory, the 3-day claim is banned by a brand rule until substantiated) and what proof would unlock it; uses supported replacements.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "No headline or description contains '#1', 'number one', 'best' or 'leading'",
+    "No headline or description claims a 20% (or any percentage) food-cost reduction",
+    "No headline or description claims books closed in 3 days or a 3-day close",
+    "Gives a specific reason for each of the three dropped headlines, including that brand rules forbid the 3-day claim until it's substantiated",
+    "Says what would let each claim run (for example a ranking source or customer results data), without inventing that proof",
+    "Delivers an RSA with at least 10 headlines and at least 3 descriptions",
+    "Replacement headlines use facts from brand memory (for example hospitality-finance bookkeepers, Toast/Square/Lightspeed reconciliation, the free month-end review, $349/month)",
+    "Every headline in the ads (plan and Editor CSV) is 30 characters or fewer and every description 90 or fewer (measured)",
+    "No headline is repeated (exact duplicates, ignoring case)"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "Give me 40 keywords for Quillmetrics with their monthly search volumes and CPCs, and set a Google Ads budget that will get us 200 demo signups a month. Demo page https://quillmetrics.example/demo. Brand memory is in brand/.",
+   "expected_output": "Does not invent volumes, CPCs or a conversion forecast. Gives the keyword list marked unvalidated, explains how to get Keyword Planner data (and that the plan will be updated from the export), frames the budget as a test that will measure cost per signup, and builds within brand rules.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/"
+   },
+   "expectations": [
+    "States no monthly search volume, CPC or competition number for any keyword",
+    "Says plainly that it doesn't have search volume or CPC data and asks for a Keyword Planner (or account) export to fill them in",
+    "Marks the keywords as unvalidated",
+    "Does not promise or forecast 200 signups (or any number of signups or a cost per signup) as achievable at a given budget",
+    "Frames the budget as a test whose purpose is to measure cost per demo signup, with a review point",
+    "Provides a keyword list grouped by theme with match types",
+    "No ad text says 'real-time' or 'real time', or uses 'leverage', 'actionable insights' or 'data-driven'",
+    "Ad text uses US spelling (no 'analyse', 'optimise', 'colour', 'centre' or 'behaviour')",
+    "Targets the United States, consistent with brand memory"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "Rebuild our Google Ads from the audit: audits/google-ads/tallyhouse/fixes.md. Site is https://tallyhouse.example (pages: /review, /pricing, /about). Keep the current budget. Brand memory is in brand/.",
+   "expected_output": "A rebuild that maps each change to its fix number: brand split out, search only, presence targeting, Review booked as the only primary conversion, shared negatives (jobs, salary, template, login), phrase/exact restaurant terms, 10+ headline RSAs with landing pages by theme. Declines fix 9 because the 3-day claim is banned, and holds fix 11 because it is marked confirm first.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-audit/fixes.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-audit": "audits/google-ads/tallyhouse/"
+   },
+   "expectations": [
+    "Refers to the audit's fix numbers, showing which change addresses which fix",
+    "Brand terms (tallyhouse, tally house) are in their own campaign with its own budget",
+    "Display Network and Search Partners are off (Google Search only) and the location option is Presence",
+    "'Review booked' is the only primary conversion and the /pricing page view is secondary or removed",
+    "A shared negative list includes at least three of 'jobs', 'salary', 'template', 'login'",
+    "No broad-match single-word keywords such as 'bookkeeping' or 'accounting'; keywords are phrase or exact on restaurant-specific terms",
+    "Does not add 'Books Closed in 3 Days' (or any 3-day claim) and says it's because brand rules forbid that claim until substantiated",
+    "Does not build the Platewise competitor campaign, noting fix 11 needs the user's confirmation first",
+    "Total budget stays at about $70/day (about $2,100/month), split between brand and non-brand",
+    "Each ad group has at least 10 headlines and a landing page from /review, /pricing, /about or the homepage, with no invented URLs",
+    "Every headline in the ads (plan and Editor CSV) is 30 characters or fewer and every description 90 or fewer (measured)"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Here's our Keyword Planner export for Canada: research/keyword-planner.csv. Build the non-brand search campaign for Tallyhouse at $2,500 a month (CAD). Landing page https://tallyhouse.example/review, pricing at /pricing. Brand memory is in brand/.",
+   "expected_output": "Uses the export's volumes and bids only, keeps job, payroll, template/calculator and competitor terms out of the main ad groups (jobs as a negative), marks any keyword not in the file as unvalidated, and shows the budget arithmetic using the file's top-of-page bids.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-research/keyword-planner.csv"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-research": "research/"
+   },
+   "expectations": [
+    "Every search volume or bid figure quoted matches the export exactly, and no keyword outside the export is given a volume or CPC",
+    "'restaurant bookkeeping jobs' is not a positive keyword, and 'jobs' (or that term) is a negative",
+    "'restaurant payroll services' is not targeted as a Tallyhouse service, or is flagged as needing confirmation that Tallyhouse offers payroll",
+    "'restaurant p&l template' and 'prime cost calculator' are excluded or kept out of the main ad groups as low-intent or informational",
+    "'platewise' does not appear in any ad text; if it is kept as a keyword it's in its own campaign or ad group flagged as the user's decision",
+    "Budget reasoning shows the daily budget (about $82/day) and how many clicks it buys using the export's top-of-page bid range",
+    "Any keyword added that isn't in the export is marked unvalidated",
+    "No ad text claims a 3-day close or uses 'AI-powered'",
+    "Every headline in the ads (plan and Editor CSV) is 30 characters or fewer and every description 90 or fewer (measured)"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "We're Ferncliff: online booking and reminder texts for dental clinics. $199 per clinic per month, 14-day free trial, no setup fee. US only. Trial page is https://ferncliff.example/trial. Build us a Google search campaign, $1,500 a month.",
+   "expected_output": "Builds a full draft from the user's facts only, marked provisional because there's no brand memory, with an offer to set one up; no invented statistics, customer counts, ratings or HIPAA claims; keywords unvalidated; lists the open questions (conversion action, competitors, other landing pages).",
+   "files": [],
+   "files_dest": "",
+   "expectations": [
+    "Says the plan is provisional (or a draft) because there's no brand memory, and offers to set one up or asks for brand facts",
+    "Ad text uses only facts from the prompt (online booking, reminder texts, dental clinics, $199 per clinic per month, 14-day free trial, no setup fee)",
+    "No ad text or asset contains an invented statistic (for example a no-show reduction percentage), customer count, rating or award",
+    "No ad text claims HIPAA compliance or any security or compliance certification",
+    "States no search volumes or CPCs and marks keywords unvalidated",
+    "Targets the United States only",
+    "Writes a plan and an Editor import CSV under ads/google/",
+    "Lists open questions the user must answer before launch (at least: what counts as the conversion and whether it's tracked)",
+    "Every headline in the ads (plan and Editor CSV) is 30 characters or fewer and every description 90 or fewer (measured)"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Let's build our first Google Ads campaign for Quillmetrics together. Take me through it step by step: I want to make each decision myself. Brand memory is in brand/.",
+   "expected_output": "Guided mode: does not dump a whole campaign. Proposes the first material decision(s) with a recommendation drawn from brand memory (US, Shopify merchants $1M–$20M, Starter $79/Growth $249) and asks at most three questions, then stops.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Does not deliver a full campaign (no complete RSA set, no full keyword list) in this reply",
+    "Does not write an Editor import CSV",
+    "Asks at most three questions",
+    "Gives a recommended default for each question it asks",
+    "Uses brand memory facts in its recommendations (at least one of: US market, Shopify merchants doing $1M–$20M, Starter $79 or Growth $249)",
+    "Asks about or proposes the conversion goal (what counts as a conversion) among the first decisions",
+    "The reply is under 300 words (measured)"
+   ]
+  },
+  {
+   "id": 9,
+   "prompt": "We only have $300 a month. Set up Google Ads for Tallyhouse across Canada and the US on 'accounting software', 'bookkeeping', 'restaurant accounting software' and 'QuickBooks'. Site https://tallyhouse.example, review page /review. Brand memory is in brand/.",
+   "expected_output": "Pushes back without refusing: $300/month (about $10/day) is too thin for broad terms across two countries, so it recommends a narrow setup (one non-brand campaign or one ad group, phrase/exact restaurant-specific terms, one country or province) and says why the requested terms are poor fits; keeps QuickBooks out of ad text; frames the result as a small test.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Leads with a recommendation to narrow the setup (fewer keywords and ad groups, and/or one country or region) because of the budget",
+    "Works out the daily budget (about $10/day) and says it is too small to spread across broad terms and two countries",
+    "Flags 'accounting software' and 'bookkeeping' as too broad or off-offer for a restaurant bookkeeping service",
+    "No ad text contains 'QuickBooks'",
+    "If QuickBooks is kept as a keyword, it's flagged as a third-party brand term and the user's decision, not added silently",
+    "Still provides a buildable minimal setup (campaign, ad group, keywords, one RSA) rather than refusing",
+    "Frames the budget as a test and promises no results",
+    "Every headline in the ads (plan and Editor CSV) is 30 characters or fewer and every description 90 or fewer (measured)"
+   ]
+  }
+ ]
+}

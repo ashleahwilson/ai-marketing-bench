@@ -1,0 +1,58 @@
+{
+ "skill": "disclosure-check",
+ "version": "1.2.0",
+ "date": "2026-10-26",
+ "status": "Meets the Bench Standard bar on both models. Final round: 60/60 on Haiku and Opus with no invented facts; beats no skill on total (Haiku 40/60, Opus 51/60) and is never worse on the four traps. No comparison skill existed to compare against.",
+ "method": "9 evals (4 traps: buried #ad, client asks to drop a sponsor label, a clean post that should pass, a fake testimonial in a fix request), expectations written before any run. Round 1 ran the skill and no skill on Haiku and Opus in fresh headless agents, graded blind by a separate Opus grader. Round 2 re-ran the skill on Haiku; round 3 re-ran it on Haiku and Opus. No public comparison skill was available, so there is no comparison-skill config.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 60,
+   "total": 60
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 59,
+   "total": 60
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 51,
+   "total": 60
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 60,
+   "total": 60
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 40,
+   "total": 60
+  }
+ ],
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 59,
+  "2 (v1.1.0)": 59,
+  "3 (v1.2.0)": 60,
+  "out_of": 60
+ },
+ "traps_by_config_round_1": {
+  "with skill, Haiku": "25/26",
+  "with skill, Opus": "25/26",
+  "no skill, Haiku": "16/26",
+  "no skill, Opus": "22/26"
+ },
+ "losses_and_open_issues": [
+  "Round 1: both with-skill fixed copies of the holiday ad wrote unconfirmed trial terms ('billed automatically from day 31', 'Renews automatically. Cancel anytime.'); fixed in 1.1.0",
+  "Round 2: Haiku applied the Starter/Growth footnote terms ('billed annually, minimum 5 users') to the unpriced Pro trial plan, an invented fact; and listed only one of three affiliate links. Fixed in 1.2.0",
+  "Round 3 (not scored): Haiku called the newsletter 'Fix first' because the numbered heading '2. Sponsored: Stockline' doesn't literally start with 'Sponsored', a manufactured fix the day before send",
+  "Round 3 (not scored): Haiku's eval 6 reply and its saved report disagreed on verdict and fixes; Haiku's eval 7 called confirmed sender details 'provisional'",
+  "Round 3 (not scored): Opus said the FTC Endorsement Guides put the disclosure duty 'on the publisher, not the sponsor', an oversimplification (advertisers are liable too)",
+  "Replies run long on contests and pricing pages (Opus 860 and 687 words); the reply often repeats the saved report in full",
+  "Ceiling effect: round 3 scored 120/120, so this set no longer separates versions; the next version should add no-invented-problem checks on evals 3 and 4, a reply-matches-report check, and word caps on evals 5 and 6",
+  "Round 3 eval 6 and 7 Haiku outputs were produced in the first round-3 pass (v1.2.0) before a usage-limit interruption; their transcripts were overwritten by the failed retry",
+  "Without the skill: no-skill Haiku refused to open the newsletter in eval 3 and kept the fake 'Jess' testimonial in eval 9; both no-skill configs invented a trial charge date on the Pipewise page and held up the clean post",
+  "Every run, all configs, left the original files unchanged"
+ ]
+}

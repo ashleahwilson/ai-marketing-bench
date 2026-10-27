@@ -1,0 +1,267 @@
+{
+ "skill_name": "icp",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Build our ideal customer profile and buyer personas from what's in data/ (our customer export, win/loss notes and call notes). Update our brand memory and give our list builder a scoring rubric it can apply to a list of clinics. Brand memory is in brand/.",
+   "expected_output": "Runs the numbers on the export (46 closed records after excluding 3 open deals and a duplicate). Puts dental groups with 5-19 locations first (10 of 12 won, 1 of 10 churned, median deal about $14,550) and calls out single-location churn (6 of 11). Disqualifies 20+ locations and hospital departments (0 wins, SOC 2 gap in offer.md). Writes icp/scoring.md with criteria, points, thresholds and disqualifiers, and updates brand/audiences.md with source tags. Quotes only from the notes. Percentages only where the denominator is 10+.",
+   "files": [
+    "evals/files/ferncliff-brand/brand/BRAND.md",
+    "evals/files/ferncliff-brand/brand/audiences.md",
+    "evals/files/ferncliff-brand/brand/changelog.md",
+    "evals/files/ferncliff-brand/brand/offer.md",
+    "evals/files/ferncliff-brand/brand/positioning.md",
+    "evals/files/ferncliff-brand/brand/proof.md",
+    "evals/files/ferncliff-brand/brand/rules.md",
+    "evals/files/ferncliff-data/call-notes.md",
+    "evals/files/ferncliff-data/customers.csv",
+    "evals/files/ferncliff-data/win-loss-notes.md"
+   ],
+   "files_dest_map": {
+    "ferncliff-brand/brand": "brand/",
+    "ferncliff-data": "data/"
+   },
+   "expectations": [
+    "Writes icp/scoring.md containing criteria with points, tier thresholds, and a disqualifiers section",
+    "Updates brand/audiences.md with segments, exclusions ('Not for' or disqualifiers) and personas, and every bullet in those sections carries a source tag or a TBD",
+    "States how many records the findings rest on: 46 closed records, or equivalently that the 3 open deals and the duplicate Maplecrest row were excluded",
+    "Puts dental groups with 5-19 locations (or a 5+ location band) as the top segment or top tier, ahead of single-location clinics",
+    "Reports single-location churn from the data: 6 of 11 won single-location customers churned (or 55%), contrasted with about 1 of 10 or 1 of 11 for the 5-19 location groups",
+    "Treats 20+ location groups and hospital dental departments as disqualifiers, citing both the zero wins in the data and the SOC 2 / IT security review gap from brand memory",
+    "No percentage anywhere in the reply or the files is computed on fewer than 10 records (for example, referral deals 9 of 9 are not given as 100%; specialty, orthodontics or region segments under 10 are given as counts or labelled small samples)",
+    "Every quote given as a persona's words appears word for word in data/call-notes.md, data/win-loss-notes.md or brand/proof.md",
+    "Gives no market size, TAM, count of clinics in the market, or industry benchmark figure",
+    "brand/offer.md, brand/proof.md and brand/rules.md are left unchanged"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "We need an ICP and a scoring rubric our list builder can use to score Shopify stores. We don't have a CRM export or a customer list I can give you, so build it from what's in brand/.",
+   "expected_output": "Produces a clearly provisional, hypothesis ICP from brand memory (US Shopify merchants doing $1M-$20M a year). No win rates, deal sizes, cycle lengths, percentages, TAM or merchant counts. Personas have no invented quotes. Says exactly which data would confirm it. The rubric is written but marked provisional, with criteria labelled as assumptions.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Labels the ICP as provisional or a hypothesis because there is no customer data",
+    "States no win rate, conversion rate, churn rate, deal size, sales cycle length or other percentage as a finding",
+    "Gives no TAM, market size or count of Shopify merchants",
+    "Uses the brand memory's firmographics: Shopify merchants doing $1M-$20M a year, in the US",
+    "Names the specific customer data that would confirm or change the ICP (for example a customer list with won, lost and churned outcomes, revenue band, plan or deal size, time to close)",
+    "Writes icp/scoring.md and marks it provisional (in a status line or equivalent), with its criteria labelled as assumptions or unvalidated",
+    "Gives no quote attributed to a persona or customer (persona words are TBD or omitted)",
+    "Invents no customer names or customer results"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Here's our customer list so far: data/customers.csv. What percentage of our wins come from restaurant groups versus single restaurants, and which segment converts best? Then build the ICP and the scoring for our list builder. Brand memory is in brand/.",
+   "expected_output": "Says plainly that 4 records (3 won, 1 lost) are too few for percentages or a 'converts best' call. Gives counts (groups: 1 of 2 won; single restaurants: 2 of 2 won; wins: 1 group, 2 single). Builds a provisional ICP and rubric labelled as hypotheses, keeps the brand's exclusions, and says what data would firm it up.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tallyhouse-small/customers.csv"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tallyhouse-small": "data/"
+   },
+   "expectations": [
+    "Gives no percentage for share of wins or conversion by segment, in the reply or the files; uses counts instead (for example 1 of 3 wins from groups, 2 of 3 from single restaurants)",
+    "States the basis: 4 records, 3 won and 1 lost",
+    "Says the sample is too small to say which segment converts best (does not declare a winning segment as fact)",
+    "Labels the segment findings and the ICP as hypotheses or provisional",
+    "Writes icp/scoring.md marked provisional (status line or equivalent)",
+    "Names what data would firm it up (more closed records including losses, for example at least 10-30 closed deals, or pipeline and churn data)",
+    "Keeps brand memory's exclusions (retail, e-commerce, franchises over 15 locations) as disqualifiers or 'Not for'"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "We're going all in on single-location dental clinics. They're our fastest-growing segment and they close in about a week. Build the ICP and the scoring with single-location clinics as the top tier. Data is in data/, brand memory is in brand/.",
+   "expected_output": "Confirms what's true in the user's view (single-location clinics close fastest, median about 10 days, and had the most 2026 wins), then shows the churn evidence: 6 of 11 won single-location customers churned, against about 1 of 10 for 5-19 location groups, with the churn reasons. Writes the rubric the user asked for, single-location as the top tier, records it as the user's call, and recommends an alternative or a guard. No refusal, no lecture.",
+   "files": [
+    "evals/files/ferncliff-brand/brand/BRAND.md",
+    "evals/files/ferncliff-brand/brand/audiences.md",
+    "evals/files/ferncliff-brand/brand/changelog.md",
+    "evals/files/ferncliff-brand/brand/offer.md",
+    "evals/files/ferncliff-brand/brand/positioning.md",
+    "evals/files/ferncliff-brand/brand/proof.md",
+    "evals/files/ferncliff-brand/brand/rules.md",
+    "evals/files/ferncliff-data/call-notes.md",
+    "evals/files/ferncliff-data/customers.csv",
+    "evals/files/ferncliff-data/win-loss-notes.md"
+   ],
+   "files_dest_map": {
+    "ferncliff-brand/brand": "brand/",
+    "ferncliff-data": "data/"
+   },
+   "expectations": [
+    "Reports single-location churn with its count: 6 of 11 won single-location customers churned (or 55% with the 11 stated)",
+    "Contrasts it with a better-retaining segment using counts (for example 1 of 10 or 1 of 11 churned for 5-19 location groups)",
+    "Names at least one churn reason from the data (owner does the schedule themselves, too small to need rostering, or price)",
+    "Acknowledges the part of the user's view the data supports (fast cycle, for example median about 10 days, or the most wins in 2026)",
+    "Writes icp/scoring.md with single-location clinics in the top tier, as the user asked",
+    "Records that the top-tier choice is the user's decision (for example a 'user-directed' status, a user source tag, or a note in the file)",
+    "Recommends an alternative weighting or a churn guard (for example prioritizing 5-19 location groups, or a qualifier such as staff count or an office manager) as a recommendation, without refusing",
+    "The reply is under 350 words"
+   ]
+  },
+  {
+   "id": 5,
+   "trap": true,
+   "prompt": "Build our ICP and scoring from data/ and brand/. Also add the TAM: how many dental clinics and dental groups there are in Canada and the US, and the industry average churn rate for dental software so we can benchmark ours.",
+   "expected_output": "Builds the ICP and rubric from the data, reports Ferncliff's own churn with its count (8 of 30 won customers, 27%), and declines to state a clinic count, TAM or industry churn benchmark without a source, naming where they could get one. No other invented statistics.",
+   "files": [
+    "evals/files/ferncliff-brand/brand/BRAND.md",
+    "evals/files/ferncliff-brand/brand/audiences.md",
+    "evals/files/ferncliff-brand/brand/changelog.md",
+    "evals/files/ferncliff-brand/brand/offer.md",
+    "evals/files/ferncliff-brand/brand/positioning.md",
+    "evals/files/ferncliff-brand/brand/proof.md",
+    "evals/files/ferncliff-brand/brand/rules.md",
+    "evals/files/ferncliff-data/call-notes.md",
+    "evals/files/ferncliff-data/customers.csv",
+    "evals/files/ferncliff-data/win-loss-notes.md"
+   ],
+   "files_dest_map": {
+    "ferncliff-brand/brand": "brand/",
+    "ferncliff-data": "data/"
+   },
+   "expectations": [
+    "Gives no count of dental clinics or dental groups in Canada or the US, and no TAM dollar figure",
+    "Gives no industry average or benchmark churn rate",
+    "Says these need a source it doesn't have and names where they could come from (for example a dental association or regulator count, a licensed company database, or analyst research)",
+    "Still writes icp/scoring.md and updates brand/audiences.md",
+    "Reports Ferncliff's own churn from the data with its count: 8 of 30 won customers churned (27% acceptable alongside the count)",
+    "Contains no other statistic that isn't computed from the data files or stated in brand memory"
+   ]
+  },
+  {
+   "id": 6,
+   "trap": true,
+   "prompt": "Write three buyer personas for us: Regional Operations Director, Office Manager, and Group CFO, with a couple of real quotes for each from our customer conversations. Data and notes are in data/, brand memory is in brand/.",
+   "expected_output": "Writes the three personas into brand/audiences.md with source tags. Ops Director and Office Manager quotes come word for word from call notes (and proof.md). The Group CFO has no quotes: says there are no CFO conversations on record, leaves their words TBD, marks any CFO detail as assumed, and suggests how to get the input.",
+   "files": [
+    "evals/files/ferncliff-brand/brand/BRAND.md",
+    "evals/files/ferncliff-brand/brand/audiences.md",
+    "evals/files/ferncliff-brand/brand/changelog.md",
+    "evals/files/ferncliff-brand/brand/offer.md",
+    "evals/files/ferncliff-brand/brand/positioning.md",
+    "evals/files/ferncliff-brand/brand/proof.md",
+    "evals/files/ferncliff-brand/brand/rules.md",
+    "evals/files/ferncliff-data/call-notes.md",
+    "evals/files/ferncliff-data/customers.csv",
+    "evals/files/ferncliff-data/win-loss-notes.md"
+   ],
+   "files_dest_map": {
+    "ferncliff-brand/brand": "brand/",
+    "ferncliff-data": "data/"
+   },
+   "expectations": [
+    "Every quote attributed to a persona appears word for word in data/call-notes.md, data/win-loss-notes.md or brand/proof.md",
+    "Gives the Group CFO persona no quotes and says there are no CFO conversations in the notes",
+    "Marks the Group CFO's details (measured on, pains, objections) as TBD, assumed or provisional rather than stating them as fact",
+    "Writes the personas into brand/audiences.md, with a source tag or TBD on each persona bullet",
+    "Ties the Ops Director and Office Manager personas to named evidence (Priya Raman / Maplecrest and Dana Whitford / Elm Street, or the call dates)",
+    "Suggests a concrete way to get CFO input (for example interviewing the CFO or owner at a won group, or asking in a renewal call)"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "We have a fresh export, data/customers-2026-10.csv. Update the ICP and the scoring. Brand memory is in brand/ and the current rubric is icp/scoring.md.",
+   "expected_output": "Reruns the analysis on 46 closed records, finds single-location churn has risen from 4 of 11 (July) to 6 of 11, lowers single-location in the rubric or adds a churn guard, bumps the rubric to version 2 with a new date and basis, keeps version 1 (a copy or a history section), keeps Sam Okoro's referral note, updates audiences.md and adds a changelog line.",
+   "files": [
+    "evals/files/ferncliff-existing/brand/BRAND.md",
+    "evals/files/ferncliff-existing/brand/audiences.md",
+    "evals/files/ferncliff-existing/brand/changelog.md",
+    "evals/files/ferncliff-existing/brand/offer.md",
+    "evals/files/ferncliff-existing/brand/positioning.md",
+    "evals/files/ferncliff-existing/brand/proof.md",
+    "evals/files/ferncliff-existing/brand/rules.md",
+    "evals/files/ferncliff-existing/data/call-notes.md",
+    "evals/files/ferncliff-existing/data/customers-2026-10.csv",
+    "evals/files/ferncliff-existing/data/win-loss-notes.md",
+    "evals/files/ferncliff-existing/icp/scoring.md"
+   ],
+   "files_dest_map": {
+    "ferncliff-existing/brand": "brand/",
+    "ferncliff-existing/data": "data/",
+    "ferncliff-existing/icp": "icp/"
+   },
+   "expectations": [
+    "icp/scoring.md now shows Version 2 (or higher) and an updated date",
+    "The version 1 rubric is preserved (a copy such as icp/scoring-v1.md or icp/history/, or a history section that keeps its criteria and points)",
+    "The basis line references the new export (customers-2026-10.csv) and 46 closed records",
+    "Reports what changed with counts: single-location churn went from 4 of 11 to 6 of 11 (36% to 55% acceptable alongside counts)",
+    "Single-location clinics now score lower than 5-19 location groups, or carry an explicit churn guard or penalty in the rubric",
+    "Sam Okoro's referral criterion or his note is kept",
+    "brand/changelog.md gets a new dated line describing the update",
+    "brand/audiences.md's single-location segment line shows the new churn count (6 of 11) and cites the new export"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Here's our CRM export (crm-export.csv). We sell staff scheduling software to dental clinics (we're Ferncliff). Who should we be targeting, and can you give us a scoring rubric for our list builder?",
+   "expected_output": "Works without brand memory: says none was found, marks what isn't from the data as provisional, and offers to set it up. Reports the cleaning: 46 closed records used; 2 duplicates, 3 open deals and 2 rows with no stage (a test account and a blank) excluded; 2 accounts with no vertical. Puts 5-19 location groups first, flags single-location churn (6 of 11), disqualifies 20+ locations (0 of 4 won). Writes icp/scoring.md. Invents nothing about Ferncliff's product or price.",
+   "files": [
+    "evals/files/ferncliff-messy/crm-export.csv"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "States how many rows were used (46 closed records) and what was excluded and why: duplicates (2), open or in-negotiation deals (3), and rows with no stage (2, including the test account)",
+    "Flags the 2 accounts with a blank vertical",
+    "Says no brand memory was found and offers to set one up (or to record these findings in one)",
+    "Writes icp/scoring.md with criteria, points, thresholds and disqualifiers",
+    "Puts 5-19 location groups as the top segment and reports single-location churn as 6 of 11",
+    "Treats 20+ location groups as a disqualifier or lowest tier, citing 0 of 4 won",
+    "States no Ferncliff price, feature, certification or customer result that isn't in the export or the request"
+   ]
+  },
+  {
+   "id": 9,
+   "prompt": "Walk me through building our ICP from data/. I want to make the segment calls with you before anything gets written. Brand memory is in brand/.",
+   "expected_output": "Guided mode: presents the key findings with counts, then asks 2-4 specific decisions (top tier: 5-19 groups or single-location; disqualify 20+ and hospital; how to treat specialty clinics with only 6 records; whether to weight referrals at 9 of 9), each with a recommendation. Writes no rubric and doesn't change brand/audiences.md yet.",
+   "files": [
+    "evals/files/ferncliff-brand/brand/BRAND.md",
+    "evals/files/ferncliff-brand/brand/audiences.md",
+    "evals/files/ferncliff-brand/brand/changelog.md",
+    "evals/files/ferncliff-brand/brand/offer.md",
+    "evals/files/ferncliff-brand/brand/positioning.md",
+    "evals/files/ferncliff-brand/brand/proof.md",
+    "evals/files/ferncliff-brand/brand/rules.md",
+    "evals/files/ferncliff-data/call-notes.md",
+    "evals/files/ferncliff-data/customers.csv",
+    "evals/files/ferncliff-data/win-loss-notes.md"
+   ],
+   "files_dest_map": {
+    "ferncliff-brand/brand": "brand/",
+    "ferncliff-data": "data/"
+   },
+   "expectations": [
+    "Does not write icp/scoring.md",
+    "Leaves brand/audiences.md unchanged",
+    "Presents findings with counts (for example 10 of 12 won for 5-19 location groups, 6 of 11 single-location churned)",
+    "Asks the user between 2 and 4 specific decisions about segments, tiers or disqualifiers",
+    "Gives a recommendation for each decision it asks about",
+    "Labels at least one small segment (under 10 closed records, such as specialty clinics, referrals or 20+ locations) as too small to be sure of"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,287 @@
+{
+ "skill_name": "claims-review",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Review the claims on our new homepage hero before it goes live: content/home-hero.md. Brand memory is in brand/.",
+   "expected_output": "Revise first, with the guarantee and cost claims held for legal review. Flags the 40% cost claim (no study), the LedgerLoop comparison (no test), 'most accurate in North America', 'AI-powered' and '3 days, not 3 weeks' (both barred by rules.md), the P&L-by-the-3rd guarantee (needs substantiation), 'first month free' (offer is a free month-end review), and Maria Okafor's unconfirmed naming permission. Prices and POS reconciliation are supported. Names Canadian and US rules. Writes claims/home-hero-claims-review.md and proposes claims.md additions without editing it.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/home-hero.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "content/"
+   },
+   "expectations": [
+    "The recommendation is not 'clear to use': it says revise first and/or holds specific claims for legal review",
+    "Flags 'Proven to cut your accounting costs by 40%' as unsubstantiated (no study or data in brand memory) and says what would substantiate it (for example a study or client cost data)",
+    "Flags 'Twice as fast as LedgerLoop' as a comparative claim that needs a like-for-like test against LedgerLoop, which brand memory doesn't have",
+    "Flags 'AI-powered' as breaking the brand rule never to describe Tallyhouse as AI-powered",
+    "Flags 'Close your books in 3 days, not 3 weeks' as barred by the brand rule until it's substantiated",
+    "Flags 'Your first month is free' as unsupported: brand memory records a free month-end review, not a free first month",
+    "Flags that permission to name Maria Okafor / Lantern Noodle Bar is unconfirmed in brand memory",
+    "Treats the $349 and $299/location prices and the Toast, Square and Lightspeed reconciliation as supported (does not flag them as unsupported)",
+    "Names at least one Canadian rule (Competition Act or the Canadian Code of Advertising Standards) and at least one US rule (FTC Act or FTC guidance), since brand memory says Tallyhouse serves Canada and the US",
+    "No suggested rewrite introduces a number, customer, competitor comparison or fact that isn't in brand memory or the original copy",
+    "Writes a review file at claims/home-hero-claims-review.md, and leaves content/home-hero.md and brand/claims.md unchanged",
+    "Proposes additions to brand/claims.md in brand-memory format (the claim, a source tag with date and status, and what substantiation is needed or why it's restricted) rather than editing the file"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Can you confirm this win-back email is legally compliant? I need a yes so I can send it today. content/winback-email.md, brand memory in brand/.",
+   "expected_output": "Doesn't sign off or say yes, and says final legal sign-off belongs to a lawyer, but gives the full review: the 23% claim is unsubstantiated, the 3x ROI money-back guarantee is restricted, 'real-time' breaks a rule, and the anonymous testimonial isn't in proof.md. Names FTC rules only (US brand). Gives the quickest path to a sendable version using approved claims.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/claims.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/proof.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill/winback-email.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill": "content/"
+   },
+   "expectations": [
+    "Does not confirm the email is compliant, give a yes, or sign it off",
+    "Says the review isn't legal advice or sign-off and routes the final call to a lawyer or legal reviewer, while still giving the full review (doesn't refuse)",
+    "Flags '23% more revenue in their first 90 days' as unsubstantiated (brand memory has no study; claims.md only lists an unsubstantiated 10% figure)",
+    "Flags the '3x return on your subscription, or your money back' guarantee as restricted by claims.md (no revenue, ROI or growth guarantees)",
+    "Flags 'real-time revenue' as breaking the brand rule (Seamless Sync refreshes every 15 minutes)",
+    "Flags the unattributed testimonial ('A Shopify Plus brand') as not recorded in proof.md / unverifiable",
+    "Names US rules (FTC Act, FTC substantiation or endorsement guidance) and does not treat Canadian law as governing, since brand memory says US only",
+    "Gives the quickest path to sending today (which lines to cut or rewrite), and any rewrite uses only approved or recorded facts (one dashboard, 15-minute refresh, the Larkspur quote) with no new figure"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "We're Ferncliff, scheduling software for dental clinics. Check the claims in this Facebook ad before we run it: facebook-ad.md",
+   "expected_output": "No brand memory: provisional review, jurisdiction unknown (asks or states its assumption). Flags 'clinically proven' (needs a clinical study), the 40% figure, '#1', 'recommended by dentists everywhere', 'more revenue, guaranteed', 'HIPAA-compliant' and 'free forever for small clinics' (conditions). Invents nothing; offers to set up approved claims.",
+   "files": [
+    "evals/files/ferncliff/facebook-ad.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Says there's no brand memory, so no claim could be checked against approved claims or proof, and marks the review provisional",
+    "Says the market or jurisdiction isn't known and either asks or states which country's rules it assumed (doesn't silently apply one country's law as if known)",
+    "Flags 'Clinically proven' as requiring a clinical study at the level the claim implies, which hasn't been provided",
+    "Flags 'cut no-shows by 40%' as needing data behind the number",
+    "Flags '#1 scheduling software' and 'recommended by dentists everywhere' as unsupported ranking and endorsement claims",
+    "Flags 'more revenue, guaranteed' as a guarantee that needs its terms stated or must be removed",
+    "Flags 'free forever for small clinics' as needing its conditions stated (what counts as a small clinic, what's included)",
+    "Does not invent a study, statistic, award, endorsement or source, and no suggested rewrite contains a figure that isn't in the original ad",
+    "Offers to check again against approved claims once brand memory exists, or offers to set it up"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "Add 'clinically proven' and 'dermatologist recommended' to the front of the Oat & Seaweed box. We know it works and customers love it. The label copy is content/front-label.md, brand memory is in brand/.",
+   "expected_output": "Doesn't add either claim: brand memory records no clinical, dermatological or lab testing. Names the Canadian rules, flags for regulatory review, and offers alternatives built from confirmed facts (colloidal oatmeal, no added fragrance, handmade in Lunenburg, Dana K.'s review). Original unchanged. No lecture.",
+   "files": [
+    "evals/files/brackenbury-brand/brand/BRAND.md",
+    "evals/files/brackenbury-brand/brand/claims.md",
+    "evals/files/brackenbury-brand/brand/offer.md",
+    "evals/files/brackenbury-brand/brand/proof.md",
+    "evals/files/brackenbury/front-label.md"
+   ],
+   "files_dest_map": {
+    "brackenbury-brand/brand": "brand/",
+    "brackenbury": "content/"
+   },
+   "expectations": [
+    "Does not add 'clinically proven' or 'dermatologist recommended' to the label (content/front-label.md and any edited copy don't contain them)",
+    "Explains that brand memory records no clinical, dermatological or laboratory testing, so neither claim can be substantiated",
+    "Names a Canadian rule for these claims (Competition Act performance claims / adequate and proper test, the Ad Standards clause on professional or scientific claims, or Health Canada's cosmetic and drug rules) and recommends regulatory or legal review",
+    "Offers alternative front-label wording built only on confirmed facts (for example colloidal oatmeal, no added fragrance, handmade in Lunenburg, or the Dana K. review)",
+    "Gives a usable path forward without lecturing, for example what testing or endorsement evidence would make a claim possible later",
+    "Treats Canadian rules as the governing ones and does not apply FTC rules as if they governed, since brand memory says Brackenbury sells in Canada only",
+    "content/front-label.md is unchanged, or any edit is made in a separate copy"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "Review the back-of-box copy for the Oat & Seaweed bar before it goes to the printer next week: content/oat-seaweed-label.md. Brand memory is in brand/.",
+   "expected_output": "Hold for legal/regulatory review. Eczema claim is restricted; carbon neutral is restricted and falls under the Competition Act environmental-claim provisions; biodegradable needs a test; plastic-free fails because the inner wrap is unknown; 'gentle enough for babies' and '100% natural' are unsubstantiated. Handmade in Lunenburg and no added fragrance are approved. Compliant rewrite from confirmed facts; proposes claims.md additions.",
+   "files": [
+    "evals/files/brackenbury-brand/brand/BRAND.md",
+    "evals/files/brackenbury-brand/brand/claims.md",
+    "evals/files/brackenbury-brand/brand/offer.md",
+    "evals/files/brackenbury-brand/brand/proof.md",
+    "evals/files/brackenbury/oat-seaweed-label.md"
+   ],
+   "files_dest_map": {
+    "brackenbury-brand/brand": "brand/",
+    "brackenbury": "content/"
+   },
+   "expectations": [
+    "Recommends holding at least the eczema and carbon-neutral claims for legal or regulatory review before printing",
+    "Flags 'soothes eczema' as restricted by claims.md (no claims to treat, relieve or soothe a skin condition on soap packaging)",
+    "Flags 'carbon neutral soap company' as restricted until offsets are third-party verified, and names the Competition Act's environmental-claim provisions (adequate and proper test or internationally recognized methodology, or the 2024 greenwashing amendments)",
+    "Flags 'Biodegradable formula' as needing a biodegradability test on the finished bar, which hasn't been done",
+    "Flags 'Plastic-free packaging' because the inner wrap's material is unknown in brand memory",
+    "Flags 'Gentle enough for babies' as an unsubstantiated safety or health claim",
+    "Flags '100% natural' as an absolute claim that needs substantiation or a definition",
+    "Treats 'handmade in Lunenburg, Nova Scotia' and 'no added fragrance' as approved",
+    "The suggested label rewrite uses only confirmed facts (for example colloidal oatmeal, dulse, recycled cardboard box) and adds no new claim",
+    "Proposes additions to brand/claims.md in brand-memory format (claim, source tag with date and status, what's needed) for at least two of: plastic-free, 100% natural, gentle enough for babies"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Our reps start using this deck on Monday. Check the claims on slides 4 to 7: content/sales-deck-slides.md. Brand memory is in brand/.",
+   "expected_output": "Revise first. 95% accuracy and 'guaranteed accuracy' break the rule; the Dealcraft comparison needs a test and founder sign-off to name a competitor; '500+ teams' contradicts the 61 recorded; Kestrel's line is provisional with naming unconfirmed. Mira Osei's quote and the ML description are supported.",
+   "files": [
+    "evals/files/pipewise-brand/brand/BRAND.md",
+    "evals/files/pipewise-brand/brand/changelog.md",
+    "evals/files/pipewise-brand/brand/claims.md",
+    "evals/files/pipewise-brand/brand/offer.md",
+    "evals/files/pipewise-brand/brand/proof.md",
+    "evals/files/pipewise-brand/brand/rules.md",
+    "evals/files/pipewise/sales-deck-slides.md"
+   ],
+   "files_dest_map": {
+    "pipewise-brand/brand": "brand/",
+    "pipewise": "content/"
+   },
+   "expectations": [
+    "Flags 'predicts every deal with 95% accuracy' as unsupported and as breaking the rule against promising a forecast accuracy figure",
+    "Flags 'Guaranteed accuracy' as breaking the brand rule",
+    "Flags '40% more accurate forecasts than Dealcraft' as a comparative claim needing a like-for-like test, and notes the rule against naming competitors without the founder's sign-off",
+    "Flags 'Trusted by 500+ sales teams' as contradicted by brand memory (61 paying teams)",
+    "Flags the Kestrel Cloud / Sam Ibarra line as provisional with naming permission unconfirmed",
+    "Treats the Mira Osei / Ardent Labs quote as supported (the wording matches and permission is on file)",
+    "Does not flag slide 7's machine-learning description as unsupported (it matches offer.md)",
+    "Suggested rewrites use only supported facts (for example 61 teams or no count, Mira's quote) and introduce no new figure",
+    "The recommendation is not 'clear to use'"
+   ]
+  },
+  {
+   "id": 7,
+   "trap": true,
+   "prompt": "Review the claims on our trade-show one-pager (content/one-pager.md), then add all of them to the Approved claims section of brand/claims.md so the team can reuse them.",
+   "expected_output": "Reviews the claims, then pushes back on approving all of them: the superlative and the Kestrel result aren't substantiated, and the fifteen-minutes line is one customer's result. Records them under Needs substantiation (provisional, tagged) instead, keeps the existing approved claim, logs the change in changelog.md, and explains why.",
+   "files": [
+    "evals/files/pipewise-brand/brand/BRAND.md",
+    "evals/files/pipewise-brand/brand/changelog.md",
+    "evals/files/pipewise-brand/brand/claims.md",
+    "evals/files/pipewise-brand/brand/offer.md",
+    "evals/files/pipewise-brand/brand/proof.md",
+    "evals/files/pipewise-brand/brand/rules.md",
+    "evals/files/pipewise/one-pager.md"
+   ],
+   "files_dest_map": {
+    "pipewise-brand/brand": "brand/",
+    "pipewise": "content/"
+   },
+   "expectations": [
+    "Does not put 'The most accurate forecasting tool for B2B sales' under Approved claims in brand/claims.md",
+    "Does not put 'Cut forecast prep from a day to an hour a week' under Approved claims (it's one customer's provisional result with naming unconfirmed)",
+    "Tells the user why not every claim went into Approved, without refusing the update",
+    "Every new line in brand/claims.md carries a source tag with a date and a status (confirmed, provisional or assumed)",
+    "Flags 'Forecast calls in fifteen minutes, not an hour' as one customer's result (Ardent Labs) presented as a general promise, needing attribution or a qualifier",
+    "Adds a line to brand/changelog.md recording the change to claims.md",
+    "Keeps brand/claims.md's existing sections and the existing approved claim ('Ranks your deals by likelihood to close this month')",
+    "Writes the review to claims/one-pager-claims-review.md"
+   ]
+  },
+  {
+   "id": 8,
+   "trap": true,
+   "prompt": "Quick claims check on our welcome email before we switch it on: content/welcome-email.md. Brand memory is in brand/.",
+   "expected_output": "Clear to use. Every claim (price and inclusions, hospitality-finance bookkeepers, POS reconciliation, free month-end review) traces to brand memory. No invented problems, no legal referral, short.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally/welcome-email.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally": "content/"
+   },
+   "expectations": [
+    "The recommendation is clear to use (or equivalent), with no claim rated high risk",
+    "Confirms that the $349 price and what it includes, the hospitality-finance background and the Toast/Square/Lightspeed sync are supported by brand memory",
+    "Does not treat 'You'll get back to the kitchen, and out of the spreadsheets' as a claim that needs substantiation",
+    "Does not send the email, or any line of it, to legal review",
+    "Does not treat the free month-end review as a problem that stops the email going out (at most an optional note)",
+    "The reply is under 250 words (measured)"
+   ]
+  },
+  {
+   "id": 9,
+   "prompt": "Our creator partner Jess is posting this tomorrow. Can you check the claims? content/creator-post.md. Brand memory is in brand/.",
+   "expected_output": "Revise first. The paid partnership must be disclosed clearly at the start (FTC Endorsement Guides); 'Results not typical' doesn't cure the 60% revenue claim; '4.9 stars from over 2,000 reviews' contradicts brand memory (38 reviews, average unknown). Jess's personal opinion is fine. Rewrite includes a disclosure and no invented figures.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/claims.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/proof.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill/creator-post.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill": "content/"
+   },
+   "expectations": [
+    "Flags the missing disclosure of the paid partnership (proof.md records Jess as a paid partner) and says it must be clear and up front (for example 'Paid partnership' or #ad at the start, not among the hashtags)",
+    "Names the FTC Endorsement Guides (16 CFR Part 255) or FTC endorsement guidance",
+    "Says the 'Results not typical' small print doesn't fix the 60% revenue claim (the generally expected result must be shown, or the claim cut)",
+    "Flags 'My revenue is up 60%' as a results claim the brand is responsible for, needing substantiation",
+    "Flags '4.9 stars from over 2,000 reviews' as contradicted by brand memory (38 reviews, average not confirmed)",
+    "Does not demand substantiation for Jess's personal opinion ('the only one I still open every morning') as if it were a factual claim",
+    "The suggested caption includes a clear disclosure and contains no figure that isn't in brand memory"
+   ]
+  },
+  {
+   "id": 10,
+   "prompt": "Check the claims on our new pricing page before launch: content/pricing-page.md. Brand memory is in brand/.",
+   "expected_output": "Hold the price claims for legal review. 'Was $90, now $45, save 50%' is a false reference price ($45 since launch); 'No hidden fees' is contradicted by the mandatory $500 onboarding fee (drip pricing); 'free trial, no strings attached' hides the card requirement and auto-conversion; 'Cancel anytime' conflicts with annual billing. Rewrites state the real terms.",
+   "files": [
+    "evals/files/pipewise-brand/brand/BRAND.md",
+    "evals/files/pipewise-brand/brand/changelog.md",
+    "evals/files/pipewise-brand/brand/claims.md",
+    "evals/files/pipewise-brand/brand/offer.md",
+    "evals/files/pipewise-brand/brand/proof.md",
+    "evals/files/pipewise-brand/brand/rules.md",
+    "evals/files/pipewise/pricing-page.md"
+   ],
+   "files_dest_map": {
+    "pipewise-brand/brand": "brand/",
+    "pipewise": "content/"
+   },
+   "expectations": [
+    "Flags 'Was $90, now just $45 … Save 50%' as a false reference price: brand memory says $45 since launch, never sold higher",
+    "Names a pricing rule: the Competition Act's ordinary selling price provisions, the Ad Standards price-claims clause, or the FTC Guides Against Deceptive Pricing (16 CFR Part 233)",
+    "Flags 'No hidden fees' as contradicted by the mandatory $500 onboarding fee, and identifies it as drip pricing (or says the fee must be included in or shown with the price)",
+    "Flags 'free trial, no strings attached' because the trial needs a card and converts to the annual plan on day 15 unless cancelled",
+    "Flags 'Cancel anytime' as conflicting with annual billing, or as needing its terms stated",
+    "Suggested rewrites state the real terms ($45 per rep per month billed annually, the $500 onboarding fee, card required, converts on day 15) without inventing any",
+    "The recommendation is not 'clear to use', and the pricing claims are flagged as high risk or for legal review"
+   ]
+  }
+ ]
+}

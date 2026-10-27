@@ -1,0 +1,12 @@
+Reporting starts,Reporting ends,Campaign name,Ad set name,Ad set delivery,Attribution setting,Results,Result indicator,Cost per result,Amount spent (USD),Impressions,Reach,Frequency,Link clicks,CTR (link click-through rate),"CPM (cost per 1,000 impressions) (USD)"
+2026-09-01,2026-09-28,Prospecting | Free trial | Traffic,Traffic | Broad US,Active,7-day click or 1-day view,0,Link clicks,,1680.00,120000,57142,2.10,1556,1.30,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Shopify owners US,Active,7-day click or 1-day view,33,Website leads,44.24,1460.00,104284,54886,1.90,1147,1.10,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Lookalike 1% trials,Active,7-day click or 1-day view,28,Website leads,47.14,1320.00,94284,48350,1.95,1032,1.09,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Lookalike 3% trials,Active,1-day click,22,Website leads,53.64,1180.00,84284,42142,2.00,922,1.09,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: ecommerce analytics,Active,7-day click or 1-day view,19,Website leads,55.26,1050.00,75000,36585,2.05,816,1.09,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: Shopify Plus,Active,7-day click or 1-day view,17,Website leads,58.24,990.00,70714,33673,2.10,768,1.09,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: Klaviyo users,Active,1-day click,13,Website leads,67.69,880.00,62856,29235,2.15,679,1.08,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Broad US 25-54,Active,7-day click or 1-day view,11,Website leads,69.09,760.00,54284,24674,2.20,582,1.07,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: DTC founders,Active,7-day click or 1-day view,8,Website leads,80.00,640.00,45714,20317,2.25,487,1.07,14.00
+2026-09-01,2026-09-28,Trials | Conversions | 9 audiences,TR | Interest: Stripe,Active,1-day click,6,Website leads,86.67,520.00,37142,16148,2.30,391,1.05,14.00
+2026-09-01,2026-09-28,Retargeting | Site visitors 30d,RT | Visitors 30d,Active,7-day click or 1-day view,46,Website leads,27.39,1260.00,57272,7342,7.80,699,1.22,22.00

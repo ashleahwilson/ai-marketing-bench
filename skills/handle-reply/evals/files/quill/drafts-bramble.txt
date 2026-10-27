@@ -1,0 +1,22 @@
+FACTS
+- prospect: Bramble & Co, Shopify merchant, US; Marcus Dell, COO | user
+- address: marcus@brambleandco.example, published on brambleandco.example/about, captured 2026-10-09 | user
+- offer: revenue dashboard combining Shopify and Stripe data | brand/offer.md
+- offer: Seamless Sync refreshes Shopify and Stripe data every 15 minutes, free on every plan | brand/offer.md
+- sender: Alex Romero, Account Executive, Quillmetrics | user
+ASSUMED
+- none
+---
+Channel: email
+Type: first
+Subject: shopify and stripe
+
+Hi Marcus,
+
+Reconciling Shopify orders against Stripe payouts usually means two tabs and a spreadsheet. Quillmetrics puts both in one revenue dashboard, and Seamless Sync refreshes them every 15 minutes, free on every plan.
+
+Open to a look?
+
+Alex Romero, Account Executive, Quillmetrics
+Quillmetrics Inc., 88 Market St, Suite 400, Portland, OR 97204
+Reply "no" and I won't follow up.

@@ -1,0 +1,3 @@
+Campaign Name,Campaign Objective,Special Ad Categories,Special Ad Category Country,Ad Set Name,Optimization Goal,Custom Event Type,Attribution Spec,Countries,Age Min,Age Max,Custom Audiences,Advantage+ Audience,Placements,Daily Budget
+Demo | Leads | Sales leaders,OUTCOME_LEADS,None,,Demo | VP Sales interests,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,US,18,65,,Off,Advantage+ placements,110.00
+Demo | Leads | Sales leaders,OUTCOME_LEADS,None,,Demo | Lookalike 1% customers,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,US,18,65,"Lookalike (US, 1%) - Customers",Off,Advantage+ placements,90.00

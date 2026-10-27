@@ -1,0 +1,1102 @@
+{
+ "basis": {
+  "files": [
+   "data/deals.csv"
+  ],
+  "rows_used": 26,
+  "excluded": {
+   "open deal (not closed)": 2
+  },
+  "columns": {
+   "company": "account",
+   "outcome": "stage",
+   "industry": "industry",
+   "employees": "employees",
+   "country": "country",
+   "deal": "acv",
+   "cycle": "sales_cycle_days",
+   "churn_date": "churn_date"
+  },
+  "missing_fields": [
+   "locations"
+  ],
+  "sample": "moderate",
+  "warnings": {},
+  "run_date": "2026-10-23"
+ },
+ "overall": {
+  "closed": 26,
+  "label": "evidence",
+  "win_rate": {
+   "k": 16,
+   "n": 26,
+   "pct": 62,
+   "text": "16 of 26 (62%)"
+  },
+  "churn_rate": {
+   "k": 3,
+   "n": 16,
+   "pct": 19,
+   "text": "3 of 16 (19%)"
+  },
+  "deal_size": {
+   "n": 16,
+   "median": 13800.0,
+   "text": "median $13,800 (n=16)"
+  },
+  "cycle_days_won": {
+   "n": 16,
+   "median": 36.0,
+   "text": "median 36 (n=16)"
+  },
+  "cycle_days_lost": {
+   "n": 10,
+   "median": 34.0,
+   "text": "median 34 (n=10)"
+  },
+  "months_to_churn": {
+   "n": 0,
+   "median": null,
+   "text": "no data"
+  },
+  "wins_by_year": {},
+  "loss_reasons": [],
+  "churn_reasons": []
+ },
+ "segments": {
+  "industry": {
+   "software": {
+    "closed": 16,
+    "label": "evidence",
+    "win_rate": {
+     "k": 12,
+     "n": 16,
+     "pct": 75,
+     "text": "12 of 16 (75%)"
+    },
+    "churn_rate": {
+     "k": 2,
+     "n": 12,
+     "pct": 17,
+     "text": "2 of 12 (17%)"
+    },
+    "deal_size": {
+     "n": 12,
+     "median": 13800.0,
+     "text": "median $13,800 (n=12)"
+    },
+    "cycle_days_won": {
+     "n": 12,
+     "median": 36.0,
+     "text": "median 36 (n=12)"
+    },
+    "cycle_days_lost": {
+     "n": 4,
+     "median": null,
+     "values": [
+      14.0,
+      16.0,
+      30.0,
+      49.0
+     ],
+     "text": "values: 14, 16, 30, 49"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "fintech": {
+    "closed": 3,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 2,
+     "n": 3,
+     "pct": null,
+     "text": "2 of 3"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 2,
+     "pct": null,
+     "text": "0 of 2"
+    },
+    "deal_size": {
+     "n": 2,
+     "median": null,
+     "values": [
+      7200.0,
+      15600.0
+     ],
+     "text": "values: $7,200, $15,600"
+    },
+    "cycle_days_won": {
+     "n": 2,
+     "median": null,
+     "values": [
+      26.0,
+      47.0
+     ],
+     "text": "values: 26, 47"
+    },
+    "cycle_days_lost": {
+     "n": 1,
+     "median": null,
+     "values": [
+      19.0
+     ],
+     "text": "values: 19"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "manufacturing": {
+    "closed": 3,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 0,
+     "n": 3,
+     "pct": null,
+     "text": "0 of 3"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 0,
+     "pct": null,
+     "text": "none closed"
+    },
+    "deal_size": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_won": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_lost": {
+     "n": 3,
+     "median": null,
+     "values": [
+      38.0,
+      71.0,
+      95.0
+     ],
+     "text": "values: 38, 71, 95"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "agency": {
+    "closed": 2,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 1,
+     "n": 2,
+     "pct": null,
+     "text": "1 of 2"
+    },
+    "churn_rate": {
+     "k": 1,
+     "n": 1,
+     "pct": null,
+     "text": "1 of 1"
+    },
+    "deal_size": {
+     "n": 1,
+     "median": null,
+     "values": [
+      4800.0
+     ],
+     "text": "values: $4,800"
+    },
+    "cycle_days_won": {
+     "n": 1,
+     "median": null,
+     "values": [
+      15.0
+     ],
+     "text": "values: 15"
+    },
+    "cycle_days_lost": {
+     "n": 1,
+     "median": null,
+     "values": [
+      11.0
+     ],
+     "text": "values: 11"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "logistics": {
+    "closed": 1,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 0,
+     "n": 1,
+     "pct": null,
+     "text": "0 of 1"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 0,
+     "pct": null,
+     "text": "none closed"
+    },
+    "deal_size": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_won": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_lost": {
+     "n": 1,
+     "median": null,
+     "values": [
+      63.0
+     ],
+     "text": "values: 63"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "healthtech": {
+    "closed": 1,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 1,
+     "n": 1,
+     "pct": null,
+     "text": "1 of 1"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 1,
+     "pct": null,
+     "text": "0 of 1"
+    },
+    "deal_size": {
+     "n": 1,
+     "median": null,
+     "values": [
+      14400.0
+     ],
+     "text": "values: $14,400"
+    },
+    "cycle_days_won": {
+     "n": 1,
+     "median": null,
+     "values": [
+      44.0
+     ],
+     "text": "values: 44"
+    },
+    "cycle_days_lost": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   }
+  },
+  "employees_band": {
+   "50-199": {
+    "closed": 15,
+    "label": "evidence",
+    "win_rate": {
+     "k": 12,
+     "n": 15,
+     "pct": 80,
+     "text": "12 of 15 (80%)"
+    },
+    "churn_rate": {
+     "k": 1,
+     "n": 12,
+     "pct": 8,
+     "text": "1 of 12 (8%)"
+    },
+    "deal_size": {
+     "n": 12,
+     "median": 15000.0,
+     "text": "median $15,000 (n=12)"
+    },
+    "cycle_days_won": {
+     "n": 12,
+     "median": 40.5,
+     "text": "median 40 (n=12)"
+    },
+    "cycle_days_lost": {
+     "n": 3,
+     "median": null,
+     "values": [
+      49.0,
+      63.0,
+      71.0
+     ],
+     "text": "values: 49, 63, 71"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "10-49": {
+    "closed": 9,
+    "label": "hypothesis",
+    "win_rate": {
+     "k": 4,
+     "n": 9,
+     "pct": null,
+     "text": "4 of 9"
+    },
+    "churn_rate": {
+     "k": 2,
+     "n": 4,
+     "pct": null,
+     "text": "2 of 4"
+    },
+    "deal_size": {
+     "n": 4,
+     "median": null,
+     "values": [
+      4800.0,
+      4800.0,
+      6000.0,
+      7200.0
+     ],
+     "text": "values: $4,800, $4,800, $6,000, $7,200"
+    },
+    "cycle_days_won": {
+     "n": 4,
+     "median": null,
+     "values": [
+      15.0,
+      18.0,
+      22.0,
+      26.0
+     ],
+     "text": "values: 15, 18, 22, 26"
+    },
+    "cycle_days_lost": {
+     "n": 5,
+     "median": 19.0,
+     "text": "median 19 (n=5)"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "1-9": {
+    "closed": 1,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 0,
+     "n": 1,
+     "pct": null,
+     "text": "0 of 1"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 0,
+     "pct": null,
+     "text": "none closed"
+    },
+    "deal_size": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_won": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_lost": {
+     "n": 1,
+     "median": null,
+     "values": [
+      11.0
+     ],
+     "text": "values: 11"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "200-999": {
+    "closed": 1,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 0,
+     "n": 1,
+     "pct": null,
+     "text": "0 of 1"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 0,
+     "pct": null,
+     "text": "none closed"
+    },
+    "deal_size": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_won": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_lost": {
+     "n": 1,
+     "median": null,
+     "values": [
+      95.0
+     ],
+     "text": "values: 95"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   }
+  },
+  "country": {
+   "us": {
+    "closed": 16,
+    "label": "evidence",
+    "win_rate": {
+     "k": 10,
+     "n": 16,
+     "pct": 62,
+     "text": "10 of 16 (62%)"
+    },
+    "churn_rate": {
+     "k": 1,
+     "n": 10,
+     "pct": 10,
+     "text": "1 of 10 (10%)"
+    },
+    "deal_size": {
+     "n": 10,
+     "median": 13800.0,
+     "text": "median $13,800 (n=10)"
+    },
+    "cycle_days_won": {
+     "n": 10,
+     "median": 36.0,
+     "text": "median 36 (n=10)"
+    },
+    "cycle_days_lost": {
+     "n": 6,
+     "median": 34.0,
+     "text": "median 34 (n=6)"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "canada": {
+    "closed": 10,
+    "label": "evidence",
+    "win_rate": {
+     "k": 6,
+     "n": 10,
+     "pct": 60,
+     "text": "6 of 10 (60%)"
+    },
+    "churn_rate": {
+     "k": 2,
+     "n": 6,
+     "pct": null,
+     "text": "2 of 6"
+    },
+    "deal_size": {
+     "n": 6,
+     "median": 13800.0,
+     "text": "median $13,800 (n=6)"
+    },
+    "cycle_days_won": {
+     "n": 6,
+     "median": 37.0,
+     "text": "median 37 (n=6)"
+    },
+    "cycle_days_lost": {
+     "n": 4,
+     "median": null,
+     "values": [
+      11.0,
+      19.0,
+      49.0,
+      71.0
+     ],
+     "text": "values: 11, 19, 49, 71"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   }
+  }
+ },
+ "cross": {
+  "industry x employees_band": {
+   "software / 50-199": {
+    "closed": 11,
+    "label": "evidence",
+    "win_rate": {
+     "k": 10,
+     "n": 11,
+     "pct": 91,
+     "text": "10 of 11 (91%)"
+    },
+    "churn_rate": {
+     "k": 1,
+     "n": 10,
+     "pct": 10,
+     "text": "1 of 10 (10%)"
+    },
+    "deal_size": {
+     "n": 10,
+     "median": 15600.0,
+     "text": "median $15,600 (n=10)"
+    },
+    "cycle_days_won": {
+     "n": 10,
+     "median": 38.5,
+     "text": "median 38 (n=10)"
+    },
+    "cycle_days_lost": {
+     "n": 1,
+     "median": null,
+     "values": [
+      49.0
+     ],
+     "text": "values: 49"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "software / 10-49": {
+    "closed": 5,
+    "label": "hypothesis",
+    "win_rate": {
+     "k": 2,
+     "n": 5,
+     "pct": null,
+     "text": "2 of 5"
+    },
+    "churn_rate": {
+     "k": 1,
+     "n": 2,
+     "pct": null,
+     "text": "1 of 2"
+    },
+    "deal_size": {
+     "n": 2,
+     "median": null,
+     "values": [
+      4800.0,
+      6000.0
+     ],
+     "text": "values: $4,800, $6,000"
+    },
+    "cycle_days_won": {
+     "n": 2,
+     "median": null,
+     "values": [
+      18.0,
+      22.0
+     ],
+     "text": "values: 18, 22"
+    },
+    "cycle_days_lost": {
+     "n": 3,
+     "median": null,
+     "values": [
+      14.0,
+      16.0,
+      30.0
+     ],
+     "text": "values: 14, 16, 30"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "fintech / 10-49": {
+    "closed": 2,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 1,
+     "n": 2,
+     "pct": null,
+     "text": "1 of 2"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 1,
+     "pct": null,
+     "text": "0 of 1"
+    },
+    "deal_size": {
+     "n": 1,
+     "median": null,
+     "values": [
+      7200.0
+     ],
+     "text": "values: $7,200"
+    },
+    "cycle_days_won": {
+     "n": 1,
+     "median": null,
+     "values": [
+      26.0
+     ],
+     "text": "values: 26"
+    },
+    "cycle_days_lost": {
+     "n": 1,
+     "median": null,
+     "values": [
+      19.0
+     ],
+     "text": "values: 19"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "fintech / 50-199": {
+    "closed": 1,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 1,
+     "n": 1,
+     "pct": null,
+     "text": "1 of 1"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 1,
+     "pct": null,
+     "text": "0 of 1"
+    },
+    "deal_size": {
+     "n": 1,
+     "median": null,
+     "values": [
+      15600.0
+     ],
+     "text": "values: $15,600"
+    },
+    "cycle_days_won": {
+     "n": 1,
+     "median": null,
+     "values": [
+      47.0
+     ],
+     "text": "values: 47"
+    },
+    "cycle_days_lost": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "logistics / 50-199": {
+    "closed": 1,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 0,
+     "n": 1,
+     "pct": null,
+     "text": "0 of 1"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 0,
+     "pct": null,
+     "text": "none closed"
+    },
+    "deal_size": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_won": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_lost": {
+     "n": 1,
+     "median": null,
+     "values": [
+      63.0
+     ],
+     "text": "values: 63"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "manufacturing / 10-49": {
+    "closed": 1,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 0,
+     "n": 1,
+     "pct": null,
+     "text": "0 of 1"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 0,
+     "pct": null,
+     "text": "none closed"
+    },
+    "deal_size": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_won": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_lost": {
+     "n": 1,
+     "median": null,
+     "values": [
+      38.0
+     ],
+     "text": "values: 38"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "manufacturing / 50-199": {
+    "closed": 1,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 0,
+     "n": 1,
+     "pct": null,
+     "text": "0 of 1"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 0,
+     "pct": null,
+     "text": "none closed"
+    },
+    "deal_size": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_won": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_lost": {
+     "n": 1,
+     "median": null,
+     "values": [
+      71.0
+     ],
+     "text": "values: 71"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "agency / 10-49": {
+    "closed": 1,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 1,
+     "n": 1,
+     "pct": null,
+     "text": "1 of 1"
+    },
+    "churn_rate": {
+     "k": 1,
+     "n": 1,
+     "pct": null,
+     "text": "1 of 1"
+    },
+    "deal_size": {
+     "n": 1,
+     "median": null,
+     "values": [
+      4800.0
+     ],
+     "text": "values: $4,800"
+    },
+    "cycle_days_won": {
+     "n": 1,
+     "median": null,
+     "values": [
+      15.0
+     ],
+     "text": "values: 15"
+    },
+    "cycle_days_lost": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "healthtech / 50-199": {
+    "closed": 1,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 1,
+     "n": 1,
+     "pct": null,
+     "text": "1 of 1"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 1,
+     "pct": null,
+     "text": "0 of 1"
+    },
+    "deal_size": {
+     "n": 1,
+     "median": null,
+     "values": [
+      14400.0
+     ],
+     "text": "values: $14,400"
+    },
+    "cycle_days_won": {
+     "n": 1,
+     "median": null,
+     "values": [
+      44.0
+     ],
+     "text": "values: 44"
+    },
+    "cycle_days_lost": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "agency / 1-9": {
+    "closed": 1,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 0,
+     "n": 1,
+     "pct": null,
+     "text": "0 of 1"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 0,
+     "pct": null,
+     "text": "none closed"
+    },
+    "deal_size": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_won": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_lost": {
+     "n": 1,
+     "median": null,
+     "values": [
+      11.0
+     ],
+     "text": "values: 11"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   },
+   "manufacturing / 200-999": {
+    "closed": 1,
+    "label": "anecdote",
+    "win_rate": {
+     "k": 0,
+     "n": 1,
+     "pct": null,
+     "text": "0 of 1"
+    },
+    "churn_rate": {
+     "k": 0,
+     "n": 0,
+     "pct": null,
+     "text": "none closed"
+    },
+    "deal_size": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_won": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "cycle_days_lost": {
+     "n": 1,
+     "median": null,
+     "values": [
+      95.0
+     ],
+     "text": "values: 95"
+    },
+    "months_to_churn": {
+     "n": 0,
+     "median": null,
+     "text": "no data"
+    },
+    "wins_by_year": {},
+    "loss_reasons": [],
+    "churn_reasons": []
+   }
+  }
+ }
+}

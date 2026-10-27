@@ -1,0 +1,35 @@
+{
+ "skill": "audit-positioning",
+ "version": "1.2.0",
+ "date": "2026-10-24",
+ "status": "Meets the Bench Standard bar: beats no skill on both models (Opus 55/55 vs 29/55; Haiku 51/55 vs 28/55), never worse on traps, no invented facts found in any with-skill output in the final round, lint passes. No public comparison skill to compare against.",
+ "method": "8 evals (3 traps), expectations written before any run. Round 1 ran the skill and no skill on Haiku and Opus in fresh headless agents that never saw the expectations; graded blind by a separate Opus grader. Round 2 re-ran the skill on Haiku (v1.1.0); round 3 re-ran it on Haiku and Opus (v1.2.0). Each round was graded blind by a fresh grader.",
+ "results": [
+  {"config": "with skill, Opus (v1.2.0, round 3)", "passed": 55, "total": 55},
+  {"config": "with skill, Opus (v1.0.0, round 1)", "passed": 52, "total": 55},
+  {"config": "no skill, Opus", "passed": 29, "total": 55},
+  {"config": "with skill, Haiku (v1.2.0, round 3)", "passed": 51, "total": 55},
+  {"config": "no skill, Haiku", "passed": 28, "total": 55}
+ ],
+ "haiku_with_skill_by_round": {"1 (v1.0.0)": 47, "2 (v1.1.0)": 54, "3 (v1.2.0)": 51, "out_of": 55},
+ "by_eval_round_1": [
+  {"eval": "1 Tallyhouse prospect, no brand memory", "with_opus": "10/10", "with_haiku": "7/10", "no_opus": "1/10", "no_haiku": "1/10"},
+  {"eval": "2 Quillmetrics with brand memory", "with_opus": "8/8", "with_haiku": "8/8", "no_opus": "5/8", "no_haiku": "5/8"},
+  {"eval": "3 Pipewise swap test with competitor pages", "with_opus": "7/7", "with_haiku": "6/7", "no_opus": "5/7", "no_haiku": "4/7"},
+  {"eval": "4 trap: no pages supplied", "with_opus": "5/5", "with_haiku": "5/5", "no_opus": "5/5", "no_haiku": "5/5"},
+  {"eval": "5 trap: 'say we're better than Ledgerly'", "with_opus": "7/7", "with_haiku": "7/7", "no_opus": "4/7", "no_haiku": "6/7"},
+  {"eval": "6 trap: strong site, consultant's brand memory", "with_opus": "3/6", "with_haiku": "2/6", "no_opus": "1/6", "no_haiku": "0/6"},
+  {"eval": "7 hand-off: re-score an existing full audit", "with_opus": "6/6", "with_haiku": "6/6", "no_opus": "3/6", "no_haiku": "2/6"},
+  {"eval": "8 guided mode", "with_opus": "6/6", "with_haiku": "6/6", "no_opus": "5/6", "no_haiku": "5/6"}
+ ],
+ "losses_and_open_issues": [
+  "Round 3 Haiku lost 4: eval 1 gave the 'first hire' label without citing the team of 14 or the open role; eval 3 quoted only a fragment of the near-identical Dealstream subhead; eval 6 offered a subhead change as a fix and described the Northgate result as thin proof rather than a strength (likely caused by the 1.2.0 rule that one account only partly supports a claim about every customer).",
+  "Haiku with skill went 47 -> 54 -> 51: round 3 is lower than round 2, partly run-to-run variance and partly the 1.2.0 proof rule. Not re-tested after round 3 (round limit).",
+  "Round 1: every config, with and without the skill, told the user to rewrite Ferncliff's already-strong headline; fixed in 1.1.0 (Haiku 6/6 in round 2, Opus 6/6 in round 3).",
+  "Round 2 Haiku named the skill in a reply after the test machine's global instruction to announce skills; fixed in 1.2.0, no leak in round 3.",
+  "Round 3 minor: Haiku eval 6 report header said 'Brand memory: none' while the reply named the consultant's memory; Opus eval 8 dropped one word from a quote ('refreshes both'); Haiku added 'no better-than headline written' notes in evals that didn't ask for one.",
+  "Invented facts: none found in any with-skill output in any round. Without the skill (round 1): Opus claimed a positioning line was 'already on their site' when 'Unlike generalist bookkeepers' isn't, miscounted required form fields, wrote placeholders into client drafts and appended a pitch for an unrelated consultancy; Haiku invented 'three to five customers' for Ferncliff and claimed competitors 'cannot' copy a feature.",
+  "Eval 2's US-spelling expectation passed trivially in every run (no trigger words used); it doesn't separate configs.",
+  "Every with-skill run that touched an existing audit kept the old checklist in history/ and left MARKETING-HEALTH.md unchanged."
+ ]
+}

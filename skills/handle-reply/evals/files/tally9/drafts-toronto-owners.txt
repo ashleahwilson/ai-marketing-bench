@@ -1,0 +1,22 @@
+FACTS
+- persona: owner-operators of independent restaurants, 1-15 locations | brand/audiences.md
+- offer: monthly bookkeeping with a P&L every month, named bookkeeper on every plan | brand/offer.md
+- offer: free month-end review | brand/offer.md
+- sender: Hannah Ruiz, Co-founder, Tallyhouse | brand/senders.md
+- addresses: published on each restaurant's website contact page, captured 2026-10-12 | user
+ASSUMED
+- none
+---
+Channel: email
+Type: first
+Subject: month-end at {{company}}
+
+Hi {{first_name}},
+
+When the books close weeks after month-end, prime cost is a guess for most of the next month. Tallyhouse gives {{company}} a named bookkeeper who has worked in restaurant finance and a P&L every month.
+
+Open to a free month-end review to see where your numbers land?
+
+Hannah Ruiz, Co-founder, Tallyhouse
+Tallyhouse Inc., 410 Adelaide St W, Suite 300, Toronto, ON M5V 1S8
+If this isn't relevant to you, reply "no" and I won't follow up.

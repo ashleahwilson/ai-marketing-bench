@@ -1,0 +1,12 @@
+{"account": "harbourline", "checks": {
+ "objective": {"status": "pass", "evidence": "Both campaigns use Sales optimizing Purchase, the store's conversion"},
+ "conversion_events": {"status": "pass", "evidence": "Purchase from browser (104) and server (109), event ID coverage 97% and 98%: deduplicated"},
+ "attribution": {"status": "pass", "evidence": "Every ad set on 7-day click or 1-day view"},
+ "structure_learning": {"status": "warn", "evidence": "All three ad sets under 50 purchases a week; Kayaks | Interest: camping at 2.03 a week and $103.33 per purchase"},
+ "audience_overlap": {"status": "na", "evidence": "No Audience Overlap export; exclusions not in the settings export"},
+ "frequency_fatigue": {"status": "fail", "evidence": "RT | Add to cart 14d: frequency 9.4, CTR 2.01% to 1.21%, cost per purchase $14.15 to $97.55"},
+ "creative": {"status": "warn", "evidence": "4 ads in total; two ad sets run a single image ad"},
+ "placements": {"status": "pass", "evidence": "No placement over 1.19x the prospecting campaign's $60.39"},
+ "advantage_plus": {"status": "pass", "evidence": "Advantage+ audience and placements on the main prospecting ad set"},
+ "special_ad_categories": {"status": "pass", "evidence": "Not required: kayak retail"}
+}}

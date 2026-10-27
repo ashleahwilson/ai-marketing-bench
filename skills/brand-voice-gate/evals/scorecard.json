@@ -1,0 +1,69 @@
+{
+ "skill": "brand-voice-gate",
+ "version": "1.5.0",
+ "date": "2026-10-11",
+ "status": "Meets the Bench Standard bar on Opus (no invented facts in any run). On Haiku it beats every comparison and scores 62/67 consistently, but 2-4 of 10 evals per round still contain a widened or added claim; recommended for larger models.",
+ "method": "10 evals (4 traps), expectations written before any run. Each run is a fresh headless agent that never saw the expectations, graded blind by a separate grader. Round 1 compared the skill, no skill and the comparison skill (the author's de-slop) on Haiku; round 5 compared Opus with and without the skill. Rounds 2-9 re-ran the skill as it was revised. Four 'no new facts' expectations were tightened before round 5 to count only facts confirmed in brand/ (stricter for every config).",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.5.0, round 10)",
+   "passed": 66,
+   "total": 67
+  },
+  {
+   "config": "with skill, Opus (v1.4.0, round 9)",
+   "passed": 66,
+   "total": 67
+  },
+  {
+   "config": "with skill, Opus (v1.3.0, round 5)",
+   "passed": 65,
+   "total": 67
+  },
+  {
+   "config": "with skill, Haiku (v1.5.0, rounds 10-11)",
+   "passed": "62, 62",
+   "total": 67
+  },
+  {
+   "config": "no skill, Opus (round 5)",
+   "passed": 54,
+   "total": 67
+  },
+  {
+   "config": "with skill, Haiku (v1.4.0, rounds 7-8)",
+   "passed": "60, 59",
+   "total": 67
+  },
+  {
+   "config": "comparison skill (de-slop), Haiku (round 1)",
+   "passed": 43,
+   "total": 67
+  },
+  {
+   "config": "no skill, Haiku (round 1)",
+   "passed": 43,
+   "total": 67
+  }
+ ],
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 62,
+  "2 (v1.1.0)": 56,
+  "3 (v1.2.0)": 56,
+  "4 (v1.2.0)": 61,
+  "5 (v1.3.0)": 58,
+  "6 (v1.3.0)": 52,
+  "7 (v1.4.0)": 60,
+  "8 (v1.4.0)": 59,
+  "out_of": 67,
+  "10 (v1.5.0)": 62,
+  "11 (v1.5.0)": 62
+ },
+ "losses_and_open_issues": [
+  "Haiku v1.5.0: widened or added claims in 2-4 evals per round. The swapped-noun check removed the 'prime cost' swaps, but Haiku still hardens verbs ('helping reduce no-shows' to 'reduces no-shows'), adds evaluative lines ('No hidden layers'), and reuses a voice example as a promise",
+  "Haiku explains a wrong price inconsistently (corrects $299 to $349 but doesn't always say $299 is the group rate)",
+  "Haiku sometimes doesn't list removed statistics as 'needing a source', and its 'What changed' lists can misdescribe the draft",
+  "Opus v1.4.0's about-page rebuild ran 69 words against a 67-word original (expectation: shorter)",
+  "No-skill Opus overwrote the user's drafts and left placeholders in final copy; the skill never touched an original in 90 runs"
+ ]
+}

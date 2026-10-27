@@ -1,0 +1,6 @@
+Campaign report
+"August 1, 2026 - October 15, 2026"
+Campaign,Campaign state,Campaign type,Budget,Budget type,Bid strategy type,Target CPA / ROAS,Clicks,Impr.,Cost,Conversions,Cost / conv.,Conv. value,Search impr. share,Search lost IS (budget),Search lost IS (rank)
+Search | Pipeline Software,Enabled,Search,180.00,Daily,Maximize conversions,--,2110,35100,"11,051.75",51,216.70,0.00,47.00%,2.00%,51.00%
+Search | Forecasting,Enabled,Search,50.00,Daily,Target CPA,200.00,570,14500,"3,453.00",7,493.29,0.00,22.00%,0.00%,78.00%
+Total: Account,,,,,,,2680,49600,"14,504.75",58,250.08,,,,

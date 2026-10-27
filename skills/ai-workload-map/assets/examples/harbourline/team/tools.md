@@ -1,0 +1,5 @@
+- Shopify (store and product pages)
+- Google Analytics
+- Klaviyo (email)
+- Meta Business Suite (Facebook and Instagram)
+- Google Drive

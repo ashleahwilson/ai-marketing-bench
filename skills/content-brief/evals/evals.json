@@ -1,0 +1,242 @@
+{
+ "skill_name": "content-brief",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Write a brief for a blog post on food cost percentage for single-location restaurant owners. The goal is bookings of our free month-end review (https://tallyhouse.example/review). It goes up on 2026-11-24. Brand memory is in brand/.",
+   "expected_output": "Writes briefs/<slug>.md in the content-qa-gate format: nine fields, CTA with the review URL, Length as a word range, Publish date 2026-11-24. Must-includes come from confirmed brand memory (food cost and labour % on one dashboard, POS reconciliation, monthly P&L, named bookkeeper). Keyword marked unvalidated with no volumes. No industry food-cost benchmark stated as fact. The 3-day close claim is kept out (or only in Avoid). Writer guidance (angle, outline, sources, avoid) sits in a separate section after the fields.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Writes a brief file inside briefs/ (for example briefs/food-cost-percentage.md)",
+    "The brief file has all nine fields as '- Field: value' lines: Goal, Audience, Channel, Key message, Must include, CTA, Primary keyword, Length, Publish date",
+    "The CTA line contains https://tallyhouse.example/review and the Publish date line is 2026-11-24",
+    "The Length line is a word range in the form '<low>–<high> words' (or '<low>-<high> words')",
+    "Writer guidance (angle, outline, sources to use, what to avoid) is in a clearly separate section after the nine fields",
+    "Every Must include item traces to confirmed brand memory or the request; the '3 days, not 3 weeks' close and the 'P&L ready by the 3rd' claim do not appear anywhere except as something to avoid",
+    "Marks the primary keyword as unvalidated (no search data supplied) and gives no search volume, difficulty or ranking figures",
+    "States no industry benchmark or statistic as fact (for example a 'typical' or 'target' food cost percentage); any benchmark the writer wants is listed as needing a cited source",
+    "If the Lantern Noodle Bar / Maria Okafor quote is mentioned, says permission to name her is unconfirmed (passes if the quote isn't used)"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "We want to rank for labour scheduling. Give me a brief for a blog post, and include the high-volume keywords with their monthly search numbers so the writer knows what to target. Goal is bookings of the free month-end review, https://tallyhouse.example/review, publishing 2026-12-01.",
+   "expected_output": "Doesn't invent search volumes. Says no keyword data was supplied, so keywords are unvalidated, and names what would validate them (an export from their keyword tool or Search Console). Still writes the brief with candidate keywords marked unvalidated.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Gives no search volume, difficulty, ranking or traffic figure for any keyword, in the reply or the brief file",
+    "Says plainly that no search data was supplied, so the keywords are unvalidated or need checking",
+    "Names what would validate them (for example an export from their keyword tool, Search Console data, or volumes the user supplies)",
+    "Still writes a brief file in briefs/ rather than refusing or only asking questions",
+    "The brief file has all nine fields as '- Field: value' lines: Goal, Audience, Channel, Key message, Must include, CTA, Primary keyword, Length, Publish date",
+    "The Primary keyword line contains a keyword phrase only, with no number attached"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Brief for a long-form guide aimed at franchise chains with 50+ locations on why they should switch their bookkeeping to Tallyhouse. Goal is demo bookings. Publish 2026-11-30. Brand memory is in brand/.",
+   "expected_output": "Holds: brand memory says Tallyhouse serves 1–15 locations and isn't for franchises over 15. Doesn't write a brief for 50+ location chains. Offers an alternative inside the audience (groups of 2–15 locations) or asks whether the offer has changed. Notes there's no demo offer or URL in brand memory. Short, no lecture.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Points out that brand memory says Tallyhouse isn't for franchises over 15 locations (it serves 1–15 locations)",
+    "Does not write a brief aimed at franchise chains with 50+ locations (no such brief file in briefs/)",
+    "Offers a way forward: a brief for groups inside the served range (for example 2–15 locations), or asks the user to confirm whether the offer has changed",
+    "Does not invent a demo URL, a price for large chains, or any capability for 50+ locations",
+    "Doesn't refuse outright or lecture: the reply is under 250 words (measured, excluding any brief file)"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "We need a brief for a post built around our '3 days, not 3 weeks' close. Make that the headline and the key message, and have the writer include our average close time. Goal: bookings of the free month-end review at https://tallyhouse.example/review. Publish 2026-11-17.",
+   "expected_output": "Pushes back: the claim is unsubstantiated in brand memory and a brand rule says not to use it anywhere until it is. Doesn't invent an average close time. Says what would substantiate it (average close time across clients, or a client case study). Offers a reframed brief on confirmed facts, or to hold until substantiated.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Flags that '3 days, not 3 weeks' is unsubstantiated and that a brand rule says not to use it anywhere until it is",
+    "Does not put the claim or any close-time figure in a Key message, Must include, headline or title (in the reply or any brief file)",
+    "Does not invent an average close time or any other figure",
+    "Says what would substantiate the claim (for example the average close time across clients, or a client case study)",
+    "Offers a way forward: a reframed brief built on confirmed facts (such as the monthly P&L or automatic POS reconciliation), or holding the piece until the claim is substantiated",
+    "Doesn't refuse outright or lecture: the reply is under 300 words (measured, excluding any brief file)"
+   ]
+  },
+  {
+   "id": 5,
+   "trap": true,
+   "prompt": "Put together a content brief on cash flow for restaurants. Brand memory is in brand/.",
+   "expected_output": "Asks one short round of questions instead of guessing: the goal and the CTA are missing (and the channel). Uses brand memory to make the questions quick (suggests the free month-end review as a likely CTA, names the 1–15 location audience). Doesn't write a finished brief with a guessed goal or CTA.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Asks what the piece is for (its goal or what the reader should do next)",
+    "Asks about the CTA (the action, the link, or both)",
+    "Asks no more than 5 questions in total (counted)",
+    "Does not write a finished brief that fills in a goal or CTA the user didn't give (no briefs/ file presenting a guessed goal or CTA as settled)",
+    "Uses brand memory to make the questions quick, for example suggesting the free month-end review as the likely CTA or naming the 1–15 location audience"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "We're Ferncliff, scheduling software for dental clinics. Our app sends patients an SMS reminder 48 hours before each appointment. I need a brief for a blog post on reducing no-shows. Goal: free trial signups at https://ferncliff.example/trial. Audience: front-desk managers at independent dental clinics. Publish 2026-11-12.",
+   "expected_output": "With no brand memory, writes the brief anyway and marks it provisional. Must-includes come only from the request (the 48-hour SMS reminder, the free trial). No no-show statistics stated as fact, no invented features, prices, integrations or customer results. Keyword unvalidated. Offers to set up brand memory.",
+   "files": [],
+   "files_dest": "",
+   "expectations": [
+    "Writes a brief file in briefs/",
+    "The brief file has all nine fields as '- Field: value' lines: Goal, Audience, Channel, Key message, Must include, CTA, Primary keyword, Length, Publish date",
+    "Says there's no brand memory, so the brief is provisional (in the reply or the brief)",
+    "Must include items come only from the request (the 48-hour SMS reminder, the free trial); no other Ferncliff feature, price, integration or customer result appears anywhere in the brief",
+    "States no statistic about no-show rates or their cost as fact; any such figure is listed as needing a cited source",
+    "Marks the primary keyword as unvalidated and gives no search volumes",
+    "Offers to set up brand memory or to record the confirmed facts for next time"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Brief for a blog post introducing Seamless Sync to Shopify merchants who don't use Quillmetrics yet. Goal: free trial starts at https://quillmetrics.example/trial. Pick the primary keyword from our export in research/keywords.csv. Publish 2026-11-18. Brand memory is in brand/.",
+   "expected_output": "Picks the primary keyword from the CSV, but not 'real-time shopify analytics' (a brand rule forbids promising real-time) or 'data-driven shopify reporting' (a never-use word). Any volume or difficulty quoted matches the CSV exactly. Must-includes from confirmed brand memory: 15-minute refresh, free on every plan, Shopify and Stripe in one dashboard. Writes the nine fields with the trial URL.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md",
+    "evals/files/quill-research/keywords.csv"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/",
+    "quill-research": "research/"
+   },
+   "expectations": [
+    "The Primary keyword is one of the keywords in research/keywords.csv",
+    "Does not choose 'real-time shopify analytics' as the primary keyword; if it mentions it, it says the brand rule against promising real-time data rules it out",
+    "Does not choose 'data-driven shopify reporting'; if it mentions it, it notes 'data-driven' is a word the brand never uses",
+    "Every search volume or difficulty figure quoted matches research/keywords.csv exactly, and no figure is given for a keyword that isn't in the file",
+    "Must include covers the 15-minute refresh and that Seamless Sync is free on every plan",
+    "The CTA line contains https://quillmetrics.example/trial",
+    "The word 'real-time' appears only as something to avoid, never as a message, title or must-include"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Draft a brief for a LinkedIn post announcing Seamless Sync to our current merchants. Don't ask me anything, just draft it and I'll fill the gaps.",
+   "expected_output": "Writes the brief without asking. Gaps the user didn't give and brand memory doesn't have (the CTA URL, the publish date) are marked TBD, not invented, and listed for the user. Must-includes from confirmed brand memory (15-minute refresh, free on every plan, Settings > Integrations). Writer guidance carries the LinkedIn rules (no hashtags, at most one exclamation mark) and the no-real-time rule.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Writes a brief file in briefs/ without asking questions first",
+    "The CTA URL and the publish date are marked TBD (or equivalent) rather than invented; no made-up URL or date appears",
+    "Lists the open gaps for the user to fill",
+    "Must include covers the 15-minute refresh, free on every plan, and where to turn it on (Settings > Integrations)",
+    "The writer guidance says no hashtags on LinkedIn",
+    "The word 'real-time' appears only as something to avoid"
+   ]
+  },
+  {
+   "id": 9,
+   "prompt": "Brief for a short email to our client list asking them to refer another owner for a free month-end review (https://tallyhouse.example/review). Must include: the free month-end review, the stat that 60% of restaurants close in their first year, and Maria Okafor's quote with her name and restaurant. Send date 2026-11-10. Brand memory is in brand/.",
+   "expected_output": "Writes the brief but flags two must-includes: the 60% statistic needs a cited source before it can run (not confirmed from memory), and permission to name Maria Okafor is unconfirmed. If the quote is included it's word for word from proof.md. Length follows the email rule (under 120 words); writer guidance carries no exclamation marks and a first-name sign-off. No invented referral reward.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Flags the 60% statistic as needing a cited source before it can be used; it is not confirmed from memory or listed as a settled must-include",
+    "Flags that permission to name Maria Okafor / Lantern Noodle Bar is unconfirmed, and makes naming her conditional on her OK (or uses the quote without her name)",
+    "If the quote appears, its wording matches proof.md exactly: 'We finally know our prime cost before the month is over.'",
+    "The Length line keeps the email under 120 words (for example '80–120 words')",
+    "The writer guidance includes the email rules: no exclamation marks, and/or sign off with a first name only",
+    "The brief file's CTA line contains https://tallyhouse.example/review and its Publish date is 2026-11-10",
+    "Does not invent a referral reward, incentive or deadline"
+   ]
+  }
+ ]
+}

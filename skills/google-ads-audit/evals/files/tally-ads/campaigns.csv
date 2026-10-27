@@ -1,0 +1,7 @@
+Campaign report
+"July 1, 2026 - September 30, 2026"
+Campaign,Campaign state,Campaign type,Budget,Budget type,Bid strategy type,Target CPA / ROAS,Clicks,Impr.,Cost,Conversions,Cost / conv.,Conv. value,Search impr. share,Search lost IS (budget),Search lost IS (rank)
+Search | Brand,Enabled,Search,20.00,Daily,Maximize clicks,--,971,2590,"1,240.50",70,17.72,0.00,92.50%,0.00%,7.50%
+Search | Restaurant Bookkeeping,Enabled,Search,170.00,Daily,Maximize conversions,--,5555,86600,"15,625.85",266,58.74,0.00,41.20%,31.40%,27.40%
+Search | Catch-up Bookkeeping,Enabled,Search,30.00,Daily,Target CPA,150.00,860,62700,"2,477.45",9,275.27,0.00,38.00%,8.20%,53.80%
+Total: Account,,,,,,,7386,151890,"19,343.80",345,56.07,,,,

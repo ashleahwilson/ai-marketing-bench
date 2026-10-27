@@ -1,0 +1,51 @@
+company,industry,locations,employees,country,province_state,current_scheduling,lead_source,stage,acv_cad,created,closed,sales_cycle_days,customer_since,churn_date,reason
+Maplecrest Dental Group,general dentistry,8,64,Canada,ON,spreadsheet,referral,won,13700,2025-03-04,2025-04-07,34,2025-04-07,,
+Riverbend Family Dental,general dentistry,6,51,Canada,BC,spreadsheet,webinar,won,10300,2025-04-15,2025-05-26,41,2025-05-26,,
+Northgate Smiles,general dentistry,12,98,Canada,AB,PMS calendar,outbound,won,19800,2025-05-20,2025-07-11,52,2025-07-11,,
+Cedar Point Dental Partners,general dentistry,9,70,US,WA,spreadsheet,referral,won,15400,2025-06-02,2025-07-01,29,2025-07-01,,
+Harbour Light Dental,general dentistry,5,38,Canada,NS,paper,search,won,8600,2025-07-11,2025-08-18,38,2025-08-18,,
+Bluewater Dental Co.,general dentistry,15,121,US,OR,spreadsheet,referral,won,24500,2025-08-19,2025-10-03,45,2025-10-03,,
+Prairie Oak Dental,general dentistry,7,55,Canada,SK,PMS calendar,webinar,won,11900,2025-10-06,2025-11-11,36,2025-11-11,,
+Summit Ridge Dental,general dentistry,11,90,US,WA,spreadsheet,outbound,won,18200,2026-01-13,2026-03-02,48,2026-03-02,,
+Lakeshore Dental Collective,general dentistry,6,47,Canada,ON,spreadsheet,referral,won,10100,2026-03-02,2026-04-02,31,2026-04-02,,
+Westfield Dental Group,general dentistry,10,82,Canada,ON,competitor: ChairTime,outbound,churned,16500,2025-02-10,2025-03-26,44,2025-03-26,2026-04-30,moved back to ChairTime after an acquisition
+Granite Bay Dental,general dentistry,13,104,US,OR,competitor: ChairTime,outbound,lost,,2025-09-08,2025-11-08,61,,,stayed with ChairTime; switching cost
+Pinecrest Dental Network,general dentistry,8,66,Canada,BC,PMS calendar,search,lost,,2026-02-16,2026-04-14,57,,,no budget this fiscal year
+Elm Street Dental,general dentistry,3,22,Canada,ON,spreadsheet,referral,won,4300,2025-04-01,2025-04-25,24,2025-04-25,,
+Two Rivers Dental,general dentistry,2,15,Canada,MB,paper,search,won,2900,2025-06-23,2025-07-12,19,2025-07-12,,
+Kestrel Dental Studio,general dentistry,4,30,US,WA,spreadsheet,webinar,won,5700,2025-09-15,2025-10-18,33,2025-10-18,,
+Copperleaf Dental,general dentistry,3,24,Canada,AB,spreadsheet,referral,won,4200,2026-02-09,2026-03-03,22,2026-03-03,,
+Sandpiper Dental,general dentistry,2,14,US,OR,PMS calendar,search,churned,2800,2025-05-12,2025-06-02,21,2025-06-02,2026-01-31,office manager left; nobody owned the rollout
+Foxglove Dental,general dentistry,3,21,Canada,BC,competitor: ChairTime,outbound,lost,,2025-08-04,2025-09-10,37,,,stayed with ChairTime
+Birchwood Dental Care,general dentistry,4,29,Canada,ON,PMS calendar,outbound,lost,,2025-11-17,2025-12-27,40,,,PMS calendar is good enough
+Ironwood Dental,general dentistry,2,16,US,WA,spreadsheet,search,lost,,2026-04-06,2026-05-04,28,,,price
+Dr. Amara Singh Dentistry,general dentistry,1,7,Canada,ON,paper,search,won,1400,2025-05-05,2025-05-14,9,2025-05-14,,
+Bright Path Dental,general dentistry,1,9,Canada,BC,spreadsheet,search,won,1400,2025-11-03,2025-11-15,12,2025-11-15,,
+Willow Creek Dental,general dentistry,1,8,US,WA,spreadsheet,webinar,won,1400,2026-02-02,2026-02-10,8,2026-02-10,,
+Seabright Dental,general dentistry,1,6,Canada,NS,paper,search,won,1300,2026-03-16,2026-03-27,11,2026-03-27,,
+Hillside Dental Clinic,general dentistry,1,10,Canada,ON,spreadsheet,search,won,1400,2026-05-04,2026-05-11,7,2026-05-11,,
+Oakview Dental,general dentistry,1,8,Canada,AB,spreadsheet,search,churned,1400,2025-03-10,2025-03-20,10,2025-03-20,2025-09-30,owner does the schedule herself; didn't need it
+Tidewater Dental,general dentistry,1,7,US,OR,paper,search,churned,1300,2025-06-16,2025-06-30,14,2025-06-30,2025-12-31,too small to need rostering
+Fairhaven Dental,general dentistry,1,9,Canada,BC,spreadsheet,webinar,churned,1400,2025-10-20,2025-10-29,9,2025-10-29,2026-04-30,price; switched to free PMS calendar
+Stonebridge Dental,general dentistry,1,6,Canada,ON,paper,search,churned,1300,2026-01-05,2026-01-18,13,2026-01-18,2026-06-30,too small to need rostering
+Clearwater Smiles,general dentistry,1,8,US,WA,spreadsheet,search,churned,1400,2026-02-23,2026-03-03,8,2026-03-03,2026-08-31,owner does the schedule herself; didn't need it
+Juniper Dental,general dentistry,1,7,Canada,MB,spreadsheet,search,churned,1400,2026-04-13,2026-04-24,11,2026-04-24,2026-09-30,price
+Mossgrove Dental,general dentistry,1,5,Canada,ON,paper,search,lost,,2025-08-11,2025-08-26,15,,,price
+Redcliff Dental,general dentistry,1,8,US,OR,PMS calendar,search,lost,,2026-01-19,2026-02-06,18,,,PMS calendar is good enough
+Brookside Dental,general dentistry,1,6,Canada,BC,spreadsheet,webinar,lost,,2026-05-25,2026-06-06,12,,,not the right time
+Little Teeth Pediatric Dental,pediatric dentistry,3,26,Canada,ON,spreadsheet,referral,won,4400,2025-07-07,2025-08-02,26,2025-08-02,,
+Alignwell Orthodontics,orthodontics,4,31,US,WA,spreadsheet,referral,won,5800,2025-10-27,2025-11-19,23,2025-11-19,,
+Northshore Oral Surgery,oral surgery,2,19,Canada,BC,PMS calendar,webinar,won,3000,2026-01-26,2026-02-25,30,2026-02-25,,
+Straightline Ortho,orthodontics,5,40,Canada,AB,spreadsheet,referral,won,7300,2026-04-20,2026-05-17,27,2026-05-17,,
+Crestview Pediatric Dentistry,pediatric dentistry,2,17,US,OR,competitor: ChairTime,outbound,lost,,2025-12-01,2026-01-05,35,,,stayed with ChairTime
+Keystone Oral Surgery,oral surgery,1,12,Canada,ON,PMS calendar,search,lost,,2026-03-09,2026-04-02,24,,,PMS calendar is good enough
+Evergreen Dental Partners,general dentistry,42,410,US,WA,competitor: ChairTime,outbound,lost,,2025-04-14,2025-10-17,186,,,IT security review stalled
+Coastline Dental Organization,general dentistry,65,620,Canada,ON,enterprise suite,outbound,lost,,2025-07-21,2026-02-10,204,,,chose enterprise suite
+Unity Dental Alliance,general dentistry,28,260,US,OR,enterprise suite,webinar,lost,,2025-10-13,2026-03-20,158,,,procurement required an RFP we didn't qualify for
+Trillium Dental Group,general dentistry,31,300,Canada,ON,PMS calendar,outbound,lost,,2026-01-12,2026-07-02,171,,,IT security review stalled
+St. Brendan's Hospital Dental Clinic,hospital dental department,1,45,Canada,ON,enterprise suite,outbound,lost,,2025-09-22,2026-02-12,143,,,hospital procurement
+Mercy Valley Hospital Dentistry,hospital dental department,1,38,US,WA,enterprise suite,outbound,lost,,2026-02-02,2026-07-14,162,,,hospital procurement
+Aspen Grove Dental,general dentistry,7,58,Canada,AB,spreadsheet,referral,open,,2026-09-14,,,,,
+Kingfisher Dental,general dentistry,1,6,Canada,ON,paper,search,open,,2026-10-05,,,,,
+Meridian Dental Partners,general dentistry,24,230,US,WA,enterprise suite,outbound,open,,2026-08-03,,,,,
+Maplecrest Dental Group,general dentistry,8,64,Canada,ON,spreadsheet,referral,won,13700,2025-03-04,2025-04-07,34,2025-04-07,,

@@ -1,0 +1,34 @@
+{
+ "skill": "google-ads-build",
+ "version": "1.2.0 (tested); 1.2.1 adds text-only fixes for three round-3 gaps, not re-run",
+ "date": "2026-10-24",
+ "status": "Meets the Bench Standard bar on Opus (82/83 in every round, no invented facts). On Haiku it beats every comparison by a wide margin (80-82/83, every trap passed), but in the final round one Haiku build ran an unsupported 'Talk to a Bookkeeper' headline and both models ran a standalone 'From $299/Location/Month' headline; recommended for larger models, and check segment prices in the ads on small models.",
+ "method": "9 evals (3 traps: competitor names in headlines, '#1' and unproven result claims, volumes/CPCs/forecast with no data), 83 expectations written before any run. Round 1 ran the skill, no skill, and the comparison skill (Corey Haines' ad-creative 1.1.0) on Haiku, and the skill and no skill on Opus, in fresh headless agents graded blind by a separate Opus grader that read only evals.json, the fixtures and the run outputs (plan, Editor CSV, reply). Rounds 2-3 re-ran the skill on Haiku and Opus as it was revised.",
+ "results": [
+  {"config": "with skill, Opus (v1.2.0, round 3)", "passed": 82, "total": 83},
+  {"config": "with skill, Opus (v1.1.0, round 2)", "passed": 82, "total": 83},
+  {"config": "with skill, Opus (v1.0.0, round 1)", "passed": 82, "total": 83},
+  {"config": "no skill, Opus", "passed": 64, "total": 83},
+  {"config": "with skill, Haiku (v1.2.0, round 3)", "passed": 80, "total": 83},
+  {"config": "no skill, Haiku", "passed": 57, "total": 83},
+  {"config": "comparison skill (ad-creative), Haiku", "passed": 51, "total": 83}
+ ],
+ "traps_round_1": {"with skill, Haiku": "27/27", "with skill, Opus": "27/27", "no skill, Opus": "22/27", "no skill, Haiku": "17/27", "comparison skill, Haiku": "16/27"},
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 79,
+  "2 (v1.1.0)": 82,
+  "3 (v1.2.0)": 80,
+  "out_of": 83
+ },
+ "losses_and_open_issues": [
+  "Round 3, both models: a standalone 'From $299/Location/Month' headline that can read as the single-location price (eval 1). Addressed in 1.2.1 text, not re-run",
+  "Round 3, Haiku: 'Talk to a Bookkeeper' headline implies a talk/call option brand memory doesn't mention (eval 6, outside the expectations). Addressed in 1.2.1 text, not re-run",
+  "Round 3, Haiku: said provisional in the plan but didn't offer to set up brand memory in the reply (eval 7). Addressed in 1.2.1 text, not re-run",
+  "Round 3, Haiku: on a $300/month budget, rejected 'accounting software' and 'bookkeeping' for fit but not for budget (eval 9); round 1 Haiku kept both countries and a QuickBooks campaign, fixed in 1.1.0",
+  "Round 1, Haiku: one non-restaurant keyword ('month-end bookkeeping review') in the audit rebuild (eval 5); Opus guided reply ran 347 words (eval 8); fixed in 1.1.0",
+  "Round 2: Haiku held back the confirmed 15-minute refresh because the number check treated any rules line containing 'never' as a ban (fixed in 1.2.0); Opus built the competitor campaign as its own recommendation rather than the user's call (fixed in 1.2.0)",
+  "With-skill runs assumed budgets the user didn't give (evals 3, 4) and a /pricing URL for Quillmetrics, always labelled as assumptions",
+  "Round 1, without the skill: no-skill Opus invented CPC ranges, click forecasts, conversion rates, competitor names and a 'works remotely from Toronto' fact; no-skill Haiku assumed trial-to-paid rates and an $8 CPC and left bracketed placeholders in ads; ad-creative wrote 'Founded by a CPA', declined budgets and keywords as another skill's job, and leaked skill internals",
+  "Every run, all configs, left the user's original files unchanged"
+ ]
+}

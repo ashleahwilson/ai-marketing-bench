@@ -1,0 +1,66 @@
+{
+ "skill": "map-contacts",
+ "version": "1.2.0",
+ "date": "2026-10-23",
+ "status": "Meets the Bench Standard bar. Final round (v1.2.0): 66/66 on Haiku and Opus, no invented facts in any with-skill output. Round 1 beat no skill and the comparison skill on total and on every trap, on both models.",
+ "method": "8 evals (4 traps), expectations written before any run. Round 1 ran the skill, no skill, and the comparison skill (the user's sales-contacts, 620 lines) on Haiku, and the skill and no skill on Opus, in fresh headless agents graded blind by a separate Opus grader. Rounds 2-3 re-ran the skill on Haiku as it was revised, plus Opus once at the end.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 66,
+   "total": 66
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 66,
+   "total": 66
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 52,
+   "total": 66
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 66,
+   "total": 66
+  },
+  {
+   "config": "with skill, Haiku (v1.0.0, round 1)",
+   "passed": 64,
+   "total": 66
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 44,
+   "total": 66
+  },
+  {
+   "config": "comparison skill (sales-contacts), Haiku",
+   "passed": 45,
+   "total": 66
+  }
+ ],
+ "traps_round_1": {
+  "with skill, Haiku": "30/32",
+  "with skill, Opus": "32/32",
+  "no skill, Haiku": "18/32",
+  "no skill, Opus": "25/32",
+  "comparison skill, Haiku": "23/32"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 64,
+  "2 (v1.1.0)": 65,
+  "3 (v1.2.0)": 66,
+  "out_of": 66
+ },
+ "losses_and_open_issues": [
+  "Round 1, with skill on Haiku: declined personal data without naming the consent risk of texting (eval 2); the no-sources reply didn't say personas would be provisional (eval 4). Fixed in 1.1.0.",
+  "Round 2, with skill on Haiku: didn't offer to set up brand memory (eval 7). Minor overstatements, not counted as lost tests: '5 rows' for a 3-row CRM export, a page's save date given as a job's posting date, an unrequested email-pattern offer. Fixed in 1.2.0.",
+  "Round 3: no invented facts. Both models suggest calling a company 'main line' no source contains (no number given); Opus dated an undated CRM export with its latest activity date; both guess pronouns from first names.",
+  "Round 3, Haiku: replies run up to about 515 words against a target of about 300 outside the table; one reply garbles a sentence; two outputs leak internal wording ('on the blocker list in the role guide', 'not a quota').",
+  "The suite saturates: both models scored 66/66 in round 3, so it can't separate the next version. Harder expectations to add: reply length, pushback first on trap evals, no internal wording.",
+  "Round 1, without the skill: the comparison skill guessed email addresses nobody asked for (Rosa, Daniel, Celeste, Bruno), wrote DECISION-MAKERS.md instead of a contacts file, invented a user instruction in five runs, filled a no-sources report with placeholder rows under a COMPLETE banner, and leaked its scoring banners; no-skill Haiku refused eval 8 outright and lectured on CASL and TCPA; no-skill Opus attributed attitudes to Ben Okafor, invented Ferncliff product features, and ran to 1,749 words on a no-sources request.",
+  "No run in any config edited a source file."
+ ]
+}

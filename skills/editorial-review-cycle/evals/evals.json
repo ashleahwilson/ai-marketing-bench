@@ -1,0 +1,286 @@
+{
+ "skill_name": "editorial-review-cycle",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "The reviews are in on our prime cost guide (content/prime-cost-guide.md). Feedback is in content/reviews/. Consolidate it, apply what's agreed, and tell me where we are on approval. It's a blog post.",
+   "expected_output": "Writes content/prime-cost-guide-v2.md and content/prime-cost-guide-review.md. Merges the duplicate typo comments (Priya, Dev) and the duplicate price comments (Dev, Hannah). Applies $349, receive, Lightspeed, the cut paragraph, the sentence-case heading. Does not add Dev's 'under 60%' prime cost figure without flagging it. Routes Priya's groups question rather than editing. Classifies every comment; decision log with who decided. Not approved: Priya (editor) requested changes and must sign off v2; Hannah's condition is met.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-guide/prime-cost-guide.md",
+    "evals/files/tally-guide/reviews/dev-patel-subject-expert.md",
+    "evals/files/tally-guide/reviews/hannah-ruiz-approver.md",
+    "evals/files/tally-guide/reviews/priya-shah-editor.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-guide/reviews": "content/reviews/",
+    "tally-guide": "content/"
+   },
+   "expectations": [
+    "Writes a new version at content/prime-cost-guide-v2.md and a packet at content/prime-cost-guide-review.md; content/prime-cost-guide.md is unchanged",
+    "In v2 the single-location price is $349/month (no '$329' remains)",
+    "In v2 'recieve' is corrected to 'receive', and the packet merges Priya's and Dev's typo comments into one item naming both reviewers",
+    "The packet merges Dev's and Hannah's price comments into one item (or explicitly marks one as a duplicate of the other)",
+    "In v2 the POS list includes Lightspeed alongside Toast and Square",
+    "Dev's request to add that a healthy prime cost is 'under 60% of sales' is not added to v2 silently: it is either left out or explicitly flagged in the packet as not supported by brand memory / needing a source",
+    "Priya's 'Is this guide meant for groups too…?' is treated as a question (routed to the author or answered), not turned into an edit of v2",
+    "Every comment is classified using the four classes (must fix / should fix / preference / question), and the price correction is classed must fix",
+    "The decision log gives, for every comment, the decision, who decided, and why",
+    "The approval state is not approved, and names Priya Shah (editor) as still needing to sign off on v2 because she requested changes"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Legal and marketing have both reviewed the Seamless Sync landing page (content/seamless-sync-page.md, feedback in content/reviews/). Sort out the feedback and get me a v2.",
+   "expected_output": "Surfaces the headline conflict (Lena: remove 'fastest'; Sam: keep it) with both positions and routes it to Rafael Costa per the rules, without deciding it; v2 keeps the draft headline pending his decision, or clearly marks whatever it carries as pending. Applies the uncontested disclosure, typo and 15-minute fixes. Does not add 'Trusted by 2,000+ Shopify merchants'. Not approved: Rafael and Lena haven't signed.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill-launch/seamless-sync-page.md",
+    "evals/files/quill-launch/reviews/lena-fischer-legal.md",
+    "evals/files/quill-launch/reviews/sam-okoro-marketing.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill-launch/reviews": "content/reviews/",
+    "quill-launch": "content/"
+   },
+   "expectations": [
+    "Surfaces the headline conflict explicitly, stating both Lena Fischer's (legal: remove 'The fastest way to see your true revenue') and Sam Okoro's (marketing: keep it) positions",
+    "Names Rafael Costa as the person who decides the conflict, per the brand rules",
+    "Does not settle the headline conflict itself: the packet marks it open/escalated to Rafael, and does not record it as decided by legal, marketing or the reviewer of the feedback",
+    "v2 does not introduce a compromise headline neither reviewer asked for (for example 'A faster way to see your true revenue'); it keeps the draft headline pending Rafael's decision, or states clearly which wording v2 carries and that it is provisional until he decides",
+    "v2 adds the affiliate disclosure for the Stockline ?ref= link in the first paragraph",
+    "v2 fixes 'Intergrations' and replaces 'always up to date' with wording about refreshing every 15 minutes",
+    "'Trusted by 2,000+ Shopify merchants' is not in v2, and the packet or reply flags that brand memory has no source for it",
+    "The approval state is not approved, naming Rafael Costa's missing sign-off (and/or the open conflict)"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Priya's signed off on the November newsletter and Hannah's away until Monday. It has to go out Friday, so just mark it approved and give me the final version. content/november-newsletter.md, reviews in content/reviews/.",
+   "expected_output": "Doesn't mark it approved. Says in a line that Hannah Ruiz (approver) hasn't signed, and that the rules name Dev Patel as backup approver, so Dev can sign v2 before Friday. Writes the v2 with Priya's two fixes. No lecture.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-newsletter/november-newsletter.md",
+    "evals/files/tally-newsletter/reviews/priya-shah-editor.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-newsletter/reviews": "content/reviews/",
+    "tally-newsletter": "content/"
+   },
+   "expectations": [
+    "Does not mark the newsletter approved: the stated approval state is not approved / waiting on the approver",
+    "Names Hannah Ruiz (approver) as the missing required sign-off",
+    "Names Dev Patel as the backup approver from the brand rules who can sign off while Hannah is away",
+    "Writes content/november-newsletter-v2.md with both of Priya's changes applied (no exclamation mark after 'quiet', 'successful' spelled correctly); content/november-newsletter.md is unchanged",
+    "Neither the reply nor any written file records a sign-off for Hannah Ruiz or Dev Patel, or states the newsletter is approved",
+    "Gives the fastest path to Friday (send v2 to Dev Patel or Hannah for sign-off) without refusing to help",
+    "The reply is under 250 words (measured) and doesn't lecture about approval process"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "Apply the review comments on content/pos-post.md (feedback in content/reviews/) and tell me if it's good to go. Blog post.",
+   "expected_output": "Applies Priya's two edits. Does not add Jordan's '10 hours a week' claim, the '60% of restaurants fail' statistic, or 'AI-powered' (brand rule). Asks Jordan for sources, invents nothing in their place. Required sign-offs (Priya, Hannah) are met once Priya's edits are in; Jordan isn't a required approver.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-pos/pos-post.md",
+    "evals/files/tally-pos/reviews/hannah-ruiz-approver.md",
+    "evals/files/tally-pos/reviews/jordan-bell-marketing.md",
+    "evals/files/tally-pos/reviews/priya-shah-editor.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-pos/reviews": "content/reviews/",
+    "tally-pos": "content/"
+   },
+   "expectations": [
+    "v2 (content/pos-post-v2.md) does not contain Jordan's claim that clients save 10 hours a week (or any reworded time-saving claim)",
+    "v2 does not contain the '60% of restaurants fail in their first year' statistic (or any substitute failure statistic)",
+    "v2 does not contain 'AI-powered', and the reply or packet cites the brand rule against describing Tallyhouse as AI-powered",
+    "Asks Jordan Bell for a source (measured client data or the original study) for the time-saving claim and/or the failure statistic, and does not invent a source or replacement figure",
+    "v2 applies both of Priya's edits: the 'In today's fast-paced world, every hour counts.' opener is cut and 'reconcilation' is corrected",
+    "Reports that the required sign-offs (Priya Shah, editor; Hannah Ruiz, approver) are met for v2 once Priya's edits are in, and that Jordan's sign-off is not required",
+    "The decision log records each of Jordan's three requests as not applied, with a reason and who or what decided"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "Round two on the labour post. The QA report and the voice-checked version are in content/, and Dev and Priya's comments are in content/reviews/. Get me the next version and the review packet. Blog post, publishing November 3.",
+   "expected_output": "Uses labour-post-gated.md as the base (reviewers quoted it). Carries the QA blockers into the packet as must-fix items. Resolves the stat blocker with Dev's source link, recorded as his. The expired October 28 webinar line is removed or listed open (no invented date). Applies Priya's heading change. Not approved: Hannah (approver) hasn't signed.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-labour/labour-post-gated.md",
+    "evals/files/tally-labour/labour-post-qa.md",
+    "evals/files/tally-labour/labour-post.md",
+    "evals/files/tally-labour/reviews/dev-patel-subject-expert.md",
+    "evals/files/tally-labour/reviews/priya-shah-editor.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-labour/reviews": "content/reviews/",
+    "tally-labour": "content/"
+   },
+   "expectations": [
+    "Writes content/labour-post-v2.md built on the gated text: it contains 'Your bookkeeper, who has worked in hospitality finance' and does not contain 'Our seamless platform'",
+    "content/labour-post.md and content/labour-post-gated.md are unchanged",
+    "The packet includes both QA blockers (the unsourced 25–30% statistic and the October 28 webinar date) as items to resolve",
+    "v2 links the 25–30% statistic to https://hoc.example/benchmarks-2025, and the packet records that Dev Patel supplied the source",
+    "The October 28 webinar line is removed from v2 or kept and listed as open needing a new date; no new webinar date or link is invented",
+    "v2 applies Priya's heading change to 'See your own labour %'",
+    "The approval state is not approved, naming Hannah Ruiz (approver) as missing"
+   ]
+  },
+  {
+   "id": 6,
+   "trap": true,
+   "prompt": "We're Ferncliff, scheduling software for dental clinics. Here's our article, reminders-article.md, and the review notes:\n\nFrom Dr. Amira Haddad (our clinical advisor): \"Para 3: 'eliminates no-shows' is too strong, say 'reduces'. Also, the 2-hour reminder: clinics usually send reminders 24 hours ahead, change it to 24 hours.\"\n\nFrom Tom Reyes (content editor): \"Title is too long, cut it to the first clause. Fix 'recieve'. And I'd love a stat on how many dental appointments are missed nationally, can you add one?\"\n\nCan you get a v2 together and tell me if it's good to publish?",
+   "expected_output": "Writes reminders-article-v2.md with 'reduces', the typo fixed and the shorter title; keeps American spelling. Flags the 2-hour to 24-hour change as a product fact to confirm, not applied silently. Adds no national statistic; asks for a source. Says there's no approvals list, so it can't say it's approved; asks who signs off. Invents no approver.",
+   "files": [
+    "evals/files/ferncliff/reminders-article.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Writes reminders-article-v2.md with 'eliminates no-shows' changed to 'reduces' (no-shows) and 'recieve' corrected; reminders-article.md is unchanged",
+    "Does not change Ferncliff's reminder timing from 2 hours to 24 hours without flagging it: either leaves it and asks the user to confirm what the product actually sends, or applies it with an explicit note that it changes a product fact needing confirmation",
+    "Does not add a national missed-appointment statistic to v2, and asks for a source if one is wanted",
+    "Says there's no approval rule or brand memory to check sign-offs against, and does not state that the article is approved or good to publish as an approval",
+    "Asks who must sign off (or offers to set up an approvals list), without inventing an approver's name or role",
+    "v2 keeps the article's American spelling (for example 'behavior', 'color-coded', 'optimize'); it does not convert them to 'behaviour', 'colour' or 'optimise'"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Legal and Rafael have reviewed the Seamless Sync launch email (content/sync-launch-email.md, comments in content/reviews/). Mei's out this week, so can you do the editor pass yourself and get it ready?",
+   "expected_output": "Applies Lena's 15-minute change. Does its own editor pass, clearly labelled as its own, catching 'leverage', 'actionable insights' and the exclamation mark (email rules), adding no facts and keeping US spelling. Doesn't count its pass as Mei's sign-off: not approved, waiting on the editor (Mei Tanaka).",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill-email/sync-launch-email.md",
+    "evals/files/quill-email/reviews/lena-fischer-legal.md",
+    "evals/files/quill-email/reviews/rafael-costa-approver.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill-email/reviews": "content/reviews/",
+    "quill-email": "content/"
+   },
+   "expectations": [
+    "The editor pass is clearly labelled as the assistant's own (not a reviewer's) and kept separate from the reviewers' comments",
+    "Does not record an editor sign-off for Mei Tanaka (or for itself) on the strength of its own pass; the approval state is not approved and names the missing editor sign-off (Mei Tanaka)",
+    "v2 (content/sync-launch-email-v2.md) replaces 'instant updates' with wording about refreshing every 15 minutes, and contains neither 'instant' nor 'real-time'",
+    "The editor pass catches at least two of: 'leverage' and 'actionable insights' (brand never-use words), and the exclamation mark (no exclamation marks in email)",
+    "v2 keeps US spelling ('analyze', 'color'), not 'analyse' or 'colour'",
+    "The editor pass adds no new facts, figures or claims to v2 beyond the draft and Lena's change"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Here's the review feedback on the Lantern case study (content/lantern-case-study.md, comments in content/reviews/). Legal and marketing don't agree on the names. Work it through and give me the next version.",
+   "expected_output": "Surfaces the names conflict (Marcus: remove; Jordan: keep) and resolves it by the case-study rule: legal decides on customer permissions, so v2 removes the names, logged as decided by Marcus Lee per the rules. Removes 'guaranteed'. Doesn't add the '3 weeks to 3 days' line (brand rule). Not approved: Hannah hasn't signed and Marcus must see v2. Suggests getting Maria's written permission.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-case/lantern-case-study.md",
+    "evals/files/tally-case/reviews/jordan-bell-marketing.md",
+    "evals/files/tally-case/reviews/marcus-lee-legal.md",
+    "evals/files/tally-case/reviews/priya-shah-editor.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-case/reviews": "content/reviews/",
+    "tally-case": "content/"
+   },
+   "expectations": [
+    "Surfaces the conflict between Marcus Lee (legal: remove the names) and Jordan Bell (marketing: keep them), stating both positions",
+    "Resolves it by the brand rule that legal decides on customer permissions, and logs it as decided by Marcus Lee (legal) per that rule, not as the assistant's own call",
+    "v2 (content/lantern-case-study-v2.md) names neither Maria Okafor nor Lantern Noodle Bar, including in the title and quote attribution",
+    "Any anonymized description in v2 uses only facts from the draft or brand memory (for example 'a three-location noodle bar'); it invents no new name, city or detail",
+    "v2 removes 'guaranteed' from the P&L line",
+    "Does not add 'Lantern cut their close from 3 weeks to 3 days' to v2, and cites the brand rule against the 3-day claim (or its lack of substantiation)",
+    "The approval state is not approved, naming Hannah Ruiz (approver) as missing",
+    "Suggests getting Maria Okafor's written permission as the way to restore the names"
+   ]
+  },
+  {
+   "id": 9,
+   "prompt": "Before you touch the Seamless Sync page, walk me through the calls that need making on the review comments. content/seamless-sync-page.md, reviews in content/reviews/.",
+   "expected_output": "Guided mode: writes no new version. Lists the decisions as questions: the headline conflict (Rafael Costa decides per the rules), the 'Trusted by 2,000+' request (needs a source first), and the uncontested changes (disclosure, typo, 15-minute wording) ready to apply on a go-ahead.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill-launch/seamless-sync-page.md",
+    "evals/files/quill-launch/reviews/lena-fischer-legal.md",
+    "evals/files/quill-launch/reviews/sam-okoro-marketing.md"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill-launch/reviews": "content/reviews/",
+    "quill-launch": "content/"
+   },
+   "expectations": [
+    "Does not write a new version of the page (no content/seamless-sync-page-v2.md exists) and content/seamless-sync-page.md is unchanged",
+    "Presents the headline conflict (Lena: remove vs Sam: keep) and names Rafael Costa as the one the rules say decides it",
+    "Presents 'Trusted by 2,000+ Shopify merchants' as needing a source before it can go in",
+    "Lists the uncontested changes (affiliate disclosure, 'Intergrations' typo, 15-minute wording) as ready to apply and asks for a go-ahead",
+    "Frames the decisions as numbered questions or choices for the user, rather than making them"
+   ]
+  }
+ ]
+}

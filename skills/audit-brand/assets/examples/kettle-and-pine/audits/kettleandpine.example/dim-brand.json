@@ -1,0 +1,17 @@
+{"dimension": "brand", "assessable": true, "confidence": "medium",
+ "brand_memory": "company",
+ "checks": [
+  {"id": "B1", "points": 12, "max": 25, "evidence": "menus.html breaks register: \"Our curated seasonal menus elevate every gathering with farm-to-table flavor.\" No contractions and two stock words, while index, about and the newsletter are plain and specific (\"We cook in East Vancouver every morning and deliver by 11:45.\"). One piece breaks: partial."},
+  {"id": "B2", "points": 25, "max": 25, "evidence": "Every page and the newsletter tell the same story: office lunches and weddings cooked from BC produce, named farms, delivery by 11:45. The farm-to-table line breaks a brand rule (B5) but no page contradicts another."},
+  {"id": "B3", "points": 10, "max": 20, "evidence": "Credible: Dana Whitfield, office manager, Northshore Credit Union, quoted exactly as recorded, permission yes; founders named with experience (about.html). Unsupported: \"Trusted for 500+ events across the Lower Mainland\" (index.html) is not in brand memory. Some unsupported proof beside credible proof: partial."},
+  {"id": "B4", "points": 10, "max": 20, "evidence": "/img/menu-autumn.jpg has no alt text (menus.html); heading \"harvest table\" on menus.html against \"Harvest Table\" elsewhere. Other alt text is descriptive; titles share one format. A few gaps: partial."},
+  {"id": "B5", "points": 0, "max": 10, "evidence": "rules.md: Never say \"farm-to-table\"; menus.html says \"farm-to-table flavor\". Also on menus.html: never-use words \"curated\" and \"elevate\", US \"flavor\" against Canadian spelling, and \"harvest table\" against the recorded form \"Harvest Table\". A rule breach: 0."}
+ ],
+ "score": 57,
+ "findings": [
+  {"severity": "high", "check": "B5", "finding": "The menus page breaks the farm-to-table rule and the never-use list.", "evidence": "menus.html: \"Our curated seasonal menus elevate every gathering with farm-to-table flavor.\"", "fix": "Replace the line with a plain, specific one in the house voice, for example \"Our menus change with what the Fraser Valley farms send us.\""},
+  {"severity": "medium", "check": "B3", "finding": "\"500+ events\" has no source.", "evidence": "index.html: \"Trusted for 500+ events across the Lower Mainland.\"", "fix": "Confirm the count from the booking records and record it in brand memory, or cut the line."},
+  {"severity": "low", "check": "B4", "finding": "One image has no alt text and the buffet's name is lower case on menus.", "evidence": "menus.html: <img src=\"/img/menu-autumn.jpg\">; heading \"harvest table\".", "fix": "Add alt text describing the autumn menu photo; capitalise the heading as \"Harvest Table\"."}
+ ],
+ "strengths": ["index, about and the newsletter share one warm, specific voice that names the food, the farm and the time.", "The one testimonial is named, specific and cleared to use."],
+ "not_observable": ["logo design and use", "colour palette", "typography", "photography style"]}

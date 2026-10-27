@@ -1,0 +1,6 @@
+Negative keywords
+Campaign,Negative keyword,Match type,Level
+Search | Pipeline Software,free,Phrase match,Campaign
+Search | Pipeline Software,jobs,Phrase match,Campaign
+Search | Forecasting,free,Phrase match,Campaign
+Search | Forecasting,jobs,Phrase match,Campaign

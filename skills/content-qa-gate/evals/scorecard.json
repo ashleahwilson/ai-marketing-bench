@@ -1,0 +1,53 @@
+{
+ "skill": "content-qa-gate",
+ "version": "1.2.0",
+ "date": "2026-10-11",
+ "status": "Meets the Bench Standard bar on Opus (53/53, no invented facts, URLs or alt text). On Haiku it beats every comparison and reached 48/53, but still guesses occasionally (a suggested alt text, a softened replacement claim); recommended for larger models.",
+ "method": "8 evals (3 traps), expectations written before any run. Round 1 ran the skill, no skill, and the closest public skill (Corey Haines' copy-editing 1.3.0) on Haiku, and the skill and no skill on Opus, in fresh headless agents graded blind by a separate grader. Rounds 2-4 re-ran the skill as it was revised.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.1.0, round 2)",
+   "passed": 53,
+   "total": 53
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 52,
+   "total": 53
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 44,
+   "total": 53
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 4)",
+   "passed": 48,
+   "total": 53
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 31,
+   "total": 53
+  },
+  {
+   "config": "comparison skill (copy-editing), Haiku",
+   "passed": 27,
+   "total": 53
+  }
+ ],
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 42,
+  "2 (v1.1.0)": 46,
+  "3 (v1.1.0)": 47,
+  "4 (v1.2.0)": 48,
+  "out_of": 53
+ },
+ "losses_and_open_issues": [
+  "Haiku misses unsupported claims without a number ('Group owners tell us the consolidated view is what they were missing') in every round",
+  "Haiku under time pressure suggests softened replacement claims ('a leading', 'trusted by owners across Canada') instead of deleting",
+  "Haiku occasionally guesses alt text or adds a fact to a suggested meta description, and over-escalates hedged rules of thumb ('about 65% of sales') to blockers",
+  "Round 1, without any skill: copy-editing invented a testimonial name, a pricing URL, statistics and a HIPAA claim; no-skill Opus over-flagged a clean newsletter as not ready (660 words)",
+  "Every run, all configs, left the original files unchanged"
+ ]
+}

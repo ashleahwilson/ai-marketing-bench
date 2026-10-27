@@ -1,0 +1,228 @@
+{
+ "skill_name": "brand-voice-codify",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "We're Ferncliff (scheduling and reminders for dental clinics). We've never written down our voice. Everything we have is in voice-evidence/: our three best pieces, a draft we rejected, Tomas's edits to a contractor's drafts, and notes from our voice call. Turn it into our brand voice guide.",
+   "expected_output": "Creates brand/voice.md with all seven sections, every rule tagged to its evidence. Canadian spelling from colour/cancelled. 'practice' never-use (confirmed, Priya). No promise of zero no-shows (confirmed, Tomas). Patterns only in the rejected draft are provisional. Email, LinkedIn and Website channels only. Examples quoted verbatim from approved samples. A changelog entry. Says the rest of brand memory doesn't exist.",
+   "files": [
+    "evals/files/ferncliff-evidence/best-email-reminders.md",
+    "evals/files/ferncliff-evidence/best-linkedin.md",
+    "evals/files/ferncliff-evidence/best-web-home.md",
+    "evals/files/ferncliff-evidence/founder-edits.md",
+    "evals/files/ferncliff-evidence/rejected-agency-draft.md",
+    "evals/files/ferncliff-evidence/voice-call-notes.md"
+   ],
+   "files_dest": "voice-evidence/",
+   "expectations": [
+    "Creates brand/voice.md containing all seven sections: Principles, Do, Don't, Words we use, Words we never use, By channel, Examples",
+    "Every rule bullet in brand/voice.md (outside TBD lines) ends with a source tag naming the sample, edit pair or call note it came from",
+    "Handles spelling from the samples' evidence: either states Canadian spelling citing sample words (for example colour, cancelled), or names those -our/-ll words and asks whether the convention is Canadian or UK; it doesn't state US spelling or state a convention with no evidence cited",
+    "'practice' is in Words we never use, tagged as confirmed and sourced to Priya's feedback / the voice call notes",
+    "Includes a rule against promising zero no-shows (or 'a thing of the past'), tagged confirmed and sourced to Tomas / the voice call notes",
+    "Rules taken only from the rejected agency draft (for example seamless, AI-powered, revolutionize, unlock, exclamation marks as a dislike) are marked provisional, not confirmed",
+    "By channel has ### Email, ### LinkedIn and ### Website subsections and no subsection for a channel with no evidence (no ads, Instagram, proposals etc.)",
+    "Every quoted example in the Examples section appears word for word in one of the three approved samples or the 'after' side of an edit pair (none from the rejected draft)",
+    "voice.md contains no banned word or rule that appears nowhere in the evidence (for example 'synergy', 'leverage', 'game-changer' are not added)",
+    "Creates brand/changelog.md with a dated line recording the new voice.md"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Here's our best LinkedIn post: pipewise-post.md. Write our full brand voice guide into brand/voice.md so the team can use it for everything: emails, the website, ads. We're Pipewise, sales software for B2B teams.",
+   "expected_output": "Doesn't produce a confident full guide from one 40-word post. Writes a thin voice.md: everything provisional, TBD for spelling, never-use words, and the email/website/ad channels. Says it's thin up front and asks for specific evidence.",
+   "files": [
+    "evals/files/pipewise-one/pipewise-post.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "The reply says early (in its first two lines) that the guide is thin or provisional because it's built from one short post",
+    "No rule in voice.md is marked confirmed; every rule is provisional (or TBD)",
+    "voice.md has no Email, Website or Ad rules beyond TBD lines (no invented length limits, sign-offs or tone for channels with no evidence)",
+    "Words we never use is TBD / empty rather than a list of words not found in the post",
+    "The spelling convention is left as TBD / unknown (the post has no words that show US, UK or Canadian spelling); voice.md does not state US, UK or Canadian spelling as a rule",
+    "Asks for more evidence and names at least two specific kinds (for example more samples across channels, drafts a founder edited, words they never use, a piece they disliked)",
+    "Any example in voice.md is quoted word for word from the post; nothing is invented as an example"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Add a Website section to our brand/voice.md from the two pages in website-samples/. The team loves both.",
+   "expected_output": "Doesn't settle exclamation marks for the website: home page has none, launch page has four (a fifth is in the founder's note above it); asks. Flags 'real-time' / 'the moment it happens' against rules.md (refreshes every 15 minutes) and doesn't use those lines. Keeps existing confirmed rules. Logs the change.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md",
+    "evals/files/quill-website/home.md",
+    "evals/files/quill-website/launch-page.md"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/",
+    "quill-website": "website-samples/"
+   },
+   "expectations": [
+    "Names the conflict on exclamation marks between the two pages (home page none, launch page several / five) and asks the user to rule",
+    "voice.md does not state a settled exclamation-mark rule for the website (no 'no exclamation marks' or 'one exclamation mark' Website rule); it's left open / TBD",
+    "Flags that the launch page's 'real-time' (or 'the moment it happens') conflicts with the rule that Seamless Sync refreshes every 15 minutes / never promise real-time",
+    "Doesn't use a launch-page line containing 'real-time' or 'the moment it happens' as an example or a word we use",
+    "Keeps the existing rules: US spelling, the never-use list (leverage, synergy, actionable insights, data-driven), and the LinkedIn and Email rules, unchanged",
+    "Website rules supported by only one page are marked provisional",
+    "Adds a dated line to brand/changelog.md (creating it if needed)"
+   ]
+  },
+  {
+   "id": 4,
+   "prompt": "Hannah edited three drafts from our freelancer (edits/hannah-edits.md). Update our voice guide with what her edits show.",
+   "expected_output": "Adds simply/just as provisional (two pairs each), sourced to the edit pairs. Flags pair 3 ('Your bookkeeper' to 'Our team') as conflicting with the confirmed 'your bookkeeper' rule and asks. Doesn't turn 'by the 5th' into a voice rule. Keeps every confirmed rule; appends changelog.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-edits/hannah-edits.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-edits": "edits/"
+   },
+   "expectations": [
+    "Keeps every existing confirmed rule in voice.md word for word (Canadian spelling, the never-use list, the LinkedIn, Email and Website rules, the 'your bookkeeper' rule, the example)",
+    "Adds a rule against 'simply' and/or 'just' (in Don't or Words we never use) with a source tag citing Hannah's edit pairs",
+    "The new simply/just rule is marked provisional (seen in two edit pairs), not confirmed",
+    "Flags that pair 3 replaces 'Your bookkeeper' with 'Our team', which conflicts with the confirmed rule to talk about 'your bookkeeper', and asks the user/Hannah to rule instead of changing that rule",
+    "Doesn't add 'by the 5th' or any delivery promise to voice.md as a rule or example",
+    "Adds a dated line to brand/changelog.md and keeps the two existing changelog lines"
+   ]
+  },
+  {
+   "id": 5,
+   "trap": true,
+   "prompt": "Honestly our voice is boring. Rewrite brand/voice.md so we sound exactly like Mailchimp. Use their taglines and best lines as our examples, they're great.",
+   "expected_output": "Doesn't copy Mailchimp's name, taglines or lines into voice.md, doesn't attribute quotes to Mailchimp, keeps the confirmed rules. Says briefly rules must come from Tallyhouse's own writing, describes qualities they might want, and asks for samples or edits in that direction.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "brand/voice.md contains no mention of Mailchimp and no Mailchimp slogan, tagline or line as a rule or example",
+    "Doesn't delete or reword any existing confirmed rule in brand/voice.md",
+    "Explains in one or two sentences why the rules must come from Tallyhouse's own writing (or that another brand's lines aren't theirs to use), without a lecture",
+    "Describes, as options or questions, qualities they might be after (for example warmer, plainer, more humour) without claiming these are Mailchimp's documented rules",
+    "Offers a concrete next step: send or write a few pieces in the new direction, or have an approver edit a draft, so those can be codified",
+    "Doesn't quote or attribute specific lines, taglines or style-guide rules to Mailchimp in the reply"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Rules from today's team meeting, please add them to our voice guide: 1) we never say 'clients', it's always 'merchants'. 2) LinkedIn posts stay under 120 words. 3) never say 'seamless', it sounds like every other SaaS. 4) we never say 'leverage'. Maya (marketing lead)",
+   "expected_output": "Adds 'clients' to never-use (confirmed, Maya); LinkedIn 'Under 120 words' under ### LinkedIn keeping the existing LinkedIn rules; doesn't add bare 'seamless' without addressing Seamless Sync, asks; notes 'leverage' already there, no duplicate. Changelog line.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/"
+   },
+   "expectations": [
+    "'clients' is added to Words we never use with a source tag naming Maya or the team meeting, a date, and confirmed status",
+    "The ### LinkedIn subsection has a rule worded 'Under 120 words' (or 'under 120 words'), and still has the existing one-exclamation-mark and no-hashtags rule",
+    "Doesn't add bare 'seamless' to Words we never use without dealing with the product name Seamless Sync: either raises the conflict and asks, or scopes the rule so the product name is exempt (and that scoping is not inside the never-use list itself)",
+    "'leverage' appears only once in Words we never use (not duplicated), and the reply or changelog notes it was already there",
+    "US spelling and the Email rules are unchanged",
+    "Adds a dated line to brand/changelog.md recording the changes"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "An intern wrote our brand/voice.md. Before our other tools start using it, check whether it's usable. Don't change it, just tell me what's wrong.",
+   "expected_output": "Check mode, no edits. Leads with not usable yet. Flags YYYY-MM-DD and <add an example>; missing Don't, Words we use, By channel (Channels with ####); two spelling conventions; '(we say clinic)' in the never-use list; untagged rules without inventing sources; the vague email limit.",
+   "files": [
+    "evals/files/ferncliff-intern/brand/BRAND.md",
+    "evals/files/ferncliff-intern/brand/voice.md"
+   ],
+   "files_dest_map": {
+    "ferncliff-intern/brand": "brand/"
+   },
+   "expectations": [
+    "brand/voice.md is unchanged (no edits written to it)",
+    "The reply leads with a verdict or recommendation that the file isn't usable yet (or not without fixes)",
+    "Flags the template leftovers 'YYYY-MM-DD' and '<add an example>'",
+    "Flags the missing sections Don't and Words we use, and that channel rules sit under '## Channels' with a '####' heading instead of '## By channel' / '###'",
+    "Flags that the spelling line names two conventions (British and Canadian) and asks which one",
+    "Flags '(we say clinic)' inside the never-use list as a format problem (the reason belongs elsewhere)",
+    "Flags the rules with no source ('Friendly and warm', the spelling line, the never-use list, the email rule) and does not invent sources for them",
+    "Flags the email rule ('Max 120 words, avoid exclamation marks where possible') as not a clear limit"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Build our voice from pipewise-evidence/. Walk me through the rules first, and don't write anything into brand/ until I've approved them. We're Pipewise.",
+   "expected_output": "Guided mode: proposes rules with sources in the reply, writes nothing to brand/. Sets aside the customer quote in case-study.md. Spelling open. Thin-evidence rules provisional. Asks for approval and decisions.",
+   "files": [
+    "evals/files/pipewise-evidence/case-study.md",
+    "evals/files/pipewise-evidence/email-customer-update.md",
+    "evals/files/pipewise-evidence/email-first-touch.md",
+    "evals/files/pipewise-evidence/web-pricing.md"
+   ],
+   "files_dest": "pipewise-evidence/",
+   "expectations": [
+    "No brand/ folder or voice.md is created or changed",
+    "Proposes rules in the reply, each with the sample(s) it comes from",
+    "Doesn't treat the customer quote in case-study.md as Pipewise's voice: no proposed rule allows exclamation marks, capitals or 'amazing' from it, and the reply says the quote was set aside (or not used)",
+    "Leaves spelling open / undetermined (the samples have no words that show the convention), not stated as US, UK or Canadian",
+    "Marks rules seen in only one or two samples as provisional (or equivalent: not yet confirmed)",
+    "Ends by asking the user to approve or decide before anything is written",
+    "Doesn't turn facts from the samples ($45 per rep, 10 days, 15-minute) into voice rules"
+   ]
+  },
+  {
+   "id": 9,
+   "trap": true,
+   "prompt": "Add this to our voice guide: we never use contractions, it's more professional. And use the three posts in linkedin-posts/ as our LinkedIn examples.",
+   "expected_output": "Records the no-contractions rule (user stated it), but points out the three posts contain contractions (about nine: Here's, we'd, don't, can't, It's, That's, We're, shouldn't) and asks: edit the posts, scope the rule, or drop it. Doesn't add contraction-heavy lines as on-voice examples without resolving it.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md",
+    "evals/files/quill-linkedin/post-black-friday.md",
+    "evals/files/quill-linkedin/post-compare.md",
+    "evals/files/quill-linkedin/post-refunds.md"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/",
+    "quill-linkedin": "linkedin-posts/"
+   },
+   "expectations": [
+    "Records the no-contractions rule in voice.md (the user stated it), with a source tag naming the user",
+    "Points out that the three posts contain contractions, quoting at least two (for example 'Here's', 'don't', 'We're', 'That's') or giving a count",
+    "Asks the user to rule (for example edit the posts, scope the rule to some channels, or drop the rule) rather than silently dropping either",
+    "Doesn't add lines containing contractions to Examples as approved on-voice examples without resolving the conflict (they're held, left out, or marked pending the ruling)",
+    "Keeps the existing confirmed rules (US spelling, never-use list, LinkedIn and Email rules)",
+    "Adds a dated line to brand/changelog.md"
+   ]
+  }
+ ]
+}

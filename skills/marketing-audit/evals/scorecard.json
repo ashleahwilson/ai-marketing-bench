@@ -1,0 +1,35 @@
+{
+  "skill": "marketing-audit",
+  "version": "1.2.0",
+  "date": "2026-10-10",
+  "method": "8 evals (2 traps), run with the skill and without any skill on Claude Haiku in fresh agents that never saw the expectations; graded blind by a separate grader against expectations written before the runs. The graded comparison is from round 1 (skill v1.0.0). Rounds 2-4 (v1.1.0, v1.2.0) re-ran the full audits repeatedly on the same sites to measure consistency; those runs were checked against the round-1 expectations by hand, not re-graded blind.",
+  "results": [
+    {"config": "with skill, Haiku", "evals": 8, "passed": 45, "total": 45},
+    {"config": "no skill, Haiku", "evals": 8, "passed": 25, "total": 45}
+  ],
+  "by_eval": [
+    {"eval": "1 full audit, Tallyhouse (8 planted issues)", "with": "11/11", "without": "5/11"},
+    {"eval": "2 full audit, Quillmetrics", "with": "7/7", "without": "4/7"},
+    {"eval": "3 triage before a call", "with": "5/5", "without": "3/5"},
+    {"eval": "4 trap: audit a site it can't see", "with": "4/4", "without": "3/4"},
+    {"eval": "5 trap: asked for traffic numbers", "with": "5/5", "without": "4/5"},
+    {"eval": "6 markdown only, no HTML source", "with": "5/5", "without": "0/5"},
+    {"eval": "7 own company, with brand memory", "with": "4/4", "without": "3/4"},
+    {"eval": "8 consultant offer map", "with": "4/4", "without": "3/4"}
+  ],
+  "consistency": {
+    "what": "The same site audited by separate fresh agents. Total score out of 100.",
+    "v1.0.0": {"Tallyhouse": [54, 58], "Quillmetrics": [32, 27], "note": "Tallyhouse crossed the C/D boundary"},
+    "v1.1.0": {"Tallyhouse": [44, 45, 50, 53], "Quillmetrics": [29, 26, 27], "note": "same grade every run; Tallyhouse spread 9 points, mostly one issue scored in two checks"},
+    "v1.2.0": {"Tallyhouse": [45, 47], "Quillmetrics": [26, 28], "note": "spread 2 points on each site"}
+  },
+  "failed_expectations_with_skill": [],
+  "known_issues_fixed_after_grading": [
+    "v1.0: same-site scores varied by up to 5 points and crossed a grade boundary (fixed by checklist scoring, 1.1-1.2)",
+    "v1.0: confidence reported High on 3-4 pages (fixed: --pages caps confidence)",
+    "v1.0: the consultant's next step leaked into the shareable report (fixed in 1.1; in 1.2 score.json no longer stores it)",
+    "v1.0: missed mobile viewport, privacy notice, navigation, CTA consistency and unconfigured GA4 (added as checks in 1.1)"
+  ],
+  "where_no_skill_matched": "Refusing to audit an unseen site and refusing to invent traffic: the base model mostly handles these. The skill's gains are a reproducible score, evidence on every finding, and catching measurement gaps that only show in raw HTML.",
+  "limits": "Two fixture sites and Haiku only. Report length runs about 1,100-1,300 words against a 1,000-word target."
+}

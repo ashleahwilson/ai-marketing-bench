@@ -1,0 +1,86 @@
+{
+ "skill": "handle-reply",
+ "version": "1.2.0",
+ "date": "2026-10-23",
+ "status": "Beats no skill and the comparison skill (sales-followup) on total on both models and is never worse on the five traps. The no-invented-facts item is not fully met in round 3: Haiku put one unsupported claim in a draft (eval 8, 'you see the numbers as they happen'), and Opus made two unsupported statements in its note to the user, not in a draft (eval 5, Noor 'away for month-end' and 'never read your email'). Recommended for large models: Opus drafts had no invented facts in rounds 2 and 3.",
+ "method": "9 evals (5 traps), expectations written before any run. Round 1 ran the skill, no skill and the comparison skill (sales-followup, with sales-objections read as background) on Haiku, and the skill and no skill on Opus, in fresh headless agents graded blind by a separate Opus grader that read only evals.json and the fixtures. Rounds 2 and 3 re-ran the skill on Haiku and Opus as it was revised. After round 1 the grader reported that it had applied the status-log and suppression-file rule inconsistently; the round 2 grader re-checked those seven expectations across every round 1 config under one rule, which changed five judgments (all no-skill Opus or comparison-skill Haiku, all fail to pass). The regraded numbers are reported here.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 64,
+   "total": 64
+  },
+  {
+   "config": "with skill, Opus (v1.1.0, round 2)",
+   "passed": 64,
+   "total": 64
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 63,
+   "total": 64
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 43,
+   "total": 64
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 62,
+   "total": 64
+  },
+  {
+   "config": "with skill, Haiku (v1.1.0, round 2)",
+   "passed": 63,
+   "total": 64
+  },
+  {
+   "config": "with skill, Haiku (v1.0.0, round 1)",
+   "passed": 63,
+   "total": 64
+  },
+  {
+   "config": "comparison skill (sales-followup), Haiku",
+   "passed": 40,
+   "total": 64
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 45,
+   "total": 64
+  }
+ ],
+ "traps_passed": {
+  "out_of": 32,
+  "with skill, Haiku (round 1)": 31,
+  "with skill, Opus (round 1)": 32,
+  "no skill, Haiku": 23,
+  "no skill, Opus": 23,
+  "comparison skill, Haiku": 15,
+  "with skill, Haiku (round 2)": 32,
+  "with skill, Opus (round 2)": 32,
+  "with skill, Haiku (round 3)": 31,
+  "with skill, Opus (round 3)": 32
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 63,
+  "2 (v1.1.0)": 63,
+  "3 (v1.2.0)": 62,
+  "out_of": 64
+ },
+ "losses_and_open_issues": [
+  "Round 3, Haiku, eval 8: told Gerry 'you see the numbers as they happen', a real-time claim brand memory doesn't support (invented fact, lost the expectation)",
+  "Round 3, Haiku, eval 9: asked 4 questions in guided mode against a limit of 3",
+  "Round 3, Opus, eval 5: told the user Noor was 'away for month-end' and 'never read your email'; neither is in the fixture (in the note to the user, not a draft)",
+  "Round 3, Opus, eval 4: 'For four stores, our listed plans are Starter and Growth' comes close to implying those prices cover four stores; no total was quoted",
+  "Round 3, both: some reports said suppression or log rows were 'already there' when the run itself had written them; Haiku eval 6 misdescribed the reply file's structure to the user",
+  "Round 2, Haiku, eval 7: told the user to set up brand memory instead of offering to (fixed in 1.2.0). Round 2, both: holding replies promised answers 'by Tuesday', a deadline nobody set (fixed in 1.2.0; none in round 3)",
+  "Round 1, Opus, eval 1: 'how we work alongside your own accountant' presupposed the answer to Ana's question; Haiku, eval 3: left 'keep the record of where the address came from' in the file only; Haiku reported 'checker passed' to the user (all fixed in 1.1.0). Opus logged a made-up placeholder address (fixed in 1.1.0)",
+  "Not tested: whether an in-thread reply that adds an offer needs the full footer (CASL exempts responses to an inquiry; CAN-SPAM applies to replies that are mainly a pitch). Guidance added in 1.2.0, no eval yet",
+  "Several conditional expectations (eval 3 'if a reply is drafted', eval 5 Felix footer) pass automatically when nothing is drafted; eval 9's question limit and file check also pass for a run that does nothing (comparison-skill Haiku got 2 points that way)",
+  "At 97 to 100 percent the eval set barely separates versions; harder evals (multi-intent replies such as opt-out plus referral, soft bounces, a hostile reply with no source on record, implied-scope pricing) are the next step",
+  "Without the skill: every non-skill config quoted Priya a computed '$598' for two locations; no-skill and comparison-skill Haiku pitched the review to Rafael after he opted out and drafted a Felix email built on Noor's out-of-office; comparison-skill Haiku wrote 'Kevin Tran suggested I reach out'; no-skill runs invented meeting lengths, HIPAA and encryption claims, and no-skill Opus edited the user's campaign files; comparison-skill Haiku leaked its own skill name in most evals and refused to open files in eval 9",
+  "Every with-skill run left the original fixture files unchanged; suppression files were append-only"
+ ]
+}

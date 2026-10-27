@@ -1,0 +1,51 @@
+{
+ "skill": "de-slop",
+ "version": "1.1.0",
+ "date": "2026-10-11",
+ "status": "Meets the Bench Standard bar on Opus (no invented facts). On Haiku it beats every comparison, but 2 of 9 evals contained a small widened fact; recommended for larger models until that's fixed.",
+ "method": "9 evals (3 traps), expectations written before any run, run in fresh headless agents with the skill, without any skill, and with the comparison skill (the author's original de-slop) on Haiku, and with and without the skill on Opus. Graded blind by a separate grader.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.1.0)",
+   "passed": 41,
+   "total": 44
+  },
+  {
+   "config": "with skill, Opus",
+   "passed": 43,
+   "total": 44
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 31,
+   "total": 44
+  },
+  {
+   "config": "with skill, Haiku (v1.1.0, two rounds)",
+   "passed": "38, 37",
+   "total": 44
+  },
+  {
+   "config": "with skill, Haiku",
+   "passed": 40,
+   "total": 44
+  },
+  {
+   "config": "comparison skill (de-slop), Haiku",
+   "passed": 29,
+   "total": 44
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 25,
+   "total": 44
+  }
+ ],
+ "losses_and_open_issues": [
+  "v1.1.0 did not improve on 1.0.0 (Haiku 38 and 37 vs 40; Opus 41 vs 43, within run-to-run variation). Haiku still hardens 'helping reduce no-shows' and once added a 'financing' service; Opus once tied the 3-day claim to fifteen-location customers",
+  "Haiku: 'helping reduce no-shows' hardened to 'to reduce no-shows', the SMS recipient changed from patients to the reader, and 'Most dental clinics' widened to 'Dental clinics'",
+  "Haiku switched one US draft to 'colour'",
+  "Opus returned the eval-9 text unchanged when asked to make it more human (judged it already plain); scored as a miss",
+  "Without the skill: Haiku invented a replacement customer quote with an 80% statistic and a full client story; Opus overwrote three of the user's drafts and imposed Canadian spelling from its own environment"
+ ]
+}

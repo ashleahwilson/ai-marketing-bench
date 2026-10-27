@@ -1,0 +1,143 @@
+{
+  "name": "ai-marketing-bench",
+  "owner": {
+    "name": "Ashleah Wilson"
+  },
+  "metadata": {
+    "description": "Tested marketing and go-to-market skills for AI agents. Install one skill or a whole capability."
+  },
+  "plugins": [
+    {
+      "name": "outbound",
+      "description": "Ideal customer profile, prospect lists, buying committees, prospecting emails and reply handling, with every claim sourced and compliance checked.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/reach-out",
+        "./skills/handle-reply",
+        "./skills/competitor-intel",
+        "./skills/icp",
+        "./skills/build-list",
+        "./skills/map-contacts"
+      ]
+    },
+    {
+      "name": "audit",
+      "description": "A scored Marketing Health report for any website: positioning, acquisition, conversion, brand and measurement.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/marketing-audit",
+        "./skills/audit-positioning",
+        "./skills/audit-acquisition",
+        "./skills/audit-conversion",
+        "./skills/audit-brand",
+        "./skills/audit-measurement"
+      ]
+    },
+    {
+      "name": "brand",
+      "description": "Brand memory that every skill reads, codified voice rules, an anti-AI-writing pass, and a gate that checks drafts against them.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/brand-memory",
+        "./skills/brand-voice-codify",
+        "./skills/de-slop",
+        "./skills/brand-voice-gate"
+      ]
+    },
+    {
+      "name": "content",
+      "description": "Briefs, email sequences, LinkedIn content, a pre-publish QA gate, editorial review and content audits, run as a governed workflow.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/content-brief",
+        "./skills/content-qa-gate",
+        "./skills/editorial-review-cycle",
+        "./skills/content-audit",
+        "./skills/email-sequence",
+        "./skills/linkedin-content"
+      ]
+    },
+    {
+      "name": "paid",
+      "description": "Audit Google Ads and Meta Ads accounts and build new campaigns and ads, with every claim sourced from brand memory.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/google-ads-audit",
+        "./skills/google-ads-build",
+        "./skills/meta-ads-audit",
+        "./skills/meta-ads-build"
+      ]
+    },
+    {
+      "name": "team-ops",
+      "description": "Turn proven work into skills, map which work goes to agents, and route intake and approvals.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/skill-author",
+        "./skills/ai-workload-map",
+        "./skills/campaign-intake",
+        "./skills/approval-routing",
+        "./skills/agency-brief"
+      ]
+    },
+    {
+      "name": "compliance",
+      "description": "Claims substantiation, accessibility review and disclosure checks for regulated teams.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/claims-review",
+        "./skills/accessibility-review",
+        "./skills/disclosure-check"
+      ]
+    },
+    {
+      "name": "all",
+      "description": "Every published skill in the library.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/accessibility-review",
+        "./skills/agency-brief",
+        "./skills/ai-workload-map",
+        "./skills/approval-routing",
+        "./skills/audit-acquisition",
+        "./skills/audit-brand",
+        "./skills/audit-conversion",
+        "./skills/audit-measurement",
+        "./skills/audit-positioning",
+        "./skills/brand-memory",
+        "./skills/brand-voice-codify",
+        "./skills/brand-voice-gate",
+        "./skills/build-list",
+        "./skills/campaign-intake",
+        "./skills/claims-review",
+        "./skills/competitor-intel",
+        "./skills/content-audit",
+        "./skills/content-brief",
+        "./skills/content-qa-gate",
+        "./skills/de-slop",
+        "./skills/disclosure-check",
+        "./skills/editorial-review-cycle",
+        "./skills/email-sequence",
+        "./skills/google-ads-audit",
+        "./skills/google-ads-build",
+        "./skills/handle-reply",
+        "./skills/icp",
+        "./skills/linkedin-content",
+        "./skills/map-contacts",
+        "./skills/marketing-audit",
+        "./skills/meta-ads-audit",
+        "./skills/meta-ads-build",
+        "./skills/reach-out",
+        "./skills/skill-author"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a demo | Pipewise</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PW55120"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-PW55120");</script>
+<script type="text/javascript">_linkedin_partner_id="7730114";window._linkedin_data_partner_ids=window._linkedin_data_partner_ids||[];window._linkedin_data_partner_ids.push(_linkedin_partner_id);</script>
+<script type="text/javascript" async src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script>
+</head><body>
+<nav><a href="/">Pipewise</a> <a href="/product">Product</a> <a href="/customers">Customers</a> <a href="/demo" class="btn">Book a demo</a></nav>
+<h1>Book a 20-minute demo</h1>
+<form id="demo-form" action="/api/demo" method="post">
+<label>Work email <input name="work_email" type="email" required></label>
+<label>Full name <input name="full_name" required></label>
+<label>Company <input name="company" required></label>
+<label>Sales team size <select name="team_size" required><option value="1-10">1–10</option><option value="11-50">11–50</option><option value="51-200">51–200</option><option value="200+">200+</option></select></label>
+<label>Phone (optional) <input name="phone" type="tel"></label>
+<button type="submit">Book my demo</button>
+</form>
+<script>
+document.getElementById("demo-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var form = this;
+  fetch("/api/demo", { method: "POST", body: new FormData(form) }).then(function (r) {
+    if (r.ok) {
+      gtag("event", "demo_requested", { form_id: "demo", team_size: form.team_size.value });
+      form.outerHTML = "<p>Thanks, we'll email you within one business day to pick a time.</p>";
+    }
+  });
+});
+</script>
+<footer>Pipewise · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></footer>
+</body></html>

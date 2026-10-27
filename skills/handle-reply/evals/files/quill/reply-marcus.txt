@@ -1,0 +1,6 @@
+From: Marcus Dell <marcus@brambleandco.example>
+Date: 2026-10-22 14:51
+Subject: Re: shopify and stripe
+
+Interested. Three things before I take a call: is the data real-time? Are you SOC 2 Type II? And we run four Shopify stores, what would it cost for all four?
+Marcus

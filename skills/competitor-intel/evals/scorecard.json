@@ -1,0 +1,81 @@
+{
+ "skill": "competitor-intel",
+ "version": "1.2.0",
+ "date": "2026-10-23",
+ "status": "Meets the Bench Standard bar on Opus at v1.2.0: beats no skill and the comparison skill (sales-competitors) on total, never worse on the three traps, and no invented facts in round 3 Opus outputs. On Haiku it beats every comparison and passes every trap, but round 3 Haiku outputs had small widened or wrong facts (see losses_and_open_issues), so it is recommended for large models.",
+ "method": "8 evals (3 traps), expectations written before any run. Round 1 ran the skill, no skill and the comparison skill (sales-competitors, with competitor-alternatives read as background) on Haiku, and the skill and no skill on Opus, in fresh headless agents with no web access, graded blind by a separate headless Opus grader that read only evals.json and the fixtures. Rounds 2 and 3 re-ran the skill on Haiku and Opus as it was revised. Grading clarifications were written before round 1 grading and kept identical across rounds; one round 2 note restated the round 1 reading on eval 3. No expectation was changed after any run.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 54,
+   "total": 55
+  },
+  {
+   "config": "with skill, Opus (v1.1.0, round 2)",
+   "passed": 54,
+   "total": 55
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 55,
+   "total": 55
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 45,
+   "total": 55
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 53,
+   "total": 55
+  },
+  {
+   "config": "with skill, Haiku (v1.1.0, round 2)",
+   "passed": 54,
+   "total": 55
+  },
+  {
+   "config": "with skill, Haiku (v1.0.0, round 1)",
+   "passed": 53,
+   "total": 55
+  },
+  {
+   "config": "comparison skill (sales-competitors), Haiku",
+   "passed": 40,
+   "total": 55
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 42,
+   "total": 55
+  }
+ ],
+ "traps_passed": {
+  "out_of": 17,
+  "with skill, Haiku (round 1)": 16,
+  "with skill, Opus (round 1)": 17,
+  "no skill, Haiku": 15,
+  "no skill, Opus": 13,
+  "comparison skill, Haiku": 14,
+  "with skill, Haiku (round 3)": 17,
+  "with skill, Opus (round 3)": 17
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 53,
+  "2 (v1.1.0)": 54,
+  "3 (v1.2.0)": 53,
+  "out_of": 55
+ },
+ "losses_and_open_issues": [
+  "Eval 1 (round 3, Haiku and Opus): 'TBD:' gap bullets under the Platewise heading in brand/competitors.md carry no source tag, which fails the literal 'every fact line has a source tag' expectation. Brand-memory format allows TBD lines; the grader flagged the expectation as ambiguous. Not regraded. Round 2 Haiku lost the same point on an untagged TBD under an empty Price history heading",
+  "Eval 8 (round 1 Haiku, round 3 Haiku): '$99' repeated without 'from' or 'billed annually' in one place (round 3: inside a quoted buyer objection, corrected in the response cell)",
+  "Eval 3 (round 1 Haiku): a no-material skeleton filled 'Where they're strong' from win/loss reasons; fixed in 1.1.0",
+  "Eval 7 (round 2 Opus): the guided plan mentioned the prospect's $249 first-year quote without asking how to treat it; fixed in 1.2.0",
+  "Widened or wrong facts in with-skill outputs, all Haiku: round 2 'the lowest entry price' for Platewise and an unrecorded 'setup review' process; round 3 'both companies sell only to dental practices' (eval 5), the re-seen 'North America' line marked stale and a brand-memory date used as the oldest capture (eval 6). Opus outputs in rounds 2 and 3 had none; one Opus run dropped the as-of date on the retention figure and one tagged a review 'confirmed' instead of 'provisional'",
+  "Guided-mode replies run 550-660 words in round 3, long for a plan",
+  "Round 1 comparisons: no-skill Opus treated a prospect's wish (CFO advisory) as a Ledgerline service, said Quillmetrics doesn't connect WooCommerce (not in sources) and got the Platewise price gap direction wrong; comparison skill on Haiku said it couldn't reach the files in eval 5 and built nothing, padded every report with switching-cost and displacement sections, and named its own steps to the user; no-skill Haiku in eval 7 asked questions without opening the material",
+  "Eval 4 (the '2x faster and cheaper' trap) passed in every config, so it doesn't separate them",
+  "No config wrote or repeated the trade-show rumour as a talking point; every run left the original intel files unchanged"
+ ]
+}

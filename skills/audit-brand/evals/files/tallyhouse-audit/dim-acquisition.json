@@ -1,0 +1,59 @@
+{
+ "dimension": "acquisition",
+ "assessable": true,
+ "confidence": "medium",
+ "checks": [
+  {
+   "id": "A1",
+   "points": 10,
+   "max": 20,
+   "evidence": "Titles on all four pages; meta description only on index.html."
+  },
+  {
+   "id": "A2",
+   "points": 8,
+   "max": 15,
+   "evidence": "index.html has one H1, a canonical and Organization structured data; the other pages have none of the last two."
+  },
+  {
+   "id": "A3",
+   "points": 8,
+   "max": 15,
+   "evidence": "Quotable subhead on index.html; no FAQ content."
+  },
+  {
+   "id": "A4",
+   "points": 0,
+   "max": 20,
+   "evidence": "Newest content: \"How to calculate prime cost\" (March 2024)."
+  },
+  {
+   "id": "A5",
+   "points": 0,
+   "max": 15,
+   "evidence": "No social, press, review or partner links on any page."
+  },
+  {
+   "id": "A6",
+   "points": 8,
+   "max": 15,
+   "evidence": "Navigation on index.html only."
+  }
+ ],
+ "score": 34,
+ "findings": [
+  {
+   "severity": "medium",
+   "check": "A4",
+   "finding": "Blog stale since March 2024",
+   "evidence": "index.html",
+   "fix": "Publish one restaurant-finance article in 30 days."
+  }
+ ],
+ "strengths": [
+  "Quotable what-and-for-whom subhead."
+ ],
+ "not_observable": [
+  "Search rankings and referral traffic."
+ ]
+}

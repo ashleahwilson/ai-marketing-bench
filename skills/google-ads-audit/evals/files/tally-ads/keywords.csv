@@ -1,0 +1,15 @@
+Search keyword report
+"July 1, 2026 - September 30, 2026"
+Campaign,Ad group,Keyword,Match type,Status,Quality Score,Exp. CTR,Ad relevance,Landing page exp.,Clicks,Impr.,Cost,Conversions
+Search | Brand,Brand,tallyhouse,Exact match,Enabled,10,Above average,Above average,Above average,410,980,512.40,38
+Search | Brand,Brand,tallyhouse,Phrase match,Enabled,9,Above average,Above average,Above average,356,1090,427.00,13
+Search | Brand,Brand,tallyhouse bookkeeping,Phrase match,Enabled,9,Above average,Above average,Average,205,520,301.10,19
+Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping,Broad match,Enabled,7,Average,Above average,Average,2255,36600,"6,212.50",105
+Search | Restaurant Bookkeeping,Restaurant bookkeeping,restaurant bookkeeping service,Broad match,Enabled,6,Average,Average,Average,1260,20600,"3,577.45",50
+Search | Restaurant Bookkeeping,Restaurant bookkeeping,bookkeeping for restaurants,Phrase match,Enabled,7,Average,Above average,Average,590,7300,"1,644.90",39
+Search | Restaurant Bookkeeping,Restaurant accountant,restaurant accountant,Broad match,Enabled,5,Below average,Average,Average,910,14500,"2,645.80",44
+Search | Restaurant Bookkeeping,Restaurant accountant,restaurant cpa,Broad match,Enabled,4,Below average,Below average,Average,210,3100,655.20,9
+Search | Restaurant Bookkeeping,Bar bookkeeping,bar bookkeeping,Broad match,Enabled,6,Average,Average,Average,330,4500,890.00,19
+Search | Catch-up Bookkeeping,Catch-up bookkeeping,catch up bookkeeping,Broad match,Enabled,3,Below average,Average,Below average,470,10600,"1,578.80",6
+Search | Catch-up Bookkeeping,Catch-up bookkeeping,behind on bookkeeping,Broad match,Enabled,3,Below average,Below average,Below average,180,4100,610.25,3
+Total: Keywords,,,,,,,,,7176,103890,"19,055.40",345

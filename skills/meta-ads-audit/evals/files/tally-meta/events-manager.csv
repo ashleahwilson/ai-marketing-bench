@@ -1,0 +1,3 @@
+Dataset,Event name,Connection method,Events received,Event ID coverage (%),Event match quality
+Tallyhouse Pixel,Lead,Browser,152,100,6.8
+Tallyhouse Pixel,Lead,Server (Conversions API),149,100,8.1

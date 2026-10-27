@@ -1,0 +1,58 @@
+{
+ "skill": "ai-workload-map",
+ "version": "1.2.0",
+ "date": "2026-10-27",
+ "status": "Meets the Bench Standard bar on Opus (66/67 in the final round, no invented facts). On Haiku it beats every comparison and reached 67/67, but in the final round it assigned one approver by inference rather than from the files (Noor for negative keywords, which the survey gives to Caleb); recommended for larger models, or check named approvers on small ones.",
+ "method": "8 evals (4 traps), expectations written before any run. Round 1 ran the skill and no skill on Haiku and Opus in fresh headless agents, graded blind by a separate grader. No local comparison skill exists, so there is no comparison-skill comparison. Rounds 2 and 3 re-ran the skill as it was revised (round 3 on Haiku and Opus). One expectation (eval 6, US spelling) was reworded after round 1 to cover the reply and draft file, and every round 1 config was re-graded on it; no verdict changed.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 66,
+   "total": 67
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 66,
+   "total": 67
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 38,
+   "total": 67
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 67,
+   "total": 67
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 38,
+   "total": 67
+  }
+ ],
+ "traps": {
+  "with skill, Haiku (round 3)": "31/31",
+  "with skill, Opus (round 3)": "31/31",
+  "with skill, Haiku (round 1)": "29/31",
+  "with skill, Opus (round 1)": "30/31",
+  "no skill, Haiku": "15/31",
+  "no skill, Opus": "16/31"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 63,
+  "2 (v1.1.0)": 65,
+  "3 (v1.2.0)": 67,
+  "out_of": 67
+ },
+ "losses_and_open_issues": [
+  "Opus round 3, eval 6: wrote 'help-centre' in a guided reply for a US-spelling brand (the environment's Canadian-spelling rule leaking through); Opus round 1 lost eval 5 on reply length",
+  "Haiku round 3, eval 7: named Noor as approver for negative-keyword changes because she owns budgets; the survey gives the task to Caleb (an inferred approver, counted as an invented fact)",
+  "Haiku round 3, eval 6: the guided draft CSV had unquoted commas (15 to 19 fields per row) and empty hours columns; the check isn't run on guided drafts",
+  "Haiku round 3, eval 2: called the 100% stop-doing rate 'the map's default' (internal wording); Opus round 3 printed the 'assumed savings' sentence next to the user's own measured rates",
+  "Round 1 Haiku: split a mixed approve/prepare row (11 rows instead of 10), folded a new task into an existing row, replies of 264-277 words, a guessed pronoun, a wrong 'most hours' comparison; all fixed by v1.2.0",
+  "Rounds 1-2: with-skill replies included 'Skill used: ...' because the test machine's global instructions ask for it; fixed in v1.2.0 (none in round 3)",
+  "Without the skill (round 1): both models gave invented hours estimates for a board deck with no time data, answered 'Zero' and stayed on headcount, converted hours to 'two-thirds of one full-time role', singled out a named person for 'a role change', left a spend approval as agent-run, stated HIPAA obligations as fact, invented 'Seamless Sync launched' and edited the user's survey file",
+  "Expectations note: several (no FTE, no invented tools) pass in every with-skill run and don't separate versions; library-skill expectations favour the skill because no-skill runs can't see the library"
+ ]
+}

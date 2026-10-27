@@ -1,0 +1,247 @@
+{
+  "skill_name": "audit-brand",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Brand audit for us at Tallyhouse (tallyhouse.example). The site's saved HTML is in site/, our last month of LinkedIn posts and the October newsletter are in channels/, and our brand memory is in brand/. I want to know where we sound like ourselves and where we don't.",
+      "expected_output": "A full brand audit at audits/tallyhouse.example/brand.md with the top three findings first, a gap analysis against Tallyhouse's own brand memory (the AI-powered banner breaks rules.md; the 3-day and 'by the 3rd' claims are listed as needing substantiation; Okafor naming permission unconfirmed; '20 hours a month' not in brand memory), voice breaks (third-person corporate about page, hype LinkedIn post 2), spelling mix (labor/labour), naming drift (TallyHouse, LightSpeed, Month End Review), alt text gaps, a B1–B5 score with B5 at 0, and a 48-hour / 2-week / 3-month plan.",
+      "files": [
+        "evals/files/tallyhouse-site/about.html",
+        "evals/files/tallyhouse-site/contact.html",
+        "evals/files/tallyhouse-site/index.html",
+        "evals/files/tallyhouse-site/pricing.html",
+        "evals/files/tallyhouse-channels/linkedin-posts.md",
+        "evals/files/tallyhouse-channels/newsletter-october.md",
+        "evals/files/tallyhouse-brand/brand/BRAND.md",
+        "evals/files/tallyhouse-brand/brand/audiences.md",
+        "evals/files/tallyhouse-brand/brand/changelog.md",
+        "evals/files/tallyhouse-brand/brand/claims.md",
+        "evals/files/tallyhouse-brand/brand/offer.md",
+        "evals/files/tallyhouse-brand/brand/positioning.md",
+        "evals/files/tallyhouse-brand/brand/proof.md",
+        "evals/files/tallyhouse-brand/brand/results.md",
+        "evals/files/tallyhouse-brand/brand/rules.md",
+        "evals/files/tallyhouse-brand/brand/voice.md"
+      ],
+      "files_dest_map": {
+        "tallyhouse-site": "site/",
+        "tallyhouse-channels": "channels/",
+        "tallyhouse-brand/brand": "brand/"
+      },
+      "expectations": [
+        "Writes a brand report file (for example audits/tallyhouse.example/brand.md) in which the three most important findings appear before the detailed sections",
+        "Flags the banner 'New: AI-powered bookkeeping for restaurant groups' as breaking the brand rule 'Never describe us as \"AI-powered\"', quoting or naming the rule",
+        "Flags that 'Close your books in 3 days, not 3 weeks' (and/or the P&L 'by the 3rd' promise) is listed in the brand memory's claims file as needing substantiation",
+        "Flags that permission to name Maria Okafor / Lantern Noodle Bar is unconfirmed in the brand memory, noting it appears on the site and/or LinkedIn",
+        "Flags 'Our clients save 20 hours a month' in LinkedIn post 2 as an unsupported figure not found in brand memory",
+        "Flags the about page as a voice break, quoting its corporate third-person copy (for example 'Tallyhouse Inc. is committed to delivering best-in-class financial solutions')",
+        "Flags the spelling mix: 'labor' on the pricing page against 'labour' elsewhere, and recommends 'labour' (the brand's own form)",
+        "Flags at least two naming inconsistencies among: 'TallyHouse' (about page title/heading), 'LightSpeed' vs 'Lightspeed', 'Month End Review' vs 'month-end review'",
+        "Flags the image with no alt text (dashboard) and/or the alt text 'IMG_2041.jpg'",
+        "Gives a B1–B5 checklist score whose points add up to the stated brand total, with B5 at 0 because of the rule or claim breach",
+        "Names at least one genuine strength with a quote (for example the newsletter's plain voice, the named founders with credentials, or the audience exclusions)",
+        "Includes a plan with 48-hour, 2-week and 3-month actions",
+        "States no figure (traffic, review score, customer count, hours saved) as Tallyhouse fact that isn't on the pages or in brand memory"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Check Quillmetrics' brand consistency against our brand memory (brand/). Site pages are in site/, recent LinkedIn posts and the welcome email are in channels/. Write it up for the marketing lead.",
+      "expected_output": "A brand report with a gap analysis against Quillmetrics' voice.md and rules.md: 'real-time' breaks the rule (Seamless Sync refreshes every 15 minutes) on the homepage and LinkedIn post 2; Seamless Sync written as 'seamless sync', 'SeamlessSync', 'Seamless sync'; UK spellings (Colour, Optimise, catalogue) against the US spelling rule, with US fixes; never-use words on the careers page; LinkedIn post 2 breaks the exclamation and hashtag rule; welcome email has exclamation marks and runs over 150 words. B5 at 0.",
+      "files": [
+        "evals/files/quillmetrics-site/careers.html",
+        "evals/files/quillmetrics-site/features.html",
+        "evals/files/quillmetrics-site/index.html",
+        "evals/files/quillmetrics-channels/linkedin-posts.md",
+        "evals/files/quillmetrics-channels/welcome-email.md",
+        "evals/files/quillmetrics-brand/brand/BRAND.md",
+        "evals/files/quillmetrics-brand/brand/offer.md",
+        "evals/files/quillmetrics-brand/brand/rules.md",
+        "evals/files/quillmetrics-brand/brand/voice.md"
+      ],
+      "files_dest_map": {
+        "quillmetrics-site": "site/",
+        "quillmetrics-channels": "channels/",
+        "quillmetrics-brand/brand": "brand/"
+      },
+      "expectations": [
+        "Flags 'Real-time revenue tracking' on the homepage (and/or 'synced in real time' in LinkedIn post 2) as breaking the rule never to promise real-time data, noting Seamless Sync refreshes every 15 minutes",
+        "Flags the product name written as 'seamless sync', 'SeamlessSync' or 'Seamless sync' on the features page, citing the brand memory's form 'Seamless Sync' (always capitalized)",
+        "Flags 'Colour', 'Optimise' and/or 'catalogue' as breaking the brand's US spelling rule",
+        "Recommends the US forms ('color', 'optimize', 'catalog') as the fix, and does not recommend Canadian or British spellings for Quillmetrics' copy",
+        "Flags at least two never-use words on the careers page among 'leverage(s)', 'synergy', 'actionable insights', 'data-driven'",
+        "Flags LinkedIn post 2 for breaking the LinkedIn rule (more than one exclamation mark and/or hashtags)",
+        "Flags the welcome email for exclamation marks and/or running over 150 words, against the email rule",
+        "Gives a B1–B5 score whose points add up to the stated total, with B5 at 0",
+        "Names at least one genuine strength with a quote (for example the homepage or LinkedIn post 1's concrete voice, or prices stated plainly)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Brand audit for Pipewise (pipewise.example), pages are in site/. They don't have any brand guidelines. Put their G2 rating and number of customers in the trust section, the founder wants to see them.",
+      "expected_output": "A full brand report judged against the site's own majority voice, marked provisional. Flags the spelling mix (UK -ise forms on the product page against US 'behavior', 'analyze', 'center') and recommends US; Deal Radar / DealRadar / dealradar; the product page's corporate register; 'Lorem ipsum'; the unnamed testimonial and unsourced '1,000+' and '4.8/5'; no contact details or policies; alt 'image1' and missing alt. Doesn't invent a G2 rating or customer count; says what's needed. B5 = 5 by the fallback.",
+      "files": [
+        "evals/files/pipewise-site/about.html",
+        "evals/files/pipewise-site/customers.html",
+        "evals/files/pipewise-site/index.html",
+        "evals/files/pipewise-site/product.html"
+      ],
+      "files_dest": "site/",
+      "expectations": [
+        "Says there is no brand memory for Pipewise, so findings are judged against the site's own voice and are provisional (or equivalent), and offers to record the voice rules or set up brand memory",
+        "Flags the spelling mix: UK forms on the product page ('organisations', 'maximise', 'optimise' or 'prioritise') against US forms elsewhere ('behavior', 'analyze' or 'center')",
+        "Recommends standardizing on US spelling (the majority convention on the site), not Canadian or British",
+        "Flags the product name drift between 'Deal Radar', 'DealRadar' and 'dealradar'",
+        "Flags the product page's register as a voice break, quoting its corporate copy (for example 'Pipewise Inc. provides an enterprise-grade, AI-driven revenue intelligence solution')",
+        "Flags the 'Lorem ipsum' placeholder on the product page",
+        "Flags the testimonial attributed only to 'VP Sales, SaaS company' and/or 'Trusted by 1,000+ sales teams worldwide' as unverifiable proof",
+        "Does not state any G2 rating or customer count as fact; says neither is observable from the pages (the '4.8/5' names no source; '1,000+' is the company's own unverified claim) and says what would supply them",
+        "Flags that no contact details (email, phone or address) appear on any page",
+        "Flags the alt text 'image1' and/or the image with no alt text",
+        "Gives a B1–B5 score whose points add up to the stated total, with B5 at 5 under the no-brand-memory fallback"
+      ]
+    },
+    {
+      "id": 4,
+      "trap": true,
+      "prompt": "Can you run a brand audit on Ferncliff (ferncliff.example)? Pages are in site/ and their latest newsletter is in channels/. We're deciding whether they need a brand refresh.",
+      "expected_output": "A short report that says the brand is consistent and credible and doesn't need a refresh: one voice, US spelling throughout, consistent naming (Ferncliff, Chair View), named testimonials, contact details and policies on every page, descriptive alt text. B1 and B2 full, brand score 85+. At most one or two low, optional findings. No invented problems.",
+      "files": [
+        "evals/files/ferncliff-site/about.html",
+        "evals/files/ferncliff-site/contact.html",
+        "evals/files/ferncliff-site/index.html",
+        "evals/files/ferncliff-site/pricing.html",
+        "evals/files/ferncliff-channels/newsletter-october.md"
+      ],
+      "files_dest_map": {
+        "ferncliff-site": "site/",
+        "ferncliff-channels": "channels/"
+      },
+      "expectations": [
+        "The verdict says the brand reads as consistent and does not need a refresh (or equivalent: protect it, small fixes at most)",
+        "B1 (voice consistency) and B2 (message drift) both score full points (25 and 25)",
+        "The brand score is 85 or more out of 100",
+        "Does not flag US spelling ('color-coded') as an error and does not recommend Canadian or British spellings",
+        "Does not claim anything is missing that is present: contact details, privacy or terms links, alt text, named testimonials, consistent product naming",
+        "No finding is rated high or medium severity; any findings are low or optional, three at most",
+        "Names specific strengths with quotes from the pages"
+      ]
+    },
+    {
+      "id": 5,
+      "trap": true,
+      "prompt": "Brand audit for Quillmetrics (quillmetrics.example). Their pages are in site/ and a few of their LinkedIn posts are in channels/. Brand memory's in brand/.",
+      "expected_output": "Notices brand/ is Brightpath Advisory's, not Quillmetrics', says so once, and doesn't use it: no flagging of US spelling as wrong (Brightpath wants Canadian), no flagging 'Seamless Sync' as a banned 'seamless', no Brightpath LinkedIn rules. Audits Quillmetrics against its own majority voice: still catches the UK spellings on the features page as a mix (recommends US), the naming drift, the careers page register. B5 = 5 by the fallback.",
+      "files": [
+        "evals/files/quillmetrics-site/careers.html",
+        "evals/files/quillmetrics-site/features.html",
+        "evals/files/quillmetrics-site/index.html",
+        "evals/files/quillmetrics-channels/linkedin-posts.md",
+        "evals/files/auditor-brand/brand/BRAND.md",
+        "evals/files/auditor-brand/brand/rules.md",
+        "evals/files/auditor-brand/brand/voice.md"
+      ],
+      "files_dest_map": {
+        "quillmetrics-site": "site/",
+        "quillmetrics-channels": "channels/",
+        "auditor-brand/brand": "brand/"
+      },
+      "expectations": [
+        "States that the brand/ folder belongs to Brightpath Advisory, not Quillmetrics, and that it was not used to judge Quillmetrics",
+        "Does not flag Quillmetrics' US spelling as wrong and does not recommend Canadian spelling (Brightpath's convention) for Quillmetrics",
+        "Does not flag 'Seamless Sync' as a banned or stock word, and does not apply Brightpath's never-use list or LinkedIn rules to Quillmetrics",
+        "Flags the spelling mix on the features page ('Colour', 'Optimise', 'catalogue') against the US forms and USD prices elsewhere ('Analyze', 'organization', 'Prices are in USD'), and recommends US spelling",
+        "Flags the Seamless Sync naming variants ('seamless sync', 'SeamlessSync', 'Seamless sync')",
+        "Flags the careers page as a voice break, quoting its corporate copy",
+        "Scores B5 at 5 under the no-brand-memory fallback (not 0 for breaching the folder's rules)"
+      ]
+    },
+    {
+      "id": 6,
+      "trap": true,
+      "prompt": "Brand audit for Tallyhouse from the copy in site/ (it's just the text from their home, about and pricing pages, no HTML). Also give their logo and colour palette a score out of 10 each, I need a number for the deck.",
+      "expected_output": "Audits the words, but gives no logo or colour score: says they can't be judged from text and names what's needed (screenshots, logo files, the style guide). Doesn't describe the logo or colours. Notes alt text and titles couldn't be checked from markdown. Still gives the B1–B5 score.",
+      "files": [
+        "evals/files/tallyhouse-md/about.md",
+        "evals/files/tallyhouse-md/homepage.md",
+        "evals/files/tallyhouse-md/pricing.md"
+      ],
+      "files_dest": "site/",
+      "expectations": [
+        "Does not give a score or rating for the logo or the colour palette (no number out of 10, no letter grade for either)",
+        "Says the logo and colours can't be judged from text, and names what would be needed (for example screenshots, the logo files, or a style guide)",
+        "Does not describe what the logo or colours look like",
+        "Still delivers the word-level brand audit, with a B1–B5 score whose points add up to the stated total",
+        "Notes that alt text and/or page titles could not be checked because only text was supplied",
+        "Offers a usable line for the deck that doesn't invent a visual score (for example stating visuals weren't assessed, or offering to score them once images are supplied)"
+      ]
+    },
+    {
+      "id": 7,
+      "trap": true,
+      "prompt": "Run a brand audit on brightloom.example: voice, naming, trust signals, the lot. Write it up so I can send it to them tomorrow.",
+      "expected_output": "With no pages and no browsing, says it can't audit a site it hasn't read, asks for saved pages or copied text (and channel samples), says what the audit will cover, and writes no findings or scores about Brightloom.",
+      "files": [],
+      "expectations": [
+        "Does not produce findings, scores or a written audit about brightloom.example",
+        "Says it cannot see the site in this environment and asks for the pages (saved HTML or copied text) and any channel pieces",
+        "Briefly explains what the audit will cover once it has the pages",
+        "Does not invent any facts about Brightloom (its product, audience, voice or customers)"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "We ran the marketing audit on Tallyhouse last week, it's in audits/tallyhouse.example/. Now do the deeper brand pass. The site's in site/ and I've added their recent LinkedIn posts in channels/. Update the brand score and tell me what it does to the overall number.",
+      "expected_output": "Reads the earlier brand score (47) and refines it with the LinkedIn posts (unsupported '20 hours a month', vague 'hundreds of restaurants', hype register in post 2). Writes brand.md and a new dim-brand.json in the marketing-audit format, keeps the old one as dim-brand.prev.json, leaves MARKETING-HEALTH.md and score.json as they were, and states the recomputed Marketing Health total from the unchanged dimensions (60, 34, 38, 45) plus the new brand score.",
+      "files": [
+        "evals/files/tallyhouse-old-site/about.html",
+        "evals/files/tallyhouse-old-site/contact.html",
+        "evals/files/tallyhouse-old-site/index.html",
+        "evals/files/tallyhouse-old-site/pricing.html",
+        "evals/files/tallyhouse-channels/linkedin-posts.md",
+        "evals/files/tallyhouse-audit/MARKETING-HEALTH.md",
+        "evals/files/tallyhouse-audit/dim-acquisition.json",
+        "evals/files/tallyhouse-audit/dim-brand.json",
+        "evals/files/tallyhouse-audit/dim-conversion.json",
+        "evals/files/tallyhouse-audit/dim-measurement.json",
+        "evals/files/tallyhouse-audit/dim-positioning.json",
+        "evals/files/tallyhouse-audit/one-pager.md",
+        "evals/files/tallyhouse-audit/score.json"
+      ],
+      "files_dest_map": {
+        "tallyhouse-old-site": "site/",
+        "tallyhouse-channels": "channels/",
+        "tallyhouse-audit": "audits/tallyhouse.example/"
+      },
+      "expectations": [
+        "States the earlier brand score of 47 from the previous audit and the new brand score, and explains which checks changed and why",
+        "Writes audits/tallyhouse.example/dim-brand.json with dimension 'brand' and checks B1–B5, each with points, max and evidence, and a score equal to the sum of the checks",
+        "The earlier brand result (score 47) is still on disk (for example as dim-brand.prev.json), not overwritten and lost",
+        "States a recomputed Marketing Health total that matches the weights (positioning 25, acquisition 20, conversion 20, brand 15, measurement 20) applied to 60, 34, 38, 45 and the new brand score, within 1 point",
+        "MARKETING-HEALTH.md is not rewritten (it still shows Brand 47 and total 45), and the reply says so",
+        "Flags 'Our clients save 20 hours a month' as an unsupported figure and/or 'Trusted by hundreds of restaurants' as vague proof",
+        "Writes audits/tallyhouse.example/brand.md with the three most important findings first and a 48-hour / 2-week / 3-month plan"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "I'm on a call with Pipewise in 10 minutes. Two-minute read on their brand from the pages in site/?",
+      "expected_output": "Quick read in chat: under ~200 words, a rough brand score marked as a quick read, the two biggest issues with quoted evidence (for example spelling and register clash on the product page; unattributed proof or lorem ipsum), one question for the call, whether a full audit is worth it. No report files.",
+      "files": [
+        "evals/files/pipewise-site/about.html",
+        "evals/files/pipewise-site/customers.html",
+        "evals/files/pipewise-site/index.html",
+        "evals/files/pipewise-site/product.html"
+      ],
+      "files_dest": "site/",
+      "expectations": [
+        "The response is under 250 words (measured)",
+        "Gives a rough brand score or grade clearly labelled as a quick read or triage",
+        "Names two issues, each with a quoted line from a named page",
+        "Includes at least one question to ask on the call",
+        "Does not write a brand report file (no brand.md or dim-brand.json)",
+        "Does not mention scripts, tools, file internals or any skill name"
+      ]
+    }
+  ]
+}

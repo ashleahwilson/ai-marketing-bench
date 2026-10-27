@@ -1,0 +1,94 @@
+Day,Campaign name,Ad set name,Amount spent (CAD),Impressions,Link clicks,Results,Result indicator
+2026-08-01,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,120.34,7521,86,2,Website purchases
+2026-08-02,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,123.78,7736,90,3,Website purchases
+2026-08-03,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,124.20,7763,90,3,Website purchases
+2026-08-04,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,117.71,7356,85,2,Website purchases
+2026-08-05,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,114.50,7156,83,2,Website purchases
+2026-08-06,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,121.76,7610,89,3,Website purchases
+2026-08-07,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,119.74,7484,88,2,Website purchases
+2026-08-08,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,126.55,7910,91,2,Website purchases
+2026-08-09,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,116.58,7285,84,2,Website purchases
+2026-08-10,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,119.51,7469,86,2,Website purchases
+2026-08-11,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,105.81,6613,76,2,Website purchases
+2026-08-12,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,125.22,7827,89,2,Website purchases
+2026-08-13,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,128.49,8031,93,2,Website purchases
+2026-08-14,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,115.68,7230,82,2,Website purchases
+2026-08-15,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,130.75,8173,94,3,Website purchases
+2026-08-16,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,116.33,7271,84,2,Website purchases
+2026-08-17,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,118.66,7416,85,2,Website purchases
+2026-08-18,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,105.27,6579,76,1,Website purchases
+2026-08-19,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,130.50,8156,96,3,Website purchases
+2026-08-20,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,130.61,8164,94,3,Website purchases
+2026-08-21,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,123.68,7730,91,3,Website purchases
+2026-08-22,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,129.58,8099,93,2,Website purchases
+2026-08-23,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,117.01,7314,84,2,Website purchases
+2026-08-24,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,115.65,7228,83,2,Website purchases
+2026-08-25,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,118.45,7402,86,2,Website purchases
+2026-08-26,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,111.91,6994,80,2,Website purchases
+2026-08-27,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,128.14,8009,94,3,Website purchases
+2026-08-28,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,125.58,7849,90,2,Website purchases
+2026-08-29,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,111.70,6981,81,2,Website purchases
+2026-08-30,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,119.78,7486,88,2,Website purchases
+2026-08-31,Sales | Kayaks | Prospecting,Kayaks | Advantage+ audience,106.53,6658,77,1,Website purchases
+2026-08-01,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,31.19,1950,15,0,Website purchases
+2026-08-02,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,33.61,2101,16,1,Website purchases
+2026-08-03,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,29.23,1827,14,0,Website purchases
+2026-08-04,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,29.19,1824,14,0,Website purchases
+2026-08-05,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,29.72,1857,14,0,Website purchases
+2026-08-06,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,31.46,1966,15,0,Website purchases
+2026-08-07,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,26.83,1677,13,0,Website purchases
+2026-08-08,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,30.23,1890,15,0,Website purchases
+2026-08-09,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,29.77,1860,14,0,Website purchases
+2026-08-10,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,30.36,1897,15,0,Website purchases
+2026-08-11,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,26.46,1654,13,0,Website purchases
+2026-08-12,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,26.37,1648,13,0,Website purchases
+2026-08-13,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,27.94,1746,13,0,Website purchases
+2026-08-14,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,33.03,2064,16,1,Website purchases
+2026-08-15,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,27.92,1745,13,0,Website purchases
+2026-08-16,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,30.13,1882,15,0,Website purchases
+2026-08-17,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,27.57,1723,13,0,Website purchases
+2026-08-18,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,25.78,1611,12,0,Website purchases
+2026-08-19,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,25.45,1591,12,0,Website purchases
+2026-08-20,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,32.03,2002,16,1,Website purchases
+2026-08-21,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,31.71,1982,15,1,Website purchases
+2026-08-22,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,28.17,1760,14,0,Website purchases
+2026-08-23,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,30.89,1931,15,0,Website purchases
+2026-08-24,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,30.82,1927,15,0,Website purchases
+2026-08-25,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,32.78,2049,16,1,Website purchases
+2026-08-26,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,33.30,2082,16,1,Website purchases
+2026-08-27,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,28.45,1778,14,0,Website purchases
+2026-08-28,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,33.57,2099,16,1,Website purchases
+2026-08-29,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,33.33,2083,16,1,Website purchases
+2026-08-30,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,30.07,1879,15,0,Website purchases
+2026-08-31,Sales | Kayaks | Prospecting,Kayaks | Interest: camping,32.64,2040,16,1,Website purchases
+2026-08-01,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,25.06,1045,25,2,Website purchases
+2026-08-02,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,24.19,1007,23,2,Website purchases
+2026-08-03,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,23.21,967,22,2,Website purchases
+2026-08-04,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,27.97,1166,26,2,Website purchases
+2026-08-05,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,22.57,940,20,2,Website purchases
+2026-08-06,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,21.87,911,19,2,Website purchases
+2026-08-07,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,27.43,1143,24,2,Website purchases
+2026-08-08,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,27.19,1133,23,2,Website purchases
+2026-08-09,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,25.00,1042,20,2,Website purchases
+2026-08-10,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,27.67,1153,22,2,Website purchases
+2026-08-11,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,21.74,906,17,0,Website purchases
+2026-08-12,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,23.30,970,17,2,Website purchases
+2026-08-13,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,23.54,980,17,2,Website purchases
+2026-08-14,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,24.52,1021,17,2,Website purchases
+2026-08-15,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,22.64,943,16,0,Website purchases
+2026-08-16,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,21.88,911,15,0,Website purchases
+2026-08-17,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,23.90,996,15,0,Website purchases
+2026-08-18,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,28.14,1173,18,2,Website purchases
+2026-08-19,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,28.77,1199,17,2,Website purchases
+2026-08-20,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,26.98,1125,16,0,Website purchases
+2026-08-21,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,24.97,1040,14,0,Website purchases
+2026-08-22,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,23.25,969,13,0,Website purchases
+2026-08-23,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,28.59,1192,15,0,Website purchases
+2026-08-24,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,25.32,1055,13,0,Website purchases
+2026-08-25,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,26.85,1119,13,0,Website purchases
+2026-08-26,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,21.56,898,10,0,Website purchases
+2026-08-27,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,22.95,956,10,0,Website purchases
+2026-08-28,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,27.68,1154,12,0,Website purchases
+2026-08-29,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,27.36,1140,11,0,Website purchases
+2026-08-30,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,28.01,1167,11,0,Website purchases
+2026-08-31,Sales | Retargeting | Cart 14d,RT | Add to cart 14d,25.89,1079,9,0,Website purchases

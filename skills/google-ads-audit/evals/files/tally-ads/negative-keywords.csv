@@ -1,0 +1,5 @@
+Negative keywords
+Campaign,Negative keyword,Match type,Level
+Search | Restaurant Bookkeeping,jobs,Exact match,Campaign
+Search | Restaurant Bookkeeping,careers,Phrase match,Campaign
+,wikipedia,Phrase match,Negative keyword list: General

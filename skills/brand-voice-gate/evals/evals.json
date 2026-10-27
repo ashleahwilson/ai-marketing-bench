@@ -1,0 +1,297 @@
+{
+ "skill_name": "brand-voice-gate",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Run our brand voice gate on Dev's LinkedIn post before it goes out tomorrow. It's in drafts/linkedin-post.md. Our brand memory is in brand/.",
+   "expected_output": "A verdict first, then a revised post in Dev's first-person voice, under 150 words, with the banned words, the unsubstantiated 3-day claim and the stock AI phrasing removed, two hashtags at most, and a short list of what changed and what to check.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tallyhouse-drafts/linkedin-post.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tallyhouse-drafts": "drafts/"
+   },
+   "expectations": [
+    "Opens with a clear verdict (for example ready, ready after fixes, or hold) before or alongside the revised text",
+    "The revised post contains none of the brand's never-use words: AI-powered, revolutionary, revolutionize, solution, seamless/seamlessly, game-changer, hassle-free",
+    "The revised post does not state 'Close your books in 3 days, not 3 weeks' (or any 3-day close claim) as fact, and the response says the claim is unsubstantiated or not cleared under the brand rules",
+    "Removes the stock phrasing: 'In today's fast-paced', 'landscape', the 'not just a bookkeeping service — we're a partner' construction, and 'empowering you to focus on what matters most'",
+    "The revised post has two hashtags or fewer",
+    "The revised post is written in the first person as a founder (I/we from Dev) and is under 150 words (measured)",
+    "Introduces no new facts: every name, number and claim in the revised text appears in the original draft or is recorded as confirmed in brand/ (no new customers, results, counts, percentages or dates)",
+    "drafts/linkedin-post.md is left unchanged (the revision is delivered in the reply or in a separate file)"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Gate this email before I send it to Sam, who owns a single-location restaurant: drafts/email-owner.md",
+   "expected_output": "Corrects or flags the $299 price (the single-location price is $349; $299 is the per-location group rate), removes the banned words, exclamation marks and greeting filler, keeps the free month-end review offer, and stays under 120 words.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tallyhouse-drafts/email-owner.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tallyhouse-drafts": "drafts/"
+   },
+   "expectations": [
+    "Catches that $299/month is wrong for a single location: the revised email uses $349/month or removes the price, and the response explains the conflict with brand memory ($299 is the 2–15 location rate)",
+    "The revised email (subject and body) contains no exclamation marks",
+    "The revised email contains none of: AI-powered, solution, seamlessly, revolutionize",
+    "Removes 'I hope this email finds you well' and 'My name is Hannah'",
+    "Removes or flags 'Our clients typically see their books closed in record time' as an unsupported claim",
+    "Keeps the free month-end review as the ask",
+    "The revised email body is under 120 words (measured, excluding greeting and sign-off)",
+    "Introduces no new facts: every name, number and claim in the revised text appears in the original draft or is recorded as confirmed in brand/ (no new customers, results, counts, percentages or dates)"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Clean up the hero copy for the new homepage and make it sound like us: drafts/homepage-hero.md. We launch Monday.",
+   "expected_output": "Holds the three invented-looking numbers (500+ restaurants, 70%, 12 hours a week) because nothing in brand memory supports them, rewrites the hero from confirmed facts only, keeps Maria Okafor's quote verbatim while flagging that permission to name her is unconfirmed, and says what proof would let the numbers back in.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tallyhouse-drafts/homepage-hero.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tallyhouse-drafts": "drafts/"
+   },
+   "expectations": [
+    "The revised hero does not contain '500+', '70%' or '12 hours' as facts",
+    "The response says these numbers aren't supported by brand memory (proof.md / claims.md) and need a source before publishing",
+    "Does not substitute any other number or result that isn't in brand/",
+    "Keeps the Lantern Noodle Bar quote word for word: 'We finally know our prime cost before the month is over.'",
+    "Flags that permission to name Maria Okafor / Lantern Noodle Bar is unconfirmed",
+    "The verdict is a hold, or 'ready after fixes' with the numbers removed and listed as needing substantiation",
+    "The revised hero is built from confirmed brand facts (for example the hospitality-finance bookkeepers, daily POS reconciliation, the free month-end review)"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "Quick gate on this follow-up before I send it: drafts/followup.md",
+   "expected_output": "Says it's ready to send with no changes, or at most a trivial one. Doesn't rewrite a clean, specific, on-voice email.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tallyhouse-drafts/followup.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tallyhouse-drafts": "drafts/"
+   },
+   "expectations": [
+    "The verdict is that the email is ready to send (no changes, or at most one trivial change)",
+    "Keeps Priya, Marcus, 31%, 28% and 'Thursday at 3' exactly as written",
+    "Does not add sentences, claims or a sign-off, and does not make the email longer",
+    "Does not flag the client-specific details (Marcus, 31%, 28%) as unsupported inventions just because they aren't in brand/",
+    "The response, excluding any quoted email, is under 150 words (measured)"
+   ]
+  },
+  {
+   "id": 5,
+   "trap": true,
+   "prompt": "Make this about-page blurb sound like us and less generic: drafts/about-blurb.md",
+   "expected_output": "Recognises the blurb says nothing checkable. Either rewrites it shorter from confirmed brand facts (founders' backgrounds, hospitality-finance bookkeepers, POS reconciliation, Toronto, 2021, team of 14) or asks for the specifics. Invents nothing.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tallyhouse-drafts/about-blurb.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tallyhouse-drafts": "drafts/"
+   },
+   "expectations": [
+    "Says the original makes no specific, checkable claim (it's generic or content-free), rather than just polishing it",
+    "Removes 'unlock their full potential', 'commitment to excellence' and 'shaping the future of restaurant finance'",
+    "Any rewrite uses only facts from brand/ (for example Dev Patel, former restaurant controller; Hannah Ruiz, CPA; founded 2021; team of 14; Toronto; bookkeepers from hospitality finance; Toast, Square, Lightspeed reconciliation)",
+    "Invents no client counts, results, awards, years of experience or other specifics absent from brand/",
+    "Any rewrite is shorter than the original (measured in words), or the response asks for specific missing facts instead of rewriting"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Can you de-slop this product update email before it goes to our customers? It's in update.md. We're Ferncliff, we make scheduling software for dental clinics.",
+   "expected_output": "With no brand memory, does the general clean-up only, keeps the source's US spelling, keeps every product fact, says the voice pass is provisional because there's no brand memory, and offers to set one up.",
+   "files": [
+    "evals/files/ferncliff/update.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Removes the stock phrasing: 'game-changing', 'revolutionize', 'In today's fast-paced world', 'seamlessly', 'empowering', 'streamline', 'navigate these exciting changes'",
+    "Keeps every product fact: October 20, the color-coded calendar by hygienist, SMS reminders 48 hours before the appointment",
+    "Keeps US spelling (does not change 'color' to 'colour' or 'organized' to 'organised')",
+    "Says there's no brand memory (or brand voice) to check against, so only the general clean-up was applied or the voice is provisional",
+    "Offers to set up brand memory or capture Ferncliff's voice rules for next time",
+    "Does not invent a no-show reduction figure or any other number or feature not in the draft"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Don't rewrite it, just tell me whether this section passes our voice and what's wrong with it: drafts/landing-section.md",
+   "expected_output": "A verdict and a list of issues, each quoting the line and naming the brand-memory rule it breaks. No rewrite.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tallyhouse-drafts/landing-section.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tallyhouse-drafts": "drafts/"
+   },
+   "expectations": [
+    "Does not provide a full rewrite of the section",
+    "Gives a verdict that it does not pass as written",
+    "Flags 'AI-powered' and cites the brand rule or never-use list",
+    "Flags 'Close your books in 3 days, not 3 weeks' as a claim the brand rules say not to use until substantiated",
+    "Flags 'hassle-free' as a never-use word",
+    "Flags the automation-only framing ('on autopilot' / 'our software handles the rest') as breaking the brand's rule that the human bookkeeper is the point",
+    "Flags 'labor' as US spelling where the brand uses Canadian spelling ('labour')",
+    "Each issue quotes the offending text"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Gate this LinkedIn post for us: drafts/post.md. Our brand memory is in brand/.",
+   "expected_output": "Applies Quillmetrics' voice, not generic defaults: keeps the product name Seamless Sync and US spelling, removes 'real time' (the brand rule says 15 minutes, never real-time), the never-use words and the hashtags, and doesn't apply the email-only exclamation rule to LinkedIn.",
+   "files": [
+    "evals/files/quillmetrics-brand/brand/BRAND.md",
+    "evals/files/quillmetrics-brand/brand/offer.md",
+    "evals/files/quillmetrics-brand/brand/rules.md",
+    "evals/files/quillmetrics-brand/brand/voice.md",
+    "evals/files/quillmetrics-drafts/post.md"
+   ],
+   "files_dest_map": {
+    "quillmetrics-brand/brand": "brand/",
+    "quillmetrics-drafts": "drafts/"
+   },
+   "expectations": [
+    "Keeps the product name 'Seamless Sync' exactly (does not treat 'seamless' as a banned or AI word here)",
+    "Removes 'in real time' or replaces it with the 15-minute refresh, citing the brand rule against promising real-time data",
+    "Removes 'leverage' and 'actionable insights' (the brand's never-use words) and the 'Not just faster reporting — a whole new way' construction",
+    "Removes the hashtags (the brand's LinkedIn rule is no hashtags)",
+    "Keeps US spelling ('analyze' stays 'analyze'; no 'analyse', 'colour' or 'optimise')",
+    "Does not apply the email-only 'no exclamation marks' rule to the post (keeps the exclamation mark, or removes it without citing that rule)",
+    "Keeps every product fact: Shopify, Stripe, every 15 minutes, free on every plan, Settings > Integrations",
+    "Introduces no new facts: every name, number and claim in the revised text appears in the original draft or is recorded as confirmed in brand/ (no new customers, results, counts, percentages or dates)"
+   ]
+  },
+  {
+   "id": 9,
+   "trap": true,
+   "prompt": "Punch up drafts/linkedin-short.md. Add a couple of strong stats about the results our clients get so it's more convincing.",
+   "expected_output": "Doesn't add client-result stats because brand memory has none, says so in a sentence or two without lecturing, still delivers a stronger post from real facts, and offers a quick way to get real numbers.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tallyhouse-drafts/linkedin-short.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tallyhouse-drafts": "drafts/"
+   },
+   "expectations": [
+    "The revised post contains no client-result statistic (no percentage, hours saved, days to close or client count) that isn't in brand/",
+    "Says briefly that brand memory has no recorded client results to cite",
+    "Still delivers a revised post (does not refuse the whole task)",
+    "Offers a way to get real proof (for example asking a client, or the questions to ask) or uses honest proof that exists (the team's hospitality-finance background, the Lantern quote with its permission caveat)",
+    "The explanation of why stats weren't added is 3 sentences or fewer, with no lecture on ethics or advertising law"
+   ]
+  },
+  {
+   "id": 10,
+   "prompt": "Gate the pricing section in drafts/pricing-section.md. The line 'A real bookkeeper who knows restaurants' is our approved tagline, so don't touch it.",
+   "expected_output": "Leaves the tagline alone, restores Maria Okafor's quote to its exact wording from proof.md (the draft misquotes it) and flags the naming permission, confirms the prices match brand memory, removes the banned and stock phrasing, and flags 'no hidden fees' as an unsupported claim.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tallyhouse-drafts/pricing-section.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tallyhouse-drafts": "drafts/"
+   },
+   "expectations": [
+    "'A real bookkeeper who knows restaurants.' is unchanged",
+    "Catches that the quote is misquoted ('before the month even starts' vs 'before the month is over') and restores the proof.md wording or holds the quote",
+    "Flags that permission to name Maria Okafor / Lantern Noodle Bar is unconfirmed",
+    "The prices stay $349/month single location and from $299/location/month for 2–15 locations",
+    "Removes 'seamlessly' and the 'designed to scale' filler",
+    "Flags 'no hidden fees' (or the 'no hidden fees, no surprises, no stress' line) as a claim not in brand memory, or removes it",
+    "Introduces no new facts: every name, number and claim in the revised text appears in the original draft or is recorded as confirmed in brand/ (no new customers, results, counts, percentages or dates)"
+   ]
+  }
+ ]
+}

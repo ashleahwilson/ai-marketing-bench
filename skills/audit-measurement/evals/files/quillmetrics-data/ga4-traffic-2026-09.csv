@@ -1,0 +1,8 @@
+# GA4 export: Reports > Acquisition > Traffic acquisition, session source / medium, 2026-09-01 to 2026-09-30
+session_source_medium,sessions,engaged_sessions,key_events
+google / organic,4120,2710,8930
+(direct) / (none),2870,1650,6240
+website / banner,1930,1410,4630
+newsletter / email,1040,790,2380
+facebook / paid,780,310,1610
+shopify-app-store / referral,466,350,528

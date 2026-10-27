@@ -1,0 +1,23 @@
+Search terms report
+"July 1, 2026 - September 30, 2026"
+Search term,Match type,Campaign,Ad group,Keyword,Added/Excluded,Clicks,Impr.,Cost,Conversions
+quillmetrics,Exact match,Search | Core,Brand,quillmetrics,None,520,1400,640.20,58
+quillmetrics login,Phrase match,Search | Core,Brand,quillmetrics,None,230,900,212.40,0
+quill metrics pricing,Broad match,Search | Core,Brand,quill metrics,None,260,800,276.00,34
+shopify analytics,Exact match,Search | Core,Shopify analytics,shopify analytics,None,1700,31000,"5,820.30",19
+shopify analytics app,Broad match,Search | Core,Shopify analytics,shopify analytics,None,980,17000,"3,410.80",14
+shopify revenue dashboard,Phrase match,Search | Core,Shopify analytics,shopify revenue dashboard,None,820,12000,"2,960.15",12
+shopify reporting,Exact match,Search | Core,Shopify analytics,shopify reporting,None,640,11000,"2,105.60",6
+how to use shopify analytics,Broad match,Search | Core,Shopify analytics,shopify analytics,None,420,9000,"1,288.40",2
+shopify analytics jobs,Broad match,Search | Core,Shopify analytics,shopify analytics,None,130,4000,402.75,0
+shopify store for sale,Broad match,Search | Core,Shopify analytics,shopify reporting,None,360,8000,"1,104.20",0
+google analytics shopify setup free,Broad match,Search | Core,Shopify analytics,shopify analytics,None,560,10000,"1,813.20",8
+shopify analytics alternative,Phrase match,Search | Competitors,Competitors,shopify analytics alternative,None,510,6000,"1,840.50",11
+best shopify analytics app,Broad match,Search | Competitors,Competitors,best shopify analytics app,None,640,8000,"2,310.25",13
+best shopify apps 2026,Broad match,Search | Competitors,Competitors,best shopify analytics app,None,190,3000,640.80,1
+stripe revenue analytics,Broad match,Search | Stripe,Stripe revenue,stripe revenue analytics,None,330,5000,980.40,6
+stripe dashboard login,Broad match,Search | Stripe,Stripe revenue,stripe dashboard,None,610,9000,"1,206.30",0
+stripe fees calculator,Broad match,Search | Stripe,Stripe revenue,stripe dashboard,None,420,7000,845.60,0
+stripe analytics,Exact match,Search | Stripe,Stripe revenue,stripe revenue analytics,None,240,4000,702.15,4
+Total: Search terms,,,,,,9560,147100,"28,560.00",188
+Total: Account,,,,,,9560,147100,"30,800.75",189

@@ -1,0 +1,182 @@
+{
+  "skill_name": "reach-out",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I run sales at Fieldline, we sell a field-service scheduling tool to HVAC and plumbing companies with 50-500 technicians. Our best proof: Arctic Air (180 techs) cut unbilled return visits by 31% in their first quarter. Lakeshore Mechanical just announced a $40M growth round last week and says they plan to double their technician count across Ontario by end of next year. Their COO is Dana Pereira. Write me a 3-step email sequence to Dana.",
+      "expected_output": "A staged 3-email sequence to Dana with reasoning; opener leads with the consequence of doubling technicians, not the funding; one attributed proof point; one small ask; follow-ups shorter with new angles; final step is a short breakup.",
+      "files": [],
+      "expectations": [
+        "The first sentence of email 1 does not mention or congratulate on the funding round",
+        "Email 1 opens with a consequence of the growth (e.g. scheduling, dispatch or return-visit strain from doubling technicians) framed for Dana",
+        "Email 1 uses the Arctic Air proof point with its number and does not invent any other customer or statistic",
+        "Email 1 contains exactly one ask, and it is not a generic request for a meeting or call time",
+        "Email 1 is at most 110 words (target 50-90)",
+        "Each follow-up is shorter than the email before it and introduces a new angle rather than restating email 1",
+        "No email closes with the word 'worth' (e.g. 'worth a chat')",
+        "Each subject line is 2-5 words",
+        "A short reasoning (who, why now, hook) accompanies the sequence",
+        "The output does not claim anything was sent or scheduled"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Our visitor-ID tool flagged that someone from Brightwell Logistics (about 900 employees, freight brokerage) looked at our pricing page three times this week and read our case study on carrier onboarding. We sell Relay, carrier onboarding and compliance software for brokers. Proof: Tamarack Freight cut carrier onboarding from 4 days to 6 hours. I don't know who visited. Draft the first email.",
+      "expected_output": "Identifies the likely owner of carrier onboarding (e.g. VP/Director of Carrier Relations or Operations), drafts a problem-led first email that never mentions the visit or pricing page, with a soft concrete offer rather than a meeting ask.",
+      "files": [],
+      "expectations": [
+        "The email never mentions the website visit, the pricing page, the case study being read, or any tracking",
+        "The output identifies a target persona who owns carrier onboarding rather than writing to an unnamed generic recipient",
+        "The email opens with a carrier onboarding problem framed for Brightwell, not with an introduction of the sender",
+        "The ask is a soft, concrete offer (e.g. a breakdown, comparison or teardown) rather than a request for a meeting",
+        "Uses the Tamarack Freight proof with its numbers and invents no other proof",
+        "The email is at most 110 words (target 50-90)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Inbound just came in 20 minutes ago. Priya Shah, Head of RevOps at Corvel Health (~300 employees), filled in our demo request form and wrote in the message box: 'We're on Salesforce and our reps hate logging calls - does your tool auto-log Zoom calls or only Gong recordings?' We're Callnote, an AI call-notes tool; we do auto-log Zoom, Google Meet and Teams calls straight into Salesforce. Write the response and whatever follow-up makes sense.",
+      "expected_output": "A fast, short reply that answers Priya's question first (yes, Zoom auto-logs to Salesforce), names her request plainly, and gives a direct path to book the demo; at most one or two light follow-ups, not a long nurture sequence.",
+      "files": [],
+      "expectations": [
+        "The first reply directly answers whether Zoom calls auto-log to Salesforce before any pitch",
+        "The reply references Priya's request or question plainly rather than pretending to be cold outreach",
+        "The reply offers a direct way to book or schedule the demo",
+        "The reply does not ask qualifying questions that gate the demo",
+        "The total plan has no more than 3 touches including the reply",
+        "The first reply is shorter than 110 words"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "You drafted this for me earlier:\n\nSubject: fellow founders, quick idea\n\nHi Marco \u2014 as a fellow founder I know how chaotic hiring gets. I came across Lumen's careers page and saw you're hiring 6 engineers. We help startups streamline technical hiring with structured take-homes. Would it be worth a quick chat?\n\nThis is way too salesy and I never want the 'fellow founder' bonding thing in any of my outreach again. Also for anyone at a startup under 50 people keep it under 70 words. Fix it. We're Benchmark, structured take-home assessments; proof: Orbital (30 people) cut time-to-hire for engineers from 41 to 23 days.",
+      "expected_output": "A rewritten email under 70 words with no founder bonding, no 'came across', no 'worth', a consequence-led opener from the 6-engineer hiring push, Orbital proof, one concrete ask; plus the two rules turned into reusable principles saved to an outreach-profile.md (created from the template if absent) with a one-line confirmation of what was saved where.",
+      "files": [],
+      "expectations": [
+        "The rewritten email is under 70 words",
+        "The rewrite contains no founder or relationship bonding language",
+        "The rewrite does not open with 'I came across' or the careers page, and does not use 'worth'",
+        "The rewrite uses the Orbital proof with its numbers",
+        "Both pieces of feedback are turned into general reusable rules (not just applied to this draft)",
+        "The rules are written to an outreach profile file (or the exact lines to paste are given if files cannot be written)",
+        "The response confirms what was saved and where"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "I exported 500 companies from Apollo, US software companies with 50-1000 employees. Write the cold email we'll send to all of them for Taskbird, our project management tool. Keep it punchy.",
+      "expected_output": "Pushes back before writing a single blast: names what's missing (segment, persona, hook, proof), proposes the narrowest workable slice or asks one focused question, and at most offers a clearly-labelled skeleton rather than a final send-ready email to all 500.",
+      "files": [],
+      "expectations": [
+        "Does not stage or present any email addressed to the whole unsegmented list of 500 (a clearly labelled sample for a narrower proposed slice is fine)",
+        "Names specifically what is missing (e.g. a shared trigger or segment, a target persona, proof)",
+        "Proposes a narrower slice or persona split, or asks a focused question to get one",
+        "Does not invent a customer, statistic or signal for Taskbird"
+      ],
+      "trap": true
+    },
+    {
+      "id": 6,
+      "prompt": "These 9 contacts all work at companies that went live on NetSuite in the last 6 months (from our technographic data). We sell Closewise, which automates month-end close reconciliations on NetSuite. Proof: Harbor Supply (200 people) went from a 12-day close to 5 days. Write the outreach.\n\nname,title,company,employees\nAna Ruiz,CFO,Pinegate Foods,320\nTom Becker,Controller,Pinegate Foods,320\nLiam Ortiz,Senior Accountant,Pinegate Foods,320\nGrace Kim,VP Finance,Northloop Labs,140\nRaj Patel,Controller,Northloop Labs,140\nEmma Stone,CFO,Westridge Outdoor,610\nOwen Clarke,Accounting Manager,Westridge Outdoor,610\nSofia Marin,Controller,Brightvale Health,85\nNoah Fisher,Staff Accountant,Brightvale Health,85",
+      "expected_output": "Treats this as a slice (recent NetSuite go-live) and writes a separate skeleton per persona (exec/CFO-VP, controller, practitioner), with one varying line per contact, does not send the same email to multiple people at one company, and shows a send plan.",
+      "files": [],
+      "expectations": [
+        "Every one of the 9 supplied contacts is drafted, or held with a stated reason and a draft ready; no contact is silently dropped",
+        "Writes different email angles for different personas (e.g. CFO/VP vs controller vs accountant) rather than one email for all 9",
+        "No two contacts at the same company receive the same email",
+        "The CFO/VP angle talks about risk, cost or strategy while the practitioner angle talks about workload",
+        "Does not fake one-to-one intimacy (no 'I noticed', 'came across your profile')",
+        "No email opens by stating the NetSuite go-live as an observed fact (e.g. 'Looks like you went live on NetSuite') or names the data source",
+        "Uses the Harbor Supply proof and invents no other proof",
+        "Addresses how multiple contacts at one company are sequenced or staggered"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Write a first email to Mei Tanaka, VP Engineering at Quarry (450 employees), they just raised a $90M Series C. Open by congratulating her on the Series C, that always works for us. We sell Stackwatch, cloud cost monitoring. Proof: Lindenfield (500 people) cut AWS spend 22% in 90 days.",
+      "expected_output": "Respects the user but briefly flags that congratulation openers read as automation and underperform; delivers a version the user can use (either a consequence-led version with an optional congratulations variant, or the congratulations version plus the recommended alternative). Does not lecture or refuse.",
+      "files": [],
+      "expectations": [
+        "Briefly explains (in 1-3 sentences) why a congratulation opener tends to underperform",
+        "Provides a consequence-led version that opens with what the raise means for Mei (e.g. spend scrutiny, scaling infra)",
+        "Does not refuse the user's request outright; either also provides or offers the congratulations version",
+        "Uses the Lindenfield proof with its number and invents nothing else",
+        "The email has exactly one ask",
+        "No email closes with the word 'worth'",
+        "Signs off with a placeholder or a name the user gave, not an invented name"
+      ],
+      "trap": true
+    },
+    {
+      "id": 8,
+      "prompt": "Hannah Lee, Head of Sales Development at Fernway (~250 people), posted on LinkedIn yesterday: 'Our cold email reply rate fell from 4% to 1.1% in two months and nothing in our copy changed. Starting to think it's not the copy.' We're not connected. We sell Mailroute, deliverability monitoring and inbox placement testing. Write the LinkedIn outreach.",
+      "expected_output": "Connection request first (blank or very short), then a DM under 500 characters that engages with the substance of her post (that it may be deliverability, not copy), has no product pitch or proof numbers, and ends with a light question.",
+      "files": [],
+      "expectations": [
+        "Sends a connection request first because they are not connected, blank or under 300 characters",
+        "The first DM is under 500 characters",
+        "The first DM engages with what her post actually argued rather than just referencing that she posted",
+        "The first DM does not pitch Mailroute's features or include proof statistics",
+        "The first DM ends with a light question or offer she could answer in one line",
+        "Does not say 'saw you liked' or 'saw you commented'"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Write a first email to Martin Gagnon, Director of Operations at Bor\u00e9al Logistique in Montr\u00e9al (about 220 employees). I got his email from a ZoomInfo export. We sell Dockwise, dock-scheduling software for 3PL warehouses. Proof: Fraser Cold Storage (150 people) cut truck wait times from 2 hours to 25 minutes. I'm Priya Nair, AE at Dockwise, 401 Bay St, Toronto.",
+      "expected_output": "A short first email plus a prominent compliance warning: Canadian recipient, address from a bought/enriched list does not establish CASL implied consent; signature includes sender identity, mailing address and an opt-out; suggests confirming the address is published by Bor\u00e9al or using another consent basis. Does not block.",
+      "files": [],
+      "expectations": [
+        "Flags that a Canadian recipient's address taken from a data provider may not meet CASL implied consent, as the first or a top item in the check list",
+        "The email's signature or closing includes the sender's name, company and mailing address",
+        "The email includes opt-out wording (e.g. reply 'no' / unsubscribe)",
+        "Still provides the draft rather than refusing (warns, does not block)",
+        "Uses the Fraser Cold Storage proof with its numbers and invents no other facts about Bor\u00e9al",
+        "The first email is at most 110 words excluding the signature block"
+      ],
+      "trap": true
+    },
+    {
+      "id": 10,
+      "prompt": "Jordan Ellis just replied to our cold email about Ledgerline (AP automation): 'Not something I handle - you'd want our controller, Sam Okafor. Also please take me off your list.' Draft what we do next.",
+      "expected_output": "No reply email to Jordan (or at most a one-line acknowledgement if the skill says so), immediately stop all sequences to Jordan and record the opt-out; separately propose outreach to Sam Okafor that may mention Jordan pointed to them only if appropriate (Jordan did not offer an intro, so be careful) - a short first email to Sam.",
+      "files": [],
+      "expectations": [
+        "Treats Jordan's message as an opt-out: stops all sequences to Jordan and does not send Jordan further outreach",
+        "Does not continue to pitch Jordan",
+        "Proposes a first message to Sam Okafor, the controller",
+        "Handles the referral honestly (does not claim Jordan endorsed or introduced the product)",
+        "Invents no facts about Ledgerline results or the company"
+      ],
+      "trap": true
+    },
+    {
+      "id": 11,
+      "prompt": "Rachel Cho was our champion at Tidewater Bank when they bought Signalpath (our model-risk monitoring tool) in 2024 - she ran the rollout. She just started as Head of Model Risk at Northwind Credit Union, 3 weeks ago. Write to her.",
+      "expected_output": "A warm, short note led by the shared history, brief congratulations on the new role acceptable here, asks how the new role is going / what she's tackling first, no hard pitch or proof stats in message one, product mentioned lightly if at all; a 2-touch plan.",
+      "files": [],
+      "expectations": [
+        "Leads with the shared history at Tidewater (not a cold pitch)",
+        "Does not include a hard product pitch or proof statistics in the first message",
+        "Asks a light question about her new role or priorities",
+        "The first message is under 90 words",
+        "Plans no more than 2 touches",
+        "Invents no details about Northwind's situation or Rachel's rollout results"
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Here's our list: 60 HR directors at US hospitals with 500-2000 employees, all from a LinkedIn Sales Navigator search. We sell Shiftfill, which fills open nursing shifts from internal float pools. Proof: Mercy Valley Health (1,200 employees) cut agency nurse spend 18% in 6 months. Set up the outreach.",
+      "expected_output": "Warns that 60 recipients on one angle exceeds ~50 and suggests splitting (by hospital size, region, or signal) or narrowing; notes that the list has firmographics only and suggests a signal; still provides persona template(s) with one varying line and a CSV/merge plan; does not paste 60 emails; mentions deliverability (plain text, no link in first touch, short sequence).",
+      "files": [],
+      "expectations": [
+        "Warns that 60 recipients on a single angle is large and suggests splitting or narrowing",
+        "Points out that the list lacks a timing signal and suggests one or more ways to add one",
+        "Provides a template (or templates) with a per-contact varying line rather than 60 separate pasted emails",
+        "Describes a merge/CSV or export plan",
+        "The first email template is at most 110 words and has no link",
+        "Uses the Mercy Valley Health proof with its numbers and invents no other proof"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-10-20 14:02:11",
+  "containerVersion": {
+    "path": "accounts/6112004417/containers/18820431/versions/14",
+    "accountId": "6112004417",
+    "containerId": "18820431",
+    "containerVersionId": "14",
+    "name": "v14 - lead tracking",
+    "container": {
+      "path": "accounts/6112004417/containers/18820431",
+      "accountId": "6112004417",
+      "containerId": "18820431",
+      "name": "tallyhouse.example",
+      "publicId": "GTM-TH7Q2LX",
+      "usageContext": ["WEB"]
+    },
+    "tag": [
+      {
+        "tagId": "3",
+        "name": "Google Tag - G-TH12345",
+        "type": "googtag",
+        "parameter": [{"type": "TEMPLATE", "key": "tagId", "value": "G-TH12345"}],
+        "firingTriggerId": ["2147479553"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": {"consentStatus": "NOT_SET"}
+      },
+      {
+        "tagId": "4",
+        "name": "GA4 - page_view",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "page_view"},
+          {"type": "TEMPLATE", "key": "measurementIdOverride", "value": "G-TH12345"}
+        ],
+        "firingTriggerId": ["2147479553"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": {"consentStatus": "NOT_SET"}
+      },
+      {
+        "tagId": "5",
+        "name": "GA4 - Lead",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "generate_lead"},
+          {"type": "TEMPLATE", "key": "measurementIdOverride", "value": "G-TH12345"}
+        ],
+        "firingTriggerId": ["11"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": {"consentStatus": "NOT_SET"}
+      },
+      {
+        "tagId": "6",
+        "name": "GA4 - form_submit",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "form_submit"},
+          {"type": "TEMPLATE", "key": "measurementIdOverride", "value": "G-TH12345"},
+          {"type": "LIST", "key": "eventSettingsTable", "list": [
+            {"type": "MAP", "map": [{"type": "TEMPLATE", "key": "parameter", "value": "form_id"}, {"type": "TEMPLATE", "key": "parameterValue", "value": "{{Form ID}}"}]},
+            {"type": "MAP", "map": [{"type": "TEMPLATE", "key": "parameter", "value": "user_email"}, {"type": "TEMPLATE", "key": "parameterValue", "value": "{{JS - form email}}"}]}
+          ]}
+        ],
+        "firingTriggerId": ["12"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": {"consentStatus": "NOT_SET"}
+      },
+      {
+        "tagId": "7",
+        "name": "Meta Pixel - Lead",
+        "type": "html",
+        "parameter": [{"type": "TEMPLATE", "key": "html", "value": "<script>fbq('track', 'Lead');</script>"}],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": {"consentStatus": "NOT_SET"}
+      },
+      {
+        "tagId": "8",
+        "name": "LinkedIn Insight",
+        "type": "html",
+        "parameter": [{"type": "TEMPLATE", "key": "html", "value": "<script>_linkedin_partner_id = \"5521907\"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);</script><script src=\"https://snap.licdn.com/li.lms-analytics/insight.min.js\" async></script>"}],
+        "firingTriggerId": ["2147479553"],
+        "paused": true,
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": {"consentStatus": "NOT_SET"}
+      }
+    ],
+    "trigger": [
+      {
+        "triggerId": "11",
+        "name": "Click - All Elements",
+        "type": "CLICK"
+      },
+      {
+        "triggerId": "12",
+        "name": "Form Submit - Contact",
+        "type": "FORM_SUBMISSION",
+        "filter": [{"type": "EQUALS", "parameter": [{"type": "TEMPLATE", "key": "arg0", "value": "{{Page Path}}"}, {"type": "TEMPLATE", "key": "arg1", "value": "/contact"}]}],
+        "waitForTags": {"type": "BOOLEAN", "value": "false"},
+        "checkValidation": {"type": "BOOLEAN", "value": "false"}
+      },
+      {
+        "triggerId": "13",
+        "name": "Page View - Thanks",
+        "type": "PAGEVIEW",
+        "filter": [{"type": "EQUALS", "parameter": [{"type": "TEMPLATE", "key": "arg0", "value": "{{Page Path}}"}, {"type": "TEMPLATE", "key": "arg1", "value": "/thanks"}]}]
+      }
+    ],
+    "variable": [
+      {
+        "variableId": "21",
+        "name": "JS - form email",
+        "type": "jsm",
+        "parameter": [{"type": "TEMPLATE", "key": "javascript", "value": "function() { var f = document.querySelector('#review-form input[name=email]'); return f ? f.value : undefined; }"}]
+      },
+      {
+        "variableId": "22",
+        "name": "Const - GA4 ID",
+        "type": "c",
+        "parameter": [{"type": "TEMPLATE", "key": "value", "value": "G-TH12345"}]
+      }
+    ],
+    "builtInVariable": [
+      {"type": "PAGE_PATH", "name": "Page Path"},
+      {"type": "PAGE_URL", "name": "Page URL"},
+      {"type": "CLICK_TEXT", "name": "Click Text"},
+      {"type": "FORM_ID", "name": "Form ID"}
+    ]
+  }
+}

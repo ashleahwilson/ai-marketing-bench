@@ -1,0 +1,77 @@
+{
+ "skill": "email-sequence",
+ "version": "1.2.0",
+ "date": "2026-10-23",
+ "status": "Meets the Bench Standard bar on Opus and Haiku at v1.2.0: beats no skill and the comparison skill (Corey Haines' email-sequence 1.1.0) on total, never worse on the three traps, no invented facts found in round 3 outputs. Earlier versions (1.0.0, 1.1.0) had small inventions in with-skill outputs, listed below.",
+ "method": "8 evals (3 traps), expectations written before any run. Round 1 ran the skill, no skill and the comparison skill on Haiku, and the skill and no skill on Opus, in fresh headless agents graded blind by a separate Opus grader. Rounds 2 and 3 re-ran the skill on Haiku and Opus as it was revised. Grading clarifications added after round 1 (footer on every email read literally, questions counted by question marks, Markdown stripped for the eval 2 word count) were applied to every config: round 1 was regraded in full under them, and the regraded numbers are reported here.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 55,
+   "total": 55
+  },
+  {
+   "config": "with skill, Opus (v1.1.0, round 2)",
+   "passed": 55,
+   "total": 55
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 51,
+   "total": 55
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 46,
+   "total": 55
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 54,
+   "total": 55
+  },
+  {
+   "config": "with skill, Haiku (v1.0.0, round 1)",
+   "passed": 52,
+   "total": 55
+  },
+  {
+   "config": "comparison skill (email-sequence 1.1.0), Haiku",
+   "passed": 41,
+   "total": 55
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 35,
+   "total": 55
+  }
+ ],
+ "traps_passed": {
+  "out_of": 18,
+  "with skill, Haiku (round 1)": 17,
+  "with skill, Opus (round 1)": 17,
+  "no skill, Opus": 16,
+  "comparison skill, Haiku": 13,
+  "no skill, Haiku": 11,
+  "with skill, Haiku (round 3)": 18,
+  "with skill, Opus (round 3)": 18
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 52,
+  "2 (v1.1.0)": 54,
+  "3 (v1.2.0)": 54,
+  "out_of": 55
+ },
+ "losses_and_open_issues": [
+  "Round 3, Haiku, eval 7: flagged 'seamless' as being in email 2 when it is in email 3 (removed it correctly), and trimmed a phrase from the user's own draft",
+  "Round 2, Haiku, eval 3: hard-coded a calendar month-end date in relative-timed emails (fixed in 1.2.0)",
+  "Round 1, Haiku and Opus, eval 6: asked more than five questions in guided mode; Opus, eval 7: deleted email 3 instead of fixing it; Haiku, eval 7: kept the pricing link and replaced a working URL with a placeholder; Opus, eval 2: 302 words against a 300-word limit (all fixed in 1.1.0)",
+  "Invented facts in with-skill outputs: round 1 Haiku offered a 'get it less often' option not in brand memory (eval 6) and Opus wrote 'a person you can call' (eval 1); round 2 Opus reused the unconfirmed Lantern quote as 'one restaurant owner we work with' (evals 1, 3). None found in round 3",
+  "Round 3 soft inferences, not graded as inventions: 'nothing is charged unless you upgrade' (both, from 'no card needed') and Opus's 'your dashboard keeps running tomorrow' (eval 4)",
+  "Both models reported the original eval 7 email 2 as 152 words; the grader measured 137 under its counting rule. Either way it is over 120",
+  "Sequence files show the FACTS/OPEN ledger and source tags; useful to reviewers, but jargon to strip before loading into a sending tool",
+  "At 98 to 100 percent in round 3 the eval set no longer separates the skill's versions; harder evals (right email located, no trimming of user content, no implied speed or access claims) are the next step",
+  "Without any skill: no-skill and comparison-skill runs left the mailing address and unsubscribe off US trial emails and Ferncliff onboarding without saying so, wrote full copy in guided mode, and invented setup times, call lengths, benchmarks and audience facts; no-skill Haiku kept '3 review spots left' and 'ends Friday'",
+  "Every run, all configs, left the original fixture files unchanged"
+ ]
+}

@@ -1,0 +1,21 @@
+FACTS
+- prospect: Juniper Room, two locations in Toronto, owner Noor Saleh | user
+- address: noor@juniperroom.example, published on juniperroom.example/contact, captured 2026-10-05 | user
+- offer: free month-end review; daily sales reconciled from Toast, Square and Lightspeed | brand/offer.md
+- sender: Hannah Ruiz, Co-founder, Tallyhouse | brand/senders.md
+ASSUMED
+- none
+---
+Channel: email
+Type: first
+Subject: month-end at juniper room
+
+Hi Noor,
+
+With two locations, a late close means two sets of prime cost numbers you see weeks after the month ends. Tallyhouse reconciles daily sales from your POS and gives you a named bookkeeper who has worked in restaurant finance.
+
+Open to a free month-end review?
+
+Hannah Ruiz, Co-founder, Tallyhouse
+Tallyhouse Inc., 410 Adelaide St W, Suite 300, Toronto, ON M5V 1S8
+If this isn't relevant to you, reply "no" and I won't follow up.

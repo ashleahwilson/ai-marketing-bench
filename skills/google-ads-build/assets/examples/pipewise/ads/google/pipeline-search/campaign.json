@@ -1,0 +1,102 @@
+{
+  "brand_name": "Pipewise",
+  "domain": "pipewise.example",
+  "currency": "USD",
+  "monthly_budget": 2000,
+  "spelling": "US",
+  "keyword_data": null,
+  "competitors": [],
+  "user_facts": ["$2,000 a month", "US only"],
+  "conversion_actions": [{"name": "Demo booked", "primary": true}],
+  "shared_negatives": [
+    {"name": "Non-brand negatives", "campaigns": ["non-brand"],
+     "keywords": [
+       {"text": "jobs", "match": "phrase"}, {"text": "salary", "match": "phrase"}, {"text": "course", "match": "phrase"},
+       {"text": "template", "match": "phrase"}, {"text": "free", "match": "phrase"}, {"text": "excel", "match": "phrase"},
+       {"text": "email marketing", "match": "phrase"}, {"text": "marketing automation", "match": "phrase"},
+       {"text": "login", "match": "phrase"}]}
+  ],
+  "campaigns": [
+    {
+      "name": "Search | Brand", "type": "brand", "daily_budget": 6.5,
+      "networks": ["Google search"], "locations": ["United States"], "location_option": "presence",
+      "languages": ["English"], "bid_strategy": "Maximize clicks", "negatives": [],
+      "ad_groups": [
+        {"name": "Brand", "landing_page": "https://pipewise.example/",
+         "keywords": [{"text": "pipewise", "match": "exact"}, {"text": "pipewise", "match": "phrase"}, {"text": "pipe wise crm", "match": "phrase"}],
+         "ads": [{"headlines": [
+            {"text": "Pipewise Sales Pipeline", "pin": null}, {"text": "Pipewise: $45 Per Rep/Month", "pin": null},
+            {"text": "Every Feature, Every Rep", "pin": null}, {"text": "Cancel Any Month", "pin": null},
+            {"text": "No Setup Fee", "pin": null}, {"text": "See the Price, No Sales Call", "pin": null},
+            {"text": "Forecasts by Rep", "pin": null}, {"text": "Weekly Pipeline Review View", "pin": null},
+            {"text": "Book a 30-Minute Demo", "pin": null}, {"text": "Built by a Sales Director", "pin": null}],
+          "descriptions": [
+            {"text": "Pipeline software for B2B sales teams. One plan: $45 per rep per month.", "pin": null},
+            {"text": "Deal stages, forecasts by rep and a weekly review view. Cancel any month.", "pin": null},
+            {"text": "No setup fee, and the price is on the site. Book a 30-minute demo.", "pin": null}],
+          "path1": "demo", "path2": ""}]}
+      ]
+    },
+    {
+      "name": "Search | Sales Pipeline", "type": "non-brand", "daily_budget": 59.3,
+      "networks": ["Google search"], "locations": ["United States"], "location_option": "presence",
+      "languages": ["English"], "bid_strategy": "Maximize clicks", "negatives": [],
+      "ad_groups": [
+        {"name": "Pipeline software", "landing_page": "https://pipewise.example/demo",
+         "keywords": [{"text": "sales pipeline software", "match": "phrase"}, {"text": "sales pipeline software", "match": "exact"},
+                      {"text": "pipeline management software", "match": "phrase"}, {"text": "b2b sales pipeline tool", "match": "phrase"},
+                      {"text": "deal pipeline software", "match": "phrase"}],
+         "ads": [{"headlines": [
+            {"text": "Sales Pipeline Software", "pin": null}, {"text": "Pipeline Software for B2B", "pin": null},
+            {"text": "See Which Deals Are Real", "pin": null}, {"text": "Forecasts by Rep", "pin": null},
+            {"text": "Weekly Pipeline Review View", "pin": null}, {"text": "$45 Per Rep Per Month", "pin": null},
+            {"text": "Every Feature, Every Rep", "pin": null}, {"text": "Cancel Any Month", "pin": null},
+            {"text": "No Setup Fee", "pin": null}, {"text": "Price on the Site, No Calls", "pin": null},
+            {"text": "Book a 30-Minute Demo", "pin": null}, {"text": "Pipewise Pipeline Software", "pin": null}],
+          "descriptions": [
+            {"text": "Deal stages, forecasts by rep and a weekly pipeline review for B2B sales teams.", "pin": null},
+            {"text": "One plan: $45 per rep per month, every feature for every rep. Cancel any month.", "pin": null},
+            {"text": "No setup fee and no sales call to see the price. Book a 30-minute demo.", "pin": null}],
+          "path1": "pipeline", "path2": "demo"}]},
+        {"name": "Sales forecasting", "landing_page": "https://pipewise.example/demo",
+         "keywords": [{"text": "sales forecasting software", "match": "phrase"}, {"text": "sales forecast by rep", "match": "phrase"},
+                      {"text": "b2b sales forecasting tool", "match": "phrase"}, {"text": "pipeline forecasting software", "match": "exact"}],
+         "ads": [{"headlines": [
+            {"text": "Sales Forecasting Software", "pin": null}, {"text": "Forecasts by Rep", "pin": null},
+            {"text": "Forecast From Your Pipeline", "pin": null}, {"text": "See Which Deals Are Real", "pin": null},
+            {"text": "Weekly Pipeline Review View", "pin": null}, {"text": "$45 Per Rep Per Month", "pin": null},
+            {"text": "Every Feature, Every Rep", "pin": null}, {"text": "No Setup Fee", "pin": null},
+            {"text": "Cancel Any Month", "pin": null}, {"text": "Book a 30-Minute Demo", "pin": null},
+            {"text": "Pipewise Forecasting", "pin": null}],
+          "descriptions": [
+            {"text": "Forecasts by rep, built from your deal stages. For B2B sales teams.", "pin": null},
+            {"text": "One plan: $45 per rep per month, every feature for every rep. Cancel any month.", "pin": null},
+            {"text": "See the price on the site, no sales call needed. Book a 30-minute demo.", "pin": null}],
+          "path1": "forecasting", "path2": "demo"}]},
+        {"name": "Pricing", "landing_page": "https://pipewise.example/pricing",
+         "keywords": [{"text": "sales pipeline software pricing", "match": "phrase"}, {"text": "pipeline software cost", "match": "phrase"},
+                      {"text": "sales pipeline tool price per user", "match": "phrase"}],
+         "ads": [{"headlines": [
+            {"text": "$45 Per Rep Per Month", "pin": null}, {"text": "One Plan, Every Feature", "pin": null},
+            {"text": "Pipeline Software Pricing", "pin": null}, {"text": "See the Price, No Sales Call", "pin": null},
+            {"text": "No Setup Fee", "pin": null}, {"text": "Cancel Any Month", "pin": null},
+            {"text": "Forecasts by Rep", "pin": null}, {"text": "Weekly Pipeline Review View", "pin": null},
+            {"text": "Book a 30-Minute Demo", "pin": null}, {"text": "Pipewise Pricing", "pin": null}],
+          "descriptions": [
+            {"text": "One plan: $45 per rep per month. Every feature for every rep, cancel any month.", "pin": null},
+            {"text": "No setup fee, and the price is on the site. No call with sales to see it.", "pin": null},
+            {"text": "Pipeline software for B2B sales teams: deal stages, forecasts and weekly reviews.", "pin": null}],
+          "path1": "pricing", "path2": ""}]}
+      ]
+    }
+  ],
+  "assets": {
+    "sitelinks": [
+      {"text": "Pricing", "desc1": "One plan, $45 per rep per month", "desc2": "No setup fee, cancel any month", "url": "https://pipewise.example/pricing"},
+      {"text": "Book a Demo", "desc1": "A 30-minute walkthrough", "desc2": "See your pipeline in Pipewise", "url": "https://pipewise.example/demo"},
+      {"text": "Pipewise Home", "desc1": "Sales pipeline software", "desc2": "For B2B sales teams", "url": "https://pipewise.example/"}
+    ],
+    "callouts": ["No Setup Fee", "Cancel Any Month", "Every Feature, Every Rep", "Price Shown Upfront"],
+    "snippets": [{"header": "Types", "values": ["Deal stages", "Forecasts by rep", "Pipeline reviews"]}]
+  }
+}

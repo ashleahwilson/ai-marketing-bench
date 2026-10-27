@@ -1,0 +1,62 @@
+{
+ "skill": "accessibility-review",
+ "version": "1.2.0",
+ "date": "2026-10-27",
+ "status": "Meets the Bench Standard bar: beats no skill on total on both models (Haiku 72/72 vs 57/72, Opus 72/72 vs 62/72), never worse on the four traps, and no invented facts in any with-skill output in the final round. One open issue: on Opus, two final-round replies named the skill (the test machine's global instructions ask agents to announce skills).",
+ "method": "8 evals (4 traps), expectations written before any run. Round 1 ran the skill and no skill on Haiku and Opus in fresh headless agents, graded blind by a separate Opus grader. No comparison skill exists locally, so none was compared. Round 2 re-ran the skill on Haiku (v1.1.0); round 3 re-ran it on Haiku and Opus (v1.2.0), each graded blind.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 72,
+   "total": 72
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 72,
+   "total": 72
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 62,
+   "total": 72
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 72,
+   "total": 72
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 57,
+   "total": 72
+  }
+ ],
+ "traps": {
+  "evals": [
+   2,
+   3,
+   4,
+   8
+  ],
+  "with_skill_haiku_round3": "32/32",
+  "with_skill_opus_round3": "32/32",
+  "no_skill_haiku": "23/32",
+  "no_skill_opus": "25/32"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 70,
+  "2 (v1.1.0)": 71,
+  "3 (v1.2.0)": 72,
+  "out_of": 72
+ },
+ "losses_and_open_issues": [
+  "Round 1, Haiku with skill: certification reply ran to 454 words (limit 400); didn't say outright it couldn't see the images (eval 4). Fixed in 1.1.0",
+  "Round 2, Haiku with skill: excused 'plans marked with a green badge' because the badge also has text (eval 8). Fixed in 1.2.0. It also drafted screenshot alt text from a nearby feature paragraph, marked to confirm (not scored; rule tightened in 1.2.0)",
+  "Round 3, Opus with skill: evals 6 and 8 open with 'I used the accessibility-review skill' (skill name leaking into the reply, driven by the test machine's global instructions). Haiku eval 7 exposes its review step ('8 confirmed in the source, 1 added on review'). Not fixed: no rounds left",
+  "Round 3: several with-skill replies still run 440 to 545 words against the 450-word guidance, repeating the must-fix list from the report",
+  "Small ratio slips in every round (for example #747474 stated as 4.64:1, measured 4.67:1); every suggested colour still passed",
+  "Without the skill: both models invented descriptions of unseen photos and a chart trend (evals 1, 4, 7), invented must-fix issues on a clean email (eval 3), and gave replies of 439 to 1,271 words; no-skill Haiku got three contrast ratios wrong",
+  "The suite saturated at 100% in round 3; the next version should add expectations on severity (must fix versus best practice), reply length on non-trap evals, and internals in the reply",
+  "Every run, all configs, left the original page and brand files unchanged"
+ ]
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Pricing | Quillmetrics</title>
+<style>
+  body { font-family: Helvetica, sans-serif; color: #1a2b3c; background: #ffffff; font-size: 16px; }
+  .hero { background: url("hero-dashboard.jpg") center / cover; color: #ffffff; padding: 80px 32px; }
+  .plan-name { font-size: 28px; color: #777777; }
+  .plan-note { font-size: 14px; color: #777777; }
+  .badge { background: #22c55e; color: #ffffff; font-size: 12px; padding: 2px 8px; }
+  .toggle { cursor: pointer; border: 1px solid #1a2b3c; padding: 6px 12px; display: inline-block; }
+</style>
+</head>
+<body>
+<header>
+  <a href="/"><img src="quillmetrics-logo.png" alt="Quillmetrics home" width="160" height="36"></a>
+  <nav aria-label="Main"><a href="/product">Product</a> <a href="/pricing">Pricing</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <h1>One dashboard for your Shopify and Stripe revenue</h1>
+    <p>Pick a plan. Seamless Sync is included free on every plan.</p>
+  </section>
+
+  <p>Billing: <span class="toggle" onclick="setBilling('monthly')">Monthly</span> <span class="toggle" onclick="setBilling('annual')">Annual</span></p>
+  <p>Plans marked with a green badge are our most popular.</p>
+
+  <h2 class="plan-name">Starter</h2>
+  <p><strong>$79/month</strong></p>
+  <p class="plan-note">For stores getting started with revenue reporting.</p>
+
+  <h2 class="plan-name">Growth <span class="badge">Most popular</span></h2>
+  <p><strong>$249/month</strong></p>
+  <p class="plan-note">For stores that want Shopify and Stripe data in one place.</p>
+
+  <p><a href="https://quillmetrics.example/signup">Start your free trial</a></p>
+</main>
+<footer>
+  <p>Quillmetrics, 410 Market Street, Suite 300, Denver, CO 80202</p>
+</footer>
+</body>
+</html>

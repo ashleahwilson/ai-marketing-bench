@@ -1,0 +1,4 @@
+Dataset,Event name,Connection method,Events received,Event ID coverage (%),Event match quality
+Ferncliff Dataset 7740,Lead,Browser,386,0,6.2
+Ferncliff Dataset 7740,Lead,Server (Conversions API),379,0,8.0
+Old agency pixel 1182,Lead,Browser,191,,4.1

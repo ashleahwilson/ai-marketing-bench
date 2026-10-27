@@ -1,0 +1,71 @@
+{
+ "dimension": "measurement",
+ "assessable": true,
+ "confidence": "low",
+ "checks": [
+  {
+   "id": "M1",
+   "points": 30,
+   "max": 30,
+   "evidence": "GTM-SB31KQ on index, product and order-confirmed."
+  },
+  {
+   "id": "M2",
+   "points": 30,
+   "max": 30,
+   "evidence": "order-confirmed.html pushes event 'purchase' with transaction_id, value and currency on the confirmation page."
+  },
+  {
+   "id": "M3",
+   "points": 15,
+   "max": 15,
+   "evidence": "Meta Pixel 290018833471652 on every page."
+  },
+  {
+   "id": "M4",
+   "points": 15,
+   "max": 15,
+   "evidence": "No Universal Analytics and no duplicate tags in the source."
+  },
+  {
+   "id": "M5",
+   "points": 5,
+   "max": 10,
+   "evidence": "Privacy link sitewide. CookieYes and a consent mode default hold Google tags, but the Meta Pixel loads before any choice: scored as a policy link only."
+  }
+ ],
+ "score": 95,
+ "findings": [
+  {
+   "severity": "high",
+   "check": "M2",
+   "finding": "The purchase event sends the customer's email.",
+   "evidence": "order-confirmed.html: customer_email:\"{{customer.email}}\" in the purchase push.",
+   "fix": "Remove customer_email from the push."
+  },
+  {
+   "severity": "high",
+   "check": "M5",
+   "finding": "The Meta Pixel loads before the cookie banner on every page.",
+   "evidence": "fbq init and PageView in the head, above the CookieYes script.",
+   "fix": "Move the pixel into the container and fire it only after marketing consent."
+  },
+  {
+   "severity": "medium",
+   "check": "M2",
+   "finding": "Newsletter signups aren't tracked.",
+   "evidence": "#newsletter form posts to /subscribe with no event.",
+   "fix": "Add a /subscribed page and track sign_up on it."
+  }
+ ],
+ "strengths": [
+  "Google tags wait for consent (consent mode default denied).",
+  "Purchases are pushed on the confirmation page itself."
+ ],
+ "not_observable": [
+  "Order and traffic counts.",
+  "Tags inside GTM-SB31KQ (no container export).",
+  "Whether GA4 receives the purchase event."
+ ],
+ "source": "measurement deep dive, 2026-10-22"
+}

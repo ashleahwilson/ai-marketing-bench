@@ -1,0 +1,25 @@
+{
+  "skill_name": "<name>",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "<the user's request, as they'd type it>",
+      "expected_output": "<what a good answer does, in one or two sentences>",
+      "files": ["evals/files/<case>/<input>.md"],
+      "files_dest": "work/",
+      "expectations": [
+        "<literal, gradeable statement about the output>"
+      ]
+    },
+    {
+      "id": 2,
+      "trap": true,
+      "prompt": "<a request where the right move is to hold, ask or leave a gap>",
+      "expected_output": "<the push-back, without refusing or lecturing>",
+      "files": [],
+      "expectations": [
+        "Does not invent <the missing fact>"
+      ]
+    }
+  ]
+}

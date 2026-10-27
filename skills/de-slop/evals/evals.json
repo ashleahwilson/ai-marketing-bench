@@ -1,0 +1,151 @@
+{
+ "skill_name": "de-slop",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "De-slop this customer email before it goes out: update.md",
+   "expected_output": "A clean rewrite with every product fact kept, US spelling kept, and no invented numbers. The revision only, plus at most a short note.",
+   "files": [
+    "evals/files/update.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Removes 'game-changing', 'revolutionize', 'In today's fast-paced world', 'seamlessly', 'empowering', 'streamline' and 'navigate these exciting changes'",
+    "Keeps every product fact: October 20, the color-coded calendar by hygienist, SMS reminders 48 hours before the appointment",
+    "Keeps US spelling ('color', 'organized' if used); does not switch to 'colour' or 'organised'",
+    "Introduces no new facts: every name, number and claim in the revised text appears in the original draft (no new customers, results, counts, percentages, dates or benefits the draft didn't claim)",
+    "update.md is left unchanged (the revision is in the reply or a separate file)",
+    "The reply leads with the revised text; any commentary after it is 60 words or fewer (measured)"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Make this LinkedIn post sound less AI-written: linkedin-post.md",
+   "expected_output": "Removes the stock opener, the 'not just X, we're Y' move, the staged question and significance clauses, keeps the real facts, and flags the 3-day claim as unverified rather than repeating it as fact or inventing proof.",
+   "files": [
+    "evals/files/linkedin-post.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Removes 'In today's fast-paced restaurant landscape' and the 'not just a bookkeeping service — we're a partner' construction",
+    "Removes 'empowering you to focus on what matters most' and the staged question 'The result?'",
+    "Keeps the real facts: Toast, Square and Lightspeed; one to fifteen locations",
+    "Cuts the hashtags to three or fewer",
+    "Introduces no new facts: every name, number and claim in the revised text appears in the original draft (no new customers, results, counts, percentages, dates or benefits the draft didn't claim)",
+    "Does not introduce overcorrection tells: no run of three or more one-sentence paragraphs, no 'Honestly?' / 'Here's the thing' / 'Let's be real'"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Quick de-slop pass on this before I send: followup.md",
+   "expected_output": "Returns it unchanged or nearly so. It's already specific and plain.",
+   "files": [
+    "evals/files/followup.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Returns the email unchanged, or with at most one trivial change",
+    "Keeps Priya, Marcus, 31%, 28% and 'Thursday at 3' exactly",
+    "Does not add sentences or make the email longer",
+    "Says, in a sentence at most, that it's already clean (or returns it with no commentary)"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "Rewrite this about-page blurb so it doesn't sound like AI: about-blurb.md",
+   "expected_output": "Recognises there's nothing specific in it, and either asks for the missing facts or returns a much shorter version without inventing anything.",
+   "files": [
+    "evals/files/about-blurb.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Says the blurb contains no specific, checkable claim (or asks for specific facts it needs)",
+    "Invents no specifics: no client counts, years, results, locations, founders, awards or tools that aren't in the draft",
+    "Any rewrite is shorter than the original (measured in words)",
+    "Removes 'unlock their full potential', 'commitment to excellence' and 'shaping the future of restaurant finance' from any rewrite"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "Score this section for AI tells. Don't rewrite it: landing-section.md",
+   "expected_output": "A rating and flagged lines with the pattern named, no rewrite.",
+   "files": [
+    "evals/files/landing-section.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Does not provide a rewrite of the section",
+    "Gives an overall rating (for example Low, Moderate, High or Severe)",
+    "Quotes the specific offending lines",
+    "Names the pattern for each flagged line (for example stock phrase, borrowed move, unsupported claim)",
+    "Flags 'Close your books in 3 days, not 3 weeks' as a claim that needs checking, or 'hassle-free' / 'on autopilot' as stock phrasing"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Clean this up so it sounds like a real person wrote it: broetry-post.md",
+   "expected_output": "Recognises the overcorrection tells (one-line paragraph stack, performed candour, engagement bait) and rewrites into normal paragraphs without inventing the story's details.",
+   "files": [
+    "evals/files/broetry-post.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Merges the one-sentence paragraph stack into normal paragraphs (no run of three or more one-sentence paragraphs)",
+    "Removes 'Honestly?', 'Here's the thing nobody tells you', 'Let that sink in' and 'Agree?'",
+    "Keeps the real facts: Tallyhouse, bookkeeping for restaurants, Toast, Square and Lightspeed reconciled daily",
+    "Does not invent details of the 'almost quit' story (no dates, numbers, events or feelings not in the draft)",
+    "Introduces no new facts: every name, number and claim in the revised text appears in the original draft (no new customers, results, counts, percentages, dates or benefits the draft didn't claim)"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "De-slop the implementation section of our proposal: proposal-scope.md",
+   "expected_output": "Proposal register: full plain sentences, no rhetorical question, every date, count and amount kept exactly.",
+   "files": [
+    "evals/files/proposal-scope.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Removes 'pivotal', 'embark on a transformative journey', 'seamlessly', 'Leveraging', 'unlock efficiencies', 'foster a culture of innovation' and 'ever-evolving landscape'",
+    "Removes the rhetorical question 'So what does this mean for you? It means results.'",
+    "Keeps every specific exactly: 6 clinics, 4 years of appointment history, 22 front-desk staff, two half-day sessions, November 3 to December 12, 2026, $18,500 fixed fee",
+    "Uses full sentences (no sentence fragments for effect)",
+    "Introduces no new facts: every name, number and claim in the revised text appears in the original draft (no new customers, results, counts, percentages, dates or benefits the draft didn't claim)"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "Make this testimonials section less generic: testimonial-page.md",
+   "expected_output": "Rewrites the copy around the quote but leaves Dr. Rao's quote word for word, even though it contains 'game-changer' and 'seamless'.",
+   "files": [
+    "evals/files/testimonial-page.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Keeps Dr. Anita Rao's quote exactly as written, including 'game-changer' and 'seamless'",
+    "Removes 'In a world where every minute matters', 'stands as a testament to' and 'elevate your practice' from the surrounding copy",
+    "Does not keep 'helped clinics across the region transform their front desks' as fact, or flags it as an unsupported claim",
+    "Introduces no new facts: every name, number and claim in the revised text appears in the original draft (no new customers, results, counts, percentages, dates or benefits the draft didn't claim)"
+   ]
+  },
+  {
+   "id": 9,
+   "trap": true,
+   "prompt": "Make this sound more human. Add a short story about one of our clinics to make it relatable: story-request.md",
+   "expected_output": "Doesn't invent a client story; says in a sentence that it needs a real one and asks the two or three questions that would get it, and still returns a cleaner version.",
+   "files": [
+    "evals/files/story-request.md"
+   ],
+   "files_dest": "",
+   "expectations": [
+    "Does not invent a clinic, a person, a result or an anecdote",
+    "Says briefly that it needs a real story and asks for the details (for example which clinic, what changed)",
+    "Still returns an improved version of the text (doesn't refuse the whole task)",
+    "Keeps the facts: SMS reminders 48 hours before each appointment; color-coded calendar by hygienist",
+    "The explanation for not inventing the story is 3 sentences or fewer, with no lecture"
+   ]
+  }
+ ]
+}

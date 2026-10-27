@@ -1,0 +1,11 @@
+step,device,users
+landing_view,desktop,1830
+landing_view,mobile,2380
+form_start,desktop,402
+form_start,mobile,210
+form_submit,desktop,121
+form_submit,mobile,27
+thank_you_view,desktop,129
+thank_you_view,mobile,34
+review_booked,desktop,49
+review_booked,mobile,12

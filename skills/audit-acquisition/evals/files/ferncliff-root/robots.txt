@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /demo
+Disallow: /admin
+
+Sitemap: https://ferncliff.example/sitemap.xml

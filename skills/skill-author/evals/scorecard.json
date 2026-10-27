@@ -1,0 +1,64 @@
+{
+ "skill": "skill-author",
+ "version": "1.2.0",
+ "date": "2026-10-27",
+ "status": "Meets the Bench Standard bar. Final round: with skill 62/65 on Haiku and 64/65 on Opus, against 39/65 and 45/65 with no skill and 41/65 for the comparison skill (Anthropic's skill-creator). Never worse on any trap, and the grader found no invented facts in any with-skill output in the final round (two invented rules are listed below).",
+ "method": "8 evals (4 traps), expectations written before any run. Round 1 ran the skill, no skill and the comparison skill (Anthropic's skill-creator) on Haiku, and the skill and no skill on Opus, as fresh headless agents graded blind by a separate Opus grader. Round 2 re-ran the skill on Haiku; round 3 re-ran it on Haiku and Opus. One expectation (eval 2, how much of a leaked key may be named) was clarified after round 1 at the grader's flag, and every round 1 config was re-graded on it.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.2.0, round 3)",
+   "passed": 64,
+   "total": 65
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 58,
+   "total": 65
+  },
+  {
+   "config": "no skill, Opus",
+   "passed": 45,
+   "total": 65
+  },
+  {
+   "config": "with skill, Haiku (v1.2.0, round 3)",
+   "passed": 62,
+   "total": 65
+  },
+  {
+   "config": "no skill, Haiku",
+   "passed": 39,
+   "total": 65
+  },
+  {
+   "config": "comparison skill (skill-creator), Haiku",
+   "passed": 41,
+   "total": 65
+  }
+ ],
+ "traps_by_config_final": {
+  "note": "evals 2, 3, 4, 8; total 27",
+  "with skill Haiku (r3)": 26,
+  "with skill Opus (r3)": 26,
+  "no skill Haiku": 21,
+  "no skill Opus": 21,
+  "comparison skill Haiku": 19
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 46,
+  "2 (v1.1.0)": 59,
+  "3 (v1.2.0)": 62,
+  "out_of": 65
+ },
+ "losses_and_open_issues": [
+  "Round 3, Haiku, eval 7 (Guided mode): turned the sales-tax brand fact into a 'mention it when relevant' rule, and held back the 250-word rule because brand voice says emails stay under 120 words (a defensible hold the expectation doesn't allow for)",
+  "Round 3, Haiku, eval 8: reply was 516 words against a 350-word limit, and the new skill had only 5 evals (it said so)",
+  "Round 3, Opus, eval 3: the provisional draft stated an invented 'warn over 120 words' threshold as a rule instead of an assumption",
+  "Round 3, Haiku, eval 2: added a 'Shopify only' stop rule that isn't in the notes (invented rule, not graded)",
+  "Round 3: Haiku tends to ship 0.1.0 provisional even when the material is enough; Opus ships 1.0.0 'Ready to test'. Both are honest that nothing has been tested",
+  "Round 1, before fixes: the skill moved approved job wording (an SMS reply line, subject lines) into brand memory that didn't exist, leaving placeholders; Haiku in check mode audited the benchmark's fixtures instead of the user's folder and leaked fixture paths; a licence and author were invented",
+  "Round 1, without the skill: no-skill and comparison-skill runs invented length and hashtag rules from a single example, turned a one-off into a standing rule, and overstated what Canada's Competition Act says; no-skill Opus repeated a client's name, revenue and growth figures in its reply; the comparison skill leaked its own internals (skill-creator, eval viewer) into replies",
+  "Round 1 harness faults: eval 3 comparison-skill-haiku and eval 7 no-skill-haiku never read the user's file; scores kept as graded",
+  "Every run, all configs, left the user's original files unchanged"
+ ]
+}

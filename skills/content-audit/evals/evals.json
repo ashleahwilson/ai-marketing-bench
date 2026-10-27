@@ -1,0 +1,337 @@
+{
+ "skill_name": "content-audit",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Can you audit our blog? The analytics export is data/content-export.csv (last 90 days), the posts are in posts/, and brand memory is in brand/. I want to know what to keep, fix, merge or cut, and what we should write next.",
+   "expected_output": "A full audit: inventory.csv with all 17 pieces and AUDIT.md led by a recommendation and a top-10 list. The $299 single-location price (brand memory: $349 since 2026-10-01) on the high-traffic cost post is near the top. Payroll add-on post (discontinued) not kept; 3-days claim post updated; Harbour Grill quote withdrawn; three competing pairs merged in the right direction; e-commerce and franchise posts flagged as excluded audiences; the low-traffic converting POS page and compare page kept; gaps tied to the group-operator persona and catch-up bookkeeping; no invented metrics.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-data/content-export.csv",
+    "evals/files/tally-posts/choose-restaurant-bookkeeper.md",
+    "evals/files/tally-posts/close-books-3-days.md",
+    "evals/files/tally-posts/ecommerce-bookkeeping-tips.md",
+    "evals/files/tally-posts/food-cost-formula.md",
+    "evals/files/tally-posts/food-cost-percentage.md",
+    "evals/files/tally-posts/franchise-accounting-100-locations.md",
+    "evals/files/tally-posts/hiring-bookkeeper-questions.md",
+    "evals/files/tally-posts/labour-cost-restaurants.md",
+    "evals/files/tally-posts/month-end-checklist.md",
+    "evals/files/tally-posts/payroll-add-on.md",
+    "evals/files/tally-posts/prime-cost-guide.md",
+    "evals/files/tally-posts/restaurant-bookkeeping-cost.md",
+    "evals/files/tally-posts/restaurant-week-2023.md",
+    "evals/files/tally-posts/sales-tax-filing-restaurants.md",
+    "evals/files/tally-posts/tallyhouse-vs-general-bookkeeper.md",
+    "evals/files/tally-posts/toast-square-lightspeed-reconciliation.md",
+    "evals/files/tally-posts/what-is-prime-cost.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-data": "data/",
+    "tally-posts": "posts/",
+    "tally-prev": "audits/content/"
+   },
+   "expectations": [
+    "Writes audits/content/inventory.csv with one row for each of the 17 pages, each with a decision of keep, update, merge, redirect or remove",
+    "Flags 'A single location is $299/month' in /blog/restaurant-bookkeeping-cost as outdated (brand memory: $349/month from 2026-10-01) and decides update, not remove",
+    "The /blog/restaurant-bookkeeping-cost price fix is among the first three items of the prioritized action list",
+    "Flags /blog/payroll-add-on as promoting the payroll add-on, which brand memory says was discontinued on 2026-06-30, and its decision is not keep",
+    "Flags /blog/close-books-3-days for the '3 days, not 3 weeks' claim that brand memory holds until substantiated, and decides update (not remove)",
+    "Flags the Harbour Grill / Sam Whitford quote in /blog/month-end-checklist as withdrawn proof to remove",
+    "Merges /blog/what-is-prime-cost into /blog/prime-cost-guide and /blog/food-cost-formula into /blog/food-cost-percentage (in those directions)",
+    "Identifies /blog/hiring-bookkeeper-questions and /blog/choose-restaurant-bookkeeper as competing for 'restaurant bookkeeper' and decides to merge one into the other",
+    "Flags /blog/ecommerce-bookkeeping-tips and /blog/franchise-accounting-100-locations as written for audiences brand memory excludes, with decision remove or redirect for both",
+    "Keeps /blog/toast-square-lightspeed-reconciliation and /compare/tallyhouse-vs-general-bookkeeper (not remove, redirect or merge) despite low traffic, citing their conversions",
+    "Topic gaps include one tied to the group-operator persona (comparing locations or consolidating several locations' POS reports) and one for catch-up bookkeeping",
+    "Every sessions and conversions figure in inventory.csv and AUDIT.md matches the export; no traffic estimates or projections appear",
+    "Does not flag the Lantern Noodle Bar / Maria Okafor quote in /blog/prime-cost-guide as a problem"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "Our blog is bloated. Delete every post that got under 100 sessions in the last 90 days. The export is data/content-export.csv and the posts are in posts/.",
+   "expected_output": "Doesn't apply the rule blindly and doesn't delete files. Six pages fall under 100 sessions; the POS reconciliation page (7 conversions) and the compare page (5 conversions, used in sales follow-ups) stay, the sales tax post is too new (published 2026-08-20), and the food cost formula post should be merged/redirected into the food cost guide. Still gives the safe removal list (Restaurant Week 2023 recap, franchise post). Short, no lecture.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-data/content-export.csv",
+    "evals/files/tally-posts/choose-restaurant-bookkeeper.md",
+    "evals/files/tally-posts/close-books-3-days.md",
+    "evals/files/tally-posts/ecommerce-bookkeeping-tips.md",
+    "evals/files/tally-posts/food-cost-formula.md",
+    "evals/files/tally-posts/food-cost-percentage.md",
+    "evals/files/tally-posts/franchise-accounting-100-locations.md",
+    "evals/files/tally-posts/hiring-bookkeeper-questions.md",
+    "evals/files/tally-posts/labour-cost-restaurants.md",
+    "evals/files/tally-posts/month-end-checklist.md",
+    "evals/files/tally-posts/payroll-add-on.md",
+    "evals/files/tally-posts/prime-cost-guide.md",
+    "evals/files/tally-posts/restaurant-bookkeeping-cost.md",
+    "evals/files/tally-posts/restaurant-week-2023.md",
+    "evals/files/tally-posts/sales-tax-filing-restaurants.md",
+    "evals/files/tally-posts/tallyhouse-vs-general-bookkeeper.md",
+    "evals/files/tally-posts/toast-square-lightspeed-reconciliation.md",
+    "evals/files/tally-posts/what-is-prime-cost.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-data": "data/",
+    "tally-posts": "posts/",
+    "tally-prev": "audits/content/"
+   },
+   "expectations": [
+    "Does not recommend deleting all six pages under 100 sessions",
+    "Recommends keeping /blog/toast-square-lightspeed-reconciliation, citing its 7 conversions",
+    "Recommends keeping /compare/tallyhouse-vs-general-bookkeeper, citing its 5 conversions or its use in the sales team's follow-up emails",
+    "Does not recommend removing /blog/sales-tax-filing-restaurants, and says it is too new to judge (published 2026-08-20)",
+    "Recommends merging or redirecting /blog/food-cost-formula into /blog/food-cost-percentage rather than deleting it outright",
+    "Still names /blog/restaurant-week-2023 as safe to remove (does not refuse to give a removal list)",
+    "All 17 files in posts/ still exist and are unchanged (nothing was deleted or edited)",
+    "response.md is under 350 words (measured)"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Audit our blog and tell me what to cut. The posts are in posts/. We're Ferncliff, scheduling software for dental clinics.",
+   "expected_output": "No metrics and no brand memory. Decides only what the content supports: the two no-show posts compete and should become one; the 2022 text-reminders announcement ('coming in 2023') is outdated; the two posts contradict each other on price ($89 vs $119 per provider per month) and it asks which is current. Everything traffic-dependent is marked as needing data. Says there's no brand memory (provisional) and offers to set one up. Invents no traffic or Ferncliff facts.",
+   "files": [
+    "evals/files/ferncliff-posts/cut-dental-no-shows.md",
+    "evals/files/ferncliff-posts/dental-marketing-instagram.md",
+    "evals/files/ferncliff-posts/ferncliff-pricing-explained.md",
+    "evals/files/ferncliff-posts/front-desk-checklist.md",
+    "evals/files/ferncliff-posts/hygienist-scheduling.md",
+    "evals/files/ferncliff-posts/online-booking-launch.md",
+    "evals/files/ferncliff-posts/reduce-patient-no-shows.md",
+    "evals/files/ferncliff-posts/text-reminders-2022.md"
+   ],
+   "files_dest": "posts/",
+   "expectations": [
+    "Says no traffic or conversion data was supplied, and marks decisions that depend on it as needing data instead of making them",
+    "Does not state or estimate traffic, rankings, search volume or conversions for any post",
+    "Identifies reduce-patient-no-shows and cut-dental-no-shows as covering the same topic and recommends combining them into one piece",
+    "Flags the price conflict ($89 per provider per month in one post, $119 in the other) and asks which is current, without choosing one",
+    "Flags text-reminders-2022 as outdated (a 2022 announcement promising online booking 'in 2023')",
+    "Says there is no brand memory, so prices, claims and audiences couldn't be checked against it, and offers to set one up or marks the audit provisional",
+    "Does not add facts about Ferncliff that aren't in the posts (customers, prices, features, results)",
+    "Writes an inventory covering all 8 posts"
+   ]
+  },
+  {
+   "id": 4,
+   "prompt": "Here's our Search Console export (data/gsc-pages.csv, last 3 months) and the sitemap (sitemap.xml). Brand memory is in brand/. Audit the blog: what should we keep, fix, merge or kill?",
+   "expected_output": "Works from clicks and impressions, says conversions weren't supplied so low-click pages aren't removed on clicks alone; lists the two sitemap URLs with no data and the export URL missing from the sitemap; merges best-shopify-revenue-dashboard into shopify-revenue-dashboard; flags real-time-revenue-shopify against the never-promise-real-time rule and pricing-from-49 as quoting the old $49 Starter price; flags the 2023 Black Friday checklist as dated. No invented titles or metrics.",
+   "files": [
+    "evals/files/quill-brand/brand/BRAND.md",
+    "evals/files/quill-brand/brand/audiences.md",
+    "evals/files/quill-brand/brand/offer.md",
+    "evals/files/quill-brand/brand/rules.md",
+    "evals/files/quill-brand/brand/voice.md",
+    "evals/files/quill-data/gsc-pages.csv",
+    "evals/files/quill-site/sitemap.xml"
+   ],
+   "files_dest_map": {
+    "quill-brand/brand": "brand/",
+    "quill-data": "data/",
+    "quill-site": ""
+   },
+   "expectations": [
+    "Says the export has no conversion data, and does not decide to remove a low-click page on clicks alone (marks it as needing conversion data or keeps it pending that check)",
+    "Lists /blog/revenue-forecasting and /blog/churn-for-subscription-stores as in the sitemap but missing from the export, without removing them",
+    "Flags /blog/old-stripe-guide as in the export but not in the sitemap",
+    "Identifies /blog/shopify-revenue-dashboard and /blog/best-shopify-revenue-dashboard as competing and recommends merging best-shopify-revenue-dashboard into shopify-revenue-dashboard",
+    "Flags /blog/real-time-revenue-shopify as breaking the brand rule against promising 'real-time' data, and does not recommend removing it (it has 640 clicks)",
+    "Flags /blog/quillmetrics-pricing-from-49 as quoting an old price (brand memory: Starter is $79/month; $49 ended 2026-03-31)",
+    "Flags /blog/black-friday-2023-checklist as dated",
+    "Does not invent page titles, sessions or conversion figures that aren't in the export"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "Walk me through the content audit before you write anything up. I want to make the merge and removal calls myself. Export: data/content-export.csv, posts in posts/, brand memory in brand/.",
+   "expected_output": "Guided mode: states the fact fixes ($299 price, held claim, withdrawn quote) as required, then lists the merges and removals as numbered questions with the evidence and a recommendation. Doesn't write a final AUDIT.md or inventory.csv yet.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-data/content-export.csv",
+    "evals/files/tally-posts/choose-restaurant-bookkeeper.md",
+    "evals/files/tally-posts/close-books-3-days.md",
+    "evals/files/tally-posts/ecommerce-bookkeeping-tips.md",
+    "evals/files/tally-posts/food-cost-formula.md",
+    "evals/files/tally-posts/food-cost-percentage.md",
+    "evals/files/tally-posts/franchise-accounting-100-locations.md",
+    "evals/files/tally-posts/hiring-bookkeeper-questions.md",
+    "evals/files/tally-posts/labour-cost-restaurants.md",
+    "evals/files/tally-posts/month-end-checklist.md",
+    "evals/files/tally-posts/payroll-add-on.md",
+    "evals/files/tally-posts/prime-cost-guide.md",
+    "evals/files/tally-posts/restaurant-bookkeeping-cost.md",
+    "evals/files/tally-posts/restaurant-week-2023.md",
+    "evals/files/tally-posts/sales-tax-filing-restaurants.md",
+    "evals/files/tally-posts/tallyhouse-vs-general-bookkeeper.md",
+    "evals/files/tally-posts/toast-square-lightspeed-reconciliation.md",
+    "evals/files/tally-posts/what-is-prime-cost.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-data": "data/",
+    "tally-posts": "posts/",
+    "tally-prev": "audits/content/"
+   },
+   "expectations": [
+    "Presents the merge and removal decisions as numbered questions or choices for the user, each with its numbers (sessions and conversions)",
+    "Includes the prime cost pair (/blog/what-is-prime-cost and /blog/prime-cost-guide) and the food cost pair (/blog/food-cost-formula and /blog/food-cost-percentage) among the merge questions",
+    "Gives a recommendation for each question",
+    "Treats the $299 single-location price correction as a required fix, not a question for the user",
+    "Does not write audits/content/AUDIT.md or audits/content/inventory.csv with the merge and removal decisions already made (no such files, or clearly marked draft pending the user's answers)",
+    "Does not ask the user to decide whether to keep /blog/prime-cost-guide or other clear keeps as open questions (keeps are stated, not asked)"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Time for our quarterly content audit. New export is data/content-export.csv, posts in posts/, brand memory in brand/. Last quarter's audit is in audits/content/. What's changed and what's still open?",
+   "expected_output": "Re-audit: preserves the July files (copied to .prev before writing), lists the July actions still open (Restaurant Week 2023 still live, food cost formula and what-is-prime-cost merges not done, close-books claim not updated, e-commerce and franchise removals not done), the new problems from brand-memory changes since July ($299 price, discontinued payroll add-on, withdrawn Harbour Grill quote), and the new sales tax post (too new to judge).",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-data/content-export.csv",
+    "evals/files/tally-posts/choose-restaurant-bookkeeper.md",
+    "evals/files/tally-posts/close-books-3-days.md",
+    "evals/files/tally-posts/ecommerce-bookkeeping-tips.md",
+    "evals/files/tally-posts/food-cost-formula.md",
+    "evals/files/tally-posts/food-cost-percentage.md",
+    "evals/files/tally-posts/franchise-accounting-100-locations.md",
+    "evals/files/tally-posts/hiring-bookkeeper-questions.md",
+    "evals/files/tally-posts/labour-cost-restaurants.md",
+    "evals/files/tally-posts/month-end-checklist.md",
+    "evals/files/tally-posts/payroll-add-on.md",
+    "evals/files/tally-posts/prime-cost-guide.md",
+    "evals/files/tally-posts/restaurant-bookkeeping-cost.md",
+    "evals/files/tally-posts/restaurant-week-2023.md",
+    "evals/files/tally-posts/sales-tax-filing-restaurants.md",
+    "evals/files/tally-posts/tallyhouse-vs-general-bookkeeper.md",
+    "evals/files/tally-posts/toast-square-lightspeed-reconciliation.md",
+    "evals/files/tally-posts/what-is-prime-cost.md",
+    "evals/files/tally-prev/inventory.csv",
+    "evals/files/tally-prev/AUDIT.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-data": "data/",
+    "tally-posts": "posts/",
+    "tally-prev": "audits/content/"
+   },
+   "expectations": [
+    "The July inventory and audit are preserved: either audits/content/inventory.csv and AUDIT.md are unchanged, or copies with the original July content exist (for example inventory.prev.csv / AUDIT.prev.md)",
+    "Reports at least three of the July actions as still open: /blog/restaurant-week-2023 removal, /blog/food-cost-formula merge, /blog/what-is-prime-cost merge, /blog/close-books-3-days update, /blog/ecommerce-bookkeeping-tips removal, /blog/franchise-accounting-100-locations removal",
+    "Reports the $299 single-location price in /blog/restaurant-bookkeeping-cost as a new problem since the last audit (the price changed to $349 on 2026-10-01)",
+    "Reports that /blog/payroll-add-on now promotes a discontinued offer (the July audit kept it)",
+    "Notes /blog/sales-tax-filing-restaurants as new since the last audit and does not recommend removing it",
+    "Compares metrics only using figures that appear in the two files (no invented trend numbers)"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Which topics are we missing? I want to brief our next three posts. Use brand memory and our export (data/content-export.csv).",
+   "expected_output": "Topic gaps tied to brand-memory lines: group operators comparing locations / consolidating POS reports, catch-up bookkeeping for owners who fell behind, cash at month end or tax deadlines. Each names the brand line it serves and the nearest existing piece. No gaps for excluded audiences, no search volumes, doesn't list already-covered topics (prime cost, food cost, labour) as gaps.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-data/content-export.csv"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-data": "data/",
+    "tally-posts": "posts/",
+    "tally-prev": "audits/content/"
+   },
+   "expectations": [
+    "Proposes at least three topic gaps, each tied to a specific audience, persona or offer line in brand memory",
+    "Includes a gap for the group-operator persona (comparing locations side by side or consolidating separate POS reports)",
+    "Includes a gap for catch-up bookkeeping (an offer with no piece) or for owners who've fallen behind on their books (a persona trigger)",
+    "Does not attach search volumes, keyword difficulty or traffic estimates to any gap",
+    "Does not propose a gap topic for an audience brand memory excludes (retail, e-commerce, franchises over 15 locations)",
+    "Does not list prime cost, food cost percentage or labour cost as missing topics (they're already covered)",
+    "Writes the gaps to a file (for example audits/content/AUDIT.md) so they can be used for briefs"
+   ]
+  },
+  {
+   "id": 8,
+   "trap": true,
+   "prompt": "Quick one: our bookkeeping cost post still pulls a lot of traffic, so I'd rather leave it as is. OK? It's posts/restaurant-bookkeeping-cost.md and the numbers are in data/content-export.csv.",
+   "expected_output": "No: update it. The single-location price says $299/month; brand memory says $349 since 2026-10-01. Keep the page (1,800 sessions, 22 conversions). The group price line ($299 per location) is correct and stays. Short.",
+   "files": [
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tally-data/content-export.csv",
+    "evals/files/tally-posts/restaurant-bookkeeping-cost.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-brand/brand": "brand/",
+    "tally-data": "data/",
+    "tally-posts": "posts/",
+    "tally-prev": "audits/content/"
+   },
+   "expectations": [
+    "Says not to leave it as is: it needs an update",
+    "Identifies 'A single location is $299/month' as outdated and gives $349/month (effective 2026-10-01) from brand memory",
+    "Says to keep the page rather than remove or redirect it, citing its traffic or conversions (1800 sessions, 22 conversions)",
+    "Does not flag 'Groups of 2 to 15 locations start from $299 per location per month' as wrong",
+    "Does not invent a new price, claim or statistic",
+    "posts/restaurant-bookkeeping-cost.md is unchanged",
+    "response.md is under 200 words (measured)"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "pages_reviewed": 4,
+  "total": 49,
+  "grade": "D",
+  "action": "Rebuild the foundations, starting with conversion and measurement.",
+  "confidence": "Medium",
+  "assessed": 5,
+  "unassessed": [],
+  "dimensions": {
+    "positioning": {"weight": 25, "score": 60, "assessed": true},
+    "acquisition": {"weight": 20, "score": 51, "assessed": true},
+    "conversion": {"weight": 20, "score": 38, "assessed": true},
+    "brand": {"weight": 15, "score": 47, "assessed": true},
+    "measurement": {"weight": 20, "score": 45, "assessed": true}
+  }
+}

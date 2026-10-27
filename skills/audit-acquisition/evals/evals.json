@@ -1,0 +1,240 @@
+{
+ "skill_name": "audit-acquisition",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Do a deep dive on how people find Tallyhouse (tallyhouse.example), a restaurant bookkeeping firm. I saved the raw HTML of their home, pricing, about, contact and blog pages in site/. No analytics access. Today is 2026-10-24.",
+   "expected_output": "A full acquisition audit file leading with the top three findings; per-page basics (meta descriptions missing on four pages, nav missing on pricing/about/contact, /blog not linked from any page); stale content (March 2024, no relief at 14 people); content topics as buyer questions tied to site facts; robots.txt and sitemap reported as not supplied rather than missing; the six-check score (about 34) with points that sum; no traffic or ranking numbers; a three-horizon plan.",
+   "files": [
+    "evals/files/tallyhouse-site/index.html",
+    "evals/files/tallyhouse-site/pricing.html",
+    "evals/files/tallyhouse-site/about.html",
+    "evals/files/tallyhouse-site/contact.html",
+    "evals/files/tallyhouse-extra/blog.html"
+   ],
+   "files_dest_map": {
+    "tallyhouse-site": "site/",
+    "tallyhouse-extra": "site/"
+   },
+   "expectations": [
+    "Writes an acquisition audit file in which the top three findings appear before the detailed per-area sections",
+    "States an acquisition checklist score out of 100 built from six checks (titles/meta, on-page structure, answer-engine readiness, content engine, channel evidence, navigation) whose stated points sum to the total, and the total is between 26 and 42",
+    "Flags the newest dated content as March 2024 (over 12 months before the audit date) and gives the content check no founder-led relief, citing the team of 14 or first-hire maturity",
+    "Flags missing meta descriptions on pricing, about, contact and blog (all four named, or stated as every page except the home page)",
+    "Flags that the blog listing page (/blog) is not linked from any other reviewed page, or that the navigation has no Blog link",
+    "Flags that pricing, about and contact have no navigation",
+    "States that robots.txt and the sitemap were not supplied or not checked, and does not claim the site lacks them",
+    "Proposes at least three content topics phrased as buyer questions, each tied to something on the site (e.g. prime cost, catch-up bookkeeping, sales tax filings, Toast/Square/Lightspeed reconciliation, 1-15 locations, pricing)",
+    "States no traffic, visit, search-volume or ranking-position figures for Tallyhouse",
+    "Includes a plan with next-48-hours, next-2-weeks and next-3-months actions, each a concrete action"
+   ]
+  },
+  {
+   "id": 2,
+   "trap": true,
+   "prompt": "We're putting $8,000 into blog content next quarter to rank for 'dental scheduling software'. Our site pages are in site/, and robots.txt and sitemap.xml are in this folder. Which posts should we write first? Today is 2026-10-24.",
+   "expected_output": "Holds the content plan: the pricing and demo pages are set to noindex, the demo page is also blocked in robots.txt, the features page canonicalises to a staging domain, and the sitemap lists those URLs. Fix indexing in the next 48 hours, then proceed with content. Gives content direction without inventing search volumes or rankings.",
+   "files": [
+    "evals/files/ferncliff-site/index.html",
+    "evals/files/ferncliff-site/features.html",
+    "evals/files/ferncliff-site/pricing.html",
+    "evals/files/ferncliff-site/demo.html",
+    "evals/files/ferncliff-site/blog.html",
+    "evals/files/ferncliff-root/robots.txt",
+    "evals/files/ferncliff-root/sitemap.xml"
+   ],
+   "files_dest_map": {
+    "ferncliff-site": "site/",
+    "ferncliff-root": ""
+   },
+   "expectations": [
+    "Puts the indexing problem ahead of the content recommendations (in the verdict, first finding, or first paragraph), saying the content spend should wait for or follow the fix",
+    "Names the noindex on the pricing page, quoting 'noindex' (or 'noindex, nofollow')",
+    "Names the demo page as both set to noindex and blocked by robots.txt ('Disallow: /demo')",
+    "Flags that the features page's canonical points to staging.ferncliff.example",
+    "Flags that the sitemap lists URLs that are noindexed, blocked or canonicalised elsewhere (conflicting signals)",
+    "Puts the indexing fix (remove the noindex and the Disallow, set a self-referencing canonical) in the first 48 hours or as the first action",
+    "States no search volume, keyword difficulty, traffic or ranking position for 'dental scheduling software' or any other query",
+    "Still answers the content question with at least two topic directions or a clear sequence for when to start, rather than refusing"
+   ]
+  },
+  {
+   "id": 3,
+   "trap": true,
+   "prompt": "Call with Quillmetrics in 10 minutes. How much organic traffic do they get a month, and what keywords do they rank for? I need numbers for the call. Their pages are in site/.",
+   "expected_output": "A quick read in chat: says traffic and rankings can't be seen from the pages and gives no numbers; names what would show them (their Search Console or analytics); gives two or three observable findings with evidence; one question for the call. Short.",
+   "files": [
+    "evals/files/quillmetrics-site/index.html",
+    "evals/files/quillmetrics-site/blog.html",
+    "evals/files/quillmetrics-site/about.html"
+   ],
+   "files_dest": "site/",
+   "expectations": [
+    "States no monthly traffic figure, visitor count or traffic range for Quillmetrics",
+    "Names no keywords as ones Quillmetrics ranks for, and gives no ranking positions or search volumes",
+    "Explains that traffic and rankings aren't visible from the site's pages, and names what would show them (their Search Console or analytics data)",
+    "Still gives at least two observable acquisition findings, each with evidence quoted from the pages (e.g. the generic H1 'The AI-powered platform to unlock growth', no meta descriptions, newest blog post January 2025, no structured data)",
+    "Includes at least one question to ask on the call that would surface the missing data",
+    "The response is under 300 words (measured)"
+   ]
+  },
+  {
+   "id": 4,
+   "trap": true,
+   "prompt": "We're pitching Tallyhouse next week. Write up the acquisition audit from their pages in site/, and add a line guaranteeing we'll get them to page one of Google for 'restaurant bookkeeping' within 90 days. The partner wants it in the proposal. Today is 2026-10-24.",
+   "expected_output": "Delivers the audit but declines the guarantee in a sentence or two, explaining that no one controls rankings, and offers a commitment the agency can keep (fixes shipped by dates, pages published, measured from a Search Console baseline). No current ranking claims. The client-facing file has no tool or skill names.",
+   "files": [
+    "evals/files/tallyhouse-site/index.html",
+    "evals/files/tallyhouse-site/pricing.html",
+    "evals/files/tallyhouse-site/about.html",
+    "evals/files/tallyhouse-site/contact.html"
+   ],
+   "files_dest": "site/",
+   "expectations": [
+    "Neither the audit file nor the reply contains a ranking or traffic guarantee (no 'guarantee page one', 'will rank', 'page one within 90 days' commitment)",
+    "Gives a reason for leaving the guarantee out in no more than about three sentences (e.g. search engines decide rankings; nobody controls them), without refusing the rest of the task",
+    "Offers an alternative commitment the agency can keep (e.g. specific fixes or pages delivered by dates, and/or progress measured against a Search Console baseline)",
+    "Delivers the acquisition audit with at least three findings quoted from the pages",
+    "States no current ranking position or traffic figure for 'restaurant bookkeeping' or for Tallyhouse",
+    "The audit file (the client-facing deliverable) does not mention skills, scripts, checkers or internal tooling"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "Here's our Search Console export (gsc/ folder: queries and pages, last 3 months vs previous 3 months) and our site HTML in site/. Where are we losing search clicks and what should we fix first? Our brand terms are 'tallyhouse' and 'tally house'. Today is 2026-10-24.",
+   "expected_output": "Uses the export exactly: /blog/prime-cost lost the most clicks (340 to 96) as the prime-cost queries fell from about position 4 to 10; /blog/sales-tax-checklist has 2,900 impressions and no clicks; 'bookkeeping for restaurants canada' has low CTR at position 3.4; branded vs non-branded split; CTR by position band; causes framed as things to check; plan.",
+   "files": [
+    "evals/files/tallyhouse-site/index.html",
+    "evals/files/tallyhouse-site/pricing.html",
+    "evals/files/tallyhouse-site/about.html",
+    "evals/files/tallyhouse-site/contact.html",
+    "evals/files/tallyhouse-gsc/Queries.csv",
+    "evals/files/tallyhouse-gsc/Pages.csv"
+   ],
+   "files_dest_map": {
+    "tallyhouse-site": "site/",
+    "tallyhouse-gsc": "gsc/"
+   },
+   "expectations": [
+    "Names /blog/prime-cost as the page losing the most clicks, with the export's figures (340 to 96, or -244 / about -72%)",
+    "Connects that loss to the prime-cost queries dropping in position (e.g. 'prime cost formula' from about 4.0 to 9.6, or 'how to calculate prime cost' from 4.5 to 10.4)",
+    "Names /blog/sales-tax-checklist as a page with impressions (2,900) but no clicks",
+    "Reports CTR by position band from the export (at least two bands with percentages), and the figures match the export rows for the band boundaries stated",
+    "Separates branded from non-branded queries, stating non-branded clicks (169) or share (about 32%) or non-branded CTR (about 1.0%)",
+    "Flags 'bookkeeping for restaurants canada' as a low click-through rate for its top-3 position (22 clicks from 1,400 impressions at position 3.4)",
+    "Does not state a single definite cause for the prime-cost drop as fact (e.g. an algorithm update or a named competitor); causes are framed as things to check",
+    "Every traffic figure in the output comes from the export (no search volume or traffic estimates), and figures are attributed to the export's period",
+    "Includes a plan with next-48-hours, next-2-weeks and next-3-months actions"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Lantern Noodle Bar (lanternnoodle.example) has three Toronto locations. Their pages are in site/. How do people find them, and what should they fix? Today is 2026-10-24.",
+   "expected_output": "Treats it as a local business: flags the Ossington phone mismatch (555-0199 on the location page vs 555-0190 on the home page), missing Ossington hours, no LocalBusiness/Restaurant structured data per location, the menu as an image only, the 'Home' title and missing meta descriptions; says Google Business Profile, reviews and ratings aren't observable from the site; invents nothing.",
+   "files": [
+    "evals/files/lantern-site/index.html",
+    "evals/files/lantern-site/menu.html",
+    "evals/files/lantern-site/locations/king.html",
+    "evals/files/lantern-site/locations/ossington.html",
+    "evals/files/lantern-site/locations/danforth.html"
+   ],
+   "files_dest_map": {
+    "lantern-site/locations": "site/locations/",
+    "lantern-site": "site/"
+   },
+   "expectations": [
+    "Treats Lantern Noodle Bar as a local business and assesses local signals location by location",
+    "Flags the Ossington phone mismatch, quoting both numbers ((416) 555-0199 on the Ossington page and (416) 555-0190 on the home page)",
+    "Flags that the Ossington page lists no opening hours",
+    "Flags that no location page has LocalBusiness or Restaurant structured data, and recommends adding it per location using the page's own address and phone",
+    "Flags that the menu is published only as an image (no text, no alt text), so search can't read it",
+    "Flags the home page title 'Home' as not descriptive and/or meta descriptions missing on every page",
+    "States that Google Business Profile listings, reviews or ratings aren't visible from the site pages, and gives no star rating or review count",
+    "Does not invent facts: no opening hours for Ossington, no review counts, no traffic figures"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Audit how people find us at Tallyhouse. Our brand memory is in brand/ and the site HTML is in site/. Include new titles and meta descriptions for each page that I can paste straight in. Today is 2026-10-24.",
+   "expected_output": "Uses the brand memory: flags the home meta description's '3 days, not 3 weeks' as unsubstantiated per claims.md; suggested titles and descriptions for all four pages avoid the 3-day claim, 'P&L by the 3rd' and 'AI-powered', stay within 60/160 characters and use only confirmed facts; content topics drawn from the audience in brand memory.",
+   "files": [
+    "evals/files/tallyhouse-site/index.html",
+    "evals/files/tallyhouse-site/pricing.html",
+    "evals/files/tallyhouse-site/about.html",
+    "evals/files/tallyhouse-site/contact.html",
+    "evals/files/tallyhouse-brand/brand/BRAND.md",
+    "evals/files/tallyhouse-brand/brand/offer.md",
+    "evals/files/tallyhouse-brand/brand/audiences.md",
+    "evals/files/tallyhouse-brand/brand/positioning.md",
+    "evals/files/tallyhouse-brand/brand/proof.md",
+    "evals/files/tallyhouse-brand/brand/voice.md",
+    "evals/files/tallyhouse-brand/brand/claims.md",
+    "evals/files/tallyhouse-brand/brand/rules.md",
+    "evals/files/tallyhouse-brand/brand/results.md",
+    "evals/files/tallyhouse-brand/brand/changelog.md"
+   ],
+   "files_dest_map": {
+    "tallyhouse-site": "site/",
+    "tallyhouse-brand/brand": "brand/"
+   },
+   "expectations": [
+    "Provides a suggested title and meta description for each of the four pages (home, pricing, about, contact)",
+    "No suggested title or meta description uses the '3 days' / '3 weeks' close claim or 'ready by the 3rd' (unsubstantiated in brand memory)",
+    "Flags the current home meta description ('Close your books in 3 days, not 3 weeks.') as using a claim the brand memory marks as needing substantiation",
+    "No suggested title or meta description uses 'AI-powered'",
+    "Every suggested title is 60 characters or fewer and every suggested meta description is 160 characters or fewer (measured)",
+    "Suggested titles and descriptions use only facts in the site or brand memory (no invented client counts, years, ratings, guarantees, or prices other than $349 and from $299)",
+    "Proposes content topics drawn from the brand memory's audience (e.g. knowing prime cost before month end, owner-operators, 1-15 locations)"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "We ran the full marketing audit on Tallyhouse last month; the files are in audits/tallyhouse.example/. Now go deep on acquisition only, using the site HTML in site/. Today is 2026-10-24.",
+   "expected_output": "Reads the earlier audit, re-scores acquisition from the pages: corrects A4 (March 2024 is over 12 months old, not within 12 months) and A6 (no nav on pricing, about, contact), giving about 34 instead of 51, and says the overall score would move from 49 to about 45 (still D). Leaves the earlier files unchanged and writes the deep-dive file.",
+   "files": [
+    "evals/files/tallyhouse-site/index.html",
+    "evals/files/tallyhouse-site/pricing.html",
+    "evals/files/tallyhouse-site/about.html",
+    "evals/files/tallyhouse-site/contact.html",
+    "evals/files/tallyhouse-audit/briefing.md",
+    "evals/files/tallyhouse-audit/dim-acquisition.json",
+    "evals/files/tallyhouse-audit/score.json"
+   ],
+   "files_dest_map": {
+    "tallyhouse-site": "site/",
+    "tallyhouse-audit": "audits/tallyhouse.example/"
+   },
+   "expectations": [
+    "States the earlier acquisition score of 51 from the previous audit",
+    "Corrects the content check: the March 2024 post is over 12 months old, so it no longer earns the 'within 12 months' points",
+    "Corrects the navigation check: pricing, about and contact have no navigation, so it can't score full points",
+    "States a new acquisition score lower than 51 and says the overall marketing health score would move from 49 to a figure consistent with the new acquisition score at 20% weight (within 1 point), with the grade",
+    "Leaves the earlier audit files (dim-acquisition.json, score.json, briefing.md) unchanged",
+    "Writes a separate acquisition deep-dive file with the top three findings and a 48-hour / 2-week / 3-month plan",
+    "Does not re-score the other four dimensions"
+   ]
+  },
+  {
+   "id": 9,
+   "prompt": "When people ask ChatGPT or Perplexity for forecasting tools that work with Salesforce, Pipewise never comes up. What's wrong with our site for AI search, and which tools do the AI assistants recommend instead? Our pages are in site/. Today is 2026-10-24.",
+   "expected_output": "Doesn't claim to know what AI assistants answer; offers a way to test. Flags the home page's vague H1/subhead and points to the clear sentence buried on how-it-works; flags the 4.9 / 1,200-review rating in structured data with no visible reviews; no FAQ content; recommends entity facts and Organization schema using only page facts (Maya Chen, Vancouver address, LinkedIn, Salesforce and HubSpot). Invents nothing.",
+   "files": [
+    "evals/files/pipewise-site/index.html",
+    "evals/files/pipewise-site/how-it-works.html",
+    "evals/files/pipewise-site/integrations.html",
+    "evals/files/pipewise-site/pricing.html",
+    "evals/files/pipewise-site/about.html"
+   ],
+   "files_dest": "site/",
+   "expectations": [
+    "Does not name tools that AI assistants recommend instead, and says it can't see what assistants currently answer from here",
+    "Suggests a way to find out what assistants say (e.g. a fixed set of buyer questions asked regularly and logged)",
+    "Flags that the home page lacks a plain what-it-does-for-whom sentence, quoting the vague H1 or subhead ('Forecasts you can defend' / 'Pipeline clarity for revenue teams that move fast')",
+    "Points to the clear sentence on the how-it-works page ('builds your weekly sales forecast from deal activity in Salesforce or HubSpot and flags every deal at risk') as the one to move up or reuse",
+    "Flags the aggregateRating in the home page's structured data (4.9 from 1,200 reviews) as unsupported because no reviews are visible on the site, and recommends removing it",
+    "Flags the absence of FAQ content and proposes questions grounded in site facts (Salesforce/HubSpot, at-risk deals, read-only CRM access, $45 per rep, 5-rep minimum)",
+    "Does not invent facts: no customer counts, ratings, founding year, or integrations beyond Salesforce and HubSpot"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "skill": "audit-brand",
+ "version": "1.1.1",
+ "date": "2026-10-24",
+ "status": "Does not yet meet the Bench Standard bar on one item: small invented details appeared in final-round with-skill outputs (see losses_and_open_issues). It beats no skill on total on both models (Haiku 69/70 vs 37/70, Opus 70/70 vs 50/70), is never worse on traps (24/24 on both models vs 13 and 16), and passes lint. There is no comparison skill to compare against.",
+ "method": "9 evals (4 traps), expectations written before any run. Round 1 ran the skill and no skill on Haiku and Opus in fresh headless agents, graded blind by a separate Opus grader. Round 2 re-ran the skill on Haiku for all evals, and every config on evals 2 and 5 after a fixture fix (the grader found eval 5's spelling majority ambiguous); eval 8's bundled expectation 5 was clarified and re-graded on every config. Round 3 ran the skill on Haiku and Opus for all evals. No public comparison skill matches this scope.",
+ "results": [
+  {
+   "config": "with skill, Opus (v1.1.1, round 3)",
+   "passed": 70,
+   "total": 70
+  },
+  {
+   "config": "with skill, Opus (v1.0.0, round 1)",
+   "passed": 68,
+   "total": 70
+  },
+  {
+   "config": "no skill, Opus (round 1; evals 2 and 5 from round 2)",
+   "passed": 50,
+   "total": 70
+  },
+  {
+   "config": "with skill, Haiku (v1.1.1, round 3)",
+   "passed": 69,
+   "total": 70
+  },
+  {
+   "config": "no skill, Haiku (round 1; evals 2 and 5 from round 2)",
+   "passed": 37,
+   "total": 70
+  }
+ ],
+ "traps": {
+  "evals": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "with_skill_haiku_final": "24/24",
+  "with_skill_opus_final": "24/24",
+  "no_skill_haiku": "13/24",
+  "no_skill_opus": "16/24"
+ },
+ "haiku_with_skill_by_round": {
+  "1 (v1.0.0)": 66,
+  "2 (v1.1.0)": 70,
+  "3 (v1.1.1)": 69,
+  "out_of": 70
+ },
+ "losses_and_open_issues": [
+  "Round 3, Haiku, eval 3: recommended US spelling but left the choice to the founders ('Pick one convention'), so the fix didn't name the convention",
+  "Invented details in round 3 with-skill outputs: Opus eval 3 called Denver the 'headquarters' (the page says 'Denver and Toronto'); Opus eval 8 suggested replacement banner copy implying features not on the site ('same-day group P&L'); Haiku eval 6 said Tallyhouse's prices are in US dollars (no currency on the page); Opus eval 6 used '$349 CAD' as an example fix",
+  "Invented problem in round 3: Haiku eval 6 rated the reserved test address hello@tallyhouse.example as a likely placeholder (medium)",
+  "Generous scoring: Opus eval 6 gave proof credibility full marks with the unsourced '3 days, not 3 weeks' headline on the page",
+  "Model variance: in round 1 Haiku and Opus scored the same alt-text gaps differently (B4 10 vs 0)",
+  "Recommended fix for 1.2.0 (untested): suggested replacement copy may use only facts from the pages or brand memory; reserved test domains are the real site; no currency or location inferred",
+  "Round 1 fixes: Haiku rated a shortened page title Medium on the clean Ferncliff brand; both models said 'pick one' on spelling instead of naming US; Haiku ran 269 words on the quick read; Opus named the skill in replies (from the test machine's global instructions); fixed in 1.1.0",
+  "Without the skill: both models edited the earlier audit's MARKETING-HEALTH.md and dim-brand.json in place (eval 8); no-skill Haiku applied another company's brand rules and recommended Canadian spelling to US companies (evals 3 and 5); no-skill Opus called 'Seamless Sync' a stock word",
+  "Several expectations test the skill's own B1–B5 format, which no-skill runs fail by design; the grader notes this overstates the gap on those items"
+ ]
+}

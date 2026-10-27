@@ -1,0 +1,356 @@
+{
+ "files": {
+  "ads": [
+   "ads.csv"
+  ],
+  "settings": [
+   "campaign-settings.csv"
+  ],
+  "network": [
+   "campaigns-by-network.csv"
+  ],
+  "campaigns": [
+   "campaigns.csv"
+  ],
+  "conversions": [
+   "conversion-actions.csv"
+  ],
+  "keywords": [
+   "keywords.csv"
+  ],
+  "negatives": [
+   "negative-keywords.csv"
+  ],
+  "search_terms": [
+   "search-terms.csv"
+  ]
+ },
+ "date_range": [
+  [
+   2026,
+   8,
+   1
+  ],
+  [
+   2026,
+   9,
+   29
+  ]
+ ],
+ "days": 60,
+ "total_cost": 3526.65,
+ "total_conversions": 82.0,
+ "cpa_reported": 43.01,
+ "conv_value": 0,
+ "roas_reported_pct": null,
+ "campaigns": [
+  {
+   "campaign": "Search | Brand",
+   "budget_per_day": 10.0,
+   "bid_strategy": "Maximize clicks",
+   "target": "--",
+   "cost": 96.4,
+   "conversions": 22.0,
+   "cpa_reported": 4.38
+  },
+  {
+   "campaign": "Search | Physiotherapy",
+   "budget_per_day": 60.0,
+   "bid_strategy": "Maximize conversions",
+   "target": "--",
+   "cost": 3430.25,
+   "conversions": 60.0,
+   "cpa_reported": 57.17
+  }
+ ],
+ "confidence": "High",
+ "confidence_basis": "60 days, 70 conversions (real outcomes, counted once)",
+ "score": 35,
+ "grade": "F",
+ "checks_scored": 11,
+ "partial": false,
+ "checks": {
+  "conversion_tracking": {
+   "status": "FAIL",
+   "figures": {
+    "primary_actions": [
+     [
+      "Booking confirmed",
+      "Book appointment",
+      70.0
+     ],
+     [
+      "Contact page view",
+      "Page view",
+      12.0
+     ]
+    ],
+    "non_outcome_primary": [
+     [
+      "Contact page view",
+      12.0
+     ]
+    ],
+    "possible_duplicates": [],
+    "count_every_on_leads": [],
+    "static_value_actions": [],
+    "primary_conversions_reported": 82.0,
+    "outcome_conversions_deduplicated": 70.0,
+    "cpa_on_outcomes_deduplicated": 50.38
+   },
+   "notes": []
+  },
+  "wasted_spend": {
+   "status": "FAIL",
+   "figures": {
+    "waste_total": 632.2,
+    "search_terms_cost": 3526.65,
+    "waste_share_pct": 17.9,
+    "waste_by_campaign": {
+     "Search | Physiotherapy": 632.2
+    },
+    "waste_terms": [
+     {
+      "term": "physio jobs halifax",
+      "campaign": "Search | Physiotherapy",
+      "ad_group": "Physiotherapy",
+      "cost": 212.4,
+      "conversions": 0.0,
+      "reason": "built-in: jobs",
+      "suggested_negative": "\"jobs\" phrase",
+      "existing_negative_that_misses_it": [
+       "jobs (Exact match, Campaign)"
+      ],
+      "already_blocked_by": null
+     },
+     {
+      "term": "massage chair for back pain",
+      "campaign": "Search | Physiotherapy",
+      "ad_group": "Sports injury",
+      "cost": 176.2,
+      "conversions": 0.0,
+      "reason": "judged: massage chair",
+      "suggested_negative": "\"massage chair\" phrase",
+      "existing_negative_that_misses_it": [],
+      "already_blocked_by": null
+     },
+     {
+      "term": "physiotherapy course online",
+      "campaign": "Search | Physiotherapy",
+      "ad_group": "Sports injury",
+      "cost": 148.75,
+      "conversions": 0.0,
+      "reason": "built-in: course",
+      "suggested_negative": "\"course\" phrase",
+      "existing_negative_that_misses_it": [],
+      "already_blocked_by": null
+     },
+     {
+      "term": "physio exercises for knee pdf",
+      "campaign": "Search | Physiotherapy",
+      "ad_group": "Sports injury",
+      "cost": 94.85,
+      "conversions": 0.0,
+      "reason": "judged: exercises",
+      "suggested_negative": "\"pdf\" phrase",
+      "existing_negative_that_misses_it": [],
+      "already_blocked_by": null
+     }
+    ],
+    "junk_modifier_terms_with_conversions_review": [],
+    "zero_conversion_terms_not_yet_judged": [],
+    "zero_conversion_not_judged_cost": 0
+   },
+   "notes": []
+  },
+  "match_types": {
+   "status": "PASS",
+   "figures": {
+    "cost_by_match_type": {
+     "exact": 96.4,
+     "phrase": 2399.15,
+     "broad": 1031.1
+    },
+    "broad_share_pct": 29.2,
+    "broad_cost_on_manual_or_click_bidding": 0
+   },
+   "notes": [
+    "Broad match relies on Smart Bidding and accurate conversions to choose queries."
+   ]
+  },
+  "budget": {
+   "status": "WARN",
+   "figures": {
+    "budget_limited": [
+     {
+      "campaign": "Search | Physiotherapy",
+      "lost_is_budget_pct": 12.5,
+      "budget_per_day": 60.0,
+      "avg_spend_per_day": 57.17,
+      "cost": 3430.25,
+      "conversions": 60.0,
+      "cpa_reported": 57.17
+     }
+    ],
+    "account_cpa_reported": 43.01
+   },
+   "notes": [
+    "Before adding budget, move spend from waste in the same campaign. No conversion forecast is made."
+   ]
+  },
+  "bid_strategy": {
+   "status": "PASS",
+   "figures": {
+    "campaigns": [
+     {
+      "campaign": "Search | Brand",
+      "bid_strategy": "Maximize clicks",
+      "target": "--",
+      "conversions": 22.0,
+      "conversions_per_30_days": 11.0,
+      "verdict": "PASS"
+     },
+     {
+      "campaign": "Search | Physiotherapy",
+      "bid_strategy": "Maximize conversions",
+      "target": "--",
+      "conversions": 60.0,
+      "conversions_per_30_days": 30.0,
+      "verdict": "PASS"
+     }
+    ]
+   },
+   "notes": [
+    "Rule of thumb used by this audit (not a Google requirement): target-based bidding wants 15+ conversions per 30 days per campaign.",
+    "Campaign conversion counts include non-outcome or duplicate actions, so real volume is lower than shown."
+   ]
+  },
+  "quality_score": {
+   "status": "WARN",
+   "figures": {
+    "spend_weighted_qs": 6.5,
+    "cost_on_qs_4_or_less": 0,
+    "share_on_qs_4_or_less_pct": 0.0,
+    "below_average_cost_by_component": {
+     "exp. ctr": 1031.1,
+     "ad relevance": 0,
+     "landing page exp.": 1031.1
+    },
+    "low_qs_keywords": []
+   },
+   "notes": []
+  },
+  "rsa_coverage": {
+   "status": "WARN",
+   "figures": {
+    "ad_groups": [
+     {
+      "campaign": "Search | Brand",
+      "ad_group": "Brand",
+      "rsas": 1,
+      "headlines": 8,
+      "descriptions": 3,
+      "ad_strength": "Excellent",
+      "cost": 96.4,
+      "issues": []
+     },
+     {
+      "campaign": "Search | Physiotherapy",
+      "ad_group": "Physiotherapy",
+      "rsas": 1,
+      "headlines": 9,
+      "descriptions": 3,
+      "ad_strength": "Good",
+      "cost": 2399.15,
+      "issues": []
+     },
+     {
+      "campaign": "Search | Physiotherapy",
+      "ad_group": "Sports injury",
+      "rsas": 1,
+      "headlines": 6,
+      "descriptions": 2,
+      "ad_strength": "Poor",
+      "cost": 1031.1,
+      "issues": [
+       "6 of 15 headlines",
+       "2 of 4 descriptions",
+       "ad strength Poor"
+      ]
+     }
+    ]
+   },
+   "notes": [
+    "Audit rule of thumb: 8+ headlines and 3+ descriptions per ad group. Google allows up to 15 and 4."
+   ]
+  },
+  "landing_pages": {
+   "status": "FAIL",
+   "figures": {
+    "flagged": [
+     {
+      "campaign": "Search | Physiotherapy",
+      "ad_group": "Sports injury",
+      "final_url": "https://brightwaterphysio.example/",
+      "cost": 1031.1,
+      "reasons": [
+       "non-brand ad group sends traffic to the homepage",
+       "Landing page exp. Below average on 100% of the ad group's spend"
+      ]
+     }
+    ]
+   },
+   "notes": [
+    "Flags are leads to check by opening the page, not proof of a mismatch."
+   ]
+  },
+  "location": {
+   "status": "WARN",
+   "figures": {
+    "presence_or_interest_campaigns": [
+     "Search | Physiotherapy"
+    ],
+    "targeted_locations": [
+     "halifax, nova scotia"
+    ],
+    "cost_outside_targets": 0,
+    "outside_rows": []
+   },
+   "notes": [
+    "No user-locations export, so spend outside the targets can't be measured."
+   ]
+  },
+  "networks": {
+   "status": "FAIL",
+   "figures": {
+    "display_on_search_campaigns": [],
+    "search_partner_campaigns": [
+     "Search | Physiotherapy"
+    ],
+    "segments": [
+     {
+      "campaign": "Search | Physiotherapy",
+      "network": "search_partners",
+      "cost": 203.1,
+      "conversions": 0.0
+     }
+    ],
+    "partner_cost_zero_conversions": 203.1,
+    "display_cost": 0,
+    "partner_plus_display_cost": 203.1
+   },
+   "notes": []
+  },
+  "brand_split": {
+   "status": "PASS",
+   "figures": {
+    "brand_terms": [
+     "brightwater"
+    ],
+    "mixed_campaigns": [],
+    "basis": "keywords report (search-network spend only)"
+   },
+   "notes": []
+  }
+ }
+}

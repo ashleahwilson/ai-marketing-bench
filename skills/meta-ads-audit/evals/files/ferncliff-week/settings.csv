@@ -1,0 +1,4 @@
+Campaign Name,Campaign Objective,Special Ad Categories,Special Ad Category Country,Ad Set Name,Optimization Goal,Custom Event Type,Attribution Spec,Countries,Age Min,Age Max,Custom Audiences,Advantage+ Audience,Placements,Daily Budget
+Demo requests | Clinic managers,OUTCOME_LEADS,None,,Clinic managers | Interests,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,CA,18,65,,Off,Advantage+ placements,45.00
+Demo requests | Clinic managers,OUTCOME_LEADS,None,,Clinic managers | Lookalike 1%,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,CA,18,65,"Lookalike (CA, 1%) - Customers",Off,Advantage+ placements,45.00
+Demo requests | Clinic managers,OUTCOME_LEADS,None,,Dentists | Broad CA,OFFSITE_CONVERSIONS,LEAD,7-day click or 1-day view,CA,18,65,,On,Advantage+ placements,45.00
