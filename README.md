@@ -1,6 +1,6 @@
 # AI Marketing Bench
 
-Tested marketing and go-to-market skills for AI agents, by Ashleah Wilson. Install one skill, or install a whole capability.
+Tested marketing and go-to-market skills for AI agents, by Ashleah Wilson. Install one skill, or install a whole capability. Every skill has a page with its scorecard and install command at [nowofwork.com/skills](https://nowofwork.com/skills); how the library was built and tested is at [nowofwork.com/builds/ai-marketing-bench](https://nowofwork.com/builds/ai-marketing-bench).
 
 Each skill is a folder with a `SKILL.md` that follows the open [Agent Skills specification](https://agentskills.io/specification), so it works in Claude (claude.ai, Claude Code, the API), Codex, Cursor and other agents that support the format. No skill assumes a particular CRM, data provider or sending tool.
 
@@ -43,7 +43,7 @@ Some skills carry a note in their `SKILL.md` ("Recommended for large models" or 
 npx skills add ashleahwilson/ai-marketing-bench --skill reach-out
 ```
 
-**claude.ai:** download a skill's zip from the website and upload it under Settings → Capabilities → Skills.
+**claude.ai:** download a skill's zip from [its page on nowofwork.com/skills](https://nowofwork.com/skills) and upload it under Settings → Capabilities → Skills.
 
 The full list of commands is generated in `dist/INSTALL.md`.
 
