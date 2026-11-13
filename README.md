@@ -1,6 +1,6 @@
 # AI Marketing Bench
 
-Tested marketing and go-to-market skills for AI agents, by Ashleah Wilson. Website: [aimarketingbench.com](https://aimarketingbench.com). Install one skill, or install a whole capability.
+Tested marketing and go-to-market skills for AI agents, by Ashleah Wilson. Install one skill, or install a whole capability.
 
 Each skill is a folder with a `SKILL.md` that follows the open [Agent Skills specification](https://agentskills.io/specification), so it works in Claude (claude.ai, Claude Code, the API), Codex, Cursor and other agents that support the format. No skill assumes a particular CRM, data provider or sending tool.
 
